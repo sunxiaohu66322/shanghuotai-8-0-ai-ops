@@ -1,0 +1,59 @@
+[
+  {
+    "item": "1416",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1419",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1423",
+    "stage": "done",
+    "pid": null,
+    "status": null,
+    "stock": null
+  },
+  {
+    "item": "1424",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1426",
+    "stage": "failed",
+    "err": "生成超时"
+  },
+  {
+    "item": "1411",
+    "stage": "blocked"
+  },
+  {
+    "item": "1413",
+    "stage": "failed",
+    "err": "JavaScript evaluation failed at line 0, column 0: TypeError: Cannot read properties of null (reading 'innerText')\n    at"
+  },
+  {
+    "item": "1420",
+    "stage": "failed",
+    "err": "生成超时"
+  },
+  {
+    "item": "1410",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1406",
+    "stage": "failed",
+    "err": "Task space does not exist. Create a new task space, or list the task spaces to reuse an existing one."
+  },
+  {
+    "item": "1387",
+    "stage": "failed",
+    "err": "Task space does not exist. Create a new task space, or list the task spaces to reuse an existing one."
+  },
+  {
+    "item": "1407",
+    "stage": "failed",
+    "err": "Task space does not exist. Create a new task space, or list the task spaces to reuse an existing one."
+  }
+]

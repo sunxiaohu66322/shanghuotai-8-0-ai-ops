@@ -1,0 +1,78 @@
+{
+  "cardLen": 506,
+  "tail": "*发货模式\n现货\n预售\n现货预售混合\n部分发货模式不可选择 查看原因\n*现货发货时间\n当日发\n次日发\n48小时\n大于48小时发货\n存储模板\n预览\n商品规格\n发布规格图，优化商品展示效果，预计 转化率+1.5%查看标准化规格文档\n尺寸\n添加规格图\n批量上传规格图\n下移\n上移\n自定义排序\n添加规格类型（1/3）\n*价格与库存\n价格填写进度\n100%\n区域库存\n全屏\n预览\n全部尺寸\n增\n减\n批量设置\n可售库存清零\n尺寸\t\n*\n价格\n\t\n*\n现货库存\n\t\n可售库存\n\t\n预留库存\n\t\nSKUID\n\t\n商家编码\n\t\n条形码\n\t\n预览图\n\t\nSKU状态\n30*50cm\n\t\n￥\n\t\n111\n增\n减\n\t\n222\n清空\n\t-\t3389354601083173\t\n\t\n\t\t\n已上架\n设置多件优惠\n折扣力度越大，销量提升效果越好。店铺客单预计提升6.7%\n推荐\n满2件\n折\n推荐 9折\n一键采纳\n售卖价\n¥\n元\n参考价\n*订单库存计数\n下单减库存\n付款减库存\n选择免息期数\n促成交，预估GMV平均+8%\n去开通\n3期免息（费率1.65%）\n6期免息（费率4.00%）\n12期免息（费率6.00%）\n24期免息（费率10.00%）",
+  "chips": [
+    {
+      "t": "现货",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrapper-checked ",
+      "sel": true
+    },
+    {
+      "t": "次日发",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrapper-checked ",
+      "sel": true
+    },
+    {
+      "t": "尺寸",
+      "cls": "ecom-g-select-selection-item",
+      "sel": false
+    },
+    {
+      "t": "添加规格图",
+      "cls": "style_specPicLabel__S_HpM",
+      "sel": false
+    },
+    {
+      "t": "下移\n上移",
+      "cls": "style_specOperations__nWueZ",
+      "sel": false
+    },
+    {
+      "t": "自定义排序",
+      "cls": "style_specValueBox__i8sD6",
+      "sel": false
+    },
+    {
+      "t": "全部尺寸",
+      "cls": "sp-select-all-tag-text",
+      "sel": false
+    },
+    {
+      "t": "增",
+      "cls": "ecom-g-radio-button-wrapper ecom-g-radio-button-wr",
+      "sel": true
+    },
+    {
+      "t": "30*50cm",
+      "cls": "styles_specName__NrgWt",
+      "sel": false
+    },
+    {
+      "t": "下单减库存",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrapper-checked ",
+      "sel": true
+    },
+    {
+      "t": "3期免息（费率1.65%）",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-di",
+      "sel": false
+    },
+    {
+      "t": "6期免息（费率4.00%）",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-di",
+      "sel": false
+    },
+    {
+      "t": "12期免息（费率6.00%）",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-di",
+      "sel": false
+    },
+    {
+      "t": "24期免息（费率10.00%）",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-di",
+      "sel": false
+    }
+  ],
+  "skuRows": 12,
+  "specHint": false
+}

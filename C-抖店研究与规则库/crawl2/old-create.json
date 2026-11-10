@@ -1,0 +1,22 @@
+{
+  "url": "https://fxg.jinritemai.com/ffa/g/create?cid=1000004588&entrance=create",
+  "textLen": 173,
+  "text": "反馈\n返回商家后台\n商品发布\nLZL乐群云家具专卖店\n专卖店\n正常营业\n商品材料\n按住图片可上下拖动\n清空\n*商品主图\n商品正面图\n*\n上传主图\n上传辅助图\n上传辅助图\n上传辅助图\n上传辅助图\n清空\n*商品详情\n图片\n*商品标题\n标题内容需包含商品名称，建议添加材质、功能、特征或商品描述\n0/60\n确认信息，继续生成\n          \n待办",
+  "labels": [
+    "*商品主图",
+    "商品正面图\n*\n上传主图",
+    "*\n上传主图",
+    "*商品标题"
+  ],
+  "inputCount": 1,
+  "inputs": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "ph": "请输入2-60个字符（1-30个汉字）",
+      "val": "",
+      "cls": "ecom-g-input"
+    }
+  ],
+  "hasCategoryTrigger": false
+}

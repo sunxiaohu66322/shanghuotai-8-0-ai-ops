@@ -1,0 +1,37 @@
+{
+  "imgs": [
+    {
+      "label": "单门款（单柜/开孔20*37",
+      "hasImg": false,
+      "t": ""
+    },
+    {
+      "label": "三抽款（单柜/开孔20*37",
+      "hasImg": false,
+      "t": ""
+    },
+    {
+      "label": "中抽款（单柜/开孔20*37",
+      "hasImg": false,
+      "t": ""
+    },
+    {
+      "label": "底抽款（单柜/开孔20*37",
+      "hasImg": false,
+      "t": ""
+    }
+  ],
+  "w": {
+    "ok": true,
+    "v": "10"
+  },
+  "inst": {
+    "ok": true,
+    "x": 1020,
+    "y": 491
+  },
+  "fin": {
+    "reds": [],
+    "pubDisabled": false
+  }
+}

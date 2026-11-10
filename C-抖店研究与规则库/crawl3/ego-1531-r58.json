@@ -1,0 +1,161 @@
+{
+  "proto": {
+    "area": "安装模式\n为提升商品转化及消费者购物体验，建议为用户提供上门安装服务\n选择平台合作服务商\n线下提供免费上门安装\n不提供上门安装\n选择即同意《商家安装服务管理规范》，平台将监控填写真实性，若出现服务问题投诉按虚假承诺加安装异常惩罚\n售后服务\n订单完成15天内售后保障\n*售后政策\n7天无理由退货\n消费者在签收商品后的一定周期内可发起无理由退货申请，请按商品实际情况选择退货标准。点击了解\n*售后服务承诺\n保修期内提供维修(寄修)\n*选择保修天数\n1年\n*商品状态\n上架\n下架\n商品限购\n每个订单最多购买\n件\n每个用户累计可购买\n件\n若商品参加活动限购，请在「商品管理-更多-限购查询」中查看\n收起\n其他信息\n报关单\n选择已有资质\n0/20\n展开更多\n支持达人带货\n店铺精选联盟权限未开启,不能设置联盟达人带货。前往查看\n部分信息会预填充供参考，您应仔细检查每项信息，如信息有误，应修改后发布，避免虚假宣",
+    "cbs": [
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox",
+        "checked": null,
+        "x": 592,
+        "y": -1004,
+        "w": 14
+      },
+      {
+        "tag": "INPUT",
+        "cls": "ecom-g-checkbox-input",
+        "checked": false,
+        "x": 592,
+        "y": -1004,
+        "w": 14
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox-inner",
+        "checked": null,
+        "x": 592,
+        "y": -1004,
+        "w": 14
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox ecom-g-checkbox-disabled",
+        "checked": null,
+        "x": 593,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "INPUT",
+        "cls": "ecom-g-checkbox-input",
+        "checked": false,
+        "x": 593,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox-inner",
+        "checked": null,
+        "x": 593,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox ecom-g-checkbox-disabled",
+        "checked": null,
+        "x": 776,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "INPUT",
+        "cls": "ecom-g-checkbox-input",
+        "checked": false,
+        "x": 776,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox-inner",
+        "checked": null,
+        "x": 776,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox ecom-g-checkbox-disabled",
+        "checked": null,
+        "x": 958,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "INPUT",
+        "cls": "ecom-g-checkbox-input",
+        "checked": false,
+        "x": 958,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox-inner",
+        "checked": null,
+        "x": 958,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox ecom-g-checkbox-disabled",
+        "checked": null,
+        "x": 1149,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "INPUT",
+        "cls": "ecom-g-checkbox-input",
+        "checked": false,
+        "x": 1149,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox-inner",
+        "checked": null,
+        "x": 1149,
+        "y": 2543,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox ecom-g-checkbox-checked ",
+        "checked": null,
+        "x": 593,
+        "y": 2889,
+        "w": 16
+      },
+      {
+        "tag": "INPUT",
+        "cls": "ecom-g-checkbox-input",
+        "checked": true,
+        "x": 593,
+        "y": 2889,
+        "w": 16
+      },
+      {
+        "tag": "SPAN",
+        "cls": "ecom-g-checkbox-inner",
+        "checked": null,
+        "x": 593,
+        "y": 2889,
+        "w": 16
+      }
+    ]
+  },
+  "pre": {
+    "reds": [
+      "请选择 该项为必填，请输入",
+      "请选择，最多选5项 该项为必填，请输入",
+      "￥ 该项为必填，请输入",
+      "该项为必填，请输入"
+    ],
+    "pubDisabled": false,
+    "hasProto": true
+  }
+}

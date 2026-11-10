@@ -1,0 +1,28 @@
+[
+  {
+    "item": "1426",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1420",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1406",
+    "stage": "failed",
+    "err": "识别超时"
+  },
+  {
+    "item": "1411",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1413",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1407",
+    "stage": "done",
+    "pid": "3851719960418189673"
+  }
+]

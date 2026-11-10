@@ -1,0 +1,15 @@
+{
+ "counts": {
+  "products": 200,
+  "shops": 3,
+  "tasks": 6,
+  "events": 22,
+  "runs": 8,
+  "engine_ok": true,
+  "err": " overview:'NoneType' object has no attribute 'get'"
+ },
+ "state": "● 8.0 运营引擎 8.0-P0.1.0 · 127.0.0.1:9192 · 商品 372（只读） · 店铺 3 · 队列 排队 0/运行 0/完成 4/失败 2 · integrity=ok · 部分接口异常： overview:'NoneType' object has no attribute 'get'",
+ "overview": "运营总览｜引擎 在线 ｜ schema 2 ｜ ops 表 12 ｜ 商品主库 372 件（只读 ATTACH） ｜ 视频 194 ｜ 3 家店铺完整 shop_id ｜ 平台调用 0 ｜ 写入范围 ops_* only",
+ "engine_alive": true,
+ "screenshot": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台7.0调查-20261109\\8.0-P0-证据\\8.0-P0-运营中心页签-offscreen.png"
+}

@@ -1,0 +1,293 @@
+勾选框: [
+ {
+  "tag": "LABEL",
+  "cls": "ecom-g-checkbox-wrapper sp-checkbox-sm",
+  "checked": false,
+  "rowText": "31/60 AI 推荐 热搜词推荐： 美式 落地 酒吧 客厅 家用 创意 简约 欧式 换一换 一键全选 热词为算法推荐热",
+  "cx": 579,
+  "cy": -742,
+  "w": 90
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox",
+  "checked": false,
+  "rowText": "31/60 AI 推荐 热搜词推荐： 美式 落地 酒吧 客厅 家用 创意 简约 欧式 换一换 一键全选 热词为算法推荐热",
+  "cx": 541,
+  "cy": -741,
+  "w": 14
+ },
+ {
+  "tag": "INPUT",
+  "cls": "ecom-g-checkbox-input",
+  "checked": false,
+  "rowText": "31/60 AI 推荐 热搜词推荐： 美式 落地 酒吧 客厅 家用 创意 简约 欧式 换一换 一键全选 热词为算法推荐热",
+  "cx": 541,
+  "cy": -741,
+  "w": 14
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox-inner",
+  "checked": false,
+  "rowText": "31/60 AI 推荐 热搜词推荐： 美式 落地 酒吧 客厅 家用 创意 简约 欧式 换一换 一键全选 热词为算法推荐热",
+  "cx": 541,
+  "cy": -741,
+  "w": 14
+ },
+ {
+  "tag": "DIV",
+  "cls": "ecom-g-checkbox-group",
+  "checked": false,
+  "rowText": "3期免息（费率1.65%） 6期免息（费率4.00%） 12期免息（费率6.00%） 24期免息（费率10.00%）",
+  "cx": 907,
+  "cy": 2157,
+  "w": 745
+ },
+ {
+  "tag": "LABEL",
+  "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-di",
+  "checked": false,
+  "rowText": "3期免息（费率1.65%）",
+  "cx": 621,
+  "cy": 2157,
+  "w": 175
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox ecom-g-checkbox-disabled",
+  "checked": false,
+  "rowText": "3期免息（费率1.65%）",
+  "cx": 542,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "INPUT",
+  "cls": "ecom-g-checkbox-input",
+  "checked": false,
+  "rowText": "3期免息（费率1.65%）",
+  "cx": 542,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox-inner",
+  "checked": false,
+  "rowText": "3期免息（费率1.65%）",
+  "cx": 542,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "LABEL",
+  "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-di",
+  "checked": false,
+  "rowText": "6期免息（费率4.00%）",
+  "cx": 804,
+  "cy": 2157,
+  "w": 175
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox ecom-g-checkbox-disabled",
+  "checked": false,
+  "rowText": "6期免息（费率4.00%）",
+  "cx": 725,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "INPUT",
+  "cls": "ecom-g-checkbox-input",
+  "checked": false,
+  "rowText": "6期免息（费率4.00%）",
+  "cx": 725,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox-inner",
+  "checked": false,
+  "rowText": "6期免息（费率4.00%）",
+  "cx": 725,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "LABEL",
+  "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-di",
+  "checked": false,
+  "rowText": "12期免息（费率6.00%）",
+  "cx": 990,
+  "cy": 2157,
+  "w": 182
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox ecom-g-checkbox-disabled",
+  "checked": false,
+  "rowText": "12期免息（费率6.00%）",
+  "cx": 907,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "INPUT",
+  "cls": "ecom-g-checkbox-input",
+  "checked": false,
+  "rowText": "12期免息（费率6.00%）",
+  "cx": 907,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox-inner",
+  "checked": false,
+  "rowText": "12期免息（费率6.00%）",
+  "cx": 907,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "LABEL",
+  "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-di",
+  "checked": false,
+  "rowText": "24期免息（费率10.00%）",
+  "cx": 1185,
+  "cy": 2157,
+  "w": 190
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox ecom-g-checkbox-disabled",
+  "checked": false,
+  "rowText": "24期免息（费率10.00%）",
+  "cx": 1098,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "INPUT",
+  "cls": "ecom-g-checkbox-input",
+  "checked": false,
+  "rowText": "24期免息（费率10.00%）",
+  "cx": 1098,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox-inner",
+  "checked": false,
+  "rowText": "24期免息（费率10.00%）",
+  "cx": 1098,
+  "cy": 2158,
+  "w": 16
+ },
+ {
+  "tag": "LABEL",
+  "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-wrapper-ch",
+  "checked": true,
+  "rowText": "订单完成15天内售后保障",
+  "cx": 630,
+  "cy": 2504,
+  "w": 192
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox ecom-g-checkbox-checked ecom-g-che",
+  "checked": true,
+  "rowText": "订单完成15天内售后保障",
+  "cx": 542,
+  "cy": 2504,
+  "w": 16
+ },
+ {
+  "tag": "INPUT",
+  "cls": "ecom-g-checkbox-input",
+  "checked": true,
+  "rowText": "",
+  "cx": 542,
+  "cy": 2504,
+  "w": 16
+ },
+ {
+  "tag": "SPAN",
+  "cls": "ecom-g-checkbox-inner",
+  "checked": false,
+  "rowText": "",
+  "cx": 542,
+  "cy": 2504,
+  "w": 16
+ }
+]
+品牌行: {
+ "none": false,
+ "lab": {
+  "x": 560,
+  "y": 475
+ },
+ "cands": [
+  {
+   "tag": "DIV",
+   "cls": "ecom-guide-single-content",
+   "t": "【属性】已支持模板功能，灵活将常用商品信息存储为模板，可大幅度提升发布效率",
+   "cx": 1365,
+   "cy": 498,
+   "w": 316,
+   "x": 1207
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_price__p7y79 styles_priceEmpty__IHZy_",
+   "t": "未设置价格",
+   "cx": 1531,
+   "cy": 477,
+   "w": 284,
+   "x": 1389
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_priceEmpty__IHZy_",
+   "t": "未设置价格",
+   "cx": 1531,
+   "cy": 477,
+   "w": 284,
+   "x": 1389
+  }
+ ]
+}
+已点击: {"tag":"DIV","cls":"ecom-guide-single-content","t":"【属性】已支持模板功能，灵活将常用商品信息存储为模板，可大幅度提升发布效率","cx":1365,"cy":498,"w":316,"x":1207}
+下拉面板: {
+ "panels": [
+  {
+   "cls": "styles_desWrapperNew__mzukH styles_desWrapperNewConsumerPrev",
+   "rect": {
+    "x": 534,
+    "y": 73,
+    "w": 823,
+    "h": 208
+   },
+   "text": "商详图片（3/50） | 支持拖拽。宽度620-1290px，<5MB，jpg/jpeg/png | 从主图填入 | 上传图片 | 高级编辑 | 预览 | | | | | | | | | | | |"
+  },
+  {
+   "cls": "ecom-g-tooltip overlay-content-wrapper ecom-g-tooltip-placem",
+   "rect": {
+    "x": 1183,
+    "y": 418,
+    "w": 364,
+    "h": 180
+   },
+   "text": "模板功能上线啦！存储模板下次发品直接用 | 【属性】已支持模板功能，灵活将常用商品信息存储为模板，可大幅度提升发布效率 | 知道了"
+  }
+ ],
+ "emptyHint": [
+  "可选品牌为审核通过的品牌名称，如当前品牌与您申请品牌不一致，可前往资质中心-品牌资质查看明细，可选择已关联当前类目的生效中品牌，点此",
+  "新增品牌资质所属类目"
+ ]
+}
+

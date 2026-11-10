@@ -1,0 +1,157 @@
+{
+ "pid": 1391,
+ "title": "矮茶桌茶几黑胡桃实木家用新中式宋氏美学",
+ "category_hint": "",
+ "rows16": [
+  [
+   "10001417559590",
+   "矮茶桌茶几黑胡桃实木家用新中式宋氏美学",
+   "",
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9674a70002f793e9c6e24509884c30000000a000004f50",
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9673cf000e7d936c0377cf156aeacb000000a000004f50",
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9674a8000541d0177fad670b950cc9000000a000004f50",
+   "1.6米",
+   "1.6米",
+   "",
+   "",
+   "",
+   19,
+   3599.0,
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9674a70002f793e9c6e24509884c30000000a000004f50",
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9675b40005bc9a237212880b950cc9000000a000004f50,https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9675b4000596825985f81b0b87d6aa000000a000004f50,https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9675b40005806beae977bf0b950cbc000000a000004f50",
+   ""
+  ],
+  [
+   "10001417559590",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "1.8米",
+   "1.8米",
+   "",
+   "",
+   "",
+   19,
+   3999.0,
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9674a70002f793e9c6e24509884c30000000a000004f50",
+   "",
+   ""
+  ],
+  [
+   "10001417559590",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "2米",
+   "2米",
+   "",
+   "",
+   "",
+   20,
+   4599.0,
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9674a70002f793e9c6e24509884c30000000a000004f50",
+   "",
+   ""
+  ],
+  [
+   "10001417559590",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "2.2米",
+   "2.2米",
+   "",
+   "",
+   "",
+   20,
+   4999.0,
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/6a9674a70002f793e9c6e24509884c30000000a000004f50",
+   "",
+   ""
+  ]
+ ],
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\main\\image_9197742a0f55.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\main\\image_3f4a9183e9a6.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\main\\image_e1ecb12c09fa.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\detail\\image_bff6f0a21b10.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\detail\\image_29c78be92317.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\detail\\image_3789d33dc15f.jpg"
+ ],
+ "skus": [
+  {
+   "sku_id": "26182995655",
+   "name": "1.6米",
+   "spec": [
+    "1.6米"
+   ],
+   "code": "",
+   "price": 3599.0,
+   "stock": 19,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\main\\image_9197742a0f55.jpg"
+  },
+  {
+   "sku_id": "26182433559",
+   "name": "1.8米",
+   "spec": [
+    "1.8米"
+   ],
+   "code": "",
+   "price": 3999.0,
+   "stock": 19,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\main\\image_9197742a0f55.jpg"
+  },
+  {
+   "sku_id": "26182705495",
+   "name": "2米",
+   "spec": [
+    "2米"
+   ],
+   "code": "",
+   "price": 4599.0,
+   "stock": 20,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\main\\image_9197742a0f55.jpg"
+  },
+  {
+   "sku_id": "26182705496",
+   "name": "2.2米",
+   "spec": [
+    "2.2米"
+   ],
+   "code": "",
+   "price": 4999.0,
+   "stock": 20,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1391\\main\\image_9197742a0f55.jpg"
+  }
+ ],
+ "warns": [
+  "分类空缺（源数据无类目路径，需人工在 4.2 里映射后再导）",
+  "商品属性为空（模板说明第 3 条：非强校验，为空也可导入）"
+ ],
+ "meta": {
+  "product_id": 1391,
+  "source_product_id": "10001417559590",
+  "rows": 4,
+  "skus": 4,
+  "carousel_in_table": 3,
+  "carousel_total": 3,
+  "carousel_dropped": 0,
+  "detail_in_table": 3,
+  "detail_total": 3,
+  "sku_img_matched": 4,
+  "videos_in_library": 2
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

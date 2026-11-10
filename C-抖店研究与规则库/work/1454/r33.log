@@ -1,0 +1,27 @@
+== 品牌行(600-1150, 452-505) ==
+ DIV [] "* 品牌" @(659,485) 218x22 
+ DIV [] "* 品牌" @(659,485) 218x22 
+ DIV [ecom-g-modal ecom-g-modal-confirm ecom-g-modal-confirm-] "保存成功 请前往商品管理-右侧“草稿箱”中查看编辑，商品发布且审核通" @(842,456) 400x212 document
+ DIV [] "型号" @(901,496) 234x76 
+ DIV [style_categoryPropertiesItemNew__kP5wv goods-publish-hi] "型号" @(901,496) 234x76 
+ DIV [] "型号" @(893,504) 218x60 
+ DIV [] "型号" @(893,485) 218x22 
+ DIV [] "型号" @(893,485) 218x22 
+ SPAN [style_labelWrapper__krth8] "型号" @(798,485) 28x22 
+ SPAN [] "型号" @(798,485) 28x22 
+ SPAN [] "型号" @(798,485) 28x19 
+ SPAN [] "型号" @(798,485) 28x19 
+ DIV [ecom-g-modal-confirm-btns] "我知道了" @(969,498) 98x32 
+ BUTTON [ecom-g-btn ecom-g-btn-primary] "我知道了" @(973,498) 90x32 
+ SPAN [] "我知道了" @(973,498) 56x16 
+ DIV [goods-ai-prefill-area] "* 功能 稳固防晃" @(1135,496) 234x76 
+ DIV [style_categoryPropertiesItemNew__kP5wv goods-publish-hi] "* 功能 稳固防晃" @(1135,496) 234x76 
+ DIV [] "* 功能 稳固防晃" @(1127,504) 218x60 
+ DIV [] "* 功能" @(1127,485) 218x22 
+ DIV [] "* 功能" @(1127,485) 218x22 
+ SPAN [] "* 功能" @(1037,485) 38x19 
+ SPAN [style_labelWrapper__krth8] "功能" @(1042,485) 28x22 
+ SPAN [] "功能" @(1042,485) 28x22 
+ SPAN [] "功能" @(1042,485) 28x19 
+== 标题/使用品牌名带(530-1400, 312-352) ==
+

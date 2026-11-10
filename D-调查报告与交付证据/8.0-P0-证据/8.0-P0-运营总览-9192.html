@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>8.0 · AI 运营中心 · 运营总览</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#12151c;color:#e6e9ef;
+ font:14px/1.6 "Microsoft YaHei",Consolas,sans-serif;padding:22px}
+h1{font-size:20px;margin:0 0 4px}h2{font-size:14px;margin:18px 0 8px;color:#9aa4b8}
+.sub{color:#8b95a8;font-size:12px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.card{background:#1c212c;border:1px solid #2b3242;border-radius:8px;padding:12px}
+.k{color:#8b95a8;font-size:12px}.v{font-size:22px;font-weight:700;color:#6ee7a8;margin-top:2px}
+.v.blue{color:#71b7ff}.v.warn{color:#ffc46b}
+table{width:100%;border-collapse:collapse;background:#1c212c;border-radius:8px;overflow:hidden}
+td,th{padding:7px 10px;border-bottom:1px solid #262d3b;text-align:left;font-size:12px}
+th{color:#8b95a8;font-weight:600;background:#191e28}
+.tag{display:inline-block;padding:1px 7px;border-radius:10px;background:#26344a;color:#9cc4ff;font-size:11px}
+.ok{color:#6ee7a8}.bad{color:#ff8b8b}
+.mono{font-family:Consolas,monospace;font-size:11px;color:#aab3c4}
+#err{color:#ff8b8b}
+</style>
+</head><body><h1>8.0 · AI 运营中心 <span class="tag">运营总览</span></h1>
+<div class="sub">独立 ops.db 可写 · 商品主库 v3.db 只读挂载 · 零平台调用 · P0 底座</div>
+<div id="err"></div>
+<h2>引擎与数据</h2>
+<div class="grid" id="g1"><div class="card"><div class="k">引擎</div><div class="v ">在线</div></div><div class="card"><div class="k">版本</div><div class="v blue">8.0-P0.1.0</div></div><div class="card"><div class="k">商品（v3 只读）</div><div class="v ">372</div></div><div class="card"><div class="k">视频素材</div><div class="v ">194</div></div><div class="card"><div class="k">店铺数</div><div class="v blue">3</div></div><div class="card"><div class="k">ops 表</div><div class="v ">12</div></div><div class="card"><div class="k">平台调用</div><div class="v ">0</div></div><div class="card"><div class="k">监听</div><div class="v blue">127.0.0.1:9192</div></div></div>
+<h2>真实店铺与账号（完整 shop_id，不存凭据）</h2>
+<table id="shops"><tbody><tr><th>平台</th><th>店名</th><th>完整 shop_id</th><th>引擎</th><th>状态</th></tr><tr><td>dy</td><td>抖店·LZL乐群云家具</td><td class="mono">dd_lzl</td><td>ego</td><td>unknown</td></tr><tr><td>wx</td><td>欢轴家居</td><td class="mono">wx6ff10d09ff0ee823</td><td>none</td><td>unknown</td></tr><tr><td>wx</td><td>崇耿</td><td class="mono">wxfc4e24a2ebcb2b0a</td><td>none</td><td>unknown</td></tr></tbody></table>
+<h2>任务队列与执行记录</h2>
+<div class="grid" id="g2"><div class="card"><div class="k">排队</div><div class="v ">0</div></div><div class="card"><div class="k">运行</div><div class="v blue">0</div></div><div class="card"><div class="k">完成</div><div class="v ">4</div></div><div class="card"><div class="k">失败</div><div class="v warn">2</div></div><div class="card"><div class="k">执行记录 runs</div><div class="v blue">8</div></div><div class="card"><div class="k">状态事件 events</div><div class="v ">22</div></div><div class="card"><div class="k">视频资产</div><div class="v ">0</div></div><div class="card"><div class="k">错误事件</div><div class="v ">0</div></div></div>
+<h2>最近任务状态事件</h2>
+<table id="events"><tbody><tr><th>时间</th><th>任务</th><th>类型</th><th>转移</th><th>说明</th></tr><tr><td class="mono">2026-11-10 17:35:08</td><td class="mono">te78459a2b3174f7f</td><td>probe.fail</td><td>running → <b>failed</b></td><td>expected-p0-fail</td></tr><tr><td class="mono">2026-11-10 17:35:08</td><td class="mono">te78459a2b3174f7f</td><td>probe.fail</td><td>queued → <b>running</b></td><td>worker=w-293b6a37 lease=30s</td></tr><tr><td class="mono">2026-11-10 17:32:30</td><td class="mono">t3218a25f9cda46bb</td><td>probe.fail</td><td>running → <b>failed</b></td><td>expected-fail-2</td></tr><tr><td class="mono">2026-11-10 17:32:29</td><td class="mono">t3218a25f9cda46bb</td><td>probe.fail</td><td>queued → <b>running</b></td><td>worker=w-fbb7cb99 lease=30s</td></tr><tr><td class="mono">2026-11-10 17:32:29</td><td class="mono">t2df320a38ccc46fb</td><td>probe.sleep</td><td>running → <b>done</b></td><td>ok</td></tr><tr><td class="mono">2026-11-10 17:32:28</td><td class="mono">t2df320a38ccc46fb</td><td>probe.sleep</td><td>queued → <b>running</b></td><td>worker=w-fbb7cb99 lease=30s</td></tr><tr><td class="mono">2026-11-10 17:32:27</td><td class="mono">t7c12a61ac1fa47cc</td><td>probe.noop</td><td>running → <b>done</b></td><td>ok</td></tr><tr><td class="mono">2026-11-10 17:32:27</td><td class="mono">t7c12a61ac1fa47cc</td><td>probe.noop</td><td>queued → <b>running</b></td><td>worker=w-fbb7cb99 lease=30s</td></tr><tr><td class="mono">2026-11-10 17:32:27</td><td class="mono">te78459a2b3174f7f</td><td>probe.fail</td><td>running → <b>queued</b></td><td>retry in 10s: expected-p0-fail</td></tr><tr><td class="mono">2026-11-10 17:32:27</td><td class="mono">t3218a25f9cda46bb</td><td>probe.fail</td><td> → <b>queued</b></td><td>kind=probe.fail</td></tr><tr><td class="mono">2026-11-10 17:32:27</td><td class="mono">t2df320a38ccc46fb</td><td>probe.sleep</td><td> → <b>queued</b></td><td>kind=probe.sleep</td></tr><tr><td class="mono">2026-11-10 17:32:27</td><td class="mono">te78459a2b3174f7f</td><td>probe.fail</td><td>queued → <b>running</b></td><td>worker=w-fbb7cb99 lease=30s</td></tr></tbody></table>
+<script>
+function card(k,v,cls){return '<div class="card"><div class="k">'+k+'</div><div class="v '+(cls||'')+'">'+v+'</div></div>'}
+function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+function get(u){return fetch(u).then(function(r){return r.json()})}
+Promise.all([get('/api/ops/health'),get('/api/ops/overview'),get('/api/ops/task/events?limit=12')])
+.then(function(a){
+  var h=a[0], o=a[1].data||a[1], ev=a[2].rows||[];
+  document.getElementById('g1').innerHTML=
+    card('引擎',h.ok?'在线':'异常',h.ok?'':'warn')+
+    card('版本',esc(h.version),'blue')+
+    card('商品（v3 只读）',o.v3&&o.v3.products!=null?o.v3.products:'—')+
+    card('视频素材',o.v3&&o.v3.videos!=null?o.v3.videos:'—')+
+    card('店铺数',o.shops?o.shops.count:0,'blue')+
+    card('ops 表',h.ops_tables)+
+    card('平台调用',h.platform_calls)+
+    card('监听',esc(h.listen),'blue');
+  document.getElementById('g2').innerHTML=
+    card('排队',o.queue?o.queue.queued:0)+
+    card('运行',o.queue?o.queue.running:0,'blue')+
+    card('完成',o.queue?o.queue.done:0)+
+    card('失败',o.queue?o.queue.failed:0,'warn')+
+    card('执行记录 runs',o.runs!=null?o.runs:'—','blue')+
+    card('状态事件 events',o.events!=null?o.events:'—')+
+    card('视频资产',o.video_assets!=null?o.video_assets:'—')+
+    card('错误事件',o.errors!=null?o.errors:'—');
+  var s='<tr><th>平台</th><th>店名</th><th>完整 shop_id</th><th>引擎</th><th>状态</th></tr>';
+  (o.shops&&o.shops.shops||[]).forEach(function(x){
+    s+='<tr><td>'+esc(x.platform)+'</td><td>'+esc(x.display_name)+'</td><td class="mono">'+
+       esc(x.account_id)+'</td><td>'+esc(x.browser_engine)+'</td><td>'+
+       esc(x.login_status)+'</td></tr>'});
+  document.getElementById('shops').innerHTML=s;
+  var e='<tr><th>时间</th><th>任务</th><th>类型</th><th>转移</th><th>说明</th></tr>';
+  ev.forEach(function(x){
+    e+='<tr><td class="mono">'+esc(x.at_text)+'</td><td class="mono">'+esc(x.task_id)+
+       '</td><td>'+esc(x.kind)+'</td><td>'+esc(x.from_state)+' → <b>'+esc(x.to_state)+
+       '</b></td><td>'+esc((x.detail||'').slice(0,50))+'</td></tr>'});
+  if(!ev.length)e+='<tr><td colspan="5">暂无事件（入队探针任务后这里会出现真实记录）</td></tr>';
+  document.getElementById('events').innerHTML=e;
+}).catch(function(e){document.getElementById('err').textContent='接口读取失败：'+e});
+</script></body></html>

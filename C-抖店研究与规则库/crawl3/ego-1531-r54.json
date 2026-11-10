@@ -1,0 +1,37 @@
+{
+  "after": [
+    {
+      "label": "三抽款（单柜/开孔2",
+      "hasImg": false
+    },
+    {
+      "label": "中抽款（单柜/开孔2",
+      "hasImg": false
+    },
+    {
+      "label": "底抽款（单柜/开孔2",
+      "hasImg": false
+    },
+    {
+      "label": "单门款（单柜/开孔2",
+      "hasImg": false
+    },
+    {
+      "label": "三抽款（单柜/开孔2",
+      "hasImg": false
+    },
+    {
+      "label": "中抽款（单柜/开孔2",
+      "hasImg": false
+    }
+  ],
+  "w": {
+    "ok": true,
+    "v": "10"
+  },
+  "fin": {
+    "reds": [],
+    "pubDisabled": false,
+    "prog": "20%"
+  }
+}

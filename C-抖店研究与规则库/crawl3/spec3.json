@@ -1,0 +1,77 @@
+{
+  "dump": [
+    {
+      "i": 0,
+      "ph": "",
+      "al": "",
+      "name": "",
+      "v": "",
+      "cls": "ecom-g-select-selection-search"
+    },
+    {
+      "i": 1,
+      "ph": "请输入尺寸",
+      "al": "",
+      "name": "",
+      "v": "30*50cm",
+      "cls": "ecom-g-input"
+    },
+    {
+      "i": 2,
+      "ph": "请输入尺寸",
+      "al": "",
+      "name": "",
+      "v": "",
+      "cls": "ecom-g-input"
+    },
+    {
+      "i": 3,
+      "ph": "请输入",
+      "al": "",
+      "name": "",
+      "v": "0",
+      "cls": "ecom-g-input-number-input"
+    },
+    {
+      "i": 4,
+      "ph": "",
+      "al": "",
+      "name": "",
+      "v": "1",
+      "cls": "ecom-g-radio-button-input"
+    },
+    {
+      "i": 5,
+      "ph": "",
+      "al": "",
+      "name": "",
+      "v": "-1",
+      "cls": "ecom-g-radio-button-input"
+    },
+    {
+      "i": 6,
+      "ph": "请输入库存",
+      "al": "",
+      "name": "",
+      "v": "111",
+      "cls": "ecom-g-input"
+    },
+    {
+      "i": 7,
+      "ph": "请输入erp编码",
+      "al": "",
+      "name": "",
+      "v": "",
+      "cls": "ecom-g-input"
+    },
+    {
+      "i": 8,
+      "ph": "请输入条形码",
+      "al": "",
+      "name": "",
+      "v": "",
+      "cls": "ecom-g-input"
+    }
+  ],
+  "filled": null
+}

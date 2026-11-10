@@ -1,0 +1,72 @@
+[
+  {
+    "item": "1436",
+    "stage": "video",
+    "field": "主图视频",
+    "msg": "plan 里没有视频",
+    "category": "media"
+  },
+  {
+    "item": "1436",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "选项里找不到「家具 > 几类 > 茶几/边几」",
+    "category": "category"
+  },
+  {
+    "item": "1436",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1436",
+    "stage": "tab",
+    "field": "属性信息",
+    "msg": "找不到页签「属性信息」",
+    "category": "other"
+  },
+  {
+    "item": "1436",
+    "stage": "spec",
+    "field": "SKU行",
+    "msg": "SKU 行数 5 少于应有 6",
+    "category": "other"
+  },
+  {
+    "item": "1436",
+    "stage": "price",
+    "field": "SKU行",
+    "msg": "价格表 5 行 < SKU 6 个",
+    "category": "other"
+  },
+  {
+    "item": "1436",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "弹窗里没找到「确定」",
+    "category": "other"
+  },
+  {
+    "item": "1436",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 5 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1436",
+    "stage": "ship",
+    "field": "发货时间",
+    "msg": "异常: ReferenceError: goTab is not defined",
+    "category": "other"
+  },
+  {
+    "item": "1436",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "evaluate: TypeError: Cannot read properties of null (reading 'innerText')",
+    "category": "other"
+  }
+]

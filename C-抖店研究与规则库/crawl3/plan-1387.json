@@ -1,0 +1,112 @@
+{
+ "pid": 1387,
+ "title": "18寸登机箱免托运拉杆箱多功能行李箱万向轮旅行箱",
+ "category_hint": "",
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_5dc9e258d774.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_f9a5b6ab5daa.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_414bcd5a207d.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_016c75fe85df.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_39483b34122c.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_2398f0d65a12.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_c0b03a0760a9.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_bcab2944f4df.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_bf954828555d.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_17aeb8428a8c.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_f11f59e863a3.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_bc25aa3623d2.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_c84148952d53.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_e594ba1c04fd.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_63164aa07806.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_fbb7158dd5c8.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\detail\\image_1306fcb3ec0f.jpg"
+ ],
+ "skus": [
+  {
+   "name": "深灰色/18 寸",
+   "spec": [
+    "深灰色/18 寸"
+   ],
+   "price": 278.0,
+   "stock": 11605,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_5dc9e258d774.jpg"
+  },
+  {
+   "name": "石英灰/18 寸",
+   "spec": [
+    "石英灰/18 寸"
+   ],
+   "price": 278.0,
+   "stock": 12788,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_5dc9e258d774.jpg"
+  },
+  {
+   "name": "黑色/18 寸",
+   "spec": [
+    "黑色/18 寸"
+   ],
+   "price": 278.0,
+   "stock": 12893,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_5dc9e258d774.jpg"
+  },
+  {
+   "name": "粉色/18 寸",
+   "spec": [
+    "粉色/18 寸"
+   ],
+   "price": 278.0,
+   "stock": 12960,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_5dc9e258d774.jpg"
+  },
+  {
+   "name": "抹茶绿/18 寸",
+   "spec": [
+    "抹茶绿/18 寸"
+   ],
+   "price": 278.0,
+   "stock": 12886,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_5dc9e258d774.jpg"
+  },
+  {
+   "name": "米白色/18 寸",
+   "spec": [
+    "米白色/18 寸"
+   ],
+   "price": 278.0,
+   "stock": 12969,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_5dc9e258d774.jpg"
+  },
+  {
+   "name": "奶茶灰/18 寸",
+   "spec": [
+    "奶茶灰/18 寸"
+   ],
+   "price": 278.0,
+   "stock": 12929,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1387\\main\\image_5dc9e258d774.jpg"
+  }
+ ],
+ "price": 278.0,
+ "stock": 11605,
+ "cat": [
+  "家具",
+  "几类",
+  "茶几/边几"
+ ],
+ "brand": "LZL",
+ "wood": null,
+ "install": "不提供上门安装",
+ "meta": {
+  "product_id": 1387,
+  "skus": 7,
+  "main": 8,
+  "detail": 9
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

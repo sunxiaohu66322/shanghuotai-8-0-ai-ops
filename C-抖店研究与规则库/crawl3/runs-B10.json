@@ -1,0 +1,29 @@
+[
+  {
+    "item": "1390",
+    "stage": "done",
+    "pid": null,
+    "status": null
+  },
+  {
+    "item": "1393",
+    "stage": "done",
+    "pid": null,
+    "status": null
+  },
+  {
+    "item": "1404",
+    "stage": "failed",
+    "err": "识别超时"
+  },
+  {
+    "item": "1406",
+    "stage": "publish-unconfirmed"
+  },
+  {
+    "item": "1409",
+    "stage": "done",
+    "pid": null,
+    "status": null
+  }
+]

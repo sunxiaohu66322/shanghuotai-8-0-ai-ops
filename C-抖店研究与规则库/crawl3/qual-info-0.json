@@ -1,0 +1,70 @@
+{
+  "url": "https://fxg.jinritemai.com/center/qualification/shop/info?version=0&appid=1&__token=93757f38020bce544be4c193b1dd703a&_bid=fxg_admin&_lid=594157125956&verifyFp=verify_mvt7pllg_33b68de9_dcd3_16d2_9d3d_1dcee2ce8bf9&fp=verify_mvt7pllg_33b68de9_dcd3_16d2_9d3d_1dcee2ce8bf9&msToken=s65CXuKH2Roe1KUbkdQtwj1Oi9l9tOj5ifhhmZ2qJEpgTu8lbxwTZdg_BI_CwizOUJ_G5hiRiiPCqXLf2jCKLpskaU2nzsWASNNO1T67-5aYZ7EEWbu-HSPCZPQiMRxplRND9rndTX_7BawZmxeKtOrXZJeUTNPBV0WSNIcqwrzg&a_bogus=Dy4jDHWEOqAfKpAGuOj179Ol6w9%2FrTuybBixWe9zHFOeL10brt1ltda9joK24PbGempTZH17wflMYDVcp3TiponkFmkkSusfGsd99u8LgqwZaFtsDqjYCukzowBN0Rsq-5cSNl7RlsBe2x5WnrI8WdcGy5TaQObDSHFSd2sbc9WNdCjHVoQveQ6dohvM",
+  "method": "GET",
+  "postData": "",
+  "body": {
+    "data": {
+      "qual_id": "7514311503933358336",
+      "shop_type": 2,
+      "shop_name": "LZL乐群云家具专卖店",
+      "shop_logo": {
+        "file_id": "",
+        "url": "https://p3-ecom-qualification-sign.ecombdimg.com/tos-cn-i-6vegkygxbk/4420eaa0a94148f496e88c0031d0d569~tplv-6vegkygxbk-s:1024.image?lk3s=39b2b0f1&x-expires=1824795510&x-signature=X%2F44TtrQiPrPSxPmH%2BpKwmwXOAo%3D",
+        "uri": "tos-cn-i-6vegkygxbk/4420eaa0a94148f496e88c0031d0d569"
+      },
+      "brand_src": 0,
+      "portrait_auth_term": "",
+      "taxfree_licence_term": "",
+      "shop_name_section": {
+        "brand_name": "LZL",
+        "enterprise_trade_name": "乐群云",
+        "category_name": "家具",
+        "shop_type_name": "专卖店",
+        "trademark_reg_code": "43689106",
+        "category_word_id": 212,
+        "brand_qual_type": 1,
+        "brand_id": 1502455806,
+        "custom_name": "江西乐群云家居有限公司243",
+        "not_allow_update": false
+      },
+      "is_auto_generated_shop_logo": false,
+      "qual_status_info": {
+        "task_id": "0",
+        "status": 1,
+        "audit_status": 3,
+        "reject_reasons": [],
+        "submit_time": "2026-06-13 14:18:02",
+        "audit_time": "2026-06-13 14:18:02",
+        "build_source": 0
+      },
+      "exempt_shop_logo_gray_config": true,
+      "shop_has_brand35": false,
+      "poi_id": null,
+      "shop_settle_day": {
+        "detail_url": "https://fxg.jinritemai.com/ffa/fxg-bill/order-bill",
+        "delay_day_list": [
+          3,
+          10
+        ],
+        "delay_day_display": "3、10天"
+      },
+      "operate_status": 0,
+      "operate_status_str": "正常营业",
+      "shop_open_time": 1749870052,
+      "shop_open_time_str": "2025-06-14",
+      "stop_status": 0,
+      "main_category_item": {
+        "category_id": 1000004471,
+        "full_name": "家具",
+        "first_cid": 1000004471,
+        "name": "家具"
+      },
+      "allow_update_main_category": true
+    },
+    "code": 0,
+    "msg": "",
+    "extra": {
+      "log_id": "2026102915383058B30389173E818DF80A"
+    }
+  }
+}

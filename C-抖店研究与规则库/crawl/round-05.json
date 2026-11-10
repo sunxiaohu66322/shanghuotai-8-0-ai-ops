@@ -1,0 +1,231 @@
+{
+  "oldDump": {
+    "url": "https://fxg.jinritemai.com/ffa/g/create",
+    "text": "反馈\n返回商家后台\n商品发布\nLZL乐群云家具专卖店\n专卖店\n正常营业\n商品材料\n按住图片可上下拖动\n清空\n*商品主图\n商品正面图\n*\n上传主图\n上传辅助图\n上传辅助图\n上传辅助图\n上传辅助图\n清空\n*商品详情\n图片\n*商品标题\n标题内容需包含商品名称，建议添加材质、功能、特征或商品描述\n0/60\n确认信息，继续生成\n          \n待办",
+    "labels": [
+      {
+        "t": "商品正面图*上传主图",
+        "req": true
+      },
+      {
+        "t": "上传辅助图",
+        "req": false
+      },
+      {
+        "t": "上传辅助图",
+        "req": false
+      },
+      {
+        "t": "上传辅助图",
+        "req": false
+      },
+      {
+        "t": "上传辅助图",
+        "req": false
+      }
+    ],
+    "fields": [
+      {
+        "tag": "input",
+        "type": "text",
+        "ph": "请输入2-60个字符（1-30个汉字）",
+        "max": ""
+      }
+    ],
+    "sections": [],
+    "buttons": [
+      "清空",
+      "图片",
+      "确认信息，继续生成"
+    ]
+  },
+  "impDump": {
+    "url": "https://fxg.jinritemai.com/ffa/g/list",
+    "text": "反馈\n返回首页\n巨量千川\n精选联盟\n电商罗盘\n服务市场\n学习中心\n智能搜索\n为什么不同商品的整改时间不一样？\n通知中心\n2\n\n4\n\n6\n\n官方群\n飞鸽客服\n下载客户端\n更多入驻\n快速发布\nLZL乐群云家具专卖店\n专卖店\n正常营业\nAI助手\n常用\n管理\n商机中心\n订单管理\n售后工作台\n评价管理\n商品管理\n违规管理\n商品成长\n单品直降\n营销工具\n流量\n流量运营\n搜索运营\n短视频运营\n直播管理\n图文运营\n商城运营\n推荐卡运营\n豆包运营\n营销活动\n活动广场\n优价推手\n营销工具\n优惠券\n单品直降\n营销管理\n付费推广\n千川推广\n联盟推广\n订单发货\n订单管理\n卡券管理\n发货中心\n订单报备\n包裹中心\n物流工具\n电子面单\n物流服务\n物流诊断\n质检订单管理\n售后\n售后工作台\n服务工单\n消费者权益\n保险服务\n小额打款\n售后小助手\n售后挽单助手\n商品\n商品创建\n商品管理\n评价管理\n库存管理\n渠道品管理\n商品诊断\n商机中心\n商品成长\n商品工具\n商品素材\n源头好货\n店铺\n店铺管理\n账号管理\n商家体验分\n违规管理\n申诉与举报\n店铺装修\n商家权益\n申请关店\n用户\n用户运营\n用户触达\n会员中心\n资金\n账户中心\n保证金账户\n抖店贷款\n账单管理\n返佣管理\n发票管理\n历史报表\n应用\n收起导航\n商品管理\n能查看售卖中商品、已下架商品、审核中商品、审核驳回商品、审核通过商品，草稿箱总商品；能批量下架商品、批量修改商品、对商品加入爱心好物\n关联操作\n错失转化机会\n1个商品有提升空间\n全部\n2025新款软包床头靠背一体落地实木板卧室床头靠包单买\n完成千川投广，获得更多曝光机会\n立即优化\n全部\n售卖中\n已售罄\n已下架\n已封禁 (0)\n审核中 (0)\n审核驳回 (0)\n审核通过\n编辑记录\n草稿箱\n回收站\n商品售价\n商品类型\n全部\n商品销量\n类目名称\n请选择类目\n草稿审核\n全部\n发货模式\n好评率\n全部\n商品分组\n全部\n创建时间\n上架时间\n运费模板\n请选择运费模板\n商品标签\n请选择商品标签\n退货策略\n请选择退货策略\n库存类型\n全部\n货号\n平台纠错\n全部\n查询\n重置\n展开 \n导出查询商品\n查看导出记录\n共2条\n批量下架\n批量修改\n查看优化记录\n渠道品管理\n更多操作\n发趋势品得扶持批量新建渠道品\n新建商品\n\t商品信息\t\n价格\n\t\n总库存\n\t\n总销量\n\t\n质量分\n\t\n上架时间降序\n\t操作\n\n \n\t\n \n\t\n \n\t\n \n\t\n \n\t\n \n\t\n \n\t\n \n\n\n\n\t\n2025新款软包床头靠背一体落地实木板卧室床头靠包单买\nID：3783077346274312845\n现货模式\n预览\n复制链接\n\t\n￥1382.40 ~ ￥1526.40\n\t\n320\n\t\n2\n100%好评\n设置优惠提升购买转化\n设置优惠券\n提升销量\n\t\n优秀\n88\n\t\n2026/10/14\n01:12:51\n售卖中\n\t\n编辑\n下架\n新建渠道品\n发布相似品\n更多\n\n\n\t\n户外藤编沙发庭院花园家具阳光房创意三件套小组合民宿露台单人椅\nID：3759227189053227026\n现货模式\n预览\n复制链接\n\t\n￥1254.00 ~ ￥5017.00\n\t\n192\n\t\n3\n暂无评价\n设置优惠提升购买转化\n设置优惠券\n提升销量\n\t\n优秀\n88\n\t\n2026/10/14\n01:00:54\n售卖中\n\t\n编辑\n下架\n新建渠道品\n发布相似品\n更多\n\n\n共 2 件商品\n1\n20 条/页\nExcel导入\n请仔细检查以下商品信息，确保没有虚假宣传风险；\n点击批量优化后，视商品数量可能3-5分钟后生效，可以随时前往 批量操作记录 中查看进度和结果\n一、选择修改内容\n标题\n操作说明\n1.请先选择修改内容，然后点击右下方按钮下载Excel模板，并根据要求填写Excel表格后再在虚线框内上传模板；\n2.Excel中标红字段为必填项；\n3.Excel中部分字段包含下拉框，请从下拉框中选择各数值\n查看更多\n二、下载修改模板\n下载模版\n导出商品总数：2件\n同时导出查询商品\n三、导入修改完成的模板\n\n点击或拖动文件到虚线框内上传\n\n仅支持xlsx等类型文件\n\n确定取消\n          \n待办",
+    "links": [
+      {
+        "t": "46官方群官群",
+        "h": "https://fxg.jinritemai.com/growth/im?source=im_entry"
+      },
+      {
+        "t": "商机中心",
+        "h": "/ffa/bu/NewBusinessCenter"
+      },
+      {
+        "t": "订单管理",
+        "h": "/ffa/morder/order/list"
+      },
+      {
+        "t": "售后工作台",
+        "h": "/ffa/merchant-aftersale-workbench/aftersale/list"
+      },
+      {
+        "t": "评价管理",
+        "h": "/ffa/maftersale/comment/review-overview"
+      },
+      {
+        "t": "商品管理",
+        "h": "/ffa/g/list"
+      },
+      {
+        "t": "违规管理",
+        "h": "/ffa/govern-guarantee/regulation"
+      },
+      {
+        "t": "商品成长",
+        "h": "/ffa/pg/ProductGrowthCenter?source=spcz_bd_menu_pc"
+      },
+      {
+        "t": "单品直降",
+        "h": "/ffa/marketing/tools/limitsales"
+      },
+      {
+        "t": "营销工具",
+        "h": "/ffa/marketing/home"
+      },
+      {
+        "t": "搜索运营",
+        "h": "/ffa/mcompass/search"
+      },
+      {
+        "t": "短视频运营",
+        "h": "/ffa/content-tool/short-video"
+      },
+      {
+        "t": "直播管理",
+        "h": "/ffa/content-tool/shop-live"
+      },
+      {
+        "t": "图文运营",
+        "h": "/ffa/content-tool/image-text-operation"
+      },
+      {
+        "t": "商城运营",
+        "h": "/ffa/growth-common/growth-shelf"
+      },
+      {
+        "t": "推荐卡运营",
+        "h": "/ffa/recommend-card/home"
+      },
+      {
+        "t": "豆包运营",
+        "h": "/ffa/w/doubao/dashboard"
+      },
+      {
+        "t": "活动广场",
+        "h": "/ffa/merchant/campaign-square"
+      },
+      {
+        "t": "优价推手",
+        "h": "/ffa/priceTool/optimizePrice"
+      },
+      {
+        "t": "营销工具",
+        "h": "/ffa/marketing/home"
+      },
+      {
+        "t": "优惠券",
+        "h": "/ffa/marketing/coupon/home"
+      },
+      {
+        "t": "单品直降",
+        "h": "/ffa/marketing/tools/limitsales"
+      },
+      {
+        "t": "营销管理",
+        "h": "/ffa/marketing/discount-query"
+      },
+      {
+        "t": "千川推广",
+        "h": "/ffa/ad/promotion-v2?utm_source=qianchuan-origin-entrance&utm_medium=doudian-pc&utm_campaign=tuiguangtab"
+      },
+      {
+        "t": "联盟推广",
+        "h": "/ffa/buyin/shop_smallshop"
+      },
+      {
+        "t": "订单管理",
+        "h": "/ffa/morder/order/list"
+      },
+      {
+        "t": "卡券管理",
+        "h": "/ffa/morder/o2o/poi-verify"
+      },
+      {
+        "t": "发货中心",
+        "h": "/ffa/morder/logistics/ewaybill-delivery"
+      },
+      {
+        "t": "订单报备",
+        "h": "/ffa/govern-order-report/order_entry"
+      },
+      {
+        "t": "包裹中心",
+        "h": "/ffa/logistics/parcelCenter"
+      },
+      {
+        "t": "物流工具",
+        "h": "/ffa/morder/logistics/freight-list"
+      },
+      {
+        "t": "电子面单",
+        "h": "/ffa/logistics-project/eBill/landing"
+      },
+      {
+        "t": "物流服务",
+        "h": "/ffa/logistics-project/logistics-service/main"
+      },
+      {
+        "t": "物流诊断",
+        "h": "/ffa/logistics-project/optimize"
+      },
+      {
+        "t": "质检订单管理",
+        "h": "/ffa/qic/order/quality-control/binding-code"
+      },
+      {
+        "t": "售后工作台",
+        "h": "/ffa/merchant-aftersale-workbench/aftersale/list"
+      },
+      {
+        "t": "服务工单",
+        "h": "/ffa/task-order/service"
+      },
+      {
+        "t": "消费者权益",
+        "h": "/ffa/maftersale/privileges/consumer-rights"
+      },
+      {
+        "t": "保险服务",
+        "h": "https://center.baohuaxia.com/?entry_from=701"
+      },
+      {
+        "t": "小额打款",
+        "h": "/ffa/maftersale/aftersale/part-pay"
+      }
+    ],
+    "buttons": [
+      "返回首页",
+      "立即优化",
+      "查询",
+      "重置",
+      "展开",
+      "导出查询商品",
+      "查看导出记录",
+      "批量下架",
+      "批量修改",
+      "查看优化记录",
+      "渠道品管理",
+      "更多操作",
+      "发趋势品得扶持",
+      "批量新建渠道品",
+      "新建商品",
+      "复制链接",
+      "设置优惠券",
+      "下载模版",
+      "确定",
+      "取消"
+    ],
+    "fileInputs": 1
+  }
+}

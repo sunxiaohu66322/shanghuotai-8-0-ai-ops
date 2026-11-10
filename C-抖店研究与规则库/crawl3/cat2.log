@@ -1,0 +1,22 @@
+node:internal/deps/undici/undici:15845
+      Error.captureStackTrace(err);
+            ^
+
+TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async listTargets (file:///G:/Users/Administrator/Documents/deepseek-harness/default-workspace/%E6%8A%96%E5%BA%97%E7%A0%94%E7%A9%B6/engine/cdp.mjs:8:13)
+    at async findPage (file:///G:/Users/Administrator/Documents/deepseek-harness/default-workspace/%E6%8A%96%E5%BA%97%E7%A0%94%E7%A9%B6/engine/cdp.mjs:14:14)
+    at async CDP.page (file:///G:/Users/Administrator/Documents/deepseek-harness/default-workspace/%E6%8A%96%E5%BA%97%E7%A0%94%E7%A9%B6/engine/cdp.mjs:58:15)
+    at async file:///G:/Users/Administrator/Documents/deepseek-harness/default-workspace/%E6%8A%96%E5%BA%97%E7%A0%94%E7%A9%B6/engine/probe-cat2.mjs:7:11 {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:9224
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 9224
+  }
+}
+
+Node.js v25.2.1

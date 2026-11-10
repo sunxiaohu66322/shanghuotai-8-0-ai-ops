@@ -1,0 +1,32 @@
+{
+  "url": "https://fxg.jinritemai.com/center/qualification/expire/v2/info?op=2&qual_type=3&_bid=ffa_governance_new&verifyFp=verify_mvt7pllg_33b68de9_dcd3_16d2_9d3d_1dcee2ce8bf9&fp=verify_mvt7pllg_33b68de9_dcd3_16d2_9d3d_1dcee2ce8bf9&msToken=s65CXuKH2Roe1KUbkdQtwj1Oi9l9tOj5ifhhmZ2qJEpgTu8lbxwTZdg_BI_CwizOUJ_G5hiRiiPCqXLf2jCKLpskaU2nzsWASNNO1T67-5aYZ7EEWbu-HSPCZPQiMRxplRND9rndTX_7BawZmxeKtOrXZJeUTNPBV0WSNIcqwrzg&a_bogus=QvsRkzUEDxRcP3et8Cb3795UrLf%2FrsWyXPTdW73zSoKmy1MYyt1-G-c9Jou2sPRGlmpkZ937KfU%2FYEdcpZiTpFHpwmpkShsRUsdV9zXLgqiZaFzsDNbLCzhzKwBnUcsqaQcfNlJ5UsBF2xcW9rAmWpCG95Tc5YRDSHqfd%2Fmcc9WnVCDH9xQfCpLW6ZE%3D",
+  "method": "GET",
+  "postData": "",
+  "body": {
+    "data": {
+      "expire_notice": {
+        "qual_valid_type": {
+          "1": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 0,
+          "16": 0,
+          "40": 0,
+          "100": 0,
+          "118": 0
+        }
+      },
+      "tab_rule": {
+        "16": true,
+        "100": true
+      }
+    },
+    "code": 0,
+    "msg": "",
+    "extra": {
+      "log_id": "20261029153833DA1E3310E4AAD33B4B36"
+    }
+  }
+}

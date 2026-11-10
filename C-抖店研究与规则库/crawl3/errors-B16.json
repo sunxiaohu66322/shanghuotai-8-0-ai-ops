@@ -1,0 +1,23 @@
+[
+  {
+    "item": "1424",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "选项里找不到「家具 > 几类 > 茶几/边几」",
+    "category": "category"
+  },
+  {
+    "item": "1424",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1424",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  }
+]

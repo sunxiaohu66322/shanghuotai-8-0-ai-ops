@@ -1,0 +1,51 @@
+{
+  "url": "https://fxg.jinritemai.com/ffa/g/create?",
+  "len": 1849,
+  "inputs": [
+    {
+      "ph": "请输入15-60个字符（8-30个汉字）",
+      "v": "移动茶桌小茶台烧水壶一体家用茶水柜老榆木实木茶几茶车阳台煮泡",
+      "cls": "ecom-g-input"
+    },
+    {
+      "ph": "请输入",
+      "v": "750*380*680",
+      "cls": "ecom-g-input"
+    },
+    {
+      "ph": "请输入",
+      "v": "",
+      "cls": "ecom-g-input"
+    },
+    {
+      "ph": "请输入",
+      "v": "",
+      "cls": "ecom-g-input-number-input"
+    },
+    {
+      "ph": "请输入库存",
+      "v": "",
+      "cls": "ecom-g-input-number-input"
+    },
+    {
+      "ph": "请输入erp编码",
+      "v": "",
+      "cls": "ecom-g-input"
+    },
+    {
+      "ph": "请输入折扣",
+      "v": "",
+      "cls": "marketing_sylva-input-number-input"
+    },
+    {
+      "ph": "请输入0.001到9999.999的数字",
+      "v": "",
+      "cls": "ecom-g-input"
+    },
+    {
+      "ph": "请输入",
+      "v": "",
+      "cls": "ecom-g-input"
+    }
+  ]
+}

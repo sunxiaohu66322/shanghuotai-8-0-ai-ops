@@ -1,0 +1,32 @@
+{
+  "家具": {
+    "l1Click": {
+      "ok": true,
+      "html": "<div class=\"style_item__xe7f0\"><div class=\"style_list-data-name__UYHfr\">家具</div><div class=\"style_icon-arrow__Tmg0f\"></div></div>",
+      "attrs": [
+        "class=style_item__xe7f0"
+      ]
+    },
+    "panels": []
+  },
+  "户外装备": {
+    "l1Click": {
+      "ok": true,
+      "html": "<div class=\"style_item__xe7f0\"><div class=\"style_list-data-name__UYHfr\">户外装备</div><div class=\"style_icon-arrow__Tmg0f\"></div></div>",
+      "attrs": [
+        "class=style_item__xe7f0"
+      ]
+    },
+    "panels": []
+  },
+  "家装灯饰光源": {
+    "l1Click": {
+      "ok": true,
+      "html": "<div class=\"style_item__xe7f0\"><div class=\"style_list-data-name__UYHfr\">家装灯饰光源</div><div class=\"style_icon-arrow__Tmg0f\"></div></div>",
+      "attrs": [
+        "class=style_item__xe7f0"
+      ]
+    },
+    "panels": []
+  }
+}

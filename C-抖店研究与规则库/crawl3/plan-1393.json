@@ -1,0 +1,83 @@
+{
+ "pid": 1393,
+ "title": "新中式可移动折叠茶几边几2025新款茶几移动茶台家用多功能",
+ "category_hint": "",
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\main\\image_af365075c685.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\main\\image_ecfcac495281.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\main\\image_9f515b921959.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\main\\image_71dbdfb33bfe.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\main\\image_97038e92dd2a.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_17bdb89a6945.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_ee4358472585.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_6e331e11c28f.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_25f323ec8536.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_30f105e28366.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_7c1e4d1377f9.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_ed33551d311d.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_ab8316577a4a.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_91dd2935f1b1.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_e2a196a119ac.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_b4db1713acd8.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_8b5261244d1d.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_3e4c5e0818de.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_10f16f9d3319.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_49b9bf77ee2e.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_23a15b1249dc.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_d28bb39daabc.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_56ccdad4f770.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\detail\\image_00bd9dc352d7.jpg"
+ ],
+ "skus": [
+  {
+   "name": "【胡桃色】可折叠桌面（带万向轮）",
+   "spec": [
+    "【胡桃色】可折叠桌面（带万向轮）"
+   ],
+   "price": 272.1,
+   "stock": 9865,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\main\\image_af365075c685.jpg"
+  },
+  {
+   "name": "【黑色】可折叠桌面（带万向轮）",
+   "spec": [
+    "【黑色】可折叠桌面（带万向轮）"
+   ],
+   "price": 272.1,
+   "stock": 10974,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\main\\image_af365075c685.jpg"
+  },
+  {
+   "name": "【原色】可折叠桌面（带万向轮）",
+   "spec": [
+    "【原色】可折叠桌面（带万向轮）"
+   ],
+   "price": 272.1,
+   "stock": 10954,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1393\\main\\image_af365075c685.jpg"
+  }
+ ],
+ "price": 272.1,
+ "stock": 9865,
+ "cat": [
+  "家具",
+  "几类",
+  "茶几/边几"
+ ],
+ "brand": "LZL",
+ "wood": null,
+ "install": "不提供上门安装",
+ "meta": {
+  "product_id": 1393,
+  "skus": 3,
+  "main": 5,
+  "detail": 19
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

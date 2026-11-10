@@ -1,0 +1,181 @@
+锚点: {"x":16,"y":498,"w":346,"h":188,"cx":189,"cy":592,"t":"填写助手\n品牌\n可选品牌为审核通过的品牌名称，如当前品牌与您申请品牌不一致，可前往资质中心-品牌资质","tag":"DIV","cls":"styles_wrapper__uk9rA styles_adviceHelperPlain__ClL6U"}
+开关: {"x":534,"y":321,"w":804,"h":20,"cx":936,"cy":331,"t":"使用品牌名","tag":"DIV","cls":""}
+品牌label: [
+ {
+  "x": 32,
+  "y": 334,
+  "w": 314,
+  "h": 22,
+  "cx": 189,
+  "cy": 345,
+  "t": "品牌",
+  "tag": "DIV",
+  "cls": "styles_itemTitleRow__bzBQf"
+ },
+ {
+  "x": 32,
+  "y": 337,
+  "w": 28,
+  "h": 16,
+  "cx": 46,
+  "cy": 345,
+  "t": "品牌",
+  "tag": "SPAN",
+  "cls": "styles_itemTitle__iyGro"
+ },
+ {
+  "x": 32,
+  "y": 552,
+  "w": 314,
+  "h": 18,
+  "cx": 189,
+  "cy": 561,
+  "t": "品牌",
+  "tag": "DIV",
+  "cls": "style-module_header__WhUV4"
+ },
+ {
+  "x": 54,
+  "y": 553,
+  "w": 28,
+  "h": 16,
+  "cx": 68,
+  "cy": 561,
+  "t": "品牌",
+  "tag": "SPAN",
+  "cls": "style-module_title__NCQED"
+ },
+ {
+  "x": 560,
+  "y": 475,
+  "w": 28,
+  "h": 19,
+  "cx": 574,
+  "cy": 485,
+  "t": "品牌",
+  "tag": "SPAN",
+  "cls": ""
+ },
+ {
+  "x": 560,
+  "y": 474,
+  "w": 28,
+  "h": 22,
+  "cx": 574,
+  "cy": 485,
+  "t": "品牌",
+  "tag": "SPAN",
+  "cls": "style_labelWrapper__krth8"
+ }
+]
+band: [
+ {
+  "tag": "SPAN",
+  "cls": "",
+  "t": "可选品牌为审核通过的品牌名称，如当前品牌与您申请",
+  "cx": 188,
+  "cy": 604,
+  "w": 300,
+  "h": 36
+ },
+ {
+  "tag": "SPAN",
+  "cls": "",
+  "t": "查看明细，可选择已关联当前类目的生效中品牌，",
+  "cx": 188,
+  "cy": 624,
+  "w": 299,
+  "h": 36
+ },
+ {
+  "tag": "SPAN",
+  "cls": "",
+  "t": "新增品牌资质所属类目",
+  "cx": 185,
+  "cy": 644,
+  "w": 295,
+  "h": 36
+ },
+ {
+  "tag": "DIV",
+  "cls": "styles-module_hoverBottomWrapper__YPnf1",
+  "t": "",
+  "cx": 583,
+  "cy": 650,
+  "w": 98,
+  "h": 24
+ },
+ {
+  "tag": "DIV",
+  "cls": "styles-module_hoverBottomWrapper__YPnf1",
+  "t": "",
+  "cx": 697,
+  "cy": 650,
+  "w": 98,
+  "h": 24
+ },
+ {
+  "tag": "DIV",
+  "cls": "styles-module_hoverBottomWrapper__YPnf1",
+  "t": "",
+  "cx": 811,
+  "cy": 650,
+  "w": 98,
+  "h": 24
+ },
+ {
+  "tag": "DIV",
+  "cls": "styles_propertyCard__USZ8A",
+  "t": "品牌\n*\n未设置\n型号\n399\n功能\n*\n稳固防",
+  "cx": 1531,
+  "cy": 555,
+  "w": 284,
+  "h": 49
+ },
+ {
+  "tag": "DIV",
+  "cls": "styles_propertyRow__AeGAB",
+  "t": "品牌\n*\n未设置\n型号\n399\n功能\n*\n稳固防",
+  "cx": 1531,
+  "cy": 555,
+  "w": 268,
+  "h": 33
+ },
+ {
+  "tag": "DIV",
+  "cls": "styles_propertyRowItems__ZL7RB",
+  "t": "品牌\n*\n未设置\n型号\n399\n功能\n*\n稳固防",
+  "cx": 1523,
+  "cy": 555,
+  "w": 252,
+  "h": 33
+ },
+ {
+  "tag": "BUTTON",
+  "cls": "styles_previewRow__u4B8B",
+  "t": "7天无理由退货",
+  "cx": 1531,
+  "cy": 616,
+  "w": 272,
+  "h": 28
+ },
+ {
+  "tag": "DIV",
+  "cls": "",
+  "t": "现货发货 · 次日发",
+  "cx": 1531,
+  "cy": 644,
+  "w": 272,
+  "h": 28
+ },
+ {
+  "tag": "BUTTON",
+  "cls": "styles_previewRow__u4B8B",
+  "t": "现货发货 · 次日发",
+  "cx": 1531,
+  "cy": 644,
+  "w": 272,
+  "h": 28
+ }
+]
+

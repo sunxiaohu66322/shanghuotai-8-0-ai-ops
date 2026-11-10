@@ -1,0 +1,69 @@
+{
+  "clicks": [
+    {
+      "i": 0,
+      "top": 219,
+      "left": 713,
+      "cls": "style_modifyButton__M2W_6",
+      "ctx": "家具 > 家具配件及辅料 > 家具配件及辅料/修改"
+    }
+  ],
+  "clicked": {
+    "ok": true,
+    "ctx": "家具 > 家具配件及辅料 > 家具配件及辅料/修改"
+  },
+  "req": [
+    {
+      "url": "https://fxg.jinritemai.com/report/submit_fe_barrier",
+      "status": 200,
+      "body": "{\"st\":0,\"msg\":\"\",\"code\":0,\"data\":null}"
+    },
+    {
+      "url": "https://mcs.zijieapi.com/list",
+      "status": 200,
+      "body": "{\"e\":0,\"sc\":1,\"tc\":1}"
+    },
+    {
+      "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=fems",
+      "status": 204,
+      "body": ""
+    },
+    {
+      "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=ffa_goods",
+      "status": 204,
+      "body": ""
+    },
+    {
+      "url": "https://mcs.zijieapi.com/list",
+      "status": 200,
+      "body": "{\"e\":0,\"sc\":12,\"tc\":12}"
+    },
+    {
+      "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=marketing_sylva",
+      "status": 204,
+      "body": ""
+    },
+    {
+      "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=fxg_admin",
+      "status": 204,
+      "body": ""
+    }
+  ],
+  "modal": [
+    {
+      "cls": "ecom-g-modal-confirm-title",
+      "txt": "修改类目可能会导致部分内容丢失，确认修改？",
+      "lvl1": []
+    },
+    {
+      "cls": "ecom-g-modal-confirm-content",
+      "txt": "",
+      "lvl1": []
+    },
+    {
+      "cls": "ecom-g-modal-confirm-btns",
+      "txt": "取消/修改类目",
+      "lvl1": []
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "s1": {
+    "url": "https://fxg.jinritemai.com/ffa/g/list",
+    "len": 1412,
+    "catTexts": [
+      "类目预测不准，我要申诉？",
+      "类目名称\n请选择类目",
+      "类目名称",
+      "请选择类目"
+    ]
+  },
+  "s2": {
+    "pops": [
+      {
+        "cls": "download_guidePopover__3-m6Z",
+        "txt": "下载客户端"
+      },
+      {
+        "cls": "settle_settlePopover__t_63b",
+        "txt": "更多入驻"
+      },
+      {
+        "cls": "ecom-g-select ecom-g-select-sm ecom-g-select-borderless styl",
+        "txt": "全部"
+      },
+      {
+        "cls": "ecom-g-select-selector",
+        "txt": "全部"
+      },
+      {
+        "cls": "ecom-g-select-selection-item",
+        "txt": "全部"
+      },
+      {
+        "cls": "ecom-g-select ecom-g-select-sm ecom-g-select-borderless ecom",
+        "txt": "请选择类目"
+      },
+      {
+        "cls": "ecom-g-select-selector",
+        "txt": "请选择类目"
+      },
+      {
+        "cls": "ecom-g-select-selection-placeholder",
+        "txt": "请选择类目"
+      },
+      {
+        "cls": "ecom-g-select ecom-g-select-sm ecom-g-select-borderless styl",
+        "txt": "全部"
+      },
+      {
+        "cls": "ecom-g-select-selector",
+        "txt": "全部"
+      },
+      {
+        "cls": "ecom-g-select-selection-item",
+        "txt": "全部"
+      },
+      {
+        "cls": "ecom-g-select ecom-g-select-sm ecom-g-select-borderless styl",
+        "txt": "全部"
+      }
+    ]
+  },
+  "catApis": []
+}

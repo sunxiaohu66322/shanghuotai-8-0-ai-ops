@@ -1,0 +1,695 @@
+[
+  {
+    "item": "1416",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1416",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 1 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 4 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 5 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 6 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 7 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 8 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 7 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "checked",
+    "field": "功能",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1416",
+    "stage": "checked",
+    "field": "该项为必填，请输入",
+    "msg": "填写格式不正确，不支持发布",
+    "category": "required"
+  },
+  {
+    "item": "1416",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1416",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择，最多选5项 1. 该项为必填，请输入 2. 填写格式不正确，不支持发布",
+    "category": "required"
+  },
+  {
+    "item": "1416",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1419",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 1 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 4 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 5 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 6 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 5 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1419",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1423",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1423",
+    "stage": "checked",
+    "field": "功能",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1423",
+    "stage": "checked",
+    "field": "该项为必填，请输入",
+    "msg": "填写格式不正确，不支持发布",
+    "category": "required"
+  },
+  {
+    "item": "1423",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择，最多选5项 1. 该项为必填，请输入 2. 填写格式不正确，不支持发布",
+    "category": "required"
+  },
+  {
+    "item": "1423",
+    "stage": "verify",
+    "field": "商品列表",
+    "msg": "列表里找不到刚发布的商品",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1424",
+    "stage": "spec",
+    "field": "规格值",
+    "msg": "缺值: 小雅炕几、炕几+飘窗椅（送40坐垫）",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "弹窗里没找到「确定」",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 4 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 4 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "支撑件木种",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "规格值",
+    "msg": "请输入规格值",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择，最多选5项 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "draft",
+    "field": "保存草稿",
+    "msg": "未收到保存成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1426",
+    "stage": "generate",
+    "field": "确认生成",
+    "msg": "超过200秒未进入编辑页（顶部 tab 栏未出现）",
+    "category": "other"
+  },
+  {
+    "item": "1426",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "生成超时",
+    "category": "other"
+  },
+  {
+    "item": "1426",
+    "stage": "after-fail",
+    "field": "表单",
+    "msg": "编辑 删除 1. 长宽比需为1:1 2. 图片尺寸不低于600*600px",
+    "category": "media"
+  },
+  {
+    "item": "1411",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "未选中「茶几/边几」，当前=商品类目 请选择该类目，更符合平台规则，降低处罚风险 家具 > 桌子 > 家用茶台/茶桌 更多推荐 建议补充 补充包装信",
+    "category": "category"
+  },
+  {
+    "item": "1411",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1411",
+    "stage": "spec",
+    "field": "规格值",
+    "msg": "缺值: 100cm长/63cm宽/63cm高、120cm长/63cm宽/63cm高、140cm长/63cm宽/63cm高、160cm长/63cm宽/63cm高",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 2 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 1 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 4 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 5 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 6 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "checked",
+    "field": "木质结构工艺",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1411",
+    "stage": "checked",
+    "field": "产地",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1411",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "checked",
+    "field": "规格值",
+    "msg": "请输入规格值",
+    "category": "required"
+  },
+  {
+    "item": "1411",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1411",
+    "stage": "tab",
+    "field": "属性信息",
+    "msg": "找不到页签「属性信息」",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "tab",
+    "field": "价格库存",
+    "msg": "找不到页签「价格库存」",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "publish",
+    "field": "发布按钮",
+    "msg": "不可用，errs=[]",
+    "category": "other"
+  },
+  {
+    "item": "1413",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "JavaScript evaluation failed at line 0, column 0: TypeError: Cannot read properties of null (reading 'innerText') at <anonymous>:2:71 at __egoPageEvalua",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "选项里找不到「家具 > 几类 > 茶几/边几」",
+    "category": "category"
+  },
+  {
+    "item": "1420",
+    "stage": "generate",
+    "field": "确认生成",
+    "msg": "超过200秒未进入编辑页（顶部 tab 栏未出现）",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "生成超时",
+    "category": "other"
+  },
+  {
+    "item": "1410",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "未选中「茶几/边几」，当前=商品类目 家具几类茶几/边几 请选择该类目，更符合平台规则，降低处罚风险 家具 > 桌子 > 家用茶台/茶桌 更多推荐",
+    "category": "category"
+  },
+  {
+    "item": "1410",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1410",
+    "stage": "editing-empty",
+    "field": "表单",
+    "msg": "家具 > 几类 > 茶几/边几 修改 商品类目填写有误，建议修改为：家具 > 桌子 > 家用茶台/茶桌 立即使用 若不合适，可查看 更多类目",
+    "category": "category"
+  },
+  {
+    "item": "1410",
+    "stage": "tab-attrs",
+    "field": "商品类目",
+    "msg": "类目填写错误",
+    "category": "category"
+  },
+  {
+    "item": "1410",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 3 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1410",
+    "stage": "checked",
+    "field": "支撑件木种",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1410",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1410",
+    "stage": "checked",
+    "field": "规格值",
+    "msg": "请输入规格值",
+    "category": "required"
+  },
+  {
+    "item": "1410",
+    "stage": "checked",
+    "field": "价格",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1410",
+    "stage": "checked",
+    "field": "现货库存",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1410",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择，最多选5项 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1410",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "￥ 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1410",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1410",
+    "stage": "draft",
+    "field": "保存草稿",
+    "msg": "未收到保存成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1410",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "未选中「茶几/边几」，当前=商品类目 请选择该类目，更符合平台规则，降低处罚风险 家具 > 几类 > 茶几/边几 更多推荐 建议补充 补充包装信息、",
+    "category": "category"
+  },
+  {
+    "item": "1406",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1406",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 4 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 5 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 3 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "规格值",
+    "msg": "请输入规格值",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "价格",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "现货库存",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "￥ 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "Task space does not exist. Create a new task space, or list the task spaces to reuse an existing one.",
+    "category": "other"
+  },
+  {
+    "item": "1387",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "Task space does not exist. Create a new task space, or list the task spaces to reuse an existing one.",
+    "category": "other"
+  },
+  {
+    "item": "1407",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "Task space does not exist. Create a new task space, or list the task spaces to reuse an existing one.",
+    "category": "other"
+  }
+]

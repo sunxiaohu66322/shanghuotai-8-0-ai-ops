@@ -1,0 +1,22 @@
+{
+  "cat": {
+    "ok": true,
+    "x": 462,
+    "y": 250,
+    "t": "家具 > ... > 茶几/边几"
+  },
+  "chk": {
+    "catLine": "没有满意的推荐结果？手动选择类目",
+    "goFound": true,
+    "goDisabled": false,
+    "reds": []
+  },
+  "spec": {
+    "ok": false,
+    "bodyLen": 654
+  },
+  "fin": {
+    "reds": [],
+    "len": 654
+  }
+}

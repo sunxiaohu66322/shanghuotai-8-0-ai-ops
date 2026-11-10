@@ -1,0 +1,471 @@
+{
+  "url": "https://fxg.jinritemai.com/ffa/g/list",
+  "title": "商品管理",
+  "breadcrumb": "",
+  "navLinks": [
+    {
+      "text": "商机中心",
+      "href": "/ffa/bu/NewBusinessCenter",
+      "top": 159,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "售后工作台",
+      "href": "/ffa/merchant-aftersale-workbench/aftersale/list",
+      "top": 187,
+      "left": 874,
+      "w": 60
+    },
+    {
+      "text": "商品管理",
+      "href": "/ffa/g/list",
+      "top": 215,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "商品成长",
+      "href": "/ffa/pg/ProductGrowthCenter?source=spcz_bd_menu_pc",
+      "top": 243,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "营销工具",
+      "href": "/ffa/marketing/home",
+      "top": 271,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "搜索运营",
+      "href": "/ffa/mcompass/search",
+      "top": 355,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "直播管理",
+      "href": "/ffa/content-tool/shop-live",
+      "top": 383,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "商城运营",
+      "href": "/ffa/growth-common/growth-shelf",
+      "top": 411,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "豆包运营",
+      "href": "/ffa/w/doubao/dashboard",
+      "top": 439,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "活动广场",
+      "href": "/ffa/merchant/campaign-square",
+      "top": 487,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "千川推广",
+      "href": "/ffa/ad/promotion-v2?utm_source=qianchuan-origin-entrance&utm_medium=doudian-pc&utm_campaign=tuiguangtab",
+      "top": 591,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "发货中心",
+      "href": "/ffa/morder/logistics/ewaybill-delivery",
+      "top": 683,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "包裹中心",
+      "href": "/ffa/logistics/parcelCenter",
+      "top": 711,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "消费者权益",
+      "href": "/ffa/maftersale/privileges/consumer-rights",
+      "top": 723,
+      "left": 874,
+      "w": 60
+    },
+    {
+      "text": "商品创建",
+      "href": "/ffa/g/create",
+      "top": 735,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "电子面单",
+      "href": "/ffa/logistics-project/eBill/landing",
+      "top": 739,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "小额打款",
+      "href": "/ffa/maftersale/aftersale/part-pay",
+      "top": 751,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "物流诊断",
+      "href": "/ffa/logistics-project/optimize",
+      "top": 767,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "售后挽单助手",
+      "href": "/ffa/maftersale/aftersale/redeem/assistant",
+      "top": 779,
+      "left": 874,
+      "w": 72
+    },
+    {
+      "text": "渠道品管理",
+      "href": "/ffa/g/channel-goods/list",
+      "top": 791,
+      "left": 874,
+      "w": 60
+    },
+    {
+      "text": "商品工具",
+      "href": "/ffa/menu_tools/goods_tools",
+      "top": 847,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "源头好货",
+      "href": "/ffa/distribution-selected/?from=ddpc.menu",
+      "top": 875,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "店铺管理",
+      "href": "/ffa/grs-new/qualification/common-tools",
+      "top": 939,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "商家体验分",
+      "href": "/ffa/eco/experience-score?source=fxg-menu",
+      "top": 967,
+      "left": 874,
+      "w": 60
+    },
+    {
+      "text": "用户运营",
+      "href": "/ffa/mvip/consumer",
+      "top": 979,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "申诉与举报",
+      "href": "/ffa/govern-guarantee/appeal",
+      "top": 995,
+      "left": 874,
+      "w": 60
+    },
+    {
+      "text": "会员中心",
+      "href": "/ffa/mvip/rights",
+      "top": 1007,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "商家权益",
+      "href": "/ffa/growth-merchant/rights?source=fxg-menu",
+      "top": 1023,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "账户中心",
+      "href": "/ffa/fund-control/account-center",
+      "top": 1071,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "抖店贷款",
+      "href": "/ffa/ml/home",
+      "top": 1099,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "返佣管理",
+      "href": "/ffa/p-new/rebate-center",
+      "top": 1127,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "历史报表",
+      "href": "/ffa/fxg-bill/history-report",
+      "top": 1155,
+      "left": 874,
+      "w": 48
+    },
+    {
+      "text": "订单管理",
+      "href": "/ffa/morder/order/list",
+      "top": 159,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "评价管理",
+      "href": "/ffa/maftersale/comment/review-overview",
+      "top": 187,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "违规管理",
+      "href": "/ffa/govern-guarantee/regulation",
+      "top": 215,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "单品直降",
+      "href": "/ffa/marketing/tools/limitsales",
+      "top": 243,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "短视频运营",
+      "href": "/ffa/content-tool/short-video",
+      "top": 355,
+      "left": 958,
+      "w": 60
+    },
+    {
+      "text": "图文运营",
+      "href": "/ffa/content-tool/image-text-operation",
+      "top": 383,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "推荐卡运营",
+      "href": "/ffa/recommend-card/home",
+      "top": 411,
+      "left": 958,
+      "w": 60
+    },
+    {
+      "text": "优价推手",
+      "href": "/ffa/priceTool/optimizePrice",
+      "top": 487,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "优惠券",
+      "href": "/ffa/marketing/coupon/home",
+      "top": 515,
+      "left": 958,
+      "w": 36
+    },
+    {
+      "text": "营销管理",
+      "href": "/ffa/marketing/discount-query",
+      "top": 543,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "联盟推广",
+      "href": "/ffa/buyin/shop_smallshop",
+      "top": 591,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "卡券管理",
+      "href": "/ffa/morder/o2o/poi-verify",
+      "top": 655,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "订单报备",
+      "href": "/ffa/govern-order-report/order_entry",
+      "top": 683,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "服务工单",
+      "href": "/ffa/task-order/service",
+      "top": 695,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "物流工具",
+      "href": "/ffa/morder/logistics/freight-list",
+      "top": 711,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "物流服务",
+      "href": "/ffa/logistics-project/logistics-service/main",
+      "top": 739,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "售后小助手",
+      "href": "/ffa/merchant-aftersale-assistant/home",
+      "top": 751,
+      "left": 958,
+      "w": 60
+    },
+    {
+      "text": "库存管理",
+      "href": "/ffa/morder/stock-manage/list",
+      "top": 763,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "质检订单管理",
+      "href": "/ffa/qic/order/quality-control/binding-code",
+      "top": 767,
+      "left": 958,
+      "w": 72
+    },
+    {
+      "text": "商品诊断",
+      "href": "/ffa/g/diagnose",
+      "top": 791,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "商品素材",
+      "href": "/ffa/creative/material-production",
+      "top": 847,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "账号管理",
+      "href": "/ffa/w/login/account",
+      "top": 939,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "用户触达",
+      "href": "/ffa/mvip/operation/plan",
+      "top": 979,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "店铺装修",
+      "href": "/ffa/shop/decorate/selection/list",
+      "top": 995,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "申请关店",
+      "href": "/ffa/gov/closeV2",
+      "top": 1023,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "保证金账户",
+      "href": "/ffa/content/shop_deposit",
+      "top": 1071,
+      "left": 958,
+      "w": 60
+    },
+    {
+      "text": "账单管理",
+      "href": "/ffa/fxg-bill/fund-detail-bill",
+      "top": 1099,
+      "left": 958,
+      "w": 48
+    },
+    {
+      "text": "发票管理",
+      "href": "/ffa/m-invoice/merchant-invoice",
+      "top": 1127,
+      "left": 958,
+      "w": 48
+    }
+  ],
+  "tableHeads": [
+    "商品信息",
+    "价格",
+    "总库存",
+    "总销量",
+    "质量分",
+    "上架时间降序",
+    "操作"
+  ],
+  "buttons": [
+    "立即优化",
+    "查询",
+    "重置",
+    "展开",
+    "导出查询商品",
+    "查看导出记录",
+    "批量下架",
+    "批量修改",
+    "查看优化记录",
+    "渠道品管理",
+    "更多操作",
+    "发趋势品得扶持",
+    "批量新建渠道品",
+    "新建商品",
+    "复制链接",
+    "设置优惠券",
+    "发相似品",
+    "找货源"
+  ],
+  "tabs": [
+    "全部",
+    "售卖中",
+    "已售罄",
+    "已下架",
+    "已封禁 (0)",
+    "审核中 (0)",
+    "审核驳回 (0)",
+    "审核通过"
+  ],
+  "apis": [
+    "/b/w/api/v1/main_frame/get_page_header",
+    "/b/m/api/home/redirect",
+    "/dfd/api/v1/css"
+  ]
+}

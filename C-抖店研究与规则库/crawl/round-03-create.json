@@ -1,0 +1,23 @@
+{
+  "url": "https://fxg.jinritemai.com/ffa/g/create",
+  "title": "抖店",
+  "bodyLen": 268,
+  "labels": [],
+  "fields": [],
+  "heads": [
+    "省时省力更规范",
+    "商品图片",
+    "Excel 表格",
+    "任意截图",
+    "点击或拖拽文件到此处上传"
+  ],
+  "buttons": [
+    "本地上传",
+    "图库选择",
+    "下一步，生成商品"
+  ],
+  "apis": [
+    "/b/m/api/home/redirect",
+    "/dfd/api/v1/css"
+  ]
+}

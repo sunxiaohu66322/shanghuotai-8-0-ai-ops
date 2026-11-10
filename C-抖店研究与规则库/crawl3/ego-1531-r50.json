@@ -1,0 +1,49 @@
+{
+  "del": {
+    "ok": true,
+    "rowTxt": "自定义排序",
+    "icons": [
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel",
+        "x": 838,
+        "y": 478,
+        "w": 16
+      },
+      {
+        "cls": "icon",
+        "x": 838,
+        "y": 478,
+        "w": 16
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel style_dele",
+        "x": 869,
+        "y": 478,
+        "w": 14
+      },
+      {
+        "cls": "icon",
+        "x": 869,
+        "y": 478,
+        "w": 14
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel",
+        "x": 608,
+        "y": 514,
+        "w": 12
+      },
+      {
+        "cls": "icon",
+        "x": 608,
+        "y": 515,
+        "w": 12
+      }
+    ]
+  },
+  "bulk": {
+    "ok": true,
+    "x": 953,
+    "y": 492
+  }
+}

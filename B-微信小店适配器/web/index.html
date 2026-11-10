@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>微店后台管理系统</title>
+<link rel="stylesheet" href="/style.css?v=26" />
+</head>
+<body>
+<div class="app">
+  <!-- 照小猪：顶部两行。行1=logo+横排主导航+右侧店铺；行2=导入/导出+按功能 -->
+  <header class="hd">
+    <div class="hd1">
+      <a class="logo" href="#/home"><i class="pigd"></i>微店后台管理系统<em>6.0</em></a>
+      <nav id="topnav" class="topnav"></nav>
+      <div class="hd-r">
+        <button id="btnAddShop" class="mini" type="button" title="添加另一个微信小店账号"
+          style="background:#fff1f0;border-color:#ff4d4f;color:#cf1322;font-weight:700">＋ 新加微信小店</button>
+        <span class="shopsw">店铺：<select id="shopSel" class="shopsel"><option>加载中…</option></select></span>
+        <button id="btnRefresh" class="mini" type="button" title="立刻重新拉一次后台数据">↻ 刷新</button>
+        <span id="syncAt" class="tiny">—</span>
+        <span id="shopSpace" class="tag">主空间</span>
+        <span id="conn" class="tag">检查中…</span>
+      </div>
+    </div>
+    <div class="hd2">
+      <div class="hd2l">
+        <button id="btnImport" class="mini" type="button">导入</button>
+        <button id="btnExport" class="mini" type="button">导出</button>
+        <input id="funcSearch" class="func" type="search" placeholder="按功能搜索：改价格 / 云库 / 上下架 / 商品列表…" autocomplete="off" />
+      </div>
+      <div class="hd2r"><span class="tiny">本机工具 · 凭据仅存本机 · 写操作均由你点击触发</span></div>
+    </div>
+  </header>
+
+  <div class="body">
+    <aside class="side">
+      <div class="side-hd" id="sideHd">批量修改</div>
+      <div class="side-scroll"><nav id="nav" class="sidenav"></nav></div>
+      <div class="side-foot"><div class="legend tiny">可用=真写入 · 补丁=字段级 · 只读 · 壳=未接入</div></div>
+    </aside>
+    <main class="main">
+      <div class="crumbbar"><span id="crumb">首页</span></div>
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+<script src="/util.js?v=26"></script>
+<script src="/menu.js?v=26"></script>
+<script src="/pages.js?v=26"></script>
+<script src="/pages6.js?v=26"></script>
+<script src="/pages7.js?v=26"></script>
+<script src="/pages_ops.js?v=27"></script>
+<script src="/app.js?v=27"></script>
+</body>
+</html>

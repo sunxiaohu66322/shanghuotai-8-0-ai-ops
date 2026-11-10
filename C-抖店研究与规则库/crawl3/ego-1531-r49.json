@@ -1,0 +1,473 @@
+{
+  "info": {
+    "ok": true,
+    "rows": [
+      {
+        "t": "尺寸 添加规格图 批量上传规格图 下移 上移 自定义排序 款式 添加规格图 下移",
+        "y": 192,
+        "btns": [
+          {
+            "tag": "SPAN",
+            "cls": "anticon anticon-down ecom-g-select-suffi",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "",
+            "t": ""
+          },
+          {
+            "tag": "BUTTON",
+            "cls": "ecom-g-switch ecom-g-switch-small ecom-g",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel style-modu",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "icon",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "icon",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel",
+            "t": ""
+          }
+        ]
+      },
+      {
+        "t": "尺寸 添加规格图 批量上传规格图 下移 上移 自定义排序 款式 添加规格图 下移",
+        "y": 192,
+        "btns": [
+          {
+            "tag": "SPAN",
+            "cls": "anticon anticon-down ecom-g-select-suffi",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "",
+            "t": ""
+          },
+          {
+            "tag": "BUTTON",
+            "cls": "ecom-g-switch ecom-g-switch-small ecom-g",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel style-modu",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "icon",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "icon",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel",
+            "t": ""
+          }
+        ]
+      },
+      {
+        "t": "尺寸 添加规格图 批量上传规格图 下移 上移 自定义排序 款式 添加规格图 下移",
+        "y": 192,
+        "btns": [
+          {
+            "tag": "SPAN",
+            "cls": "anticon anticon-down ecom-g-select-suffi",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "",
+            "t": ""
+          },
+          {
+            "tag": "BUTTON",
+            "cls": "ecom-g-switch ecom-g-switch-small ecom-g",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel style-modu",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "icon",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "icon",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel",
+            "t": ""
+          }
+        ]
+      },
+      {
+        "t": "尺寸 添加规格图 批量上传规格图 下移 上移 自定义排序 款式 添加规格图 下移",
+        "y": 192,
+        "btns": [
+          {
+            "tag": "SPAN",
+            "cls": "anticon anticon-down ecom-g-select-suffi",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "",
+            "t": ""
+          },
+          {
+            "tag": "BUTTON",
+            "cls": "ecom-g-switch ecom-g-switch-small ecom-g",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel style-modu",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "icon",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel",
+            "t": ""
+          },
+          {
+            "tag": "svg",
+            "cls": "icon",
+            "t": ""
+          },
+          {
+            "tag": "SPAN",
+            "cls": "ecom-g-sp-icon sp-icon-parcel",
+            "t": ""
+          }
+        ]
+      }
+    ],
+    "specArea": "商品规格\n尺寸\n添加规格图\n批量上传规格图\n下移\n上移\n自定义排序\n款式\n添加规格图\n下移\n上移\n自定义排序\n添加规格类型（2/3）\n*价格与库存\n价格填写进度\n100%\n区域库存\n全屏\n预览\n仅在直播间售卖的商品建议在直播时再填写准确的库存\n全部尺寸\n全部款式\n批量设置\n尺寸\t款式\t\n*\n价格\n\t\nSKUID\n\t\n商家编码\n\t\n预览图\n\t\nSKU状态\n单门"
+  },
+  "btns": [
+    {
+      "tag": "SPAN",
+      "cls": "anticon anticon-down ecom-g-select-suffix",
+      "aria": "down",
+      "t": "",
+      "x": 754,
+      "y": 209,
+      "w": 16
+    },
+    {
+      "tag": "svg",
+      "cls": "",
+      "aria": "",
+      "t": "",
+      "x": 754,
+      "y": 209,
+      "w": 16
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "ecom-g-switch ecom-g-switch-small ecom-g-switc",
+      "aria": "",
+      "t": "",
+      "x": 797,
+      "y": 209,
+      "w": 30
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel style-module_pub",
+      "aria": "",
+      "t": "",
+      "x": 888,
+      "y": 208,
+      "w": 14
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 888,
+      "y": 209,
+      "w": 14
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel",
+      "aria": "",
+      "t": "",
+      "x": 1514,
+      "y": 209,
+      "w": 12
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 1514,
+      "y": 210,
+      "w": 12
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel",
+      "aria": "",
+      "t": "",
+      "x": 838,
+      "y": 257,
+      "w": 16
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 838,
+      "y": 257,
+      "w": 16
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+      "aria": "",
+      "t": "",
+      "x": 869,
+      "y": 257,
+      "w": 14
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 869,
+      "y": 257,
+      "w": 14
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel",
+      "aria": "",
+      "t": "",
+      "x": 608,
+      "y": 293,
+      "w": 12
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 608,
+      "y": 294,
+      "w": 12
+    },
+    {
+      "tag": "SPAN",
+      "cls": "anticon anticon-down ecom-g-select-suffix",
+      "aria": "down",
+      "t": "",
+      "x": 754,
+      "y": 368,
+      "w": 16
+    },
+    {
+      "tag": "svg",
+      "cls": "",
+      "aria": "",
+      "t": "",
+      "x": 754,
+      "y": 368,
+      "w": 16
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "ecom-g-switch ecom-g-switch-small",
+      "aria": "",
+      "t": "",
+      "x": 797,
+      "y": 368,
+      "w": 30
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel",
+      "aria": "",
+      "t": "",
+      "x": 1514,
+      "y": 368,
+      "w": 12
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 1514,
+      "y": 369,
+      "w": 12
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+      "aria": "",
+      "t": "",
+      "x": 869,
+      "y": 416,
+      "w": 14
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 869,
+      "y": 416,
+      "w": 14
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+      "aria": "",
+      "t": "",
+      "x": 1178,
+      "y": 416,
+      "w": 14
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 1178,
+      "y": 416,
+      "w": 14
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+      "aria": "",
+      "t": "",
+      "x": 1487,
+      "y": 416,
+      "w": 14
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 1487,
+      "y": 416,
+      "w": 14
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+      "aria": "",
+      "t": "",
+      "x": 869,
+      "y": 460,
+      "w": 14
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 869,
+      "y": 460,
+      "w": 14
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel",
+      "aria": "",
+      "t": "",
+      "x": 608,
+      "y": 496,
+      "w": 12
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 608,
+      "y": 497,
+      "w": 12
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "ecom-g-btn ecom-g-btn-dashed",
+      "aria": "",
+      "t": "添加规格类型（2/3）",
+      "x": 692,
+      "y": 533,
+      "w": 183
+    },
+    {
+      "tag": "SPAN",
+      "cls": "ecom-g-sp-icon sp-icon-parcel",
+      "aria": "",
+      "t": "",
+      "x": 625,
+      "y": 533,
+      "w": 14
+    },
+    {
+      "tag": "svg",
+      "cls": "icon",
+      "aria": "",
+      "t": "",
+      "x": 625,
+      "y": 533,
+      "w": 14
+    }
+  ]
+}

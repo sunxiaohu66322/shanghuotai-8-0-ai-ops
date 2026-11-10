@@ -1,0 +1,206 @@
+[
+  {
+    "path": "/doudian/ai/get_ai_page_config_by_url",
+    "n": 5
+  },
+  {
+    "path": "/center/qualification/expire/v2/info",
+    "n": 3
+  },
+  {
+    "path": "/center/qualification/shop/info",
+    "n": 2
+  },
+  {
+    "path": "/center/qualification/libra/ab_test_info",
+    "n": 2
+  },
+  {
+    "path": "/byteshop/menu/helper",
+    "n": 2
+  },
+  {
+    "path": "/center/qualification/industry/info",
+    "n": 2
+  },
+  {
+    "path": "/b/a/api/v1/reach/list",
+    "n": 2
+  },
+  {
+    "path": "/ffa/grs-new/qualification/list",
+    "n": 1
+  },
+  {
+    "path": "/sif/sif_js",
+    "n": 1
+  },
+  {
+    "path": "/b/m/api/home/redirect",
+    "n": 1
+  },
+  {
+    "path": "/ffa-micro-config/ffa-menu-v2/index.html",
+    "n": 1
+  },
+  {
+    "path": "/ecomauth/loginv1/sso_mode",
+    "n": 1
+  },
+  {
+    "path": "/sif-dxs/2.4.2-beta.1/dist/umd/worker.js",
+    "n": 1
+  },
+  {
+    "path": "/doudian/ai/get_ai_page_config",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/shopuser/getAdminV2",
+    "n": 1
+  },
+  {
+    "path": "/ecomauth/loginv1/get_login_user_detail_info",
+    "n": 1
+  },
+  {
+    "path": "/getSecsdkCsrfToken",
+    "n": 1
+  },
+  {
+    "path": "/center/qualification/shop/todo",
+    "n": 1
+  },
+  {
+    "path": "/ecomauth/loginv1/select_sso",
+    "n": 1
+  },
+  {
+    "path": "/ecomauth/loginv1/session_check",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/home/strong_dep",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/menu/navigate",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/menu/list/v2",
+    "n": 1
+  },
+  {
+    "path": "/b/a/api/home/navigation/guide",
+    "n": 1
+  },
+  {
+    "path": "/center/qualification/shop/menu_gray",
+    "n": 1
+  },
+  {
+    "path": "/center/qualification/shop/common_gray",
+    "n": 1
+  },
+  {
+    "path": "/ecomauth/loginv1/get_virtual_share_login_sites",
+    "n": 1
+  },
+  {
+    "path": "blob:/6e679c7d-8444-45f3-a694-cb1b0213fca8",
+    "n": 1
+  },
+  {
+    "path": "blob:/ca4552d7-3b1c-40a7-97a2-78c003db41cb",
+    "n": 1
+  },
+  {
+    "path": "/api/scale_shop/doudian_im/shop/user/unread_count",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/helpdesk/ai_switch_config",
+    "n": 1
+  },
+  {
+    "path": "/center/qualification/category_decouple/gray",
+    "n": 1
+  },
+  {
+    "path": "/growth/im",
+    "n": 1
+  },
+  {
+    "path": "/ffa-micro-config/feedback_entry/index.html",
+    "n": 1
+  },
+  {
+    "path": "/ffa-micro-config/helper-v2/doudian/index.html",
+    "n": 1
+  },
+  {
+    "path": "/main_frame/feed_back/all/get_feedback_info",
+    "n": 1
+  },
+  {
+    "path": "blob:/6773dd23-88bc-4571-b630-9ad9ee042f16",
+    "n": 1
+  },
+  {
+    "path": "/doudian/ai/get_banner_info",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/broadcast/getFrontierAccessInfo",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/helpdesk/check_version",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/helpdesk/get_new_unread_msg",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/helpdesk/get_rec_content",
+    "n": 1
+  },
+  {
+    "path": "/doudian/ai/get_async_task",
+    "n": 1
+  },
+  {
+    "path": "/doudian/ai/upload_banner_action",
+    "n": 1
+  },
+  {
+    "path": "/ffa-micro-config/ws-arrival/index.html",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/broadcast/getIMUnReplyCustomerNum",
+    "n": 1
+  },
+  {
+    "path": "/doudian/ai/search_config",
+    "n": 1
+  },
+  {
+    "path": "/doudian/ai/common_suggest",
+    "n": 1
+  },
+  {
+    "path": "/b/a/api/v1/pinpoint/pagepinpoint/get",
+    "n": 1
+  },
+  {
+    "path": "/b/a/api/v1/reach/notice/alert",
+    "n": 1
+  },
+  {
+    "path": "/byteshop/tshopuser/getContractTemplate",
+    "n": 1
+  }
+]

@@ -1,0 +1,52 @@
+[02:34:18] batch=B8 items=1391 space=抖店批量上货 dry=false
+[02:34:18] space 41 | page p1
+[02:34:18] 
+===== 1391 =====
+[02:34:21]    · harvest[open-empty] todo=null panel=0 inline=0 red=0 +0
+[02:34:21]    投递 6 张
+[02:34:25]    上传 6/6
+[02:34:57]    类目: 商品类目 请选择该类目，更符合平台规则，降低处罚风险 家具 > 硬木家具 > 桌类 更多推荐 建议补充 补充包装信息、价
+[02:35:10]    进编辑页 12.5s，tab=基础信息/图文信息/属性信息/价格库存
+[02:35:14]    · harvest[editing-empty] todo=1 panel=1 inline=0 red=3 +1
+[02:35:18]    tab「属性信息」: 已切换 y=80 (exact)
+[02:35:18]    · harvest[tab-attrs] todo=1 panel=1 inline=0 red=3 +0
+[02:35:26]    品牌: 1502455806
+LZL
+[02:35:26]    第1轮 待完善=2 属性类=1 [品牌]
+[02:35:26]    品牌: 已有值「LZL」，跳过
+[02:35:28]    第2轮 待完善=2 属性类=1 [品牌]
+[02:35:28]    品牌: 已有值「LZL」，跳过
+[02:35:30]    第3轮 待完善=2 属性类=1 [品牌]
+[02:35:30]    品牌: 已有值「LZL」，跳过
+[02:35:32]    · harvest[attrs-filled] todo=2 panel=2 inline=1 red=3 +2
+[02:35:36]    tab「价格库存」: 已切换 y=80 (exact)
+[02:35:36]    · harvest[tab-price] todo=2 panel=2 inline=1 red=3 +0
+[02:35:36]    规格现状: 组=「款式」 值=["新中式宋氏美学",""] 行=1
+[02:35:52]    规格结果: 值=["1.6米","1.8米","2米","2.2米",""] 行=4
+[02:35:52]    规格归一化 ✓ 通过
+[02:35:56]    价格: [{"i":0,"match":true,"label":"1.6米 ￥ - 已","price":"3599","stock":"19"},{"i":1,"match":true,"label":"1.8米 ￥ - 已","price":"3999","stock":"19"},{"i":2,"match":true,"label":"2米 ￥ - 已上架","price":"4599","stock":"20"},{"i":3,"match":true,"label":"2.2米 ￥ - 已","price":"4599","stock":"20"}] 重量=10
+[02:36:07]    · harvest[checked] todo=2 panel=2 inline=1 red=3 +1
+[02:36:07]    [recheck 1] 属性类待完善: 1 [品牌]
+[02:36:11]    tab「属性信息」: 已切换 y=79 (exact)
+[02:36:11]    品牌: 已有值「LZL」，跳过
+[02:36:17]    · harvest[recheck-1] todo=2 panel=2 inline=1 red=3 +0
+[02:36:17]    [recheck 2] 属性类待完善: 1 [品牌]
+[02:36:21]    tab「属性信息」: 已切换 y=79 (exact)
+[02:36:21]    品牌: 已有值「LZL」，跳过
+[02:36:27]    · harvest[recheck-2] todo=2 panel=2 inline=1 red=3 +0
+[02:36:27]    [recheck 3] 属性类待完善: 1 [品牌]
+[02:36:31]    tab「属性信息」: 已切换 y=79 (exact)
+[02:36:31]    品牌: 已有值「LZL」，跳过
+[02:36:37]    · harvest[recheck-3] todo=2 panel=2 inline=1 red=3 +0
+[02:36:41]    tab「价格库存」: 已切换 y=80 (exact)
+[02:36:42]    · harvest[final-check] todo=2 panel=2 inline=1 red=3 +0
+[02:36:43]    发布前 errs=1 disabled=false
+[02:37:34]    发布 未确认
+[02:37:34]    · harvest[publish-failed] todo=2 panel=2 inline=1 red=3 +0
+[02:37:45]    列表: {"found":true,"id":"3851688617936290279","price":"￥3599.00","status":"售卖中"}
+[02:37:48] 
+===== 汇总 =====
+[02:37:48] 错误 6 条 / 商品 1 件
+[02:37:48] {"done":1}
+BATCH_V5_DONE
+

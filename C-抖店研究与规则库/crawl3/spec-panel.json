@@ -1,0 +1,134 @@
+{
+  "len": 2449,
+  "opts": [
+    {
+      "t": "使用品牌名",
+      "cls": "ecom-g-checkbox-wrapper sp-checkbox-sm"
+    },
+    {
+      "t": "上传辅助图",
+      "cls": "styles-module_button__v_0O2"
+    },
+    {
+      "t": "商品正面图\n上传主图",
+      "cls": "styles-module_button__v_0O2"
+    },
+    {
+      "t": "主图视频",
+      "cls": "styles-module_button__v_0O2"
+    },
+    {
+      "t": "上传白底图",
+      "cls": "styles-module_button__v_0O2"
+    },
+    {
+      "t": "上传图片",
+      "cls": ""
+    },
+    {
+      "t": "现货",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "预售",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "现货预售混合",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "当日发",
+      "cls": "ecom-g-radio-wrapper  "
+    },
+    {
+      "t": "次日发",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "48小时",
+      "cls": "ecom-g-radio-wrapper  "
+    },
+    {
+      "t": "大于48小时发货",
+      "cls": "ecom-g-radio-wrapper  "
+    },
+    {
+      "t": "批量上传规格图",
+      "cls": ""
+    },
+    {
+      "t": "增",
+      "cls": "ecom-g-radio-button-wrapper ecom-g-radio"
+    },
+    {
+      "t": "减",
+      "cls": "ecom-g-radio-button-wrapper"
+    },
+    {
+      "t": "下单减库存",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "付款减库存",
+      "cls": "ecom-g-radio-wrapper  "
+    },
+    {
+      "t": "3期免息（费率1.65%）",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-"
+    },
+    {
+      "t": "6期免息（费率4.00%）",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-"
+    },
+    {
+      "t": "12期免息（费率6.00%）",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-"
+    },
+    {
+      "t": "24期免息（费率10.00%）",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-"
+    },
+    {
+      "t": "千克（kg）",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "克（g）",
+      "cls": "ecom-g-radio-wrapper  "
+    },
+    {
+      "t": "选择平台合作服务商",
+      "cls": "ecom-g-radio-wrapper  "
+    },
+    {
+      "t": "线下提供免费上门安装",
+      "cls": "ecom-g-radio-wrapper  "
+    },
+    {
+      "t": "不提供上门安装",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "订单完成15天内售后保障",
+      "cls": "ecom-g-checkbox-wrapper ecom-g-checkbox-"
+    },
+    {
+      "t": "保修期内提供维修(寄修)",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "上架",
+      "cls": "ecom-g-radio-wrapper ecom-g-radio-wrappe"
+    },
+    {
+      "t": "下架",
+      "cls": "ecom-g-radio-wrapper  "
+    },
+    {
+      "t": "0/20",
+      "cls": "styles-module_button__v_0O2"
+    }
+  ],
+  "tail": "3\t\n\t\n\t\t\n已上架\n设置多件优惠\n折扣力度越大，销量提升效果越好。店铺客单预计提升6.7%\n推荐\n满2件\n折\n推荐 9折\n一键采纳\n售卖价\n¥\n元\n参考价\n*订单库存计数\n下单减库存\n付款减库存\n选择免息期数\n促成交，预估GMV平均+8%\n去开通\n3期免息（费率1.65%）\n6期免息（费率4.00%）\n12期免息（费率6.00%）\n24期免息（费率10.00%）\n服务与履约\n*运费模板\n为提升消费者购物体验，建议合理设置运费模板点击了解\n限售部分地区+长途运费\n*商品重量\n千克（kg）\n克（g）\n*安装模式\n为提升商品转化及消费者购物体验，建议为用户提供上门安装服务\n选择平台合作服务商\n线下提供免费上门安装\n不提供上门安装\n选择即同意《商家安装服务管理规范》，平台将监控填写真实性，若出现服务问题投诉按虚假承诺加安装异常惩罚\n售后服务\n订单完成15天内售后保障\n*售后政策\n7天无理由退货\n*售后服务承诺\n保修期内提供维修(寄修)\n*选择保修天数\n1年\n*商品状态\n上架\n下架\n商品限购\n每个订单最多购买\n件\n每个用户累计可购买\n件\n若商品参加活动限购，请在「商品管理-更多-限购查询」中查看\n收起\n其他信息\n报关单\n选择已有资质\n0/20\n质检报告\n0/20\n老字号认证证书\n0/20\n赠品资质\n0/20\n收起\n消费者效果预览\n效果仅供参考，具体以实际展示为准\n图集 1/3\n¥0\n胡桃木复古青花瓷沙发边几30*50cm\n品牌\n*\nLZL\n型号\n399\n功能\n*\n稳固防晃\n风格\n复古\n7天无理由退货\n现货发货 · 次日发\n运费：限售部分地区+长途运费\n商品规格\n价格：未填写价格\n库存：\n-\n请选择规格\n尺寸\n30*50cm\nLZL乐群云家具专卖店\n商品详情\n发布商品\n保存草稿\n填写检查\n          \n         (  )(  )(  )(  )(  )(  )\n待办"
+}

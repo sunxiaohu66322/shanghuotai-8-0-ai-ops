@@ -1,0 +1,417 @@
+{
+ "seg": "规格设置\n存储模板\n预览\n商品规格\n款式\n添加规格图\n批量上传规格图\n下移\n上移\n自定义排序\n添加规格类型（1/3）\n*价格与库存\n价格填写进度\n0%\n区域库存\n全屏\n预览\n仅在直播间售卖的商品建议在直播时再填写准确的库存\n全部款式\n批量设置\n可售库存清零\n款式\t\n*\n价格\n\t\n*\n现货库存\n\t\nSKUID\n\t\n商家编码\n\t\n预览图\n\t\nSKU状态\n新中式宋氏美学\n\t\n￥\n\t\n\t-\t\n\t\t\n已上架\n设置多件优惠\n折扣力度越大，销量提升效果越好。店铺客单预计提升6.7%\n推荐\n满2件\n折\n推荐 9折\n一键采纳\n售卖价\n¥\n元\n参考价\n*订单库存计数\n下单减库存\n付款减库存\n选择免息期数\n促成交，预估GMV平均+8%\n去开通\n3期免息（费率1.65%）\n6期免息（费率4.00%）\n12期免息（费率6.00%）\n24期免息（费率10.00%）\n服务与履约\n*运费模板\n为提升消费者购物体验，建议合理设置运费模板点击了解\n限售部分地区+长途运费\n*商品重量\n千克（kg）\n克（g）\n*安装模式\n为提升商品转化及消费者购物体验，建议为用户提供上门安装服务\n选择平台合作服务商\n线下提供免费上门安装\n不提供上门安装\n选择即同意《商家安装服务管理规范》，平台将监控填写真实性，若出现服务问题投诉按虚假承诺加安装异常惩罚\n售后服务\n订单完成15天内售后保障\n*售后政策\n7天无理由退货\n*售后服务承诺\n保修期内提供维修(寄修)\n*选择保修天数\n1年\n*商品状态\n上架\n下架\n商品限购\n每个订单最多购买\n件\n每个用户累计可购买\n件\n若商品参加活动限购，请在「商品管理-更多-限购查询」中查看\n收起\n其他信息\n报关单\n选择已有资质\n0/20\n展开更多\n支持达人带货\n店铺精选联盟权限未开启,不能设置联盟达人带货。前往查看\n消费者效果预览\n效果仅供参考，具体以实际展示为准\n图集 1/3\n未设置价格\n矮茶桌茶几黑胡桃实木家用新中式宋氏美学\n品牌\n*\nLZL\n型号\n未设置\n功能\n*\n可耐磨\n风格\n简约风\n7天无理由退货\n现货发货 · 次日发\n运费：限售部分地区+长途运费\n商品规格\n价格：未填写价格\n库存：\n-\n",
+ "nameEls": [
+  {
+   "tag": "DIV",
+   "cls": "",
+   "box": {
+    "x": 551,
+    "y": 387,
+    "w": 168,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "box": {
+    "x": 551,
+    "y": 387,
+    "w": 168,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "box": {
+    "x": 551,
+    "y": 387,
+    "w": 168,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "style_helperWrapper__hGySD",
+   "box": {
+    "x": 551,
+    "y": 387,
+    "w": 168,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "goods-ai-prefill-area",
+   "box": {
+    "x": 551,
+    "y": 387,
+    "w": 168,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "ecom-g-select ecom-g-select-single ecom-g-select-s",
+   "box": {
+    "x": 551,
+    "y": 387,
+    "w": 168,
+    "h": 32
+   }
+  }
+ ],
+ "valEls": [
+  {
+   "tag": "INPUT",
+   "cls": "ecom-g-input",
+   "box": {
+    "x": 551,
+    "y": 435,
+    "w": 214,
+    "h": 32
+   }
+  },
+  {
+   "tag": "TD",
+   "cls": "ecom-g-table-cell styles_specTitle__EYtPv attr-col",
+   "box": {
+    "x": 551,
+    "y": 752,
+    "w": 121,
+    "h": 93
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_specName__NrgWt",
+   "box": {
+    "x": 563,
+    "y": 767,
+    "w": 96,
+    "h": 64
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_specValues__W_QDS",
+   "box": {
+    "x": 1405,
+    "y": 825,
+    "w": 272,
+    "h": 28
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_specValueWrapper__NXyr7 styles_specValueWit",
+   "box": {
+    "x": 1405,
+    "y": 825,
+    "w": 95,
+    "h": 28
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_specValueText__deyQI",
+   "box": {
+    "x": 1413,
+    "y": 828,
+    "w": 77,
+    "h": 22
+   }
+  }
+ ],
+ "ths": [
+  "款式",
+  "*\n价格",
+  "*\n现货库存",
+  "SKUID",
+  "商家编码",
+  "预览图",
+  "SKU状态",
+  "新中式宋氏美学",
+  "￥",
+  "-",
+  "已上架"
+ ],
+ "money": [
+  {
+   "ph": "请输入15-60个字符（8-30个汉字）",
+   "v": "矮茶桌茶几黑胡桃实木家用新中式宋氏美学",
+   "cls": "ecom-g-input",
+   "box": {
+    "x": 546,
+    "y": -1914,
+    "w": 580,
+    "h": 20
+   }
+  },
+  {
+   "ph": "建议填写简明准确的标题内容，避免重复表达",
+   "v": "",
+   "cls": "ecom-g-input",
+   "box": {
+    "x": 546,
+    "y": -1772,
+    "w": 400,
+    "h": 20
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 562,
+    "y": -563,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "请输入",
+   "v": "",
+   "cls": "ecom-g-input",
+   "box": {
+    "x": 784,
+    "y": -564,
+    "w": 218,
+    "h": 32
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 1264,
+    "y": -563,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 562,
+    "y": -487,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 796,
+    "y": -487,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 1030,
+    "y": -487,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 1264,
+    "y": -487,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 562,
+    "y": -411,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 796,
+    "y": -411,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 1030,
+    "y": -411,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 1264,
+    "y": -411,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 562,
+    "y": -335,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 796,
+    "y": -335,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 562,
+    "y": -141,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 1264,
+    "y": -141,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 562,
+    "y": -65,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 796,
+    "y": -65,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 1030,
+    "y": -65,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 1264,
+    "y": -65,
+    "w": 180,
+    "h": 30
+   }
+  },
+  {
+   "ph": "请输入",
+   "v": "",
+   "cls": "ecom-g-input",
+   "box": {
+    "x": 784,
+    "y": 10,
+    "w": 218,
+    "h": 32
+   }
+  },
+  {
+   "ph": "请输入",
+   "v": "",
+   "cls": "ecom-g-input",
+   "box": {
+    "x": 1018,
+    "y": 10,
+    "w": 218,
+    "h": 32
+   }
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input",
+   "box": {
+    "x": 563,
+    "y": 388,
+    "w": 130,
+    "h": 30
+   }
+  },
+  {
+   "ph": "请输入款式",
+   "v": "新中式宋氏美学",
+   "cls": "ecom-g-input",
+   "box": {
+    "x": 551,
+    "y": 435,
+    "w": 214,
+    "h": 32
+   }
+  }
+ ]
+}

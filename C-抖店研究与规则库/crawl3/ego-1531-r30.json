@@ -1,0 +1,17 @@
+{
+  "where": {
+    "isCreate": false,
+    "isEdit": false,
+    "len": 0
+  },
+  "probe": {
+    "ok": false,
+    "why": "no-add-btn"
+  },
+  "opened": [],
+  "after": {
+    "sels": [],
+    "reds": [],
+    "addTxt": null
+  }
+}

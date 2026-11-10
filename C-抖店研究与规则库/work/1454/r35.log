@@ -1,0 +1,98 @@
+URL: https://fxg.jinritemai.com/ffa/g/create? | scrollY: 0 | len: 2439
+== 含品牌的行 ==
+  品牌
+  品牌
+  可选品牌为审核通过的品牌名称，如当前品牌与您申请品牌不一致，可前往资质中心-品牌资质查看明细，可选择已关联当前类目的生效中品牌，点此新增品牌资质所属类目
+  使用品牌名
+  品牌
+  品牌
+== 使用品牌名 ==
+[
+ {
+  "t": "使用品牌名",
+  "tag": "DIV",
+  "cls": "",
+  "cx": 936,
+  "cy": -742,
+  "hasCb": true,
+  "cbChecked": false,
+  "wrapTxt": "31/60 AI 推荐 热搜词推荐： 美式 落地 酒吧 客厅 家用 创意 简约 欧式 换一换 一键全"
+ },
+ {
+  "t": "使用品牌名",
+  "tag": "DIV",
+  "cls": "",
+  "cx": 936,
+  "cy": -742,
+  "hasCb": true,
+  "cbChecked": false,
+  "wrapTxt": "使用品牌名"
+ },
+ {
+  "t": "使用品牌名",
+  "tag": "DIV",
+  "cls": "",
+  "cx": 936,
+  "cy": -742,
+  "hasCb": true,
+  "cbChecked": false,
+  "wrapTxt": "使用品牌名"
+ },
+ {
+  "t": "使用品牌名",
+  "tag": "DIV",
+  "cls": "style_helperWrapper__hGySD",
+  "cx": 936,
+  "cy": -742,
+  "hasCb": true,
+  "cbChecked": false,
+  "wrapTxt": "使用品牌名"
+ },
+ {
+  "t": "使用品牌名",
+  "tag": "LABEL",
+  "cls": "ecom-g-checkbox-wrapper sp-checkbox-sm",
+  "cx": 579,
+  "cy": -742,
+  "hasCb": true,
+  "cbChecked": false,
+  "wrapTxt": "使用品牌名"
+ },
+ {
+  "t": "使用品牌名",
+  "tag": "SPAN",
+  "cls": "",
+  "cx": 586,
+  "cy": -742,
+  "hasCb": true,
+  "cbChecked": false,
+  "wrapTxt": "使用品牌名"
+ }
+]
+== 选择器控件 ==
+  DIV [ecom-g-select ecom-g-select-single ecom-g-select-s] "请选择" @(659,518) 218x32
+  DIV [ecom-g-select-selector] "请选择" @(659,518) 218x32
+  SPAN [ecom-g-select-selection-search] "" @(652,518) 180x30
+  INPUT [ecom-g-select-selection-search-input] "" @(652,518) 180x30
+  SPAN [ecom-g-select-selection-placeholder] "请选择" @(659,518) 194x30
+  DIV [ecom-g-select ecom-g-tree-select styles_multiSelec] "稳固防晃" @(1127,518) 218x32
+  DIV [ecom-g-select-selector] "稳固防晃" @(1127,518) 218x32
+  DIV [ecom-g-select-selection-overflow] "稳固防晃" @(1126,518) 208x30
+  DIV [ecom-g-select-selection-overflow-item] "稳固防晃" @(1064,518) 84x28
+  SPAN [ecom-g-select-selection-item] "稳固防晃" @(1062,518) 80x24
+  SPAN [ecom-g-select-selection-item-content] "稳固防晃" @(1055,518) 48x22
+  DIV [ecom-g-select ecom-g-select-single ecom-g-select-a] "复古" @(1361,518) 218x32
+  DIV [ecom-g-select-selector] "复古" @(1361,518) 218x32
+  SPAN [ecom-g-select-selection-search] "" @(1354,518) 180x30
+  INPUT [ecom-g-select-selection-search-input] "" @(1354,518) 180x30
+  SPAN [ecom-g-select-selection-item] "复古" @(1361,518) 194x30
+  DIV [ecom-g-select ecom-g-select-single ecom-g-select-a] "请选择" @(659,614) 218x32
+  DIV [ecom-g-select-selector] "请选择" @(659,614) 218x32
+  SPAN [ecom-g-select-selection-search] "" @(652,614) 180x30
+  INPUT [ecom-g-select-selection-search-input] "" @(652,614) 180x30
+  SPAN [ecom-g-select-selection-placeholder] "请选择" @(659,614) 194x30
+  DIV [ecom-g-select ecom-g-select-single ecom-g-select-a] "请选择" @(893,614) 218x32
+  DIV [ecom-g-select-selector] "请选择" @(893,614) 218x32
+  SPAN [ecom-g-select-selection-search] "" @(886,614) 180x30
+  INPUT [ecom-g-select-selection-search-input] "" @(886,614) 180x30
+

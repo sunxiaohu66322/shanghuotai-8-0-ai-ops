@@ -1,0 +1,23 @@
+[
+  {
+    "item": "1531",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "支撑件木种",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择，最多选5项 该项为必填，请输入",
+    "category": "required"
+  }
+]

@@ -1,0 +1,15 @@
+木种控件 {"cur":"请选择，最多选5项","x":1035,"y":505}
+浮层 [{"cls":"ecom-g-input-affix-wrapper ecom-g-dropdown-trigger","t":"31/60 AI 推荐"},{"cls":"ecom-g-select-dropdown styles_multiSelectDropdown___InB","t":"核桃木 松木 橡木（红橡/白橡） 橡胶木 白蜡木 桦木 杨木 黑胡桃 爱里古夷苏木 桉木 找不到合适的属性值？ 点击反馈"}]
+胡桃木候选 null
+键盘序列 ["请选择，最多选5项"]
+木种选择后 请选择，最多选5项
+复检 {
+ "错误数": 1,
+ "错误文案": [
+  "请选择，最多选5项 该项为必填，请输入"
+ ],
+ "左侧面板": "1个错误问题待处理\n错误提示\n提升建议\n支撑件木种\n错误\n该项为必填，请输入\n填写助手\n暂无填写规则",
+ "panel": []
+}
+截图 G:/Users/Administrator/Documents/deepseek-harness/default-workspace/抖店研究/work/1454/r72-recheck.png
+

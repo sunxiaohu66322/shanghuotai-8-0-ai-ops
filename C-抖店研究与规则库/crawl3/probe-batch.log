@@ -1,0 +1,233 @@
+== 连上: https://fxg.jinritemai.com/ffa/g/list
+== 商品管理页『批量/导入』类元素: [
+ {
+  "tag": "DIV",
+  "t": "快速发布",
+  "cls": "nav-menu_activeHeader__1ZwyP more_headerApp__3Xgtg"
+ },
+ {
+  "tag": "SPAN",
+  "t": "快速发布",
+  "cls": "nav-tool-label_full__2Dtet"
+ },
+ {
+  "tag": "DIV",
+  "t": "运费模板\n请选择运费模板",
+  "cls": "styles-module_label-wrapper__hRvSW ecom-g-label-wr"
+ },
+ {
+  "tag": "DIV",
+  "t": "运费模板",
+  "cls": "styles-module_label__ms7Ab"
+ },
+ {
+  "tag": "DIV",
+  "t": "请选择运费模板",
+  "cls": "ecom-g-select-selector"
+ },
+ {
+  "tag": "SPAN",
+  "t": "请选择运费模板",
+  "cls": "ecom-g-select-selection-placeholder"
+ },
+ {
+  "tag": "BUTTON",
+  "t": "导出查询商品",
+  "cls": "ecom-g-btn ecom-g-btn-link ecom-g-btn-sm index_exp"
+ },
+ {
+  "tag": "SPAN",
+  "t": "导出查询商品",
+  "cls": ""
+ },
+ {
+  "tag": "BUTTON",
+  "t": "查看导出记录",
+  "cls": "ecom-g-btn ecom-g-btn-link ecom-g-btn-sm index_exp"
+ },
+ {
+  "tag": "SPAN",
+  "t": "查看导出记录",
+  "cls": ""
+ },
+ {
+  "tag": "BUTTON",
+  "t": "批量下架",
+  "cls": "ecom-g-btn ecom-g-btn-sm"
+ },
+ {
+  "tag": "SPAN",
+  "t": "批量下架",
+  "cls": ""
+ },
+ {
+  "tag": "BUTTON",
+  "t": "批量修改",
+  "cls": "ecom-g-btn ecom-g-btn-sm"
+ },
+ {
+  "tag": "SPAN",
+  "t": "批量修改",
+  "cls": ""
+ },
+ {
+  "tag": "SPAN",
+  "t": "批量新建渠道品",
+  "cls": ""
+ },
+ {
+  "tag": "BUTTON",
+  "t": "批量新建渠道品",
+  "cls": "ecom-g-btn ecom-g-btn-sm"
+ },
+ {
+  "tag": "BUTTON",
+  "t": "新建商品",
+  "cls": "ecom-g-btn ecom-g-btn-primary ecom-g-btn-sm ecom-g"
+ },
+ {
+  "tag": "SPAN",
+  "t": "新建商品",
+  "cls": ""
+ },
+ {
+  "tag": "DIV",
+  "t": "预览\n复制链接",
+  "cls": "style_previewCopy__qyKWq"
+ },
+ {
+  "tag": "BUTTON",
+  "t": "复制链接",
+  "cls": "ecom-g-btn ecom-g-btn-link ecom-g-btn-sm"
+ },
+ {
+  "tag": "SPAN",
+  "t": "复制链接",
+  "cls": ""
+ },
+ {
+  "tag": "SPAN",
+  "t": "新建渠道品",
+  "cls": ""
+ },
+ {
+  "tag": "A",
+  "t": "新建渠道品",
+  "cls": ""
+ },
+ {
+  "tag": "SPAN",
+  "t": "发布相似品",
+  "cls": ""
+ },
+ {
+  "tag": "A",
+  "t": "发布相似品",
+  "cls": ""
+ }
+]
+== 商品管理页请求数: 52
+GET https://fxg.jinritemai.com/ffa/g/list
+GET https://fxg.jinritemai.com/byteshop/menu/helper
+GET https://fxg.jinritemai.com/sif/sif_js
+GET https://fxg.jinritemai.com/b/w/api/v1/main_frame/get_page_header
+GET https://fxg.jinritemai.com/b/m/api/home/redirect
+GET https://fxg.jinritemai.com/ffa-micro-config/ffa-menu-v2/index.html
+GET https://fxg.jinritemai.com/ecomauth/loginv1/sso_mode
+HEAD https://fxg.jinritemai.com/getSecsdkCsrfToken
+GET https://fxg.jinritemai.com/product/tproduct/aggsProductCount
+GET https://fxg-sso.jinritemai.com/aff/check_login/
+POST https://fxg.jinritemai.com/ttwid/check/
+GET https://fxg.jinritemai.com/doudian/ai/get_ai_page_config
+GET https://doudian-sso.jinritemai.com/aff/check_login/
+GET https://fxg.jinritemai.com/freight/template/getFreightTemplateList
+GET https://fxg.jinritemai.com/shopuser/tshopuser/listAftersaleStrategy
+GET https://fxg.jinritemai.com/product/tproduct/getShopShipDelayRule
+GET https://fxg.jinritemai.com/product/tproduct/queryExcitation
+GET https://fxg.jinritemai.com/product/tproduct/categoryOptionsN
+GET https://fxg.jinritemai.com/product/tproduct/getProductGroupList
+GET https://fxg.jinritemai.com/product/tproduct/listBanner
+GET https://fxg.jinritemai.com/product/tproduct/rectifyInfo
+POST https://fxg.jinritemai.com/ecomauth/loginv1/select_sso
+GET https://fxg.jinritemai.com/ecomauth/loginv1/session_check
+GET https://lf3-fe.ecombdstatic.com/obj/ecom-cdn-default/cyborg_v2/ffa-goods/static/css/async/goods-list-product-control.58cc0eb8.css
+GET https://lf3-fe.ecombdstatic.com/obj/ecom-cdn-default/cyborg_v2/ffa-goods/static/js/async/goods-list-product-control.ae53759d.js
+GET https://fxg.jinritemai.com/product/tproduct/isInAllowlist
+GET https://fxg.jinritemai.com/product/tproduct/popup_content
+GET https://fxg.jinritemai.com/product/prettify/getGrayStatus
+GET https://fxg.jinritemai.com/product/tproduct/list
+GET blob:https://fxg.jinritemai.com/abb6e71e-64aa-4654-9b4a-e96ae069b328
+GET https://fxg.jinritemai.com/byteshop/home/strong_dep
+GET https://fxg.jinritemai.com/byteshop/menu/navigate
+GET https://fxg.jinritemai.com/byteshop/menu/list/v2
+POST https://fxg.jinritemai.com/b/a/api/home/navigation/guide
+GET https://fxg.jinritemai.com/ecomauth/loginv1/get_virtual_share_login_sites
+GET https://fxg.jinritemai.com/api/scale_shop/doudian_im/shop/user/unread_count
+GET https://fxg.jinritemai.com/byteshop/helpdesk/ai_switch_config
+GET https://fxg.jinritemai.com/center/qualification/shop/info
+GET https://fxg.jinritemai.com/ffa-micro-config/feedback_entry/index.html
+GET https://fxg.jinritemai.com/ffa-micro-config/helper-v2/doudian/index.html
+== 创建页『批量/类目』类元素: [
+ {
+  "tag": "DIV",
+  "t": "商品类目"
+ },
+ {
+  "tag": "SPAN",
+  "t": "商品类目"
+ },
+ {
+  "tag": "DIV",
+  "t": "存储模板\n预览"
+ },
+ {
+  "tag": "BUTTON",
+  "t": "存储模板"
+ },
+ {
+  "tag": "SPAN",
+  "t": "存储模板"
+ },
+ {
+  "tag": "DIV",
+  "t": "*类目属性"
+ },
+ {
+  "tag": "SPAN",
+  "t": "*类目属性"
+ },
+ {
+  "tag": "SPAN",
+  "t": "类目属性"
+ },
+ {
+  "tag": "SPAN",
+  "t": "批量上传规格图"
+ },
+ {
+  "tag": "DIV",
+  "t": "批量上传规格图"
+ },
+ {
+  "tag": "SPAN",
+  "t": "批量设置"
+ },
+ {
+  "tag": "BUTTON",
+  "t": "批量设置"
+ },
+ {
+  "tag": "DIV",
+  "t": "*运费模板"
+ },
+ {
+  "tag": "SPAN",
+  "t": "*运费模板"
+ },
+ {
+  "tag": "SPAN",
+  "t": "运费模板"
+ }
+]
+== 创建页请求: 0
+== 已写 G:/Users/Administrator/Documents/deepseek-harness/default-workspace/抖店研究/crawl3/probe-batch.json

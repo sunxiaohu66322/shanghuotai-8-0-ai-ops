@@ -1,0 +1,73 @@
+{
+ "pid": 1409,
+ "title": "美式双层实木床头柜中古小型沙发边柜圆形角几客厅卧室茶几小桌子",
+ "category_hint": "",
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_8808a7010253.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_98bfb828887e.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_6c16adad50ae.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_8f04a0652e69.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_51abcce582ac.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_24a3dc9b6ed8.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_0802414bef19.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_6f93446a3f31.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_f2e27bf9c08a.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_f531f698c674.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_2812072a0c93.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_d3d31865aada.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_75b1e0314a62.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_460e475e2312.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_02ff58852bfa.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_94820b1b73f5.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_a2fa44e8d622.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_3992a9e4a3e8.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_31138e684746.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_1627188f8277.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_4203f169e214.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_325106af53e3.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\detail\\image_a1f11a91cf56.jpg"
+ ],
+ "skus": [
+  {
+   "name": "黑色/2层款茶几（直径40cm）",
+   "spec": [
+    "黑色/2层款茶几（直径40cm）"
+   ],
+   "price": 385.0,
+   "stock": 98935,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_8808a7010253.jpg"
+  },
+  {
+   "name": "黑色/2 层款茶几（直径50cm）",
+   "spec": [
+    "黑色/2 层款茶几（直径50cm）"
+   ],
+   "price": 425.0,
+   "stock": 99999,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1409\\main\\image_8808a7010253.jpg"
+  }
+ ],
+ "price": 385.0,
+ "stock": 98935,
+ "cat": [
+  "家具",
+  "几类",
+  "茶几/边几"
+ ],
+ "brand": "LZL",
+ "wood": null,
+ "install": "不提供上门安装",
+ "meta": {
+  "product_id": 1409,
+  "skus": 2,
+  "main": 9,
+  "detail": 14
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

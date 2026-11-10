@@ -1,0 +1,47 @@
+[
+  {
+    "item": "1 py_compile (dd.py+publish.py)",
+    "pass": true,
+    "detail": "dd=D:\\DSH_Cache\\cache\\tmp\\tmp7ubcxro2\\dd.pyc publish=D:\\DSH_Cache\\cache\\tmp\\tmpifauzm87\\p.pyc"
+  },
+  {
+    "item": "2 缺陷1: /api/dd/queue 返回货源包",
+    "pass": true,
+    "detail": "rows=21 keys=['cols', 'dir', 'file', 'head', 'mtime', 'name', 'path', 'rows', 'sample', 'size']"
+  },
+  {
+    "item": "3 缺陷1: /api/dd/enqueue_list 返回入队记录",
+    "pass": true,
+    "detail": "total=0"
+  },
+  {
+    "item": "4 缺陷2: enqueue 缺/未知/非draft 拒绝+零副作用",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": "5 缺陷2: draft 正常入队(生成xlsx+写队列)",
+    "pass": true,
+    "detail": "xlsx=True qlines=1 state=None"
+  },
+  {
+    "item": "6 缺陷2: run_script 非 draft 拒绝(不启动子进程)",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "item": "7 缺陷2: 链A必须显式draft(显式放行/默认拒绝)",
+    "pass": true,
+    "detail": "显式->脚本不存在：__nonexist__.mjs | 默认->publish_mode 缺失：上架执行必须显式声明模式，未启动脚本"
+  },
+  {
+    "item": "8 缺陷3: 草稿按date降序+同pid留最新",
+    "pass": true,
+    "detail": "pids=['22222222', '11111111'] dates=['2026/11/01', '2026/10/29']"
+  },
+  {
+    "item": "9 dd.py 改后与备份不同(备份可回滚)",
+    "pass": true,
+    "detail": "备份存在=True"
+  }
+]

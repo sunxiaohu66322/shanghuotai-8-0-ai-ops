@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://mcs.zijieapi.com/list",
+    "status": 200,
+    "bytes": 21
+  },
+  {
+    "url": "https://mcs.zijieapi.com/list?sdk_version=5.1.9&sdk_name=web&app_id=1215&caller=ecom.fe.growth_doudian_im",
+    "status": 200,
+    "bytes": 21
+  },
+  {
+    "url": "https://api.feelgood.cn/athena/survey/platform/action/report/",
+    "status": 200,
+    "bytes": 191
+  },
+  {
+    "url": "https://mcs.zijieapi.com/list",
+    "status": 200,
+    "bytes": 21
+  },
+  {
+    "url": "https://api.feelgood.cn/athena/survey/platform/action/report/",
+    "status": 200,
+    "bytes": 191
+  },
+  {
+    "url": "/product/tproduct/list?page=0&pageSize=20&draft_status=0&comment_percent=&group_id=&sku_type=&tab=onSale&business_type=4&is_online=1&not_for_sale_search_type=1&from_mng=1&check_status=3&status=0&supply_status=&need_auto_rectify_info=true&need_pay_no_stock_skus=true&order_field=audit_time&sort=desc&appid=1&__token=93757f38020bce544be4c193b1dd703a&_bid=ffa_goods&_lid=543082299062",
+    "status": 200,
+    "bytes": 18835
+  },
+  {
+    "url": "https://mcs.zijieapi.com/list",
+    "status": 200,
+    "bytes": 21
+  },
+  {
+    "url": "https://mcs.zijieapi.com/list",
+    "status": 200,
+    "bytes": 21
+  },
+  {
+    "url": "https://lf3-config.bytetcc.com/obj/tcc-config-web/tcc-v2-data-cmp.ecom.open_captain-default",
+    "status": 200,
+    "bytes": 0
+  },
+  {
+    "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=fems",
+    "status": 204,
+    "bytes": 0
+  },
+  {
+    "url": "https://mcs.zijieapi.com/list",
+    "status": 200,
+    "bytes": 21
+  },
+  {
+    "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=ffa_goods",
+    "status": 204,
+    "bytes": 0
+  },
+  {
+    "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=fxg_admin",
+    "status": 204,
+    "bytes": 0
+  },
+  {
+    "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=fems",
+    "status": 204,
+    "bytes": 0
+  }
+]

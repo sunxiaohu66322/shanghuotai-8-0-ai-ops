@@ -1,0 +1,110 @@
+{
+  "task": "抖店家具类目/行业资质申请（家具·户外家具·商业家具·住宅家具）",
+  "run_at": "2026-11-08 13:07 ~ 13:35 +08:00",
+  "shop": {
+    "name": "LZL乐群云家具专卖店",
+    "type": "专卖店",
+    "status": "正常营业",
+    "shop_id": "229615864",
+    "evidence": "r2-category-tab.json / r8-p3-deposit.json 页面原文"
+  },
+  "browser": {
+    "tool": "ego lite (ego-browser.exe 0.6.2.8)",
+    "space_id": 108,
+    "space_name": "dd-furniture-apply-1108",
+    "ownership": "agent",
+    "cookies": "dy-login-cookies.json 152 条，page.cdp('Network.setCookies') 灌入，登录态有效（SHOP_OK=true，无验证码/扫码/短信）",
+    "pages": ["p1 资质中心", "p2 类目资质查询", "p3 保证金账户"],
+    "finished": true
+  },
+  "deposit_account": {
+    "url": "https://fxg.jinritemai.com/ffa/content/shop_deposit",
+    "basic_balance": "¥2,000.00",
+    "basic_required": "¥500.00",
+    "basic_withdrawable": "¥1,500.00",
+    "experience_balance": "¥0.00",
+    "experience_required": "¥0.00",
+    "conclusion": "现有余额已覆盖应缴，无补缴；提交前后数值完全一致，流水最新仍为 2026-07-08 +¥1500.00，无新增缴纳/补缴记录",
+    "evidence": ["r8-p3-deposit.json", "r8-p3-deposit.png", "r22-deposit-after-submit.json", "r22-deposit-after-submit.png"]
+  },
+  "pre_state": {
+    "industry_groups_selected": ["运动户外", "智能家居", "鞋靴箱包", "珠宝文玩", "鲜花园艺", "钟表配饰"],
+    "top_level_categories": ["电子/电工", "运动休闲用品", "钟表眼镜", "鞋靴", "箱包", "五金/工具", "户外装备", "家具", "家装灯饰光源", "家装建材", "居家日用", "农资园艺", "民俗工艺/非遗", "汽车用品", "餐饮厨具"],
+    "furniture_l1": "已开通（家具一级下 19 个二级全部在经营类目表内）",
+    "required_qualification": "无",
+    "evidence": ["r2-category-tab.json 经营类目表", "r5-p1-edit-dialog.png", "r11-p1-snapshot.txt"]
+  },
+  "amount_rule_fact": "抖店「查询类目要求」页对家具类目不逐类目显示保证金金额（实测所有叶子 MONEY=[]）；保证金按店铺+在架商品类目计算、多类目取最高不叠加。判定依据=店铺级保证金账户实测余额覆盖 + 该叶子无「产生订单需缴纳体验保证金」标签。",
+  "categories": [
+    {"name": "其他家具", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt L2 其他家具"},
+    {"name": "适老家具", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "架类", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "几类", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "椅子", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "硬木家具", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "商业/办公家具", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出；p2 叶子「其他商业/办公家具」返回「您店铺已经满足类目要求，可以经营该类目」", "evidence": "r10-all.json / r16-p2-reqs.json / r10-p2-leaf.png"},
+    {"name": "沙发", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出；p2「皮艺沙发」返回「可以经营该类目」", "evidence": "r13-all.json"},
+    {"name": "红木家具", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "柜子", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "组合家具/一体家具/套装家具", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通（含 2 个待申请三级）", "need_pay": false, "reason": "弹窗半选；三级中「客厅家具套装/卧室家具套装/户外桌椅套装/书桌书柜套装」已勾", "evidence": "r15-lvl3-precise.json"},
+    {"name": "台案", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "家具配件及辅料", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "凳子", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "儿童家具", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通（含 3 个待申请三级）", "need_pay": false, "reason": "弹窗半选；三级中 14 项已勾", "evidence": "r15-lvl3-precise.json"},
+    {"name": "床垫", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "桌子", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出，弹窗 checkbox [x]", "evidence": "r11-p1-snapshot.txt"},
+    {"name": "床", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通（含 1 个跳过三级）", "need_pay": false, "reason": "经营类目表已列出 13 个三级；弹窗 14 个中 13 勾", "evidence": "r15-lvl3-precise.json / r20-page0.json 家具表格行"},
+    {"name": "庭院户外家具", "level": "二级", "parent": "家具", "amount": 0, "amount_source": "页面未显示金额，店铺级余额覆盖", "decision": "已开通无需申请", "need_pay": false, "reason": "经营类目表已列出；p2 叶子「其他庭院户外家具」返回「您店铺已经满足类目要求，可以经营该类目」", "evidence": "r10-all.json / r16-p2-reqs.json"},
+    {"name": "其他组合家具", "level": "三级", "parent": "组合家具/一体家具/套装家具", "amount": 0, "amount_source": "p2 类目要求无金额；店铺级余额覆盖", "decision": "已提交申请", "need_pay": false, "reason": "原未开通；p2 显示「经营该类目需开通经营权限，点击下方按钮可一键发起申请」，无体验保证金标签、无报白提示", "evidence": "r16-p2-reqs.json / r17-checked.png / r19-before-submit.png"},
+    {"name": "餐桌椅四件套", "level": "三级", "parent": "组合家具/一体家具/套装家具", "amount": 0, "amount_source": "p2 类目要求无金额；店铺级余额覆盖", "decision": "已提交申请", "need_pay": false, "reason": "原未开通；p2 显示需开通经营权限，无体验保证金标签", "evidence": "r16-p2-reqs.json / r17-checked.png"},
+    {"name": "儿童学习桌", "level": "三级", "parent": "儿童家具", "amount": 0, "amount_source": "p2 类目要求无金额；店铺级余额覆盖", "decision": "已提交申请", "need_pay": false, "reason": "原未开通；p2 显示需开通经营权限，无体验保证金标签", "evidence": "r16-p2-reqs.json / r17-checked.png"},
+    {"name": "婴童床垫", "level": "三级", "parent": "儿童家具", "amount": 0, "amount_source": "p2 类目要求无金额；店铺级余额覆盖", "decision": "已提交申请", "need_pay": false, "reason": "原未开通；p2 显示需开通经营权限，无体验保证金标签", "evidence": "r16-p2-reqs.json / r17-checked.png"},
+    {"name": "儿童沙发", "level": "三级", "parent": "儿童家具", "amount": 0, "amount_source": "p2 类目要求无金额；店铺级余额覆盖", "decision": "已提交申请", "need_pay": false, "reason": "原未开通；p2 显示需开通经营权限，无体验保证金标签", "evidence": "r16-p2-reqs.json / r17-checked.png"},
+    {"name": "皮艺床", "level": "三级", "parent": "床", "amount": 10000, "amount_source": "页面标签「产生订单需缴纳体验保证金」+ 历史口径家具体验保证金 1 万元", "decision": "跳过", "need_pay": true, "reason": "带「产生订单需缴纳体验保证金」标签，金额 10000 > 2000，且触发条件为该类目产生订单成交；按规则 3（金额>2000 / 会触发花钱）跳过", "evidence": "r15-lvl3-precise.json 原文「实木床 / 产生订单需缴纳体验保证金」「皮艺床 / 产生订单需缴纳体验保证金」/ r15-lvl3-precise.png / r16-p2-reqs.json 显示需开通经营权限"}
+  ],
+  "submitted": {
+    "action": "新增/编辑 → 编辑类目 → 勾选 5 项 → 内层「确定」→ 外层「提交审核」",
+    "count": 5,
+    "names": ["其他组合家具", "餐桌椅四件套", "儿童学习桌", "婴童床垫", "儿童沙发"],
+    "check_proof": "round-17 逐个 before:false → after:true；round-18 重开弹窗 5 项全部 checked:true（持久保持）",
+    "submit_proof": "round-19 SUBMIT_CLICK={ok:true,disabled:false}；URL 由 /ffa/grs-new/qualification/list 变为 ?type=3；弹窗关闭；按钮回到「查询类目要求/新增/编辑」",
+    "pay_buttons_detected": [],
+    "zero_payment": true,
+    "evidence": ["r17-checked.png", "r18-verify.json", "r19-before-submit.png", "r19-after-submit.png", "r19-after-submit.json"]
+  },
+  "readback": {
+    "url": "https://fxg.jinritemai.com/ffa/grs-new/qualification/list?type=3",
+    "required_qualification": "无",
+    "status_words_found": [],
+    "furniture_table_rows": "家具行仍为原有 19 个二级；「床」行仍 13 个三级；未见新增 5 个申请细分类目单独列出",
+    "deposit_after": {"basic_balance": "¥2,000.00", "basic_required": "¥500.00", "withdrawable": "¥1,500.00", "new_flow": "无（最新仍 2026-07-08 +¥1500.00）"},
+    "verdict": "提交动作已发出且页面已跳转，但后台未显示「审核中/审核通过/被拒」任何状态文字，经营类目表也未即时新增这 5 个三级细分 → 开通状态标记为【未验证·待人工确认】，不冒充已开通",
+    "evidence": ["r20-page0.json", "r20-verify.png", "r22-deposit-after-submit.json"]
+  },
+  "skipped": [
+    {"name": "皮艺床", "amount": 10000, "reason": "产生订单需缴纳体验保证金（>2000），跳过"},
+    {"name": "软装搭配（页面通知）", "amount": null, "reason": "与本次无关：页面常驻旧通知「依据【本地生活及虚拟】行业管理规范…准入方式为定邀，不支持商家主动入驻」，非家具类目、非本次操作产生，未处理"}
+  ],
+  "unverified": [
+    "5 个申请类目的最终审核结果（审核中/通过/被拒）——本页无状态列，需到「类目审核记录/通知中心」或次日回读经营类目表确认",
+    "round-20/21 重开弹窗后按名称定位三级叶子返回 checked:null（弹窗二级列表渲染为「骑行装备/维修工具/摩托车养护」，疑似另一经营大类树残留），未能二次确认勾选态；但 round-17/18 已证实提交前 5 项 checked:true",
+    "皮艺床若将来申请需报白 + 体验保证金，未实操"
+  ],
+  "still_sellable": {
+    "summary": "家具一级下 19 个二级全部已开通（含商业/办公家具、庭院户外家具、住宅家具相关：床/沙发/柜子/桌子/椅子/几类/架类/台案/凳子/床垫/红木家具/硬木家具/适老家具/其他家具/儿童家具/组合家具/家具配件及辅料），各自三级绝大多数已勾；另 15 个一级类目全线在经营类目表内",
+    "newly_requested": ["其他组合家具", "餐桌椅四件套", "儿童学习桌", "婴童床垫", "儿童沙发"],
+    "not_allowed": ["皮艺床（体验保证金 1 万 > 2000）"]
+  },
+  "screenshots_dir": "D:\\DSH_Cache\\cache\\tmp\\ego\\dd-furniture-1108\\",
+  "key_screenshots": [
+    "r5-p1-edit-dialog.png（已选 6 分组）",
+    "r8-p3-deposit.png（保证金余额 ¥2000 / 应缴 ¥500）",
+    "r10-p2-leaf.png（家具叶子「可以经营该类目」）",
+    "r15-lvl3-precise.png（三级勾选态 + 皮艺床体验保证金标签）",
+    "r17-checked.png（5 项勾选后）",
+    "r19-before-submit.png（提交前核对，无支付按钮）",
+    "r19-after-submit.png（提交后页面）",
+    "r22-deposit-after-submit.png（提交后保证金未变）"
+  ],
+  "conclusion_grade": "B（提交动作已完成、零支付；开通状态待回读确认）"
+}

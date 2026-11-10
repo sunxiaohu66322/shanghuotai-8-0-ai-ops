@@ -1,0 +1,87 @@
+{
+ "at": "2026-11-10 22:52:11",
+ "engine_version": "8.0-P0.3.0",
+ "schema_version": "4",
+ "architecture": "ops.db 独立 + v3.db 只读 ATTACH（不往 v3.db 建表）",
+ "applied": true,
+ "db": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\data\\ops.db",
+ "db_existed_before": true,
+ "db_bytes": 258048,
+ "ops_tables_added": [
+  "ops_campaign",
+  "ops_content_publish",
+  "ops_operation"
+ ],
+ "shops_source": {
+  "ok": true,
+  "shops": [
+   {
+    "appid": "===REDACTED===",
+    "name": "欢轴家居",
+    "mask": "wx6ff1****",
+    "enabled": true,
+    "kind": "wx_api",
+    "profileId": "",
+    "space": "",
+    "has_secret": true
+   },
+   {
+    "appid": "===REDACTED===",
+    "name": "崇耿",
+    "mask": "wxfc4e****",
+    "enabled": true,
+    "kind": "wx_api",
+    "profileId": "",
+    "space": "",
+    "has_secret": true
+   },
+   {
+    "appid": "dd_lzl",
+    "name": "抖店·LZL乐群云家具",
+    "mask": "dd_lzl",
+    "enabled": true,
+    "kind": "doudian",
+    "profileId": "",
+    "space": "",
+    "has_secret": false
+   }
+  ],
+  "source": "http://127.0.0.1:9191/api/shops"
+ },
+ "accounts": {
+  "written": [
+   {
+    "account_id": "wx6ff10d09ff0ee823",
+    "name": "欢轴家居",
+    "platform": "wx"
+   },
+   {
+    "account_id": "wxfc4e24a2ebcb2b0a",
+    "name": "崇耿",
+    "platform": "wx"
+   },
+   {
+    "account_id": "dd_lzl",
+    "name": "抖店·LZL乐群云家具",
+    "platform": "dy"
+   }
+  ],
+  "skipped": [],
+  "count": 3
+ },
+ "v3_before": {
+  "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3.db",
+  "bytes": 111321088,
+  "sha256": "5eb518c4d645e3a33049a4577e8713290390bd98cf2872ef00c3929c21e65dfe",
+  "integrity": "ok"
+ },
+ "v3_after": {
+  "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3.db",
+  "bytes": 111321088,
+  "sha256": "5eb518c4d645e3a33049a4577e8713290390bd98cf2872ef00c3929c21e65dfe",
+  "integrity": "ok"
+ },
+ "v3_tables_checked": 28,
+ "v3_unchanged": true,
+ "elapsed_s": 1.816
+}

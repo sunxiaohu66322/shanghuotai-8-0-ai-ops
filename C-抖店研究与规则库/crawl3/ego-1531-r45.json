@@ -1,0 +1,540 @@
+{
+  "tbl": [
+    {
+      "t": "单门款（单柜/开孔20*37送盖板） ￥ - 已上架",
+      "tds": [
+        {
+          "i": 0,
+          "t": "",
+          "x": 660,
+          "y": 398,
+          "w": 116,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 1,
+          "t": "单门款（单柜/开孔20*37送盖板）",
+          "x": 776,
+          "y": 398,
+          "w": 116,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 2,
+          "t": "￥",
+          "x": 927,
+          "y": 398,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": true
+        },
+        {
+          "i": 3,
+          "t": "",
+          "x": 1112,
+          "y": 398,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": true
+        },
+        {
+          "i": 4,
+          "t": "-",
+          "x": 1297,
+          "y": 398,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 5,
+          "t": "",
+          "x": 1482,
+          "y": 398,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 6,
+          "t": "",
+          "x": 1609,
+          "y": 398,
+          "w": 69,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 7,
+          "t": "已上架",
+          "x": 1466,
+          "y": 398,
+          "w": 108,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        }
+      ]
+    },
+    {
+      "t": "三抽款（单柜/开孔20*37送盖板） ￥ - 已上架",
+      "tds": [
+        {
+          "i": 0,
+          "t": "",
+          "x": 660,
+          "y": 523,
+          "w": 116,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 1,
+          "t": "三抽款（单柜/开孔20*37送盖板）",
+          "x": 776,
+          "y": 523,
+          "w": 116,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 2,
+          "t": "￥",
+          "x": 927,
+          "y": 523,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": true
+        },
+        {
+          "i": 3,
+          "t": "",
+          "x": 1112,
+          "y": 523,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": true
+        },
+        {
+          "i": 4,
+          "t": "-",
+          "x": 1297,
+          "y": 523,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 5,
+          "t": "",
+          "x": 1482,
+          "y": 523,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 6,
+          "t": "",
+          "x": 1609,
+          "y": 523,
+          "w": 69,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 7,
+          "t": "已上架",
+          "x": 1466,
+          "y": 523,
+          "w": 108,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        }
+      ]
+    },
+    {
+      "t": "中抽款（单柜/开孔20*37送盖板） ￥ - 已上架",
+      "tds": [
+        {
+          "i": 0,
+          "t": "",
+          "x": 660,
+          "y": 648,
+          "w": 116,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 1,
+          "t": "中抽款（单柜/开孔20*37送盖板）",
+          "x": 776,
+          "y": 648,
+          "w": 116,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 2,
+          "t": "￥",
+          "x": 927,
+          "y": 648,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": true
+        },
+        {
+          "i": 3,
+          "t": "",
+          "x": 1112,
+          "y": 648,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": true
+        },
+        {
+          "i": 4,
+          "t": "-",
+          "x": 1297,
+          "y": 648,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 5,
+          "t": "",
+          "x": 1482,
+          "y": 648,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 6,
+          "t": "",
+          "x": 1609,
+          "y": 648,
+          "w": 69,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 7,
+          "t": "已上架",
+          "x": 1466,
+          "y": 648,
+          "w": 108,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        }
+      ]
+    },
+    {
+      "t": "底抽款（单柜/开孔20*37送盖板） ￥ - 已上架",
+      "tds": [
+        {
+          "i": 0,
+          "t": "",
+          "x": 660,
+          "y": 773,
+          "w": 116,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 1,
+          "t": "底抽款（单柜/开孔20*37送盖板）",
+          "x": 776,
+          "y": 773,
+          "w": 116,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 2,
+          "t": "￥",
+          "x": 927,
+          "y": 773,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": true
+        },
+        {
+          "i": 3,
+          "t": "",
+          "x": 1112,
+          "y": 773,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": true
+        },
+        {
+          "i": 4,
+          "t": "-",
+          "x": 1297,
+          "y": 773,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 5,
+          "t": "",
+          "x": 1482,
+          "y": 773,
+          "w": 185,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 6,
+          "t": "",
+          "x": 1609,
+          "y": 773,
+          "w": 69,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        },
+        {
+          "i": 7,
+          "t": "已上架",
+          "x": 1466,
+          "y": 773,
+          "w": 108,
+          "hasImg": false,
+          "hasFile": false,
+          "hasSvg": false
+        }
+      ]
+    }
+  ],
+  "head": [
+    {
+      "i": 0,
+      "t": "尺寸",
+      "x": 660
+    },
+    {
+      "i": 1,
+      "t": "款式",
+      "x": 776
+    },
+    {
+      "i": 2,
+      "t": "* 价格",
+      "x": 927
+    },
+    {
+      "i": 3,
+      "t": "* 现货库存",
+      "x": 1112
+    },
+    {
+      "i": 4,
+      "t": "SKUID",
+      "x": 1297
+    },
+    {
+      "i": 5,
+      "t": "商家编码",
+      "x": 1482
+    },
+    {
+      "i": 6,
+      "t": "预览图",
+      "x": 1609
+    },
+    {
+      "i": 7,
+      "t": "SKU状态",
+      "x": 1466
+    }
+  ],
+  "files": [
+    {
+      "i": 0,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 1,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 2,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 3,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 4,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 5,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 6,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 7,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 8,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 9,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 10,
+      "y": 0,
+      "accept": ".mp4",
+      "visible": false
+    },
+    {
+      "i": 11,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 12,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 13,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 14,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 15,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 16,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 17,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 18,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 19,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 20,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 21,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 22,
+      "y": 0,
+      "accept": "image/*",
+      "visible": false
+    },
+    {
+      "i": 23,
+      "y": 0,
+      "accept": "",
+      "visible": false
+    }
+  ],
+  "misc": {
+    "weightPh": "(空)",
+    "installOpts": [
+      "线下提供免费上门安装",
+      "不提供上门安装"
+    ],
+    "weightArea": "*商品重量\n千克（kg）\n克（g）\n*安装模式\n为提升商品转化及消费者购物体验，建议为用户提供上门安装服务\n选择平台合作服务商\n线下提供免费上门安装\n不提供上门安装\n全链路展示专属安装标识，预计支付转化率+13%，履约问题商家免罚\n售后服务\n订单完成15天内售后保障\n*售后政策\n7天无理由退货\n消费者在签收商品后的一定周期内可发起无理由退货申请，请按商品实际情况选择退货标准。点击了解\n*售后服务承"
+  }
+}

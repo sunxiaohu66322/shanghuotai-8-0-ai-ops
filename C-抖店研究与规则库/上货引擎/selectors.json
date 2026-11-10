@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "purpose": "抖店后台定位规则库：只放按文本/占位符/结构的定位，禁止写死混淆 class",
+    "verified_at": "2026-10-29",
+    "shop": "LZL乐群云家具专卖店",
+    "notes": [
+      "列表页每行都有同名按钮，必须用 nth 指定行",
+      "点编辑会开新标签页，优先直接拼 URL /ffa/g/create?product_id=&cid=&entrance=edit",
+      "菜单需先点一次「展开导航」"
+    ]
+  },
+  "urls": {
+    "home": "https://fxg.jinritemai.com/ffa/mshop/homepage/index",
+    "goods_list": "https://fxg.jinritemai.com/ffa/g/list",
+    "goods_create": "https://fxg.jinritemai.com/ffa/g/create",
+    "goods_create_with_cid": "https://fxg.jinritemai.com/ffa/g/create?cid={cid}&entrance=create",
+    "goods_edit": "https://fxg.jinritemai.com/ffa/g/create?product_id={product_id}&cid={cid}&entrance=edit",
+    "stock": "https://fxg.jinritemai.com/ffa/morder/stock-manage/list",
+    "experience_score": "https://fxg.jinritemai.com/ffa/eco/experience-score?source=fxg-menu",
+    "regulation": "https://fxg.jinritemai.com/ffa/govern-guarantee/regulation",
+    "appeal": "https://fxg.jinritemai.com/ffa/govern-guarantee/appeal",
+    "diagnose": "https://fxg.jinritemai.com/ffa/g/diagnose",
+    "marketing_home": "https://fxg.jinritemai.com/ffa/marketing/home",
+    "coupon": "https://fxg.jinritemai.com/ffa/marketing/coupon/home",
+    "activity_square": "https://fxg.jinritemai.com/ffa/merchant/campaign-square",
+    "order_list": "https://fxg.jinritemai.com/ffa/morder/order/list",
+    "aftersale": "https://fxg.jinritemai.com/ffa/merchant-aftersale-workbench/aftersale/list"
+  },
+  "nav": {
+    "expand_button": "text=\"展开导航\"",
+    "link_selector": "a[href^=\"/ffa\"]"
+  },
+  "goods_list": {
+    "new_button": "text=\"新建商品\"",
+    "more_button": "text=\"更多操作\"",
+    "more_menu_excel_import": "text=\"Excel导入\"",
+    "batch_offline": "text=\"批量下架\"",
+    "batch_modify": "text=\"批量修改\"",
+    "export_products": "text=\"导出查询商品\"",
+    "query": "text=\"查询\"",
+    "reset": "text=\"重置\"",
+    "search_input": "input[placeholder*=\"请输入商品名称\"]",
+    "row_action_edit": "text=\"编辑\"",
+    "row_edit_takes_nth": true,
+    "tabs": ["全部", "售卖中", "已售罄", "已下架", "已封禁", "审核中", "审核驳回", "审核通过", "编辑记录", "草稿箱", "回收站"],
+    "columns": ["商品信息", "价格", "总库存", "总销量", "质量分", "上架时间降序", "操作"]
+  },
+  "excel_import_modal": {
+    "title": "批量优化（Excel 导入）",
+    "download_template": "text=\"下载模版\"",
+    "upload_hint": "点击或拖动文件到虚线框内上传",
+    "file_input": "input[type=file]",
+    "confirm": "text=\"确定\"",
+    "cancel": "text=\"取消\"",
+    "scope": "只改已有商品，不新建"
+  },
+  "goods_form": {
+    "entry_ai_create": "无 cid 时只显示 AI 创建（上传图片/Excel/截图 → 下一步，生成商品）",
+    "entry_classic": "text=\"返回旧版\"",
+    "sections": ["基础信息", "图文信息", "价格库存", "服务与履约", "其他信息"],
+    "title": {
+      "locator": "input[placeholder*=\"8-30个汉字\"]",
+      "maxlength": 60,
+      "hint": "汉字按 2 字符"
+    },
+    "short_title": "input[placeholder*=\"建议填写简明准确的标题\"]",
+    "main_image_upload": "text=\"上传主图\"",
+    "white_bg_image": "text=\"上传白底图\"",
+    "detail_image_upload": "text=\"上传图片\"",
+    "detail_from_main": "text=\"从主图填入\"",
+    "ship_mode": ["现货", "预售", "现货预售混合"],
+    "ship_time": ["当日发", "次日发", "48小时", "大于48小时发货"],
+    "add_spec_type": "text=\"添加规格类型（1/3）\"",
+    "sku_price_input": "input[placeholder=\"价格\"]",
+    "sku_stock_input": "input[placeholder=\"现货库存\"]",
+    "sku_merchant_code": "input[placeholder=\"商家编码\"]",
+    "sku_barcode": "input[placeholder=\"条形码\"]",
+    "publish_button": "text=\"发布商品\"",
+    "save_draft_button": "text=\"保存草稿\"",
+    "check_button": "text=\"填写检查\"",
+    "required_fields": ["商品类目", "商品标题", "类目属性·品牌", "类目属性·材质", "主图", "商品详情", "发货模式", "现货发货时间", "价格与库存", "运费模板", "商品重量", "售后政策", "商品状态"],
+    "price_unit": "元（两位小数）",
+    "price_evidence": "表单值 1382.4 ↔ 列表显示 ￥1382.40"
+  },
+  "experience_score": {
+    "update_note": "每日更新（实测 2026-10-29 11:28:26 今日已更新）",
+    "window": "近 30 天",
+    "scoring_mode": "任务制：发布1个商品并保持售卖中 + 近30天有效订单达门槛；入驻需>90天",
+    "effective_order_formula": "近30天有效订单 = 近30天支付订单 − 不参与体验分考核订单"
+  },
+  "regulation": {
+    "columns": ["违规对象", "违规单编号", "处置状态", "违规原因", "处置方式", "违规时间", "操作"],
+    "buckets": ["待处理", "今日新增", "历史待处理", "全部", "处置生效中", "可申诉"],
+    "observed_reasons": ["效果虚假", "优惠价格虚假"]
+  }
+}

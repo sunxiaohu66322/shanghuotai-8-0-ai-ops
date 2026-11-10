@@ -1,0 +1,66 @@
+{
+ "pid": 1454,
+ "title": "胡桃木复古青花瓷沙发边几30*50cm",
+ "category_hint": "",
+ "rows16": [
+  [
+   "10000322230364",
+   "胡桃木复古青花瓷沙发边几30*50cm",
+   "",
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/69ded4a0000473d00ceaa8ab0ad61515000000a000004f50",
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/69ded4a1000a1f865732d2bb156aeaf2000000a000004f50",
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/69ded4a70009e836fbd5526609884def000000a000004f50",
+   "fhp04",
+   "",
+   "",
+   "",
+   "fhp04",
+   111,
+   399.0,
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/69ded4a0000473d00ceaa8ab0ad61515000000a000004f50",
+   "https://wst.wxapp.tc.qq.com/161/20304/snscosdownload/SZ/reserved/69ded4ab000c59c2fd7963d1156aea1c000000a000004f50",
+   ""
+  ]
+ ],
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1454\\main\\image_3da0d718bbce.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1454\\main\\image_635d76352013.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1454\\main\\image_af26132d18c8.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1454\\detail\\image_50e4f63db3f1.jpg"
+ ],
+ "skus": [
+  {
+   "sku_id": "4531771862",
+   "name": "fhp04",
+   "spec": [],
+   "code": "fhp04",
+   "price": 399.0,
+   "stock": 111,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1454\\main\\image_3da0d718bbce.jpg"
+  }
+ ],
+ "warns": [
+  "分类空缺（源数据无类目路径，需人工在 4.2 里映射后再导）",
+  "商品属性为空（模板说明第 3 条：非强校验，为空也可导入）"
+ ],
+ "meta": {
+  "product_id": 1454,
+  "source_product_id": "10000322230364",
+  "rows": 1,
+  "skus": 1,
+  "carousel_in_table": 3,
+  "carousel_total": 3,
+  "carousel_dropped": 0,
+  "detail_in_table": 1,
+  "detail_total": 1,
+  "sku_img_matched": 1,
+  "videos_in_library": 0
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

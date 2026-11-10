@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "name": "抖店红线规则库",
+    "version": "0.1",
+    "built_at": "2026-10-29",
+    "shop": "LZL乐群云家具专卖店",
+    "principle": "只收录能在页面上看到证据的条目；二手文章一律标 reprint，不进 official",
+    "source_types": {
+      "official_page": "抖店后台或官方规则页原文（已核）",
+      "official_observed": "在官方页面上实测到的状态/数值",
+      "reprint": "第三方转载/二手，未核",
+      "shop_record": "本店真实违规记录（最硬的一手证据）"
+    },
+    "update_rule": "每条存 effective_date / expire_date / superseded_by / content_sha1，重抓时 sha1 未变则跳过"
+  },
+  "categories": [
+    "商品发布规范",
+    "虚假宣传",
+    "价格与促销",
+    "体验分与考核",
+    "售后服务",
+    "违规处置与申诉"
+  ],
+  "rules": [
+    {
+      "id": "R-VIOL-001",
+      "category": "虚假宣传",
+      "title": "效果虚假",
+      "summary": "商品描述/图片宣称的效果与实际不符，实测处置=商品下架。",
+      "penalty": "商品下架",
+      "evidence": {
+        "source_type": "shop_record",
+        "source": "违规管理页实测记录",
+        "case": "美瑞德洗澡椅老人洗澡孕妇浴室凳可折叠老年人卫生间淋浴防滑座椅（商品ID 3780829145643221160）",
+        "violation_no": "7696200769975992603",
+        "time": "2026-10-14 01:19:15"
+      },
+      "effect_on_listing": "标题/主图/详情不得出现无法证实的功效、性能、认证等表述",
+      "effective_date": null,
+      "expire_date": null,
+      "superseded_by": null,
+      "verified": true,
+      "content_sha1": null
+    },
+    {
+      "id": "R-VIOL-002",
+      "category": "价格与促销",
+      "title": "优惠价格虚假",
+      "summary": "划线价/优惠前后价不真实（虚假折扣），实测处置=商品下架。",
+      "penalty": "商品下架",
+      "evidence": {
+        "source_type": "shop_record",
+        "source": "违规管理页实测记录",
+        "case": "酒店大堂实木圈椅沙发椅整装软包阳台桌椅卧室椅子小茶几（商品ID 3834969665298366793）",
+        "violation_no": "7670711360686424361",
+        "time": "2026-08-06 08:42:08"
+      },
+      "effect_on_listing": "参考价/划线价必须有真实成交依据；上货时不得自造高价再打折",
+      "effective_date": null,
+      "expire_date": null,
+      "superseded_by": null,
+      "verified": true,
+      "content_sha1": null
+    },
+    {
+      "id": "R-TITLE-001",
+      "category": "商品发布规范",
+      "title": "标题规范（页面提示原文）",
+      "summary": "商品标题：建议 8-30 个汉字，需含品牌、品名、属性（材质）、规格（型号）；系统最大 60 字符（1 汉字 = 2 字符）；请勿输入特殊字符（标点）及商品无关信息。",
+      "penalty": "未知（页面提示层）",
+      "evidence": {
+        "source_type": "official_page",
+        "source": "商品编辑页「填写助手」提示原文",
+        "case": "https://fxg.jinritemai.com/ffa/g/create?product_id=3783077346274312845&cid=1000004588&entrance=edit",
+        "time": "2026-10-29 13:47"
+      },
+      "effect_on_listing": "标题改写脚本的硬约束：≤60 字符（汉字×2）、不用标点、含品牌/品名/材质/型号",
+      "effective_date": null,
+      "expire_date": null,
+      "superseded_by": null,
+      "verified": true,
+      "content_sha1": null
+    },
+    {
+      "id": "R-SCORE-001",
+      "category": "体验分与考核",
+      "title": "体验分出分任务制（实测推翻「满 30 单出分」）",
+      "summary": "体验分按近 30 天商品质量/物流履约/服务同行对比评估，满分 100。出分需同时满足：入驻>90 天 + 发布 1 个商品并保持售卖中 + 近 30 天有效订单达门槛。更新时间每日（实测 11:28:26 今日已更新）。有效订单 = 近30天支付订单 − 不参与考核订单。",
+      "penalty": "未出分则不解锁：准入精选联盟 / 不限广告投放 / 允许报名活动",
+      "evidence": {
+        "source_type": "official_observed",
+        "source": "商家体验分页实测文本",
+        "case": "本店当前总分=暂无（未出分）；提示「您当前入驻时间已大于90天，需同时完成该任务才可获得分数」",
+        "time": "2026-10-29 13:53"
+      },
+      "effect_on_listing": "铺货节奏：必须先把「上架售卖中的商品」凑起来并跑出有效订单，才会出分；出分前不能报活动",
+      "effective_date": null,
+      "expire_date": null,
+      "superseded_by": null,
+      "conflicts_with": "二手来源称「有效订单 ≥30 单出分、权重 商品40/物流25/服务35、初始 71–78 分」—— 实测为任务制，未见 30 单门槛与百分比权重",
+      "verified": true,
+      "content_sha1": null
+    },
+    {
+      "id": "R-AFTER-001",
+      "category": "售后服务",
+      "title": "售后政策必填 + 更长期限",
+      "summary": "商品发布必须选售后政策（默认 7 天无理由退货）；可选「提供更长的售后有效期」，实测值为 120 天。",
+      "penalty": "未填不能发布",
+      "evidence": {
+        "source_type": "official_page",
+        "source": "商品编辑页「服务与履约」区块",
+        "case": "选 7天无理由退货 + 120 天有效期",
+        "time": "2026-10-29 13:47"
+      },
+      "effect_on_listing": "必填项之一，Excel 16 列模板里没有 → 必须由脚本按店铺默认补齐",
+      "effective_date": null,
+      "expire_date": null,
+      "superseded_by": null,
+      "verified": true,
+      "content_sha1": null
+    },
+    {
+      "id": "R-SERVICE-001",
+      "category": "体验分与考核",
+      "title": "客服消极敷衍回复记为无效回复",
+      "summary": "平台公告：客服消极敷衍回复会被记为无效回复，影响飞鸽平均响应时长及店铺体验分。",
+      "penalty": "计入体验分服务维度",
+      "evidence": {
+        "source_type": "official_page",
+        "source": "体验分页「规则中心」公告条目 2026-10-12",
+        "case": "9月29日起生效",
+        "time": "2026-10-29 13:53"
+      },
+      "effect_on_listing": "与客服自动回复系统直接相关：话术必须轮换、延迟随机，不能机械重复",
+      "effective_date": "2026-09-29",
+      "expire_date": null,
+      "superseded_by": null,
+      "verified": true,
+      "content_sha1": null
+    }
+  ],
+  "pending": [
+    "公开规则正文（商品发布规范/禁售目录/虚假宣传细则/价格规则/售后细则/保证金扣罚）由子任务抓取中，落 rules/index.json 后合并进本库",
+    "类目属性必填项按 cid 的完整映射表（当前只有家具类 cid=1000004588 实测）",
+    "违规「处置方式」全量枚举（当前只见 商品下架）",
+    "申诉时限与入口（/ffa/govern-guarantee/appeal 未逐项采集）"
+  ]
+}

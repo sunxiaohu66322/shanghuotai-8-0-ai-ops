@@ -1,0 +1,210 @@
+{
+  "cell": {
+    "ok": true,
+    "nTd": 8,
+    "tds": [
+      {
+        "i": 5,
+        "html": "<div><div><div class=\"\"><div style=\"margin-bottom: 0px;\"><div class=\"\" style=\"width: 110px; margin-bottom: 0px; display: none;\"><div><span><span>商家编码</span></span></div></div><div class=\"\" style=\"flex: 1 1 0%;\"><span class=\"ecom-g-sp-input\"><input autocomplete=\"off\" placeholder=\"请输入erp编码\" type=\"text\" class=\"ecom-g-input\" value=\"\"></span></div></div></div></div></div>",
+        "txt": "",
+        "nInp": 1,
+        "nFile": 0,
+        "nImg": 0,
+        "nBtn": 0
+      },
+      {
+        "i": 6,
+        "html": "",
+        "txt": "",
+        "nInp": 0,
+        "nFile": 0,
+        "nImg": 0,
+        "nBtn": 0
+      },
+      {
+        "i": 7,
+        "html": "<div><div class=\"styles_skuStatusRow__jRbdW\"><div style=\"margin-right: 4px;\">已上架</div><div><div><div class=\"\"><div style=\"margin-bottom: 0px;\"><div class=\"\" style=\"width: 110px; margin-bottom: 0px; display: none;\"><div><span><span>SKU状态</span></span></div></div><div class=\"\" style=\"flex: 1 1 0%;\"><button placeholder=\"\" type=\"button\" role=\"switch\" aria-checked=\"true\" class=\"ecom-g-switch ecom-g-swi",
+        "txt": "已上架",
+        "nInp": 0,
+        "nFile": 0,
+        "nImg": 0,
+        "nBtn": 1
+      }
+    ]
+  },
+  "cands": [
+    {
+      "i": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "DIV. < DIV.styles-module_imgWrapper < DIV.style_imgErrorWrapper__u < DIV.style_autoCutWrapper__os < DIV.styles_diagnosisItem__pc < DIV.style_helperWrapper__hGy"
+    },
+    {
+      "i": 1,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "DIV. < DIV.styles-module_imgWrapper < DIV.style_imgErrorWrapper__u < DIV.style_autoCutWrapper__os < DIV.styles_diagnosisItem__pc < DIV.style_helperWrapper__hGy"
+    },
+    {
+      "i": 2,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "DIV. < DIV.styles-module_imgWrapper < DIV.style_imgErrorWrapper__u < DIV.style_autoCutWrapper__os < DIV.styles_diagnosisItem__pc < DIV.style_helperWrapper__hGy"
+    },
+    {
+      "i": 3,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "DIV. < DIV.styles-module_imgWrapper < DIV.style_imgErrorWrapper__u < DIV.style_autoCutWrapper__os < DIV.styles_diagnosisItem__pc < DIV.style_helperWrapper__hGy"
+    },
+    {
+      "i": 4,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "DIV. < DIV.styles-module_imgWrapper < DIV.style_imgErrorWrapper__u < DIV.style_autoCutWrapper__os < DIV.styles_diagnosisItem__pc < DIV.style_helperWrapper__hGy"
+    },
+    {
+      "i": 5,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 6,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 7,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 8,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 9,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 10,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "SPAN.ecom-g-upload < DIV.ecom-g-upload ecom-g-upl < SPAN. < DIV. < LABEL.styles-module_button__v_ < DIV.styles-module_buttonGrou"
+    },
+    {
+      "i": 11,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 12,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL. < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi < DIV."
+    },
+    {
+      "i": 13,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL. < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi < DIV."
+    },
+    {
+      "i": 14,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 15,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_mainLabel_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 16,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < LABEL.styles-module_mainLabel_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container"
+    },
+    {
+      "i": 17,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_mainLabel_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 18,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < LABEL.styles-module_mainLabel_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container"
+    },
+    {
+      "i": 19,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_mainLabel_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 20,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < LABEL.styles-module_mainLabel_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container"
+    },
+    {
+      "i": 21,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_mainLabel_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container < DIV.ecom-g-spin-nested-loadi"
+    },
+    {
+      "i": 22,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "LABEL.styles-module_button__v_ < LABEL.styles-module_mainLabel_ < DIV.styles-module_buttonGrou < UL. < DIV.styles-module_batchImage < DIV.ecom-g-spin-container"
+    },
+    {
+      "i": 23,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "path": "BODY. < HTML."
+    }
+  ],
+  "clickRes": {
+    "ok": true,
+    "x": 1486,
+    "y": 491
+  }
+}

@@ -1,0 +1,74 @@
+{
+ "pid": 1411,
+ "title": "黑胡桃清言茶桌矮款家用黑胡桃实木阳台茶桌茶台新中式茶几禅意",
+ "category_hint": "",
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\main\\image_1b35df4e2cd8.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\main\\image_89aa23465b4e.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\main\\image_e53d0ee8dac9.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\detail\\image_4aff9a2dc2b9.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\detail\\image_a7f16747630c.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\detail\\image_a88dd89964b1.jpg"
+ ],
+ "skus": [
+  {
+   "name": "100cm长/63cm宽/63cm高",
+   "spec": [
+    "100cm长/63cm宽/63cm高"
+   ],
+   "price": 1899.0,
+   "stock": 5,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\main\\image_1b35df4e2cd8.jpg"
+  },
+  {
+   "name": "120cm长/63cm宽/63cm高",
+   "spec": [
+    "120cm长/63cm宽/63cm高"
+   ],
+   "price": 1999.0,
+   "stock": 2,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\main\\image_1b35df4e2cd8.jpg"
+  },
+  {
+   "name": "140cm长/63cm宽/63cm高",
+   "spec": [
+    "140cm长/63cm宽/63cm高"
+   ],
+   "price": 2699.0,
+   "stock": 5,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\main\\image_1b35df4e2cd8.jpg"
+  },
+  {
+   "name": "160cm长/63cm宽/63cm高",
+   "spec": [
+    "160cm长/63cm宽/63cm高"
+   ],
+   "price": 3299.0,
+   "stock": 0,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1411\\main\\image_1b35df4e2cd8.jpg"
+  }
+ ],
+ "price": 1899.0,
+ "stock": 5,
+ "cat": [
+  "家具",
+  "几类",
+  "茶几/边几"
+ ],
+ "brand": "LZL",
+ "wood": null,
+ "install": "不提供上门安装",
+ "meta": {
+  "product_id": 1411,
+  "skus": 4,
+  "main": 3,
+  "detail": 3
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

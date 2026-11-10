@@ -1,0 +1,121 @@
+[
+  {
+    "item": "1531",
+    "stage": "tab",
+    "field": "属性信息",
+    "msg": "找不到页签「属性信息」",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "brand",
+    "field": "品牌",
+    "msg": "未能选中品牌",
+    "category": "brand"
+  },
+  {
+    "item": "1531",
+    "stage": "tab",
+    "field": "价格库存",
+    "msg": "找不到页签「价格库存」",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "price",
+    "field": "价格",
+    "msg": "没找到价格输入框",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "price",
+    "field": "现货库存",
+    "msg": "没找到库存输入框",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "price",
+    "field": "商品毛重",
+    "msg": "没找到重量输入框",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "品牌",
+    "msg": "该项为必填，请输入",
+    "category": "brand"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "支撑件木种",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "价格",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "商品重量",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "安装模式",
+    "msg": "请选择安装模式或模版",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择，最多选5项 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "￥ 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "为提升商品转化及消费者购物体验，建议为用户提供上门安装服务 选择平台合作服务商 线下提供免费上门安装 不提供上门安装 请选择安装模式或模版 全链路展示专属安装标识，预计支付转化率+13%，履约问题商家免罚",
+    "category": "other"
+  }
+]

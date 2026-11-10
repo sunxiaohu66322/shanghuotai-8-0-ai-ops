@@ -1,0 +1,197 @@
+{
+  "b": {
+    "ok": true,
+    "x": 659,
+    "y": 485
+  },
+  "all": [
+    {
+      "tag": "DIV",
+      "cls": "load_app_container",
+      "t": "返回商家后台\n商品发布\nLZL乐群云家具专卖店\n专卖",
+      "x": 0,
+      "y": 0,
+      "w": 1683,
+      "h": 0,
+      "kids": 1,
+      "inDropdown": false
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "t": "返回商家后台\n商品发布\nLZL乐群云家具专卖店\n专卖",
+      "x": 0,
+      "y": 0,
+      "w": 1683,
+      "h": 0,
+      "kids": 1,
+      "inDropdown": false
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "t": "返回商家后台\n商品发布\nLZL乐群云家具专卖店\n专卖",
+      "x": 0,
+      "y": 0,
+      "w": 1683,
+      "h": 0,
+      "kids": 2,
+      "inDropdown": false
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "t": "返回商家后台\n商品发布\nLZL乐群云家具专卖店\n专卖",
+      "x": 0,
+      "y": 0,
+      "w": 1683,
+      "h": 0,
+      "kids": 2,
+      "inDropdown": false
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "t": "返回商家后台\n商品发布\nLZL乐群云家具专卖店\n专卖",
+      "x": 0,
+      "y": 0,
+      "w": 1683,
+      "h": 0,
+      "kids": 1,
+      "inDropdown": false
+    },
+    {
+      "tag": "DIV",
+      "cls": "nav-menu_wrapper__3bJBv",
+      "t": "返回商家后台\n商品发布\nLZL乐群云家具专卖店\n专卖",
+      "x": 0,
+      "y": 0,
+      "w": 1683,
+      "h": 64,
+      "kids": 2,
+      "inDropdown": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "nav-menu_rightBar__2FmVk",
+      "t": "LZL乐群云家具专卖店\n专卖店\n正常营业",
+      "x": 1499,
+      "y": 8,
+      "w": 168,
+      "h": 48,
+      "kids": 2,
+      "inDropdown": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "nav-menu_extra__2KCgj",
+      "t": "LZL乐群云家具专卖店\n专卖店\n正常营业",
+      "x": 1499,
+      "y": 8,
+      "w": 168,
+      "h": 48,
+      "kids": 1,
+      "inDropdown": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "index_wrapper__11Lcd",
+      "t": "LZL乐群云家具专卖店\n专卖店\n正常营业",
+      "x": 1499,
+      "y": 8,
+      "w": 168,
+      "h": 48,
+      "kids": 1,
+      "inDropdown": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "index_headerShopName__2wP1V",
+      "t": "LZL乐群云家具专卖店\n专卖店\n正常营业",
+      "x": 1499,
+      "y": 8,
+      "w": 168,
+      "h": 48,
+      "kids": 3,
+      "inDropdown": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "index_shopDetails__3w143",
+      "t": "LZL乐群云家具专卖店\n专卖店\n正常营业",
+      "x": 1539,
+      "y": 17,
+      "w": 128,
+      "h": 30,
+      "kids": 2,
+      "inDropdown": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "index_shopTitle__2ZwwM",
+      "t": "LZL乐群云家具专卖店",
+      "x": 1539,
+      "y": 17,
+      "w": 128,
+      "h": 16,
+      "kids": 2,
+      "inDropdown": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "index_userName__16Isl",
+      "t": "LZL乐群云家具专卖店",
+      "x": 1539,
+      "y": 17,
+      "w": 115,
+      "h": 16,
+      "kids": 0,
+      "inDropdown": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "t": "LZL乐群云家具专卖店",
+      "x": 1379,
+      "y": 884,
+      "w": 304,
+      "h": 50,
+      "kids": 1,
+      "inDropdown": false
+    },
+    {
+      "tag": "SECTION",
+      "cls": "styles_section__w9kgY styles_shopSection",
+      "t": "LZL乐群云家具专卖店",
+      "x": 1385,
+      "y": 884,
+      "w": 292,
+      "h": 50,
+      "kids": 1,
+      "inDropdown": false
+    },
+    {
+      "tag": "DIV",
+      "cls": "styles_shopInfo__VnPdP",
+      "t": "LZL乐群云家具专卖店",
+      "x": 1386,
+      "y": 885,
+      "w": 290,
+      "h": 48,
+      "kids": 2,
+      "inDropdown": false
+    },
+    {
+      "tag": "DIV",
+      "cls": "styles_shopName__KZCYl",
+      "t": "LZL乐群云家具专卖店",
+      "x": 1438,
+      "y": 900,
+      "w": 230,
+      "h": 18,
+      "kids": 0,
+      "inDropdown": false
+    }
+  ],
+  "layers": []
+}

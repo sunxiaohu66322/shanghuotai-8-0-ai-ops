@@ -1,0 +1,11 @@
+ops.db bytes(空表) = 147456
+ops_task 写入 v3.db(111MB)            625.3 ms 总 / 2.084 ms 每条
+ops_task 写入 ops.db(新库)              496.5 ms 总 / 1.655 ms 每条
+v3_task_log 写入 v3.db                432.4 ms 总 / 1.441 ms 每条
+跨库 ATTACH 读商品                         2.7 ms 总 / 0.009 ms 每次
+同库读商品(对照)                             3.2 ms 总 / 0.011 ms 每次
+v3.db bytes = 111321088
+ops.db bytes(300 任务后) = 208896
+v3.db 单次 quick_check(热) 与 ops.db 对比：
+   v3.db    0.35s -> ok
+   ops.db   0.00s -> ok

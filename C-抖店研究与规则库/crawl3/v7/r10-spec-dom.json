@@ -1,0 +1,326 @@
+{
+  "found": true,
+  "anchorName": "添加规格类型",
+  "block": {
+    "x": 585,
+    "y": 329,
+    "w": 952,
+    "h": 227
+  },
+  "selects": [
+    {
+      "x": 602,
+      "y": 387,
+      "w": 168,
+      "h": 32,
+      "cls": "ecom-g-select ecom-g-select-single ecom-g-select-show-arrow",
+      "text": "材质"
+    },
+    {
+      "x": 602,
+      "y": 387,
+      "w": 168,
+      "h": 32,
+      "cls": "ecom-g-select-selector",
+      "text": "材质"
+    },
+    {
+      "x": 614,
+      "y": 388,
+      "w": 130,
+      "h": 30,
+      "cls": "ecom-g-select-selection-search",
+      "text": ""
+    },
+    {
+      "x": 614,
+      "y": 388,
+      "w": 130,
+      "h": 30,
+      "cls": "ecom-g-select-selection-search-input",
+      "text": ""
+    },
+    {
+      "x": 614,
+      "y": 388,
+      "w": 144,
+      "h": 30,
+      "cls": "ecom-g-select-selection-item",
+      "text": "材质"
+    }
+  ],
+  "inputs": [
+    {
+      "x": 614,
+      "y": 388,
+      "w": 130,
+      "h": 30,
+      "tag": "INPUT",
+      "ph": "",
+      "val": "",
+      "type": "search",
+      "ro": true,
+      "cls": "ecom-g-select-selection-search-input"
+    },
+    {
+      "x": 602,
+      "y": 435,
+      "w": 214,
+      "h": 32,
+      "tag": "INPUT",
+      "ph": "请输入材质",
+      "val": "实木橡胶木",
+      "type": "text",
+      "ro": false,
+      "cls": "ecom-g-input"
+    },
+    {
+      "x": 911,
+      "y": 435,
+      "w": 233,
+      "h": 32,
+      "tag": "INPUT",
+      "ph": "请输入材质",
+      "val": "",
+      "type": "text",
+      "ro": false,
+      "cls": "ecom-g-input"
+    }
+  ],
+  "switches": [
+    {
+      "x": 782,
+      "y": 394,
+      "w": 30,
+      "h": 18,
+      "tag": "BUTTON",
+      "role": "switch",
+      "aria": "true",
+      "cls": "ecom-g-switch ecom-g-switch-small ecom-g-switch-checked",
+      "text": ""
+    },
+    {
+      "x": 796,
+      "y": 396,
+      "w": 14,
+      "h": 14,
+      "tag": "DIV",
+      "role": "",
+      "aria": "",
+      "cls": "ecom-g-switch-handle",
+      "text": ""
+    }
+  ],
+  "btns": [
+    {
+      "x": 1373,
+      "y": 345,
+      "w": 74,
+      "h": 28,
+      "tag": "BUTTON",
+      "text": "存储模板",
+      "cls": "ecom-g-btn ecom-g-btn-sm"
+    },
+    {
+      "x": 1386,
+      "y": 352,
+      "w": 48,
+      "h": 14,
+      "tag": "SPAN",
+      "text": "存储模板",
+      "cls": ""
+    },
+    {
+      "x": 1455,
+      "y": 345,
+      "w": 66,
+      "h": 28,
+      "tag": "BUTTON",
+      "text": "预览",
+      "cls": "ecom-g-btn ecom-g-btn-default ecom-g-btn"
+    },
+    {
+      "x": 1484,
+      "y": 352,
+      "w": 24,
+      "h": 14,
+      "tag": "SPAN",
+      "text": "预览",
+      "cls": ""
+    },
+    {
+      "x": 601,
+      "y": 349,
+      "w": 56,
+      "h": 20,
+      "tag": "SPAN",
+      "text": "商品规格",
+      "cls": ""
+    },
+    {
+      "x": 601,
+      "y": 349,
+      "w": 56,
+      "h": 20,
+      "tag": "SPAN",
+      "text": "商品规格",
+      "cls": "style_publishHelperTipsContainer__MSl6g "
+    },
+    {
+      "x": 601,
+      "y": 349,
+      "w": 56,
+      "h": 19,
+      "tag": "SPAN",
+      "text": "商品规格",
+      "cls": ""
+    },
+    {
+      "x": 601,
+      "y": 349,
+      "w": 56,
+      "h": 19,
+      "tag": "SPAN",
+      "text": "商品规格",
+      "cls": ""
+    },
+    {
+      "x": 601,
+      "y": 349,
+      "w": 56,
+      "h": 19,
+      "tag": "SPAN",
+      "text": "商品规格",
+      "cls": "style_specFormItemLabel__MHFaO"
+    },
+    {
+      "x": 614,
+      "y": 388,
+      "w": 144,
+      "h": 30,
+      "tag": "SPAN",
+      "text": "材质",
+      "cls": "ecom-g-select-selection-item"
+    },
+    {
+      "x": 746,
+      "y": 395,
+      "w": 16,
+      "h": 16,
+      "tag": "SPAN",
+      "text": "down",
+      "cls": "anticon anticon-down ecom-g-select-suffi"
+    },
+    {
+      "x": 818,
+      "y": 393,
+      "w": 60,
+      "h": 19,
+      "tag": "SPAN",
+      "text": "添加规格图",
+      "cls": "style_specPicLabel__S_HpM"
+    },
+    {
+      "x": 881,
+      "y": 393,
+      "w": 14,
+      "h": 19,
+      "tag": "SPAN",
+      "text": "",
+      "cls": "ecom-g-sp-icon sp-icon-parcel style-modu"
+    },
+    {
+      "x": 911,
+      "y": 395,
+      "w": 84,
+      "h": 16,
+      "tag": "SPAN",
+      "text": "批量上传规格图",
+      "cls": ""
+    },
+    {
+      "x": 911,
+      "y": 395,
+      "w": 84,
+      "h": 16,
+      "tag": "SPAN",
+      "text": "批量上传规格图",
+      "cls": ""
+    },
+    {
+      "x": 1508,
+      "y": 395,
+      "w": 12,
+      "h": 16,
+      "tag": "SPAN",
+      "text": "",
+      "cls": "ecom-g-sp-icon sp-icon-parcel"
+    },
+    {
+      "x": 830,
+      "y": 443,
+      "w": 16,
+      "h": 16,
+      "tag": "SPAN",
+      "text": "",
+      "cls": "ecom-g-sp-icon sp-icon-parcel"
+    },
+    {
+      "x": 862,
+      "y": 441,
+      "w": 14,
+      "h": 20,
+      "tag": "SPAN",
+      "text": "",
+      "cls": "ecom-g-sp-icon sp-icon-parcel style_dele"
+    },
+    {
+      "x": 602,
+      "y": 479,
+      "w": 12,
+      "h": 16,
+      "tag": "SPAN",
+      "text": "",
+      "cls": "ecom-g-sp-icon sp-icon-parcel"
+    },
+    {
+      "x": 601,
+      "y": 508,
+      "w": 183,
+      "h": 32,
+      "tag": "BUTTON",
+      "text": "添加规格类型（1/3）",
+      "cls": "ecom-g-btn ecom-g-btn-dashed"
+    },
+    {
+      "x": 618,
+      "y": 516,
+      "w": 14,
+      "h": 16,
+      "tag": "SPAN",
+      "text": "",
+      "cls": "ecom-g-sp-icon sp-icon-parcel"
+    },
+    {
+      "x": 634,
+      "y": 516,
+      "w": 133,
+      "h": 16,
+      "tag": "SPAN",
+      "text": "添加规格类型（1/3）",
+      "cls": ""
+    }
+  ],
+  "rows": [],
+  "txts": [
+    "存储模板@1386,352",
+    "预览@1484,352",
+    "商品规格@601,349",
+    "材质@614,388",
+    "添加规格图@818,393",
+    "批量上传规格图@911,395",
+    "下移@1426,393",
+    "上移@1450,393",
+    "添加规格类型（1/3）@634,516"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "url": "https://fxg.jinritemai.com/center/qualification/libra/ab_test_info?_bid=growth_governance_pc&verifyFp=verify_mvt7pllg_33b68de9_dcd3_16d2_9d3d_1dcee2ce8bf9&fp=verify_mvt7pllg_33b68de9_dcd3_16d2_9d3d_1dcee2ce8bf9&msToken=s65CXuKH2Roe1KUbkdQtwj1Oi9l9tOj5ifhhmZ2qJEpgTu8lbxwTZdg_BI_CwizOUJ_G5hiRiiPCqXLf2jCKLpskaU2nzsWASNNO1T67-5aYZ7EEWbu-HSPCZPQiMRxplRND9rndTX_7BawZmxeKtOrXZJeUTNPBV0WSNIcqwrzg&a_bogus=Ov0fgq7yD2WbKplbuOj-7e%2FUQLfArTSy%2FBidbwAF7oOgyHFYvG1eGXl9cqKZsBYG-WpTZH1HKfWPbxxOZZxikFnkqmkvSBsRtUQc9w0L%2FqqZPFtsDHj8CLDzuwBN0bTql5cyN1J5lsse2xOWnqIYWdcGC5PP5mRDWHqfd%2F8br9WrdCDHI9d5eBt2LhUl",
+  "method": "POST",
+  "postData": "{\"app_scene\":\"doudian_server\",\"ab_layer_ids\":[348920,372552,396295,511474],\"app_id\":1215}",
+  "body": {
+    "data": {
+      "is_hit_test": false,
+      "group_detail_map": {
+        "186627": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "2591396",
+          "param": "{}"
+        },
+        "188831": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "2626808",
+          "param": "{}"
+        },
+        "195973": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "2588292",
+          "param": "{}"
+        },
+        "224325": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "3166454",
+          "param": "{}"
+        },
+        "225132": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "10719655",
+          "param": "{}"
+        },
+        "226303": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "10779389",
+          "param": "{}"
+        },
+        "227500": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "3216640",
+          "param": "{}"
+        },
+        "228742": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "3241807",
+          "param": "{}"
+        },
+        "231559": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "3281805",
+          "param": "{}"
+        },
+        "232970": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "3297102",
+          "param": "{}"
+        },
+        "249892": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "3480479",
+          "param": "{}"
+        },
+        "339267": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4230986",
+          "param": "{}"
+        },
+        "342817": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4259986",
+          "param": "{}"
+        },
+        "342899": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4260834",
+          "param": "{}"
+        },
+        "348920": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4311952",
+          "param": "{}"
+        },
+        "379143": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4536239",
+          "param": "{}"
+        },
+        "383631": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4563698",
+          "param": "{}"
+        },
+        "384832": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4573708",
+          "param": "{}"
+        },
+        "396295": {
+          "is_test": true,
+          "ab_group": "0",
+          "unique_key": "4763152",
+          "param": "{}"
+        },
+        "400400": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4678084",
+          "param": "{}"
+        },
+        "405910": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "4720059",
+          "param": "{}"
+        },
+        "465511": {
+          "is_test": true,
+          "ab_group": "0",
+          "unique_key": "5227420",
+          "param": "{}"
+        },
+        "511474": {
+          "is_test": true,
+          "ab_group": "0",
+          "unique_key": "5585799",
+          "param": "{}"
+        },
+        "512461": {
+          "is_test": true,
+          "ab_group": "0",
+          "unique_key": "5589756",
+          "param": "{}"
+        },
+        "514112": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "5600478",
+          "param": "{}"
+        },
+        "525658": {
+          "is_test": true,
+          "ab_group": "1",
+          "unique_key": "5686626",
+          "param": "{}"
+        }
+      }
+    },
+    "code": 0,
+    "msg": "",
+    "extra": {
+      "log_id": "202610291538329B8B17C2EB55DC47ECA6"
+    }
+  }
+}

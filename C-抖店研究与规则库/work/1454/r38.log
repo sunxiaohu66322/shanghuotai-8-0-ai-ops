@@ -1,0 +1,88 @@
+tooltip: {"cx":1365,"cy":558}
+搜索输入框: [{"e":null,"cx":652,"cy":518,"w":180},{"e":null,"cx":1354,"cy":518,"w":180},{"e":null,"cx":652,"cy":614,"w":180},{"e":null,"cx":886,"cy":614,"w":180},{"e":null,"cx":1120,"cy":614,"w":180},{"e":null,"cx":1354,"cy":614,"w":180},{"e":null,"cx":652,"cy":690,"w":180},{"e":null,"cx":886,"cy":690,"w":180},{"e":null,"cx":1120,"cy":690,"w":180},{"e":null,"cx":1354,"cy":690,"w":180},{"e":null,"cx":652,"cy":766,"w":180},{"e":null,"cx":886,"cy":766,"w":180},{"e":null,"cx":652,"cy":960,"w":180},{"e":null,"cx":1354,"cy":960,"w":180},{"e":null,"cx":652,"cy":1036,"w":180},{"e":null,"cx":886,"cy":1036,"w":180},{"e":null,"cx":1120,"cy":1036,"w":180},{"e":null,"cx":1354,"cy":1036,"w":180},{"e":null,"cx":628,"cy":1433,"w":130},{"e":null,"cx":663,"cy":2315,"w":234},{"e":null,"cx":663,"cy":2551,"w":234},{"e":null,"cx":663,"cy":2668,"w":234}]
+含「乐」的可见项: {
+ "hits": [
+  {
+   "t": "LZL乐群云家具专卖店 | 专卖店 | 正常营业",
+   "tag": "DIV",
+   "cls": "nav-menu_rightBar__2FmVk",
+   "cx": 1583,
+   "cy": 32,
+   "w": 168
+  },
+  {
+   "t": "LZL乐群云家具专卖店 | 专卖店 | 正常营业",
+   "tag": "DIV",
+   "cls": "nav-menu_extra__2KCgj",
+   "cx": 1583,
+   "cy": 32,
+   "w": 168
+  },
+  {
+   "t": "LZL乐群云家具专卖店 | 专卖店 | 正常营业",
+   "tag": "DIV",
+   "cls": "index_wrapper__11Lcd",
+   "cx": 1583,
+   "cy": 32,
+   "w": 168
+  },
+  {
+   "t": "LZL乐群云家具专卖店 | 专卖店 | 正常营业",
+   "tag": "DIV",
+   "cls": "index_headerShopName__2wP1V",
+   "cx": 1583,
+   "cy": 32,
+   "w": 168
+  },
+  {
+   "t": "LZL乐群云家具专卖店 | 专卖店 | 正常营业",
+   "tag": "DIV",
+   "cls": "index_shopDetails__3w143",
+   "cx": 1603,
+   "cy": 32,
+   "w": 128
+  },
+  {
+   "t": "LZL乐群云家具专卖店",
+   "tag": "DIV",
+   "cls": "index_shopTitle__2ZwwM",
+   "cx": 1603,
+   "cy": 25,
+   "w": 128
+  },
+  {
+   "t": "LZL乐群云家具专卖店",
+   "tag": "DIV",
+   "cls": "index_userName__16Isl",
+   "cx": 1597,
+   "cy": 25,
+   "w": 115
+  },
+  {
+   "t": "LZL乐群云家具专卖店",
+   "tag": "DIV",
+   "cls": "",
+   "cx": 1531,
+   "cy": 896,
+   "w": 304
+  },
+  {
+   "t": "LZL乐群云家具专卖店",
+   "tag": "SECTION",
+   "cls": "styles_section__w9kgY styles_shopSection__yXb",
+   "cx": 1531,
+   "cy": 896,
+   "w": 292
+  },
+  {
+   "t": "LZL乐群云家具专卖店",
+   "tag": "DIV",
+   "cls": "styles_shopName__KZCYl",
+   "cx": 1553,
+   "cy": 896,
+   "w": 230
+  }
+ ],
+ "empty": []
+}
+

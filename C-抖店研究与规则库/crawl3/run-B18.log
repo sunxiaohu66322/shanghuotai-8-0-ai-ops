@@ -1,0 +1,21 @@
+[08:31:15] batch=B18 items=1480 space=抖店批量上货 dry=false
+[08:31:15] space  | page 
+[08:31:15] 
+===== 1480 =====
+[08:31:25]    · harvest[open-empty] todo=null panel=0 inline=0 red=0 +0
+[08:31:25]    投递 18 张
+[08:31:28]    上传 18/18
+[08:31:34]    类目前: 
+[08:31:34]    ⚠ 类目没落到目标，品牌可能被拒
+[08:31:34]    [gen] 第1次 按钮不在（可能已提交）
+[08:31:54]    [wait1] 20s tabs=0 gen=disabled parsing=false
+[08:32:14]    [wait1] 40s tabs=0 gen=disabled parsing=false
+[08:32:34]    [wait1] 60s tabs=0 gen=disabled parsing=false
+[08:32:54]    [wait1] 80s tabs=0 gen=disabled parsing=false
+[08:33:14]    [wait1] 100s tabs=0 gen=disabled parsing=false
+[08:33:34]    [wait1] 120s tabs=0 gen=disabled parsing=false
+[08:33:55]    [wait1] 140s tabs=0 gen=disabled parsing=false
+[08:34:15]    [wait1] 160s tabs=0 gen=disabled parsing=false
+[08:34:35]    [wait1] 180s tabs=0 gen=disabled parsing=false
+[08:34:55]    [wait1] 200s tabs=0 gen=disabled parsing=false
+[08:34:55]    [gen] 第2次 按钮不在（可能已提交）

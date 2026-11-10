@@ -1,0 +1,9 @@
+23:10:14 "GET /api/health HTTP/1.1" 200 -
+23:10:17 "GET /api/overview HTTP/1.1" 200 -
+23:10:18 "GET /api/photo/status HTTP/1.1" 200 -
+23:10:18 "GET /api/photo/list?root=1&size=2 HTTP/1.1" 200 -
+23:10:18 "GET /api/uploads HTTP/1.1" 200 -
+23:10:18 "GET /api/editSpec HTTP/1.1" 200 -
+23:10:39 "GET /api/diagnose HTTP/1.1" 200 -
+23:11:46 "GET /api/health HTTP/1.1" 200 -
+23:11:47 "POST /api/import/create HTTP/1.1" 200 -

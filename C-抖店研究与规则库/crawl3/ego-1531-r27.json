@@ -1,0 +1,27 @@
+{
+  "url": "https://fxg.jinritemai.com/ffa/g/create",
+  "len": 216,
+  "errs": [],
+  "btns": [
+    {
+      "t": "清空",
+      "d": false
+    },
+    {
+      "t": "清空",
+      "d": false
+    },
+    {
+      "t": "图片",
+      "d": false
+    },
+    {
+      "t": "手动选择类目",
+      "d": false
+    },
+    {
+      "t": "确认信息，继续生成",
+      "d": true
+    }
+  ]
+}

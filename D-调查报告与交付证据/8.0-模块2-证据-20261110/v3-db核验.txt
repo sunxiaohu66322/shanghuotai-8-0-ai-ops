@@ -1,0 +1,6 @@
+TABLES 28
+COUNTS {"sqlite_sequence": 14, "v3_audit": 1581, "v3_category_map": 0, "v3_dl_job": 3, "v3_dl_log": 157, "v3_dl_task": 26, "v3_image": 18353, "v3_image_edit": 21, "v3_image_ocr": 18156, "v3_job": 1, "v3_keyword": 22052, "v3_keyword_waiver": 9, "v3_meta": 2, "v3_pack": 4, "v3_pack_member": 399, "v3_product": 372, "v3_publish": 1, "v3_publish_intent": 854, "v3_sku": 8450, "v3_store": 1, "v3_task_log": 1, "v3_title_policy": 1, "v3_title_variant": 0, "v3_trash": 0, "v3_upload_batch": 7, "v3_upload_status": 149, "v3_wx_img_cache": 11065, "v3_wx_title_idx": 764}
+INTEGRITY ok
+BYTES 111321088
+HEAD_SHA 81e470138e3a75fe
+

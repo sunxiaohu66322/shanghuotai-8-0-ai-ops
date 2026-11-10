@@ -1,0 +1,114 @@
+[
+  {
+    "item": "1424",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1424",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 1 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "支撑件木种",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "规格值",
+    "msg": "请输入规格值",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "价格",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "现货库存",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择，最多选5项 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "￥ 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 5 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "recheck-1",
+    "field": "规格值",
+    "msg": "规格值不能重复",
+    "category": "format"
+  },
+  {
+    "item": "1424",
+    "stage": "draft",
+    "field": "保存草稿",
+    "msg": "未收到保存成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  }
+]

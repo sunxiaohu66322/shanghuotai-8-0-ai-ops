@@ -1,0 +1,7 @@
+备份/
+dev/data/*.db
+dev/data/*.db-wal
+dev/data/*.db-shm
+__pycache__/
+*.pyc
+证据/截图/*.png

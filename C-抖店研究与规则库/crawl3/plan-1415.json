@@ -1,0 +1,113 @@
+{
+ "pid": 1415,
+ "title": "榻榻米飘窗桌实木胡桃木茶桌茶几矮桌国学实木炕桌天内发货客厅",
+ "category_hint": "",
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_3ff58bf73ccf.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_fdccb30a2567.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_693ca988dbb9.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_527e1e896fbb.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_e1affb8c1e34.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_9081e0df307a.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_dfe006c878dd.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\detail\\image_e97015302a20.jpg"
+ ],
+ "skus": [
+  {
+   "name": "【胡桃色】50*40*30下单送桌旗+坐垫",
+   "spec": [
+    "【胡桃色】50*40*30下单送桌旗+坐垫"
+   ],
+   "price": 530.0,
+   "stock": 207,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg"
+  },
+  {
+   "name": "【胡桃色】60*40*30下单送桌旗+坐垫",
+   "spec": [
+    "【胡桃色】60*40*30下单送桌旗+坐垫"
+   ],
+   "price": 608.0,
+   "stock": 209,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg"
+  },
+  {
+   "name": "【胡桃色】70*40*30下单送桌旗+坐垫",
+   "spec": [
+    "【胡桃色】70*40*30下单送桌旗+坐垫"
+   ],
+   "price": 660.0,
+   "stock": 215,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg"
+  },
+  {
+   "name": "【胡桃色】80*40*30下单送桌旗+坐垫",
+   "spec": [
+    "【胡桃色】80*40*30下单送桌旗+坐垫"
+   ],
+   "price": 728.0,
+   "stock": 215,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg"
+  },
+  {
+   "name": "【胡桃色】90*40*30下单送桌旗+坐垫",
+   "spec": [
+    "【胡桃色】90*40*30下单送桌旗+坐垫"
+   ],
+   "price": 788.0,
+   "stock": 215,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg"
+  },
+  {
+   "name": "【胡桃色】100*40*30下单送桌旗+坐垫",
+   "spec": [
+    "【胡桃色】100*40*30下单送桌旗+坐垫"
+   ],
+   "price": 848.0,
+   "stock": 215,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg"
+  },
+  {
+   "name": "【胡桃色】110*40*30下单送桌旗+坐垫",
+   "spec": [
+    "【胡桃色】110*40*30下单送桌旗+坐垫"
+   ],
+   "price": 928.0,
+   "stock": 215,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg"
+  },
+  {
+   "name": "【胡桃色】120*40*30下单送桌旗+坐垫",
+   "spec": [
+    "【胡桃色】120*40*30下单送桌旗+坐垫"
+   ],
+   "price": 988.0,
+   "stock": 215,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1415\\main\\image_35f494adca27.jpg"
+  }
+ ],
+ "price": 530.0,
+ "stock": 207,
+ "cat": [
+  "家具",
+  "几类",
+  "茶几/边几"
+ ],
+ "brand": "LZL",
+ "wood": null,
+ "install": "不提供上门安装",
+ "meta": {
+  "product_id": 1415,
+  "skus": 8,
+  "main": 8,
+  "detail": 1
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

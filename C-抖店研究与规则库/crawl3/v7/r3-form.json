@@ -1,0 +1,75 @@
+{
+  "tabs": [],
+  "shortTitle": [],
+  "ship": [],
+  "spec": [],
+  "mainImg": [
+    "按住图片可上下拖动",
+    "清空",
+    "*商品主图",
+    "编辑",
+    "删除",
+    "编辑",
+    "删除",
+    "编辑"
+  ],
+  "btns": [
+    "反馈",
+    "返回商家后台",
+    "商品发布",
+    "LZL乐群云家具专卖店",
+    "专卖店",
+    "正常营业",
+    "按住图片可上下拖动",
+    "*",
+    "商品主图",
+    "编辑",
+    "删除",
+    "商品详情",
+    "图片",
+    "商品标题",
+    "0/60",
+    "AI 推荐",
+    "换一批",
+    "确认信息，继续生成",
+    "待办"
+  ],
+  "files": [
+    {
+      "i": 0,
+      "accept": "image/*",
+      "multiple": false
+    },
+    {
+      "i": 1,
+      "accept": "image/*",
+      "multiple": false
+    },
+    {
+      "i": 2,
+      "accept": "image/*",
+      "multiple": false
+    },
+    {
+      "i": 3,
+      "accept": "image/*",
+      "multiple": false
+    },
+    {
+      "i": 4,
+      "accept": "image/*",
+      "multiple": false
+    },
+    {
+      "i": 5,
+      "accept": ".png,.jpg,.jpeg",
+      "multiple": true
+    },
+    {
+      "i": 6,
+      "accept": "",
+      "multiple": false
+    }
+  ],
+  "fileCount": 7
+}

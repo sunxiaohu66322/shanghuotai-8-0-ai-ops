@@ -1,0 +1,57 @@
+== 计划 pid=1391 | 矮茶桌茶几黑胡桃实木家用新中式宋氏美学
+   主图 3 / 详情 3 / SKU 4
+== 后台新窗口 ok: 7A174874
+== 表单就绪 3s
+== 投递 4 张: image_9197742a0f55.jpg,image_3f4a9183e9a6.jpg,image_e1ecb12c09fa.jpg,image_bff6f0a21b10.jpg
+== 上传完成 4 / 4
+== 点下一步: {"found":true,"dis":true,"txt":"下一步，生成商品","x":838,"y":873}
+   12s rec=false busy=false
+   24s rec=false busy=false
+   36s rec=false busy=false
+   48s rec=false busy=false
+   60s rec=false busy=false
+   72s rec=false busy=false
+   84s rec=false busy=false
+[!] 未进入识别完成态，继续 dump
+== 填标题: {"ok":false}
+[probe] url=https://fxg.jinritemai.com/ffa/g/create len=368 err=0 prog=[]
+
+---- 页面文本（截 3000）----
+反馈
+返回商家后台
+商品发布
+LZL乐群云家具专卖店
+专卖店
+正常营业
+发品手册
+返回旧版
+复杂信息帮你填，
+省时省力更规范
+请上传以下资料，系统将自动提取相关内容，并根据平台规范完善商品信息
+商品图片
+用于识别主图/商品详情等信息
+Excel 表格
+用于识别规格/价格库存等信息
+任意截图
+用于识别SKU/属性规格等信息
+点击或拖拽文件到此处上传
+支持jpg、png、jpeg、csv、xls、xlsx类型，最多上传50个，至少包含一张不小于600*600的商品图
+本地上传
+图库选择
+已上传 4
+image_9197742a0f55
+.jpg
+image_3f4a9183e9a6
+.jpg
+image_e1ecb12c09fa
+.jpg
+image_bff6f0a21b10
+.jpg
+下一步，生成商品
+          
+待办
+
+---- 按钮 ----
+[{"t":"点击或拖拽文件到此处上传\n\n支持jpg、","d":false},{"t":"本地上传","d":false},{"t":"图库选择","d":false},{"t":"下一步，生成商品","d":false}]
+
+TAB=7A174874A1929CAC73FDB98BE7B696C2

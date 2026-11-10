@@ -1,0 +1,172 @@
+{
+ "seg": "",
+ "btns": [
+  "查看已上传材料",
+  "基础信息",
+  "图文信息",
+  "属性信息",
+  "价格库存",
+  "服务与履约",
+  "其他信息",
+  "一键全选",
+  "AI智能创作",
+  "编辑\n删除",
+  "编辑\n删除",
+  "编辑\n删除",
+  "从1:1主图智能裁剪",
+  "从主图填入",
+  "上传图片",
+  "高级编辑",
+  "预览",
+  "|\n|",
+  "|\n|",
+  "|\n|",
+  "|\n|",
+  "|\n|",
+  "|\n|",
+  "存储模板",
+  "预览",
+  "存储模板",
+  "预览",
+  "批量上传规格图",
+  "添加规格类型（1/3）",
+  "预览",
+  "批量设置",
+  "可售库存清零",
+  "一键采纳",
+  "去开通",
+  "收起",
+  "展开更多",
+  "图集 1/3",
+  "7天无理由退货",
+  "现货发货 · 次日发",
+  "运费：限售部分地区+长途运费"
+ ],
+ "inputs": [
+  {
+   "ph": "请输入15-60个字符（8-30个汉字）",
+   "v": "矮茶桌茶几黑胡桃实木家用新中式宋氏美学",
+   "cls": "ecom-g-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-checkbox-input"
+  },
+  {
+   "ph": "建议填写简明准确的标题内容，避免重复表达",
+   "v": "",
+   "cls": "ecom-g-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "请输入",
+   "v": "",
+   "cls": "ecom-g-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  },
+  {
+   "ph": "",
+   "v": "",
+   "cls": "ecom-g-select-selection-search-input"
+  }
+ ]
+}

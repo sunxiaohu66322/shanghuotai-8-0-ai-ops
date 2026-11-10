@@ -1,0 +1,208 @@
+{
+ "inputs": [
+  {
+   "i": 0,
+   "multiple": false,
+   "labels": [
+    "编辑 删除",
+    "编辑 删除",
+    "编辑 删除",
+    "编辑 删除"
+   ]
+  },
+  {
+   "i": 1,
+   "multiple": false,
+   "labels": [
+    "编辑 删除",
+    "编辑 删除",
+    "编辑 删除",
+    "编辑 删除"
+   ]
+  },
+  {
+   "i": 2,
+   "multiple": false,
+   "labels": [
+    "编辑 删除",
+    "编辑 删除",
+    "编辑 删除",
+    "编辑 删除"
+   ]
+  },
+  {
+   "i": 3,
+   "multiple": true,
+   "labels": [
+    "上传辅助图",
+    "上传辅助图",
+    "编辑 删除 编辑 删除 编辑 删除 上传辅助图 上传辅助",
+    "编辑 删除 编辑 删除 编辑 删除 上传辅助图 上传辅助"
+   ]
+  },
+  {
+   "i": 4,
+   "multiple": true,
+   "labels": [
+    "上传辅助图",
+    "上传辅助图",
+    "编辑 删除 编辑 删除 编辑 删除 上传辅助图 上传辅助",
+    "编辑 删除 编辑 删除 编辑 删除 上传辅助图 上传辅助"
+   ]
+  },
+  {
+   "i": 5,
+   "multiple": true,
+   "labels": [
+    "图片",
+    "图片",
+    "图片",
+    "图片"
+   ]
+  },
+  {
+   "i": 6,
+   "multiple": true,
+   "labels": [
+    "本地上传",
+    "本地上传",
+    "本地上传图库选择智能做图",
+    "本地上传图库选择智能做图"
+   ]
+  },
+  {
+   "i": 7,
+   "multiple": true,
+   "labels": [
+    "本地上传",
+    "本地上传",
+    "本地上传",
+    "本地上传图库选择 To pick up a dragga"
+   ]
+  },
+  {
+   "i": 8,
+   "multiple": false,
+   "labels": [
+    "反馈 返回商家后台 商品发布 LZL乐群云家具专卖店 专",
+    "反馈 返回商家后台 商品发布 LZL乐群云家具专卖店 专"
+   ]
+  }
+ ],
+ "labInfo": {
+  "x": 382,
+  "y": 374,
+  "w": 56,
+  "h": 19
+ },
+ "near": [
+  {
+   "tag": "DIV",
+   "cls": "style_wrapper__ClH9l style_image__KA615",
+   "txt": "清空 *商品详情 图片",
+   "x": 840,
+   "y": 494,
+   "w": 936,
+   "h": 242
+  },
+  {
+   "tag": "DIV",
+   "cls": "style_content__ONohl",
+   "txt": "清空 *商品详情 图片",
+   "x": 840,
+   "y": 494,
+   "w": 936,
+   "h": 242
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_materialDropZone__aXom5",
+   "txt": "清空 *商品详情 图片",
+   "x": 840,
+   "y": 494,
+   "w": 936,
+   "h": 242
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_materialFormItem__nNeYq",
+   "txt": "清空 *商品详情 图片",
+   "x": 840,
+   "y": 494,
+   "w": 936,
+   "h": 242
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "txt": "*商品详情 图片",
+   "x": 840,
+   "y": 494,
+   "w": 936,
+   "h": 242
+  },
+  {
+   "tag": "DIV",
+   "cls": "ecom-g-zform-item-has-success",
+   "txt": "图片",
+   "x": 840,
+   "y": 505,
+   "w": 936,
+   "h": 220
+  },
+  {
+   "tag": "DIV",
+   "cls": "style_helperWrapper__hGySD",
+   "txt": "图片",
+   "x": 840,
+   "y": 505,
+   "w": 936,
+   "h": 220
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_materialGroup__QErAG ",
+   "txt": "图片",
+   "x": 840,
+   "y": 505,
+   "w": 936,
+   "h": 220
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "txt": "图片",
+   "x": 840,
+   "y": 509,
+   "w": 936,
+   "h": 212
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_uploadWithExample__Nds8r",
+   "txt": "图片",
+   "x": 840,
+   "y": 509,
+   "w": 936,
+   "h": 212
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_materialUploadList__fCm5F",
+   "txt": "图片",
+   "x": 840,
+   "y": 509,
+   "w": 936,
+   "h": 212
+  },
+  {
+   "tag": "DIV",
+   "cls": "styles_materialUploadCard__mgobW",
+   "txt": "",
+   "x": 421,
+   "y": 452,
+   "w": 98,
+   "h": 98
+  }
+ ]
+}

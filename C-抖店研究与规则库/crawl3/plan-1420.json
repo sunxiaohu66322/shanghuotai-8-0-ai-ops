@@ -1,0 +1,78 @@
+{
+ "pid": 1420,
+ "title": "[北美黑胡桃木]新中式实木茶桌黑胡桃木茶室客厅家用",
+ "category_hint": "",
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_b8cdaca71d8c.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_f6745a1f45da.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_55ab4541de08.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_50dd18a2649a.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_026e09f9ea48.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\detail\\image_9ee73ec4a043.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\detail\\image_cbd5ffd14f5b.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\detail\\image_9535d3d67106.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\detail\\image_7a0fd7d9f651.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\detail\\image_0ec1cfbf34e6.jpg"
+ ],
+ "skus": [
+  {
+   "name": "80*65*70cm",
+   "spec": [
+    "80*65*70cm"
+   ],
+   "price": 2580.0,
+   "stock": 9,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_b8cdaca71d8c.jpg"
+  },
+  {
+   "name": "90*65*70cm",
+   "spec": [
+    "90*65*70cm"
+   ],
+   "price": 2680.0,
+   "stock": 8,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_b8cdaca71d8c.jpg"
+  },
+  {
+   "name": "100*65*70cm",
+   "spec": [
+    "100*65*70cm"
+   ],
+   "price": 2780.0,
+   "stock": 10,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_b8cdaca71d8c.jpg"
+  },
+  {
+   "name": "120*65*70cm",
+   "spec": [
+    "120*65*70cm"
+   ],
+   "price": 2980.0,
+   "stock": 7,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1420\\main\\image_b8cdaca71d8c.jpg"
+  }
+ ],
+ "price": 2580.0,
+ "stock": 9,
+ "cat": [
+  "家具",
+  "几类",
+  "茶几/边几"
+ ],
+ "brand": "LZL",
+ "wood": null,
+ "install": "不提供上门安装",
+ "meta": {
+  "product_id": 1420,
+  "skus": 4,
+  "main": 5,
+  "detail": 5
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

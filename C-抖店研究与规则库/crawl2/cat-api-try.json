@@ -1,0 +1,100 @@
+[
+  {
+    "u": "/product/category/getCategoryList",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/getCategory",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/list",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/tree",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/getTree",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/getCascadeCategories",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/getCategoryTree",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/tcategory/list",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/getCategoryInfo",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/getCategories",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/cat/list",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/getCateList",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/getAllCategory",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  },
+  {
+    "u": "/product/category/search",
+    "status": 404,
+    "ct": "text/plain",
+    "len": 18,
+    "head": "404 page not found"
+  }
+]

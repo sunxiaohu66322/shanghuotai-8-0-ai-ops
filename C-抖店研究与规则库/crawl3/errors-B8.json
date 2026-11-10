@@ -1,0 +1,44 @@
+[
+  {
+    "item": "1391",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "未选中「茶几/边几」，当前=商品类目 请选择该类目，更符合平台规则，降低处罚风险 家具 > 硬木家具 > 桌",
+    "category": "category"
+  },
+  {
+    "item": "1391",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1391",
+    "stage": "attrs-filled",
+    "field": "品牌",
+    "msg": "当前品牌不支持使用，前往资质中心关联该类目审核通过后可以使用。详情",
+    "category": "brand"
+  },
+  {
+    "item": "1391",
+    "stage": "attrs-filled",
+    "field": "表单",
+    "msg": "1502455806 LZL 当前品牌不支持使用，前往资质中心关联该类目审核通过后可以使用。详情",
+    "category": "brand"
+  },
+  {
+    "item": "1391",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "LZL 当前品牌不支持使用，前往资质中心关联该类目审核通过后可以使用。详情",
+    "category": "brand"
+  },
+  {
+    "item": "1391",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  }
+]

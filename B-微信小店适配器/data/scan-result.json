@@ -1,0 +1,416 @@
+[
+ {
+  "route": "/add-sku",
+  "textLen": 664,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/add-to-league",
+  "textLen": 782,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/apply-category",
+  "textLen": 17740,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 商品导入 可用 商品导出 ",
+  "errors": []
+ },
+ {
+  "route": "/b1688/link",
+  "textLen": 391,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/b1688/recommend",
+  "textLen": 377,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/b1688/search",
+  "textLen": 377,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/cats",
+  "textLen": 17764,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/copy-sku",
+  "textLen": 776,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/coupon",
+  "textLen": 811,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/coupons",
+  "textLen": 359,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/create",
+  "textLen": 407,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/del-product",
+  "textLen": 739,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/delete-sku",
+  "textLen": 771,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/detect-product",
+  "textLen": 414,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 商品导入 可用 商品导出 ",
+  "errors": []
+ },
+ {
+  "route": "/diagnosis/home",
+  "textLen": 338,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/discount",
+  "textLen": 800,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-after-sale",
+  "textLen": 764,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-after-sale-desc",
+  "textLen": 764,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-attr",
+  "textLen": 775,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-brand",
+  "textLen": 765,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-category",
+  "textLen": 788,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-desc-pic",
+  "textLen": 798,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-exchange-support",
+  "textLen": 768,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-list-status",
+  "textLen": 737,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-logistics-template",
+  "textLen": 784,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-logistics-type",
+  "textLen": 779,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-main-pic",
+  "textLen": 796,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-price",
+  "textLen": 755,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-qualification",
+  "textLen": 782,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-refund-address",
+  "textLen": 768,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-sale-limit",
+  "textLen": 784,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-short-title",
+  "textLen": 727,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-size-chart",
+  "textLen": 767,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-sku-code",
+  "textLen": 778,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-sku-name",
+  "textLen": 780,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-sku-pic",
+  "textLen": 777,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-spu-code",
+  "textLen": 721,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-stock",
+  "textLen": 758,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-stock-type",
+  "textLen": 770,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-title",
+  "textLen": 754,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-title-prefix",
+  "textLen": 729,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-video",
+  "textLen": 784,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/edit-weight",
+  "textLen": 717,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/exportItem",
+  "textLen": 443,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 商品导入 可用 商品导出 ",
+  "errors": []
+ },
+ {
+  "route": "/exportRecord",
+  "textLen": 389,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/freight",
+  "textLen": 470,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/home",
+  "textLen": 295,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/importItem",
+  "textLen": 1066,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 商品导入 可用 商品导出 ",
+  "errors": []
+ },
+ {
+  "route": "/importRecord",
+  "textLen": 2906,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/jiantu",
+  "textLen": 488,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 商品导入 可用 商品导出 ",
+  "errors": []
+ },
+ {
+  "route": "/orders",
+  "textLen": 563,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/photo/mask",
+  "textLen": 4469,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/photo/wall",
+  "textLen": 4468,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/product-copy/copyHome",
+  "textLen": 439,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 商品复制",
+  "errors": []
+ },
+ {
+  "route": "/product-copy/copyList",
+  "textLen": 2936,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 商品复制",
+  "errors": []
+ },
+ {
+  "route": "/product-copy/importIndex",
+  "textLen": 1044,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 商品复制",
+  "errors": []
+ },
+ {
+  "route": "/product-copy/liebian",
+  "textLen": 407,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 商品复制",
+  "errors": []
+ },
+ {
+  "route": "/product-copy/recover",
+  "textLen": 410,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 商品复制",
+  "errors": []
+ },
+ {
+  "route": "/product-copy/refreshIndex",
+  "textLen": 411,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 商品复制",
+  "errors": []
+ },
+ {
+  "route": "/products",
+  "textLen": 555,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/publish-quality",
+  "textLen": 450,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 商品导入 可用 商品导出 ",
+  "errors": []
+ },
+ {
+  "route": "/quick-modify",
+  "textLen": 666,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/restore-recycle",
+  "textLen": 765,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 改价格 可用 改库存 可用 上下架 可用 恢",
+  "errors": []
+ },
+ {
+  "route": "/settings",
+  "textLen": 749,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/task-records",
+  "textLen": 2883,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/wx/categories",
+  "textLen": 11871,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/wx/materials",
+  "textLen": 440,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/wx/overview",
+  "textLen": 342,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 ⌘ 多店",
+  "errors": []
+ },
+ {
+  "route": "/yunku",
+  "textLen": 498,
+  "head": "自营上货台 6.0 ⌂ 首页 可用 ✎ 批量修改 35 ◎ 商品优化 6 ⧉ 商品复制 7 商品复制",
+  "errors": []
+ }
+]

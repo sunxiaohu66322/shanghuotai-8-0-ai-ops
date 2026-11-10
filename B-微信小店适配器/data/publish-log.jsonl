@@ -1,0 +1,5 @@
+{"kind": "start", "id": "20261029-220159", "cmd": ["C:\\Program Files\\nodejs\\node.exe", "C:\\Users\\Administrator\\ego\\doudian-publish-20261029-2050\\_selftest.mjs"], "ts": "2026-10-29 22:01:59"}
+{"kind": "out", "id": "20261029-220159", "line": "[selftest] node ok v25.2.1", "ts": "2026-10-29 22:02:00"}
+{"kind": "out", "id": "20261029-220159", "line": "[selftest] cwd C:\\Users\\Administrator\\ego\\doudian-publish-20261029-2050", "ts": "2026-10-29 22:02:00"}
+{"kind": "out", "id": "20261029-220159", "line": "[selftest] 如果这三行出现在上架平台的日志框里，说明启动→捕获→回显 全程通畅", "ts": "2026-10-29 22:02:00"}
+{"kind": "end", "id": "20261029-220159", "code": 0, "state": "done", "ts": "2026-10-29 22:02:00"}

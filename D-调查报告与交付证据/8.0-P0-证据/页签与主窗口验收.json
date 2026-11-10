@@ -1,0 +1,29 @@
+{
+ "tab_counts": {
+  "products": 200,
+  "shops": 3,
+  "tasks": 6,
+  "events": 22,
+  "runs": 8,
+  "engine_ok": true,
+  "err": ""
+ },
+ "tabs": [
+  "1 · 采集初筛",
+  "2 · 商品卡导入",
+  "2.5 · 商品库",
+  "2.5.1 · 下载监控",
+  "3 · 商品精筛",
+  "4 · 检测打码",
+  "4.1 · 主图人工审核",
+  "4.9 · 主图 AI 重做",
+  "5.0 · 直接上架",
+  "5.5 · 出表",
+  "6.0 · 微店后台管理",
+  "8.0 · AI 运营中心"
+ ],
+ "has_8_0": true,
+ "has_6_0": true,
+ "tab_png": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台7.0调查-20261109\\8.0-P0-证据\\8.0-P0-运营中心页签-offscreen.png",
+ "mainwindow_png": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台7.0调查-20261109\\8.0-P0-证据\\8.0-P0-主窗口含8.0页签-offscreen.png"
+}

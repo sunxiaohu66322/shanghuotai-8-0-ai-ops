@@ -1,0 +1,44 @@
+[
+  {
+    "item": "1531",
+    "stage": "brand",
+    "field": "品牌",
+    "msg": "未能选中品牌",
+    "category": "brand"
+  },
+  {
+    "item": "1531",
+    "stage": "price",
+    "field": "价格",
+    "msg": "没找到价格输入框",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "price",
+    "field": "现货库存",
+    "msg": "没找到库存输入框",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "price",
+    "field": "商品毛重",
+    "msg": "没找到重量输入框",
+    "category": "other"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "商品详情",
+    "msg": "商品详情页无图片，请补充",
+    "category": "media"
+  },
+  {
+    "item": "1531",
+    "stage": "checked",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  }
+]

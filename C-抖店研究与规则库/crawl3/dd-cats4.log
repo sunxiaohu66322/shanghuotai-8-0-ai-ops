@@ -1,0 +1,4 @@
+[!] 找不到可用的 CDP 端口（9224 / 9223-9299 全不通）。
+    需要带调试端口重开浏览器：
+    "C:\Program Files\Citro Labs\ego lite\Application\ego.exe" --remote-debugging-port=9224 --user-data-dir="F:\ego-ud-link"
+    或： python G:/Users/Administrator/Documents/deepseek-harness/default-workspace/上货台/launch_collect_browser.py --port 9224

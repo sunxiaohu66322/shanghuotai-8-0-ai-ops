@@ -1,0 +1,311 @@
+[p1 "抖店" | space "抖店上架-1531"(33): 1 managed, 0 untracked — p1* "抖店"]
+root
+  container
+    container
+      container
+        svg_root
+        text "反馈"
+      container
+        container
+          container
+            svg_root
+            text "返回商家后台"
+          text "商品发布"
+        container
+          image
+          container
+            container
+              text "LZL乐群云家具专卖店"
+              svg_root
+            container
+              text "专卖店"
+              text "正常营业"
+      container
+        svg_root
+        container
+          container
+            container [ref=1]
+              container
+                container
+                  container
+                    container
+                      svg_root
+                      text "智能填写助手"
+                    container
+                      text "商品信息质量分"
+                      container
+                        text "优秀"
+                        text "92"
+                  container
+                    image
+                    image
+                    text "11"
+                    text "个"
+                    text "已帮您自动填入商品信息，核对无误后可发布商品"
+                    button [ref=2]
+                      text "查看已上传材料"
+                container [ref=3]
+                  container
+                    text "待完善信息"
+                    text "5"
+                  container
+                    container
+                      container
+                        text "品牌"
+                        svg_root
+                      container
+                        text "错误"
+                        text "该项为必填，请输入"
+                    container
+                      container
+                        text "价格"
+                        svg_root
+                      container
+                        text "错误"
+                        text "该项为必填，请输入"
+                    container
+                      container
+                        text "现货库存"
+                        svg_root
+                      container
+                        text "错误"
+                        text "该项为必填，请输入"
+                    container
+                      container
+                        text "商品重量"
+                        svg_root
+                      container
+                        text "错误"
+                        text "该项为必填，请输入"
+                    container
+                      text "主图视频"
+                      svg_root
+              container
+                text "填写助手"
+                container
+                  container
+                    image
+                    text "商品规格"
+                  container
+                    text "1、规格不知道怎么创建？"
+                    anchor [ref=4]
+                      text "查看案例教程"
+                    text "2、sku数量不可超过450个，支持调整规格顺序"
+                    anchor [ref=5]
+                      text "点击了解"
+                    text "3、仅支持第一组规格添加规格图，宽高比1:1，大小5M内"
+            container
+              container
+                tablist
+                  tab [ref=6]
+                    text "基础信息"
+                  tab [ref=7]
+                    text "图文信息"
+                  tab [ref=8]
+                    text "属性信息"
+                  tab [ref=9]
+                    text "价格库存"
+                  tab [ref=10]
+                    text "服务与履约"
+                  tab [ref=11]
+                    text "其他信息"
+                container
+                  container
+                    switch [ref=12]
+                    text "只看必填"
+                  container
+                    switch [ref=13]
+                    text "消费者预览效果"
+              container [ref=14]
+                container
+                  text "图文信息"
+                  container
+                    container
+                      container
+                        text "*"
+                        text "主图"
+                      container
+                        container
+                          container
+                            text "发布≥3张优质图片（建议上传5张），展示商品试用试穿效果/核心卖点"
+                            text "，预计"
+                            text "转化率+2%"
+                          button [ref=15]
+                            svg_root
+                            text "AI智能创作"
+                        unordered_list
+                          button [ref=16]
+                            image
+                            text "编辑"
+                            text "删除"
+                            svg_root
+                          button [ref=17]
+                            image
+                            text "编辑"
+                            text "删除"
+                            svg_root
+                          button [ref=18]
+                            image
+                            text "编辑"
+                            text "删除"
+                            svg_root
+                          button [ref=19]
+                            image
+                            text "编辑"
+                            text "删除"
+                            svg_root
+                          button [ref=20]
+                            image
+                            text "编辑"
+                            text "删除"
+                            svg_root
+                    container
+                      text "主图3:4"
+                      container
+                        container
+                          text "有机会在搜索、推荐等场景展示，提升转化"
+                          button [ref=21]
+                            text "从1:1主图智能裁剪"
+                        unordered_list
+                          container [ref=22]
+                            svg_root
+                            container
+                              text "商品正面图"
+                              text "上传主图"
+                          container [ref=23]
+                            svg_root
+                            text "上传辅助图"
+                          container [ref=24]
+                            svg_root
+                            text "上传辅助图"
+                          container [ref=25]
+                            svg_root
+                            text "上传辅助图"
+                          container [ref=26]
+                            svg_root
+                            text "上传辅助图"
+                    container
+                      text "主图视频"
+                      container
+                        container
+                          container
+                            text "发布优质主图视频，介绍商品卖点，展示试穿试用效果"
+                            text "，预计"
+                            text "转化率+0.5%"
+                          container
+                            svg_root
+                            text "开启AI自动生成"
+                        container [ref=27]
+                          svg_root
+                          text "主图视频"
+                    container
+                      text "白底图"
+                      container
+                        text "上传后在频道、活动等场景使用，提升转化"
+                        unordered_list
+                          container [ref=28]
+                            svg_root
+                            text "上传白底图"
+            container
+              container
+                container
+                  container
+                    image
+                    text "消费者效果预览"
+                  button "关闭消费者效果预览" [ref=29, loc=css:button[aria-label="关闭消费者效果预览"]]
+                    image
+                text "效果仅供参考，具体以实际展示为准"
+              container [ref=30]
+                container
+                  container
+                    image
+                    image
+                    image
+                  button [ref=31]
+                    text "图集"
+                    text "1/5"
+                container
+                  container
+                    text "未设置价格"
+                    text "移动茶桌小茶台烧水壶一体家用茶水柜老榆木实木茶几茶车阳台煮泡"
+                    container
+                      container
+                        container
+                          container
+                            text "品牌"
+                            text "*"
+                          text "未设置"
+                        container
+                          container
+                            text "材质"
+                            text "*"
+                          text "香樟木"
+                        container
+                          container
+                            text "款式"
+                            text "*"
+                          text "新中式风格,三抽款,中抽款,低抽款"
+                        container
+                          container
+                            text "材质来源"
+                            text "*"
+                          text "人工种植"
+                      button "展开商品属性" [ref=32, loc=css:button[aria-label="展开商品属性"]]
+                        image
+                  container
+                    button [ref=33]
+                      image
+                      text "7天无理由退货"
+                      image
+                    button [ref=34]
+                      image
+                      text "现货发货 · 次日发"
+                      image
+                    button [ref=35]
+                      image
+                      text "运费：限售部分地区+长途运费"
+                      image
+                  container
+                    container
+                      text "商品规格"
+                      image
+                    container
+                      image
+                      container
+                        container
+                          text "价格："
+                          text "未填写价格"
+                        container
+                          text "库存："
+                          text "0"
+                          text "缺货"
+                        container
+                          text "已选："
+                          text "默认"
+          container
+            container
+              text "部分信息会预填充供参考，您应"
+              text "仔细检查每项信息，如信息有误，应修改后发布"
+              text "，避免虚假宣传等风险"
+            container
+              button [ref=36]
+                text "发布商品"
+              button [ref=37]
+                text "保存草稿"
+              button [ref=38]
+                svg_root
+              button [ref=39]
+                text "填写检查"
+    container
+      container
+        image
+        image
+        image
+      container
+        image
+        text "待办"
+  svg_root
+  svg_root
+  svg_root
+  svg_root
+  svg_root

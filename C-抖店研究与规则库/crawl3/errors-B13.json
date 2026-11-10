@@ -1,0 +1,289 @@
+[
+  {
+    "item": "1424",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1424",
+    "stage": "spec",
+    "field": "规格值",
+    "msg": "缺值: 小雅炕几、炕几+飘窗椅（送40坐垫）",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 2 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 4 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "checked",
+    "field": "规格值",
+    "msg": "请输入规格值",
+    "category": "required"
+  },
+  {
+    "item": "1424",
+    "stage": "draft",
+    "field": "保存草稿",
+    "msg": "未收到保存成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1424",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "JavaScript evaluation failed at line 0, column 0: TypeError: Cannot read properties of null (reading 'innerText') at <anonymous>:3:31 at __egoPageEvalua",
+    "category": "other"
+  },
+  {
+    "item": "1426",
+    "stage": "generate",
+    "field": "确认生成",
+    "msg": "超过200秒未进入编辑页（顶部 tab 栏未出现）",
+    "category": "other"
+  },
+  {
+    "item": "1426",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "生成超时",
+    "category": "other"
+  },
+  {
+    "item": "1426",
+    "stage": "after-fail",
+    "field": "表单",
+    "msg": "编辑 删除 1. 长宽比需为1:1 2. 图片尺寸不低于600*600px",
+    "category": "media"
+  },
+  {
+    "item": "1413",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "page.goto failed: net::ERR_ABORTED",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "未选中「茶几/边几」，当前=商品类目 请选择该类目，更符合平台规则，降低处罚风险 家具 > 桌子 > 家用茶台/茶桌 更多推荐 建议补充 补充包装信",
+    "category": "category"
+  },
+  {
+    "item": "1420",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1420",
+    "stage": "spec",
+    "field": "规格值",
+    "msg": "缺值: 80*65*70cm、90*65*70cm、100*65*70cm、120*65*70cm",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "有 2 行没有图",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 1 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 5 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 6 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "checked",
+    "field": "木质结构工艺",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1420",
+    "stage": "checked",
+    "field": "产地",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1420",
+    "stage": "checked",
+    "field": "规格图",
+    "msg": "请上传规格图",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "checked",
+    "field": "规格值",
+    "msg": "请输入规格值",
+    "category": "required"
+  },
+  {
+    "item": "1420",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1420",
+    "stage": "tab",
+    "field": "属性信息",
+    "msg": "找不到页签「属性信息」",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "tab",
+    "field": "价格库存",
+    "msg": "找不到页签「价格库存」",
+    "category": "other"
+  },
+  {
+    "item": "1420",
+    "stage": "publish",
+    "field": "发布按钮",
+    "msg": "不可用，errs=[]",
+    "category": "other"
+  },
+  {
+    "item": "1410",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "page.goto failed: net::ERR_ABORTED",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "选项里找不到「家具 > 几类 > 茶几/边几」",
+    "category": "category"
+  },
+  {
+    "item": "1411",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1411",
+    "stage": "attrs-filled",
+    "field": "品牌",
+    "msg": "当前品牌不支持使用，前往资质中心关联该类目审核通过后可以使用。详情",
+    "category": "brand"
+  },
+  {
+    "item": "1411",
+    "stage": "attrs-filled",
+    "field": "表单",
+    "msg": "1502455806 LZL 当前品牌不支持使用，前往资质中心关联该类目审核通过后可以使用。详情",
+    "category": "brand"
+  },
+  {
+    "item": "1411",
+    "stage": "skuimg",
+    "field": "规格图",
+    "msg": "没找到「批量上传规格图」入口",
+    "category": "other"
+  },
+  {
+    "item": "1411",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "LZL 当前品牌不支持使用，前往资质中心关联该类目审核通过后可以使用。详情",
+    "category": "brand"
+  },
+  {
+    "item": "1411",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "选项里找不到「家具 > 几类 > 茶几/边几」",
+    "category": "category"
+  },
+  {
+    "item": "1406",
+    "stage": "generate",
+    "field": "确认生成",
+    "msg": "超过200秒未进入编辑页（顶部 tab 栏未出现）",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "生成超时",
+    "category": "other"
+  }
+]

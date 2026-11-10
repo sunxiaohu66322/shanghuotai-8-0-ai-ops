@@ -1,0 +1,68 @@
+{
+  "found": true,
+  "block": {
+    "x": 601,
+    "y": 475,
+    "w": 920,
+    "h": 110
+  },
+  "blockText": "材质 | 添加规格图 | 批量上传规格图 | 下移 | 上移 | 自定义排序",
+  "selects": [
+    {
+      "x": 602,
+      "y": 476,
+      "w": 168,
+      "h": 32,
+      "text": "材质",
+      "wrapCls": "goods-ai-prefill-area"
+    }
+  ],
+  "inputs": [
+    {
+      "x": 614,
+      "y": 477,
+      "w": 130,
+      "h": 30,
+      "ph": "",
+      "val": "",
+      "type": "search"
+    },
+    {
+      "x": 602,
+      "y": 524,
+      "w": 214,
+      "h": 32,
+      "ph": "请输入材质",
+      "val": "实木橡胶木",
+      "type": "text"
+    },
+    {
+      "x": 911,
+      "y": 524,
+      "w": 233,
+      "h": 32,
+      "ph": "请输入材质",
+      "val": "",
+      "type": "text"
+    }
+  ],
+  "switches": [
+    {
+      "x": 782,
+      "y": 483,
+      "w": 30,
+      "h": 18,
+      "aria": "true",
+      "cls": "ecom-g-switch ecom-g-switch-small ecom-g-switch-ch"
+    }
+  ],
+  "delIcons": [
+    {
+      "x": 862,
+      "y": 530,
+      "w": 14,
+      "h": 20,
+      "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu1ZG"
+    }
+  ]
+}

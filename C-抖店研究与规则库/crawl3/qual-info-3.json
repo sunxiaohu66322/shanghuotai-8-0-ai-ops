@@ -1,0 +1,36 @@
+{
+  "url": "https://fxg.jinritemai.com/center/qualification/expire/v2/info?op=3&_bid=ffa_governance_new&verifyFp=verify_mvt7pllg_33b68de9_dcd3_16d2_9d3d_1dcee2ce8bf9&fp=verify_mvt7pllg_33b68de9_dcd3_16d2_9d3d_1dcee2ce8bf9&msToken=s65CXuKH2Roe1KUbkdQtwj1Oi9l9tOj5ifhhmZ2qJEpgTu8lbxwTZdg_BI_CwizOUJ_G5hiRiiPCqXLf2jCKLpskaU2nzsWASNNO1T67-5aYZ7EEWbu-HSPCZPQiMRxplRND9rndTX_7BawZmxeKtOrXZJeUTNPBV0WSNIcqwrzg&a_bogus=xv4RD7XJxqQbOpetuOb-7edlI2DMrB8yO-iOWK5zyoO2y7eGXs1lGVa9boK2ssYG-8BzZHIHwflMbxxcp3T0pqnkumkkSukS44dV9L8ogqq2Pz0sDrjmCzgFFwBx0RTql%2FcbNly5UsBCId5W9qIuWQCaC5PaQObDSqFfd%2F0bc9ArdSjH99QvedTdwhR1",
+  "method": "GET",
+  "postData": "",
+  "body": {
+    "data": {
+      "tab_rule": {
+        "16": true,
+        "100": true
+      },
+      "shop_qual_tab": [
+        {
+          "tab_name": "类目与资质",
+          "tab_type": 3
+        },
+        {
+          "tab_name": "品牌资质",
+          "tab_type": 2
+        },
+        {
+          "tab_name": "大师资质",
+          "tab_type": 9
+        },
+        {
+          "tab_name": "商品资质",
+          "tab_type": 8
+        }
+      ]
+    },
+    "code": 0,
+    "msg": "",
+    "extra": {
+      "log_id": "2026102915383358B30389173E818DF8B5"
+    }
+  }
+}

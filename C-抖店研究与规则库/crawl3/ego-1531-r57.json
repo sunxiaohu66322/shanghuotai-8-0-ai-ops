@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "label": "三抽款（单柜/开",
+      "hasImg": true
+    },
+    {
+      "label": "中抽款（单柜/开",
+      "hasImg": true
+    },
+    {
+      "label": "底抽款（单柜/开",
+      "hasImg": true
+    },
+    {
+      "label": "单门款（单柜/开",
+      "hasImg": true
+    }
+  ],
+  "reds": [],
+  "pubDisabled": false,
+  "prog": "57%"
+}

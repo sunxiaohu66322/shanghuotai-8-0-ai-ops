@@ -1,0 +1,163 @@
+[
+  {
+    "item": "1390",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "未选中「茶几/边几」，当前=商品类目 请选择该类目，更符合平台规则，降低处罚风险 家具 > 几类 > 茶几/边几 更多推荐 建议补充 补充包装信息、",
+    "category": "category"
+  },
+  {
+    "item": "1390",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1390",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1390",
+    "stage": "verify",
+    "field": "商品列表",
+    "msg": "列表里找不到刚发布的商品",
+    "category": "other"
+  },
+  {
+    "item": "1393",
+    "stage": "category",
+    "field": "商品类目",
+    "msg": "未选中「茶几/边几」，当前=商品类目 请选择该类目，更符合平台规则，降低处罚风险 家具 > 几类 > 茶几/边几 更多推荐 建议补充 补充包装信息、",
+    "category": "category"
+  },
+  {
+    "item": "1393",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1393",
+    "stage": "verify",
+    "field": "商品列表",
+    "msg": "列表里找不到刚发布的商品",
+    "category": "other"
+  },
+  {
+    "item": "1404",
+    "stage": "recognize",
+    "field": "AI识别",
+    "msg": "超过120秒未完成识别",
+    "category": "other"
+  },
+  {
+    "item": "1404",
+    "stage": "fatal",
+    "field": "fatal",
+    "msg": "识别超时",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1406",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 2 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 3 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 4 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "price",
+    "field": "价格",
+    "msg": "第 5 行未按规格值对上，已填默认价",
+    "category": "other"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "价格",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "现货库存",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "￥ 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1406",
+    "stage": "publish",
+    "field": "发布",
+    "msg": "未收到成功回执",
+    "category": "other"
+  },
+  {
+    "item": "1409",
+    "stage": "editing-empty",
+    "field": "主图视频",
+    "msg": "商品缺少主图视频或主图视频质量不合格，预计转化率+0.5%",
+    "category": "media"
+  },
+  {
+    "item": "1409",
+    "stage": "checked",
+    "field": "支撑件木种",
+    "msg": "该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1409",
+    "stage": "checked",
+    "field": "表单",
+    "msg": "请选择，最多选5项 该项为必填，请输入",
+    "category": "required"
+  },
+  {
+    "item": "1409",
+    "stage": "verify",
+    "field": "商品列表",
+    "msg": "列表里找不到刚发布的商品",
+    "category": "other"
+  }
+]

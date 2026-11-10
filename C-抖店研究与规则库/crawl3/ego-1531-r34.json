@@ -1,0 +1,155 @@
+{
+  "now": {
+    "len": 654,
+    "modalCount": 11,
+    "goFound": true,
+    "goDisabled": false,
+    "catLine": "商品类目 没有满意的推荐结果？手动选择类目 确认信息，继续生成 选择类目 最近创建 家具 > ... > 茶几/边几 家具 > "
+  },
+  "trace": [
+    {
+      "step": 1,
+      "tag": "DIV",
+      "role": "",
+      "cls": "",
+      "t": "",
+      "ph": "",
+      "x": 317,
+      "y": 167,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "step": 2,
+      "tag": "BUTTON",
+      "role": "",
+      "cls": "ecom-g-modal-close",
+      "t": "",
+      "ph": "",
+      "x": 1281,
+      "y": 195,
+      "w": 56,
+      "h": 56
+    },
+    {
+      "step": 3,
+      "tag": "INPUT",
+      "role": "",
+      "cls": "style_searchInput__AXVqd",
+      "t": "",
+      "ph": "请输入商品名/类目关键词搜索",
+      "x": 817,
+      "y": 295,
+      "w": 952,
+      "h": 42
+    },
+    {
+      "step": 4,
+      "tag": "INPUT",
+      "role": "",
+      "cls": "ecom-g-input",
+      "t": "",
+      "ph": "搜索一级类目",
+      "x": 448,
+      "y": 357,
+      "w": 157,
+      "h": 20
+    },
+    {
+      "step": 5,
+      "tag": "INPUT",
+      "role": "",
+      "cls": "",
+      "t": "",
+      "ph": "",
+      "x": 342,
+      "y": 488,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "step": 6,
+      "tag": "INPUT",
+      "role": "",
+      "cls": "ecom-g-input",
+      "t": "",
+      "ph": "搜索二级类目",
+      "x": 686,
+      "y": 357,
+      "w": 157,
+      "h": 20
+    },
+    {
+      "step": 7,
+      "tag": "INPUT",
+      "role": "",
+      "cls": "ecom-g-input",
+      "t": "",
+      "ph": "搜索三级类目",
+      "x": 926,
+      "y": 357,
+      "w": 163,
+      "h": 20
+    },
+    {
+      "step": 8,
+      "tag": "BUTTON",
+      "role": "",
+      "cls": "ecom-g-btn ecom-g-btn-primary",
+      "t": "确认",
+      "ph": "",
+      "x": 1166,
+      "y": 694,
+      "w": 74,
+      "h": 32
+    },
+    {
+      "step": 9,
+      "tag": "BUTTON",
+      "role": "",
+      "cls": "ecom-g-btn",
+      "t": "取消",
+      "ph": "",
+      "x": 1256,
+      "y": 694,
+      "w": 74,
+      "h": 32
+    },
+    {
+      "step": 10,
+      "tag": "DIV",
+      "role": "",
+      "cls": "",
+      "t": "",
+      "ph": "",
+      "x": 317,
+      "y": 734,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "step": 11,
+      "tag": "BUTTON",
+      "role": "",
+      "cls": "ecom-g-modal-close",
+      "t": "",
+      "ph": "",
+      "x": 1281,
+      "y": 195,
+      "w": 56,
+      "h": 56
+    },
+    {
+      "step": 12,
+      "tag": "INPUT",
+      "role": "",
+      "cls": "style_searchInput__AXVqd",
+      "t": "",
+      "ph": "请输入商品名/类目关键词搜索",
+      "x": 817,
+      "y": 295,
+      "w": 952,
+      "h": 42
+    }
+  ]
+}

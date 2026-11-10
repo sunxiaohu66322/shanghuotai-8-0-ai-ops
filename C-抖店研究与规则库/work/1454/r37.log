@@ -1,0 +1,48 @@
+浮层: {
+ "n": 7,
+ "out": [
+  {
+   "cls": "nav-menu_wrapper__3bJBv",
+   "rect": "0,0 1683x64",
+   "text": "返回商家后台 | 商品发布 | LZL乐群云家具专卖店 | 专卖店 | 正常营业"
+  },
+  {
+   "cls": "nav-menu_leftBar__2a2z5",
+   "rect": "16,21 256x22",
+   "text": "返回商家后台 | 商品发布"
+  },
+  {
+   "cls": "nav-menu_rightBar__2FmVk",
+   "rect": "1499,8 168x48",
+   "text": "LZL乐群云家具专卖店 | 专卖店 | 正常营业"
+  },
+  {
+   "cls": "nav-menu_extra__2KCgj",
+   "rect": "1499,8 168x48",
+   "text": "LZL乐群云家具专卖店 | 专卖店 | 正常营业"
+  },
+  {
+   "cls": "ecom-g-input-affix-wrapper ecom-g-dropdown-trigger",
+   "rect": "534,-854 706x32",
+   "text": "31/60 | AI 推荐"
+  },
+  {
+   "cls": "styles_desWrapperNew__mzukH styles_desWrapperNewConsumerPreview___g1Cw",
+   "rect": "534,73 823x208",
+   "text": "商详图片（3/50） | 支持拖拽。宽度620-1290px，<5MB，jpg/jpeg/png | 从主图填入 | 上传图片 | 高级编辑 | 预览 | | | | | | | | | | | |"
+  },
+  {
+   "cls": "ecom-g-tooltip overlay-content-wrapper ecom-g-tooltip-placement-bottom",
+   "rect": "1183,418 364x180",
+   "text": "模板功能上线啦！存储模板下次发品直接用 | 【属性】已支持模板功能，灵活将常用商品信息存储为模板，可大幅度提升发布效率 | 知道了"
+  }
+ ]
+}
+按 ↓ 后: [
+ {
+  "cls": "ecom-g-input-affix-wrapper ecom-g-dropdown-trigger",
+  "rect": "534,-854 706x32",
+  "text": "31/60 | AI 推荐"
+ }
+]
+

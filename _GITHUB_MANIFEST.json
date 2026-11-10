@@ -1,0 +1,115 @@
+{
+  "tool": "github-project-push",
+  "generated_at": "2026-11-11T02:35:02.0763761+08:00",
+  "owner": "sunxiaohu66322",
+  "repo": "shanghuotai-8-0-ai-ops",
+  "visibility": "private",
+  "staging_path": "D:\\DSH_Cache\\cache\\tmp\\ghpush-8.0-staging",
+  "included_files": 1218,
+  "included_bytes": 122598032,
+  "skipped_files": 1191,
+  "skipped_reasons": {
+    "name:bak": 140,
+    "dir-prefix:_probe": 16,
+    "dir-prefix:_扫_": 1,
+    "name:shops.json": 1,
+    "dir-prefix:chrome-profile": 691,
+    "dir-prefix:_backup": 28,
+    "dir:profile": 214,
+    "dir-prefix:_改_": 1,
+    "dir-prefix:_check": 3,
+    "dir:__pycache__": 80,
+    "dir-prefix:_open": 1,
+    "dir-prefix:_统_": 2,
+    "ext:.sqlite3": 1,
+    "name:config.json": 1,
+    "dir-prefix:_验_": 1,
+    "dir:.codegraph": 2,
+    "dir:.cache": 3,
+    "dir-prefix:_obs_": 1,
+    "ext:.rar": 1,
+    "dir-prefix:_svc": 1,
+    "dir-prefix:_探_": 1,
+    "ext:.7z": 1
+  },
+  "secret_hits": 0,
+  "scanned_text_files": 758,
+  "dry_run": false,
+  "sources": [
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\app",
+      "dest": "A-桌面主程序/app",
+      "is_dir": true
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\docs",
+      "dest": "A-桌面主程序/docs",
+      "is_dir": true
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\hooks",
+      "dest": "A-桌面主程序/hooks",
+      "is_dir": true
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\微信小店自建上货台",
+      "dest": "B-微信小店适配器",
+      "is_dir": true
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\抖店研究",
+      "dest": "C-抖店研究与规则库",
+      "is_dir": true
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台7.0调查-20261109",
+      "dest": "D-调查报告与交付证据",
+      "is_dir": true
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台7.0-P0-20261109\\dev\\ops",
+      "dest": "E-P0开发副本参考/ops",
+      "is_dir": true
+    },
+    {
+      "path": "I:\\DSHHome\\skills\\github-project-push",
+      "dest": "F-工具链/github-project-push",
+      "is_dir": true
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\run.pyw",
+      "dest": "A-桌面主程序/run.pyw",
+      "is_dir": false
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\打包.cmd",
+      "dest": "A-桌面主程序/打包.cmd",
+      "is_dir": false
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\上货台.spec",
+      "dest": "A-桌面主程序/上货台.spec",
+      "is_dir": false
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\说明.md",
+      "dest": "A-桌面主程序/说明.md",
+      "is_dir": false
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\launch_collect_browser.py",
+      "dest": "A-桌面主程序/launch_collect_browser.py",
+      "is_dir": false
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台\\tests_selftest.py",
+      "dest": "A-桌面主程序/tests_selftest.py",
+      "is_dir": false
+    },
+    {
+      "path": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\上货台7.0-P0-20261109\\.gitignore",
+      "dest": "E-P0开发副本参考/gitignore.txt",
+      "is_dir": false
+    }
+  ]
+}

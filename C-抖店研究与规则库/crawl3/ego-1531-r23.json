@@ -1,0 +1,52 @@
+{
+  "b": {
+    "ok": true,
+    "x": 659,
+    "y": 485,
+    "w": 218
+  },
+  "layers": [
+    {
+      "cls": "nav-menu_wrapper__3bJBv",
+      "t": "返回商家后台 商品发布 LZL乐群云家具专卖店 专卖店 正常营业",
+      "x": 0,
+      "y": 0,
+      "h": 64
+    },
+    {
+      "cls": "nav-menu_leftBar__2a2z5",
+      "t": "返回商家后台 商品发布",
+      "x": 16,
+      "y": 21,
+      "h": 22
+    },
+    {
+      "cls": "nav-menu_rightBar__2FmVk",
+      "t": "LZL乐群云家具专卖店 专卖店 正常营业",
+      "x": 1499,
+      "y": 8,
+      "h": 48
+    },
+    {
+      "cls": "nav-menu_extra__2KCgj",
+      "t": "LZL乐群云家具专卖店 专卖店 正常营业",
+      "x": 1499,
+      "y": 8,
+      "h": 48
+    },
+    {
+      "cls": "ecom-g-input-affix-wrapper ecom-g-dropdown-tri",
+      "t": "60/60 AI 推荐",
+      "x": 534,
+      "y": -939,
+      "h": 32
+    },
+    {
+      "cls": "styles_desWrapperNew__mzukH styles_desWrapperN",
+      "t": "商详图片（7/50） 支持拖拽。宽度620-1290px，<5MB，jpg/jpeg/png 从主图填入 上传图片 高级编辑 预览 | | | | | | | | | | | | | |",
+      "x": 534,
+      "y": -76,
+      "h": 324
+    }
+  ]
+}

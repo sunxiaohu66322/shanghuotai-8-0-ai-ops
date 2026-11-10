@@ -1,0 +1,217 @@
+{
+  "list": [],
+  "inline": [
+    {
+      "k": "__SSR_CONFIG_ECOM_FXG_ADMIN",
+      "type": "object",
+      "size": 669924,
+      "head": "{\"requestId\":\"20261029141205FBAEF4A58CEBAB63C5C2\",\"namespace\":\"ECOM_FXG_ADMIN\",\"sessionIdNumber\":\"1793254325602\",\"path\":"
+    },
+    {
+      "k": "$__SMALLFLOW",
+      "type": "object",
+      "size": 97548,
+      "head": "{\"experiments\":{\"global\":{\"uid\":\"3326454367007799\",\"open\":false,\"full\":false,\"salter\":{\"salt\":\"global\"},\"needRemoveCache"
+    },
+    {
+      "k": "__FEMS_APP_LIST_FALLBACK__",
+      "type": "object",
+      "size": 29892,
+      "head": "{\"29\":{\"CustomError\":{\"ErrMsg\":\"\",\"ErrNo\":0},\"appBaseList\":[{\"appId\":\"7444892313292390406\",\"appNameEn\":\"fxg-maftersale\","
+    },
+    {
+      "k": "__MONA_EVENT_MAP_GLOBAL_KEY__",
+      "type": "object",
+      "size": 1067,
+      "head": "{\"__DEFAULT_WORKBENCH_EVENT_SCOPE__\":{\"_appScope\":\"__DEFAULT_WORKBENCH_EVENT_SCOPE__\",\"_appEventInfoMap\":{},\"_pluginEven"
+    },
+    {
+      "k": "__cacheDispatcher__",
+      "type": "object",
+      "size": 701,
+      "head": "{\"options\":{\"cookiePath\":\"/ffa\",\"silent\":true,\"storeKey\":\"fxg-admin\",\"cacheInfo\":{\"fxg-admin\":{\"userData\":{\"cacheKey\":\"f"
+    },
+    {
+      "k": "__lightApp",
+      "type": "object",
+      "size": 516,
+      "head": "{\"events\":{\"_appScopeName\":\"light\",\"_eventMapByApp\":{},\"_eventMapByPlugin\":{},\"_pluginListenerMap\":{},\"_scopeMap\":{\"on\":"
+    },
+    {
+      "k": "__monaPreloadStrategy",
+      "type": "object",
+      "size": 449,
+      "head": "{\"timeout\":4000,\"inited\":true,\"_pathMap\":{\"/ffa/g/list\":{\"apps\":[{\"appId\":\"7346190393702123058\",\"weight\":2}],\"weight\":11"
+    },
+    {
+      "k": "__mona_light_event",
+      "type": "object",
+      "size": 365,
+      "head": "{\"_appScopeName\":\"light\",\"_eventMapByApp\":{},\"_eventMapByPlugin\":{},\"_pluginListenerMap\":{},\"_scopeMap\":{\"on\":{},\"emit\":"
+    },
+    {
+      "k": "__lightEvent",
+      "type": "object",
+      "size": 365,
+      "head": "{\"_appScopeName\":\"light\",\"_eventMapByApp\":{},\"_eventMapByPlugin\":{},\"_pluginListenerMap\":{},\"_scopeMap\":{\"on\":{},\"emit\":"
+    },
+    {
+      "k": "location",
+      "type": "object",
+      "size": 314,
+      "head": "{\"ancestorOrigins\":{},\"href\":\"https://fxg.jinritemai.com/ffa/g/list?sov_draft_status=0&sov_goodsType=0\",\"origin\":\"https:"
+    },
+    {
+      "k": "__GARFISH_SSR_ECOM_FXG_ADMIN",
+      "type": "object",
+      "size": 169,
+      "head": "{\"name\":\"g\",\"basename\":\"/ffa\",\"path\":\"/ffa/g/list\",\"strictSSR\":false,\"firstReadyDefer\":{\"promise\":{}},\"dom\":{},\"provider"
+    },
+    {
+      "k": "__wbUpdateEventEmitter",
+      "type": "object",
+      "size": 115,
+      "head": "{\"events\":{},\"target\":null,\"opts\":{},\"_pendingUpdateURLEventParam\":{},\"_pendingUpdateURLEventParamThrowTimer\":null}"
+    },
+    {
+      "k": "__GARFISH_INSULATION_VARIABLE__",
+      "type": "object",
+      "size": 63,
+      "head": "[\"__FEDERATION__\",\"__VMOK__\",\"__GLOBAL_LOADING_REMOTE_ENTRY__\"]"
+    },
+    {
+      "k": "__monaGlobalStore",
+      "type": "object",
+      "size": 11,
+      "head": "{\"data\":{}}"
+    },
+    {
+      "k": "locationbar",
+      "type": "object",
+      "size": 2,
+      "head": "{}"
+    },
+    {
+      "k": "__SSR_STYLE_LOADER_INIT_IDS_ECOM_FXG_ADMIN_",
+      "type": "object",
+      "size": 2,
+      "head": "[]"
+    },
+    {
+      "k": "ECOM_FXG_ADMIN__LOADABLE_REQUIRED_CHUNKS___piped",
+      "type": "object",
+      "size": 2,
+      "head": "{}"
+    },
+    {
+      "k": "__GLOBAL_LOADING_REMOTE_ENTRY__",
+      "type": "object",
+      "size": 2,
+      "head": "{}"
+    },
+    {
+      "k": "__prerenderListSet__",
+      "type": "object",
+      "size": 2,
+      "head": "{}"
+    },
+    {
+      "k": "__mona_global_slardar__",
+      "type": "object",
+      "size": 2,
+      "head": "{}"
+    }
+  ],
+  "raw": [
+    {
+      "k": "fetch",
+      "url": "https://lf3-config.bytetcc.com/obj/tcc-config-web/tcc-v2-data-cmp.ecom.open_captain-default",
+      "status": 200,
+      "body": ""
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mcs.zijieapi.com/list",
+      "status": 200,
+      "body": "{\"e\":0,\"sc\":1,\"tc\":1}"
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mcs.zijieapi.com/list?sdk_version=5.1.9&sdk_name=web&app_id=1215&caller=ecom.fe.growth_doudian_im",
+      "status": 200,
+      "body": "{\"e\":0,\"sc\":1,\"tc\":1}"
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://api.feelgood.cn/athena/survey/platform/action/report/",
+      "status": 200,
+      "body": "{\"code\":0,\"msg\":\"success\",\"data\":{\"common_info\":{\"trace_user_info\":\"HFkmVqRe8jMX184OhflMAmQ78k-BOHI6G9jqpvq0VFhHzTr0mJx5K33fpwPvoNAw\"},\"delay_task_list\":[],\"task_list\":[],\"task_settings\":{}}}"
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mcs.zijieapi.com/list",
+      "status": 200,
+      "body": "{\"e\":0,\"sc\":1,\"tc\":1}"
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://api.feelgood.cn/athena/survey/platform/action/report/",
+      "status": 200,
+      "body": "{\"code\":0,\"msg\":\"success\",\"data\":{\"task_settings\":{},\"common_info\":{\"trace_user_info\":\"Q6cdOwxGDrS5d7XWs-9v-GReJ4TLKRkMjOnQuBeY2THs1MD3QznPrev9idfQOct4\"},\"delay_task_list\":[],\"task_list\":[]}}"
+    },
+    {
+      "k": "xhr",
+      "m": "GET",
+      "url": "/product/tproduct/list?page=0&pageSize=20&draft_status=0&comment_percent=&group_id=&sku_type=&tab=onSale&business_type=4&is_online=1&not_for_sale_search_type=1&from_mng=1&check_status=3&status=0&supply_status=&need_auto_rectify_info=true&need_pay_no_stock_skus=true&order_field=audit_time&sort=desc&appid=1&__token=93757f38020bce544be4c193b1dd703a&_bid=ffa_goods&_lid=542478007457",
+      "status": 200,
+      "body": "{\"st\":0,\"msg\":\"\",\"code\":0,\"data\":[{\"alerts\":null,\"product_id\":\"3783077346274312845\",\"shop_id\":229615864,\"name\":\"2025新款软包床头靠背一体落地实木板卧室床头靠包单买\",\"product_url\":\"https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3783077346274312845\\u0026origin_type=doudian_product_management\",\"product_url_for_copy\":\"https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3783077346274312845\\u0026origin_type=604\",\"description\":\"\",\"img\":\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_f2f73db695181c38930b62085b59b46f_sx_65275_www800-800\",\"collect_num\":0,\"sell_num\":2,\"market_price\":152640,\"discount_price\":138240,\"price_lower\":138240,\"price_higher\":152640,\"create_time\":\"2025-10-28 14:31:16\",\"end_time\":0,\"desc_detail\":\"\",\"status\":0,\"buy_desc\":\"\",\"order_desc\":\"\",\"spec_id\":1847206163908627,\"update_time\":\"2026-10-14 01:12:51\",\"check_status\":3,\"draft_status\":3,\"reason\":\"\",\"combo_desc\":\"\",\"checker\":\"\",\"is_show\":0,\"category\":\"\",\"mobile\":\"\",\"buy_record_switch\":0,\"img_style_switch\":0,\"hot_style\":0,\"cos_ratio\":0,\"biz_type\":0,\"usp\":\"\",\"first_cid\":2,\"second_cid\":33,\"third_cid\":233,\"pay_type\":1,\"third_url\":\"\",\"recommend_remark\":\"\",\"group_id\":\"\",\"put_status\":0,\"need_code\":0,\"need_share\":0,\"extra\":\"\",\"out_product_id\":\"\",\"show_place\":0,\"brand_id\":0,\"supply_status\":0,\"product_type\":0,\"distr_sell_num\":0,\"presell_type\":0,\"operations\":[{\"name\":\"编辑\",\"key\":\"edit\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"下架\",\"key\":\"offline\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"新建渠道品\",\"key\":\"sale_channel\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"/ffa/g/channel-goods-create?main_product_id=3783077346274312845\",\"hover\":{\"content\":\"可以通过渠道品为商品分别设置自播/达播的专属信息，分开管理，累计销量评价，提升转化 \\u003ca href=\\\"https://school.jinritemai.com/doudian/web/article/aHie83XqNfbc\\\"  target=\\\"_blank\\\"\\u003e了解更多\\u003c/a\\u003e\"}},{\"name\":\"发布相似品\",\"key\":\"copy\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"确认发布相似品吗？\",\"content\":\"如需要为某位达人单独创建新品，请优先前往\\u003ca href=\\\"/ffa/g/channel-goods-create?main_product_id=3783077346274312845\\\"  target=\\\"_blank\\\"\\u003e销售渠道\\u003c/a\\u003e页面完成渠道品创建，可确保销量评价在当前商品累计。\",\"switch_dialog\":true},\"jump_url\":\"\",\"hover\":null},{\"name\":\"切组合商品\",\"key\":\"switch_package\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"删除\",\"key\":\"delete\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"限购查询\",\"key\":\"limit_rule\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"复制链接\",\"key\":\"link\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"在线预览\",\"key\":\"preview\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"编辑记录\",\"key\":\"edit_record\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"https://fxg.jinritemai.com/ffa/g/change-goods-record/list?product_id=3783077346274312845\",\"hover\":null}],\"delivery_delay_day\":2,\"audit_send_time\":0,\"stock_num\":320,\"is_seckill\":0,\"in_channel\":0,\"comment_num\":1,\"comment_percent\":100,\"comment_good\":1,\"tab\":\"售卖中\",\"appeal_detail\":null,\"draft_time\":1761633076,\"draft_time_tips\":null,\"publish_time\":1791910873,\"audit_time\":1791911571,\"audit_reason\":null,\"publish_id\":1878954712038427,\"publish_id_str\":\"1878954712038427\",\"highlight\":null,\"offline_time\":1785835016,\"delete_time\":0,\"edit_spec_flag\":0,\"promotions\":[],\"promotion_stock_num\":0,\"lock_property\":{},\"with_ad\":false,\"category_leaf_id\":1000004588,\"biz_kind\":0,\"source_country_id\":0,\"origin_country_id\":0,\"brand_country_id\":0,\"lock_stock_num\":0,\"presell_delay\":0,\"presell_end_time\":0,\"offline_type\":2,\"return_policy_id\":\"\",\"is_auction_product\":false,\"is_mass_auction_product\":false,\"is_prize\":false,\"is_not_for_sale\":false,\"new_step_product\":false,\"tags\":[],\"not_show_tags\":[],\"sell_channel\":null,\"draft_video\":null,\"is_deposit_find_goods\":false,\"info_in_main_package\":false,\"is_package_product\":0,\"package_product_list\":[],\"sub_product_list\":[],\"area_stock_button_case\":0,\"product_indicators\":null,\"in_promotion\":0,\"self_sell_stock_num\":320,\"channel_stock_num\":0,\"channel_product_num\":0,\"channel_product_num_with_cond\":0,\"draft_material\":{\"whiteBackgroundImg\":null},\"has_channel\":0,\"presell_config_level\":null,\"presell_delivery_type\":null,\"product_material_map\":{},\"can_combine\":null,\"can_not_combine_reason\":null,\"can_gov_subsidy_copy\":null,\"can_not_gov_subsidy_copy_reason\":null,\"appeal_info\":null,\"has_base_score\":true,\"base_score\":100,\"pics\":[\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_f2f73db695181c38930b62085b59b46f_sx_65275_www800-800\",\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_965b14a59091c95bbea91fc87375f801_sx_69452_www800-800\",\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_1964f2bb5950f5461dd29f1d7c48f41b_sx_267751_www1024-1024\",\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_5995256216eea0452d1471ec2675d2af_sx_130677_www1000-1000\",\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_7e7c5ef71c8b0872453b61d6a21464d5_sx_67073_www800-800\"],\"standard_brand_id\":1502455806,\"brand_name\":\"\",\"mpu_info_check_status\":0,\"category_detail\":{\"first_cid\":1000004471,\"second_cid\":1000004486,\"third_cid\":1000004588,\"fourth_cid\":0,\"first_cname\":\"家具\",\"second_cname\":\"家具配件及辅料\",\"third_cname\":\"家具配件及辅料\",\"fourth_cname\":\"\",\"status\":0,\"leaf_cid\":null,\"forbidden_status\":0},\"quality_score\":88,\"quality_level\":\"lv3\",\"has_quality_score\":true,\"is_diagnose_exemption\":false,\"name_prefix\":\"\",\"name_suffix\":\"\",\"product_format_new\":{\"1493\":[{\"value\":0,\"name\":\"7445458881749716\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"1687\":[{\"value\":106587768,\"name\":\"LZL\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"3127\":[{\"value\":37898,\"name\":\"不锈钢\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}]},\"can_series\":null,\"can_not_series_reason\":null,\"store_info\":null,\"operator_info\":null,\"prize_activity_status\":null,\"pass_wuyou_risk_check\":null,\"skus\":null,\"is_wuyou\":null,\"title_limit\":{\"max_length\":60,\"min_length\":15},\"is_product_talent_evaluation_close\":false,\"can_package\":null,\"can_not_package_reason\":null,\"sku_price_read_only\":0,\"is_dcp\":false,\"is_product_main_video_pre_generated_close\":false,\"identity\":{\"seller_type\":\"\",\"vertical_market\":\"\",\"source\":\"\"},\"category_name\":\"家具\\u003e家具配件及辅料\\u003e家具配件及辅料\",\"stock_num_read_only\":0,\"can_aigc_produce\":false,\"aigc_produce_ability\":null,\"shop_category_path\":null,\"price_power_level_info\":null,\"price_level_standard_info\":null,\"is_agg_product\":false,\"market_advertisement_exposure\":{\"enrollable_big_promotion_info\":null,\"enrollable_promotion_tool_info\":null,\"enrollable_resources\":[{\"resource_key\":\"promotion_tool\",\"resource_name\":\"\",\"profit_effect_info\":\"设置优惠提升购买转化\",\"operation_link\":\"设置优惠券\",\"extra\":{\"tool_id\":2}},{\"resource_key\":\"free_interest\",\"resource_name\":\"分期免息\",\"profit_effect_info\":\"预估销量提升高达8%\",\"operation_link\":\"立即报名\",\"extra\":null}],\"hit_ab\":2,\"hit_ad_growth_ab\":1,\"hit_ad_growth_app_ab\":0},\"sell_num_30d\":0,\"sync_store_num\":null,\"pre_product_size_template_info\":{\"size_desc_image_url\":\"\",\"pre_gen_size_image_url\":\"\",\"pre_gen_size_template_id\":\"0\",\"optimize_text\":\"\",\"optimize_type\":\"\"},\"food_property_optimize\":{\"image_url\":null,\"ingredients\":\"\",\"nutrition\":null,\"spu_info\":null,\"optimize_type\":\"\"},\"pred_category_detail\":null,\"text_count_emit_codes\":null,\"punish_ticket\":{\"has_punish_ticket\":false,\"punish_ticket_url\":\"\"},\"product_material_cnt\":{\"pic_11_cnt\":5,\"pic_34_cnt\":5,\"main_video_cnt\":0,\"white_bg_cnt\":0,\"long_pic_cnt\":0},\"product_material_miss_cnt\":{\"miss_pic_11_cnt\":0,\"miss_pic_34_cnt\":0,\"miss_main_video_cnt\":1,\"miss_white_bg_cnt\":1},\"trade_limit_rule\":{\"limit_rule_items\":[],\"limit_rule_count\":0},\"ean_published_edit_disabled\":false,\"need_show_coupon\":null,\"PickUpMethod\":null,\"rectify_can_recover\":null,\"diagnose_activity_info\":null,\"diagnose_activity_info_data\":null,\"rectify_info\":null,\"soldout_update_time\":1761818789,\"stock_tips\":null,\"pay_no_stock_skus\":null,\"have_audit_reject_suggest\":null,\"audit_reject_suggestion\":null,\"audit_reason_detail_v2\":[],\"material_op_restrict\":null,\"correction_ticket_id\":null,\"main_pics_34\":null,\"can_batch_update_stock\":null,\"cant_batch_update_stock_reason\":null,\"exist_category_misplaced\":null,\"recommend_category\":null,\"category_misplace_info\":{\"exist_category_misplaced\":null,\"recommend_category\":null,\"recommend_cate_is_invalid\":null}},{\"alerts\":null,\"product_id\":\"3759227189053227026\",\"shop_id\":229615864,\"name\":\"户外藤编沙发庭院花园家具阳光房创意三件套小组合民宿露台单人椅\",\"product_url\":\"https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3759227189053227026\\u0026origin_type=doudian_product_management\",\"product_url_for_copy\":\"https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3759227189053227026\\u0026origin_type=604\",\"description\":\"\",\"img\":\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_21203d37cb2ba32996341ef1bbc1fee6_sx_114944_www800-800\",\"collect_num\":0,\"sell_num\":3,\"market_price\":501700,\"discount_price\":125400,\"price_lower\":125400,\"price_higher\":501700,\"create_time\":\"2025-06-22 01:28:28\",\"end_time\":0,\"desc_detail\":\"\",\"status\":0,\"buy_desc\":\"\",\"order_desc\":\"\",\"spec_id\":1835560502770872,\"update_time\":\"2026-10-14 01:00:55\",\"check_status\":3,\"draft_status\":3,\"reason\":\"\",\"combo_desc\":\"\",\"checker\":\"\",\"is_show\":0,\"category\":\"\",\"mobile\":\"\",\"buy_record_switch\":0,\"img_style_switch\":0,\"hot_style\":0,\"cos_ratio\":0,\"biz_type\":0,\"usp\":\"\",\"first_cid\":2,\"second_cid\":33,\"third_cid\":233,\"pay_type\":1,\"third_url\":\"\",\"recommend_remark\":\"\",\"group_id\":\"\",\"put_status\":0,\"need_code\":0,\"need_share\":0,\"extra\":\"\",\"out_product_id\":\"\",\"show_place\":0,\"brand_id\":0,\"supply_status\":0,\"product_type\":0,\"distr_sell_num\":0,\"presell_type\":0,\"operations\":[{\"name\":\"编辑\",\"key\":\"edit\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"下架\",\"key\":\"offline\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"新建渠道品\",\"key\":\"sale_channel\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"/ffa/g/channel-goods-create?main_product_id=3759227189053227026\",\"hover\":{\"content\":\"可以通过渠道品为商品分别设置自播/达播的专属信息，分开管理，累计销量评价，提升转化 \\u003ca href=\\\"https://school.jinritemai.com/doudian/web/article/aHie83XqNfbc\\\"  target=\\\"_blank\\\"\\u003e了解更多\\u003c/a\\u003e\"}},{\"name\":\"发布相似品\",\"key\":\"copy\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"确认发布相似品吗？\",\"content\":\"如需要为某位达人单独创建新品，请优先前往\\u003ca href=\\\"/ffa/g/channel-goods-create?main_product_id=3759227189053227026\\\"  target=\\\"_blank\\\"\\u003e销售渠道\\u003c/a\\u003e页面完成渠道品创建，可确保销量评价在当前商品累计。\",\"switch_dialog\":true},\"jump_url\":\"\",\"hover\":null},{\"name\":\"切组合商品\",\"key\":\"switch_package\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"删除\",\"key\":\"delete\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"限购查询\",\"key\":\"limit_rule\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"复制链接\",\"key\":\"link\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"在线预览\",\"key\":\"preview\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"\",\"hover\":null},{\"name\":\"编辑记录\",\"key\":\"edit_record\",\"status\":\"enable\",\"reason\":\"\",\"app_link\":\"\",\"alert_dialog\":{\"title\":\"\",\"content\":\"\",\"switch_dialog\":false},\"jump_url\":\"https://fxg.jinritemai.com/ffa/g/change-goods-record/list?product_id=3759227189053227026\",\"hover\":null}],\"delivery_delay_day\":2,\"audit_send_time\":0,\"stock_num\":192,\"is_seckill\":0,\"in_channel\":0,\"comment_num\":0,\"comment_percent\":0,\"comment_good\":0,\"tab\":\"售卖中\",\"appeal_detail\":null,\"draft_time\":1750526908,\"draft_time_tips\":null,\"publish_time\":1791910832,\"audit_time\":1791910854,\"audit_reason\":null,\"publish_id\":1878954675060827,\"publish_id_str\":\"1878954675060827\",\"highlight\":null,\"offline_time\":1785835023,\"delete_time\":0,\"edit_spec_flag\":0,\"promotions\":[],\"promotion_stock_num\":0,\"lock_property\":{},\"with_ad\":true,\"category_leaf_id\":1000009362,\"biz_kind\":0,\"source_country_id\":0,\"origin_country_id\":0,\"brand_country_id\":0,\"lock_stock_num\":0,\"presell_delay\":0,\"presell_end_time\":0,\"offline_type\":2,\"return_policy_id\":\"\",\"is_auction_product\":false,\"is_mass_auction_product\":false,\"is_prize\":false,\"is_not_for_sale\":false,\"new_step_product\":false,\"tags\":[],\"not_show_tags\":[],\"sell_channel\":null,\"draft_video\":null,\"is_deposit_find_goods\":false,\"info_in_main_package\":false,\"is_package_product\":0,\"package_product_list\":[],\"sub_product_list\":[],\"area_stock_button_case\":0,\"product_indicators\":null,\"in_promotion\":0,\"self_sell_stock_num\":192,\"channel_stock_num\":0,\"channel_product_num\":0,\"channel_product_num_with_cond\":0,\"draft_material\":{\"whiteBackgroundImg\":null},\"has_channel\":0,\"presell_config_level\":null,\"presell_delivery_type\":null,\"product_material_map\":{},\"can_combine\":null,\"can_not_combine_reason\":null,\"can_gov_subsidy_copy\":null,\"can_not_gov_subsidy_copy_reason\":null,\"appeal_info\":null,\"has_base_score\":true,\"base_score\":100,\"pics\":[\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_21203d37cb2ba32996341ef1bbc1fee6_sx_114944_www800-800\",\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_594ab75eefe28770bac74a95722093ef_sx_94648_www800-800\",\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_9c2527a1c99a7d28ebdfbcd51976c2d1_sx_70292_www800-800\",\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_4d65e86c9cec79f4a4808eed2d5e3d91_sx_71820_www800-800\",\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/jpeg_m_5a53e600f63eeeaab01b66fa732974a3_sx_118153_www800-800\"],\"standard_brand_id\":1502455806,\"brand_name\":\"\",\"mpu_info_check_status\":0,\"category_detail\":{\"first_cid\":1000004471,\"second_cid\":1000004475,\"third_cid\":1000009362,\"fourth_cid\":0,\"first_cname\":\"家具\",\"second_cname\":\"沙发\",\"third_cname\":\"藤/竹沙发\",\"fourth_cname\":\"\",\"status\":0,\"leaf_cid\":null,\"forbidden_status\":0},\"quality_score\":88,\"quality_level\":\"lv3\",\"has_quality_score\":true,\"is_diagnose_exemption\":false,\"name_prefix\":\"\",\"name_suffix\":\"\",\"product_format_new\":{\"1052\":[{\"value\":10373,\"name\":\"竹藤工艺\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"1126\":[{\"value\":23964,\"name\":\"是\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"1130\":[{\"value\":0,\"name\":\"待更新\",\"diy_type\":1,\"tags\":{},\"PropertyName\":\"\"}],\"1492\":[{\"value\":0,\"name\":\"否\",\"diy_type\":1,\"tags\":{},\"PropertyName\":\"\"}],\"1493\":[{\"value\":0,\"name\":\"TSF427\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"1687\":[{\"value\":106587768,\"name\":\"LZL\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"1869\":[{\"value\":0,\"name\":\"抽象\",\"diy_type\":1,\"tags\":{},\"PropertyName\":\"\"}],\"1880\":[{\"value\":0,\"name\":\"广东省\",\"diy_type\":1,\"tags\":{},\"PropertyName\":\"\"}],\"2150\":[{\"value\":0,\"name\":\"可移动\",\"diy_type\":1,\"tags\":{},\"PropertyName\":\"\"}],\"2398\":[{\"value\":23964,\"name\":\"是\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"2426\":[{\"value\":7310,\"name\":\"否\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"2592\":[{\"value\":24351,\"name\":\"现代简约\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"3127\":[{\"value\":0,\"name\":\"见外包装\",\"diy_type\":1,\"tags\":{},\"PropertyName\":\"\"}],\"3324\":[{\"value\":0,\"name\":\"金属工艺\",\"diy_type\":1,\"tags\":{},\"PropertyName\":\"\"}],\"5771\":[{\"value\":7310,\"name\":\"否\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"5772\":[{\"value\":7310,\"name\":\"否\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}],\"835\":[{\"value\":7310,\"name\":\"否\",\"diy_type\":0,\"tags\":{},\"PropertyName\":\"\"}]},\"can_series\":null,\"can_not_series_reason\":null,\"store_info\":null,\"operator_info\":null,\"prize_activity_status\":null,\"pass_wuyou_risk_check\":null,\"skus\":null,\"is_wuyou\":null,\"title_limit\":{\"max_length\":60,\"min_length\":15},\"is_product_talent_evaluation_close\":true,\"can_package\":null,\"can_not_package_reason\":null,\"sku_price_read_only\":0,\"is_dcp\":false,\"is_product_main_video_pre_generated_close\":false,\"identity\":{\"seller_type\":\"\",\"vertical_market\":\"\",\"source\":\"\"},\"category_name\":\"家具\\u003e沙发\\u003e藤/竹沙发\",\"stock_num_read_only\":0,\"can_aigc_produce\":false,\"aigc_produce_ability\":null,\"shop_category_path\":null,\"price_power_level_info\":null,\"price_level_standard_info\":null,\"is_agg_product\":false,\"market_advertisement_exposure\":{\"enrollable_big_promotion_info\":null,\"enrollable_promotion_tool_info\":null,\"enrollable_resources\":[{\"resource_key\":\"free_interest\",\"resource_name\":\"分期免息\",\"profit_effect_info\":\"预估销量提升高达8%\",\"operation_link\":\"立即报名\",\"extra\":null}],\"hit_ab\":2,\"hit_ad_growth_ab\":1,\"hit_ad_growth_app_ab\":0},\"sell_num_30d\":0,\"sync_store_num\":null,\"pre_product_size_template_info\":{\"size_desc_image_url\":\"\",\"pre_gen_size_image_url\":\"\",\"pre_gen_size_template_id\":\"0\",\"optimize_text\":\"\",\"optimize_type\":\"\"},\"food_property_optimize\":{\"image_url\":null,\"ingredients\":\"\",\"nutrition\":null,\"spu_info\":null,\"optimize_type\":\"\"},\"pred_category_detail\":null,\"text_count_emit_codes\":null,\"punish_ticket\":{\"has_punish_ticket\":false,\"punish_ticket_url\":\"\"},\"product_material_cnt\":{\"pic_11_cnt\":5,\"pic_34_cnt\":5,\"main_video_cnt\":0,\"white_bg_cnt\":0,\"long_pic_cnt\":0},\"product_material_miss_cnt\":{\"miss_pic_11_cnt\":0,\"miss_pic_34_cnt\":0,\"miss_main_video_cnt\":1,\"miss_white_bg_cnt\":1},\"trade_limit_rule\":{\"limit_rule_items\":[],\"limit_rule_count\":0},\"ean_published_edit_disabled\":false,\"need_show_coupon\":null,\"PickUpMethod\":null,\"rectify_can_recover\":null,\"diagnose_activity_info\":null,\"diagnose_activity_info_data\":null,\"rectify_info\":null,\"soldout_update_time\":0,\"stock_tips\":null,\"pay_no_stock_skus\":null,\"have_audit_reject_suggest\":null,\"audit_reject_suggestion\":null,\"audit_reason_detail_v2\":[],\"material_op_restrict\":null,\"correction_ticket_id\":null,\"main_pics_34\":null,\"can_batch_update_stock\":null,\"cant_batch_update_stock_reason\":null,\"exist_category_misplaced\":null,\"recommend_category\":null,\"category_misplace_info\":{\"exist_category_misplaced\":null,\"recommend_category\":null,\"recommend_cate_is_invalid\":null}}],\"page\":0,\"size\":20,\"total\":2}"
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mcs.zijieapi.com/list",
+      "status": 200,
+      "body": "{\"e\":0,\"sc\":1,\"tc\":1}"
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mcs.zijieapi.com/list",
+      "status": 200,
+      "body": "{\"e\":0,\"sc\":1,\"tc\":1}"
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=fems",
+      "status": 204,
+      "body": ""
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mcs.zijieapi.com/list",
+      "status": 200,
+      "body": "{\"e\":0,\"sc\":6,\"tc\":6}"
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=ffa_goods",
+      "status": 204,
+      "body": ""
+    },
+    {
+      "k": "xhr",
+      "m": "POST",
+      "url": "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=fxg_admin",
+      "status": 204,
+      "body": ""
+    }
+  ]
+}

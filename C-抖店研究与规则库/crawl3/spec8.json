@@ -1,0 +1,15 @@
+{
+  "clr": {
+    "ok": false,
+    "reason": "no-btn",
+    "rowText": "尺寸\t\n*\n价格\n\t\n*\n现货库存\n\t\n可售库存\n\t\n预留库存\n\t\nSKUID\n\t\n商家编码\n\t\n条形码\n\t\n预览图\n\t\nSKU状态"
+  },
+  "save": {
+    "ok": true
+  },
+  "res": {
+    "url": "https://fxg.jinritemai.com/ffa/g/create?product_id=3851010940816458176&entrance=draft",
+    "toast": "保存成功",
+    "dialog": "保存成功\n请前往商品管理-右侧“草稿箱”中查看编辑，商品发布且审核通过后方可售卖\n我知道了"
+  }
+}

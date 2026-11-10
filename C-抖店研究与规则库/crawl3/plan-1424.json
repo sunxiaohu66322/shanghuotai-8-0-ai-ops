@@ -1,0 +1,70 @@
+{
+ "pid": 1424,
+ "title": "新中式实木炕桌黑胡桃木榻榻米禅意茶室小炕几阳台茶桌飘窗茶台",
+ "category_hint": "",
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\main\\image_667a32a7987e.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\main\\image_f10bb2ad037d.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\main\\image_363d48a200e0.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\main\\image_9d377677cf31.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\main\\image_444bdea7a85a.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_30cde558e594.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_18968aa4f852.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_78cf42de4f28.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_fabe60092243.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_0b39db9ebfb6.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_6b6f779108c3.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_4782f4615d44.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_3a309df086eb.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_ecde3db08864.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_4ec93f2a6e0c.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_0fc9f0787061.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_2591d94fe860.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_cff4e10de9fe.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_e7c5d515ce34.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\detail\\image_c8102fd09c56.jpg"
+ ],
+ "skus": [
+  {
+   "name": "小雅炕几",
+   "spec": [
+    "小雅炕几"
+   ],
+   "price": 980.0,
+   "stock": 47,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\main\\image_667a32a7987e.jpg"
+  },
+  {
+   "name": "炕几+飘窗椅（送40坐垫）",
+   "spec": [
+    "炕几+飘窗椅（送40坐垫）"
+   ],
+   "price": 1960.0,
+   "stock": 8,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1424\\main\\image_667a32a7987e.jpg"
+  }
+ ],
+ "price": 980.0,
+ "stock": 47,
+ "cat": [
+  "家具",
+  "几类",
+  "茶几/边几"
+ ],
+ "brand": "LZL",
+ "wood": null,
+ "install": "不提供上门安装",
+ "meta": {
+  "product_id": 1424,
+  "skus": 2,
+  "main": 5,
+  "detail": 15
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

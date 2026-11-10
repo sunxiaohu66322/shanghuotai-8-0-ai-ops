@@ -1,0 +1,96 @@
+{
+ "pid": 1410,
+ "title": "北美黑胡桃木茶桌椅组合家用阳台茶桌客厅新中式茶台功夫小茶几",
+ "category_hint": "",
+ "main": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_729101e2fc19.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_db14fd4ecf6b.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_742ac29af4cb.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_0b7027613e60.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_f66ef9c5a7dd.jpg"
+ ],
+ "detail": [
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_2f575ddd4bd7.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_fd566e342e90.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_617c36609508.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_a6b0ba485d40.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_0d6822d232a0.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_c3a4f85e9e0d.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_33667c11af88.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_3acdade061c3.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_66fa0cebc067.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_fd7f56f536d5.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_833f20ae4276.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_d6d70c907461.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_bdee6c60cdc1.jpg",
+  "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\detail\\image_cc8456c26397.jpg"
+ ],
+ "skus": [
+  {
+   "name": "茶桌（100x65x68cm）",
+   "spec": [
+    "茶桌（100x65x68cm）"
+   ],
+   "price": 2880.0,
+   "stock": 41,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_729101e2fc19.jpg"
+  },
+  {
+   "name": "茶桌（120x65x68cm）",
+   "spec": [
+    "茶桌（120x65x68cm）"
+   ],
+   "price": 3080.0,
+   "stock": 15,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_729101e2fc19.jpg"
+  },
+  {
+   "name": "茶桌（140x65x68cm）",
+   "spec": [
+    "茶桌（140x65x68cm）"
+   ],
+   "price": 3280.0,
+   "stock": 10,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_729101e2fc19.jpg"
+  },
+  {
+   "name": "1.2米茶桌+1张祥云圈椅+2张元宝凳",
+   "spec": [
+    "1.2米茶桌+1张祥云圈椅+2张元宝凳"
+   ],
+   "price": 7800.0,
+   "stock": 11,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_729101e2fc19.jpg"
+  },
+  {
+   "name": "1.2米茶桌+1张祥云圈椅+2张元宝凳+1个福熙茶水柜",
+   "spec": [
+    "1.2米茶桌+1张祥云圈椅+2张元宝凳+1个福熙茶水柜"
+   ],
+   "price": 9280.0,
+   "stock": 4,
+   "img": "G:\\Users\\Administrator\\Documents\\deepseek-harness\\default-workspace\\taobao-picker\\data\\v3\\images\\1410\\main\\image_729101e2fc19.jpg"
+  }
+ ],
+ "price": 2880.0,
+ "stock": 41,
+ "cat": [
+  "家具",
+  "几类",
+  "茶几/边几"
+ ],
+ "brand": "LZL",
+ "wood": null,
+ "install": "不提供上门安装",
+ "meta": {
+  "product_id": 1410,
+  "skus": 5,
+  "main": 5,
+  "detail": 14
+ },
+ "missing": {
+  "main": 0,
+  "detail": 0,
+  "sku_img": 0
+ }
+}

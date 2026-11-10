@@ -1,0 +1,7 @@
+[
+  {
+    "item": "1436",
+    "stage": "failed",
+    "err": "evaluate: TypeError: Cannot read properties of null (reading 'innerText')"
+  }
+]

@@ -1,0 +1,593 @@
+{
+ "steps": [
+  {
+   "step": "首页",
+   "dom": {
+    "url": "https://shipinhao.taosoft.com.cn/home",
+    "title": "小猪批量修改-工具好-下班早",
+    "menuHits": [
+     {
+      "tag": "A",
+      "cls": "",
+      "x": 41,
+      "y": 258
+     },
+     {
+      "tag": "SPAN",
+      "cls": "icon-label",
+      "x": 932,
+      "y": 438
+     },
+     {
+      "tag": "DIV",
+      "cls": "ant-tabs-tab-btn",
+      "x": 1232,
+      "y": 947
+     }
+    ],
+    "buttons": [],
+    "inputs": [
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "输入商品ID、子任务ID或标题查询",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "任务ID",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     }
+    ],
+    "tableHeads": [
+     "任务ID",
+     "类型",
+     "条件",
+     "任务",
+     "结果",
+     "进度",
+     "时间",
+     "操作"
+    ],
+    "labels": [
+     "导入文件创建",
+     "导入文件创建",
+     "导入文件创建",
+     "导入文件创建",
+     "导入文件创建"
+    ],
+    "dialogText": [],
+    "bodyHead": "首页 商品复制 不限量 多店关联 1688铺货 快速修改 任务记录 切换店铺： 视 欢轴家居 联系客服 更新商品数据 欢轴家居 搜功能 批量修改 改价格 改库存 上下架 恢复回收站 改标题 改短标题 改主图 改类目 改属性 改资质 改货号 改品牌 改限购 改尺码表 改运费模板 添加SKU 删除SKU 复制SKU 改SKU名 改SKU图 改sku编码 改发货方式 改售后 改售后说明 删除商品 改发货时效 改重量 改标题前缀 改详情图 改主图视频 改售后地址 改支持换货 改优选联盟 限时抢购 优惠券 商品优化 基础信息修改 改标题 新 改短标题 改标题前缀 改类目 改属性 改品牌 改货号 改资质 改限购 改重量 改尺码表 改运费模板 改发货方式 改发货时效 改售后 改售后说明 改售后地址 改支持换货 同步运费模板 价格库存 改价格 改库存 改SKU 添加SKU 删除SKU 复制SKU 改SKU名 改sku编码 上下架 上下架 恢复回收站 删除商品 新 清理滞销商品 多店删除/上下架商品 商品复制 商品复制 新 商品裂变 商品导入 商品刷新 云库 同步原商品信息 链接铺货 货源推荐 货源搜索 同步商品信息 图片素材 改主图 主图水印 改主图视频 改详情图 改SKU图 新 人工鉴图 商品检测 新 低价商品检测 新 发品质量检测 重复商品检测 Excel相关 Excel导入 Excel导出 营销 新 限时抢购 新 优惠券 改优选联盟 多店优惠券 其它 申请类目 快速修改 关联配置 多店修改商品 批量修改记录 商品复制 商品裂变 商品导入 商品刷新 云库 改价格 限时抢购 优惠券 改库存 改标题 改短标题 改主图 改主图视频 改详情图 改SKU图 人工鉴图 低价商品检测 发品质量检测 申请类目 改货号 改sku编码 上下架 恢复回收站 删除商品 改类目 改品牌 改发货时效 改限购 改资质 改重量 改标题前缀 改售后地址 改售后说明 添加SKU 删除SKU 复制SKU 改尺码表 改售后 改发货方式 同步原商品信息 复制记录 改属性 改运费模板 改SKU名 改支持换货 改优选联盟 商品导入 商品导出 所有 搜 索 显示我发起的跨店任务 显示本店任务 刷新 任务ID 类型 条件 任务 结果 进度 时间 操作 964617 删除商品 商品状态：全部 手动修改 成功:205 共有:205 删除成功 2026-10-26 23:50:10 恢复 查看详情 导出详情 964075 删除商品 商品状态：全部 手动修改 成功:56 共有:56 删除成功 2026-10-26 16:48:17 恢复 查看详情 导出详情 964069 删除商品 商品状态：草稿箱 手动修改 成功:56 共有:56 删除成功 2026-10-26 16:45:21 恢复 查看详情 导出详情 961593 导入创建商品 导入文件 导入商品ID：10000367092958,10001285865042,10000315864565,10000393694110,10001495106014,10000485947029 导入文件创建 查看文件 是否跳过已复制的商品：否 是否自动跳过重复货号商品：否 是否自动跳过重复标题商品：否 是否上架：草稿箱 设置发货时效为：保持与原商品一致 设置限购类型为：无限购 设置货号为原货号 成功:6 共有:6 创建成功 2026-10-23 20:04:44 查看详情 导出详情 961591 导入创建商品 导入文件 导入商品ID：10000802589791,100004"
+   }
+  },
+  {
+   "step": "点改库存后",
+   "dom": {
+    "url": "https://shipinhao.taosoft.com.cn/edit-stock?tab=1",
+    "title": "小猪批量修改-工具好-下班早",
+    "menuHits": [
+     {
+      "tag": "A",
+      "cls": "",
+      "x": 41,
+      "y": 258
+     },
+     {
+      "tag": "SPAN",
+      "cls": "ant-tag action-tag action-tag-active css-155qy5",
+      "x": 1164,
+      "y": 225
+     }
+    ],
+    "buttons": [],
+    "inputs": [
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "以换行分隔多个商品ID，最多可输入10000个",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "换行可输入多个，最多1000个",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "排除关键词，换行可输入多个，最多1000个",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最多可输入1000个",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最多可输入1000个",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最多可输入1000个",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "SKU名称\n换行可输入多个\n支持Excel直接复制粘贴，单次最多1000个",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最少",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最多",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最少",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最多",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最低",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "最高",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "以换行分隔多个商品ID，最多可输入10000个",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "开始时间",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "text",
+      "ph": "结束时间",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "search",
+      "ph": "",
+      "name": "",
+      "val": "",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "100",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "98",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "100",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "100",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "5",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "2",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "5",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "0",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "200",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "199",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "199",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "199",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "254",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "7",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "5",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "100",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "99",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "100",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "98",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "98",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "99",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "99",
+      "disabled": false
+     },
+     {
+      "type": "checkbox",
+      "ph": "",
+      "name": "",
+      "val": "on",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "286",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "286",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "294",
+      "disabled": false
+     },
+     {
+      "type": "number",
+      "ph": "",
+      "name": "",
+      "val": "295",
+      "disabled": false
+     }
+    ],
+    "tableHeads": [
+     "",
+     "商品",
+     "SKU库存",
+     "操作"
+    ],
+    "labels": [
+     "商品状态:",
+     "商品ID:",
+     "标题关键词:",
+     "排除标题关键词:",
+     "货号:",
+     "SKU编码:",
+     "SKU ID:",
+     "SKU名称:",
+     "运费模板:",
+     "发货方式:",
+     "是否预售:",
+     "价格范围:",
+     "库存范围:",
+     "销量范围:",
+     "排除商品ID:",
+     "商品复制时间范围:",
+     "商品标签:",
+     "鉴图状态:",
+     "不显示审核中商品",
+     "不显示审核中商品",
+     "统一库存 件 库存增加 件 库存减少 件",
+     "统一库存",
+     "统一库存",
+     "库存增加",
+     "库存增加",
+     "库存减少",
+     "库存减少",
+     "修改后新库存：不低于",
+     "件，不高于",
+     "件",
+     "只修改",
+     "件至",
+     "件之间的SKU",
+     "SKU名关键词：",
+     "SKU编码：",
+     "同步调整上下架：",
+     "是否限制日提审数（店铺级限制）",
+     "是否限制日提审数（店铺级限制）",
+     "上架时将商品修改为7天无理由退货",
+     "上架时将商品修改为7天无理由退货",
+     "同步修改售后地址：",
+     "同步修改七天无理由：",
+     "同步修改支持换货：",
+     "是否同步修改云库备份商品",
+     "是否同步修改云库备份商品",
+     "启用定时任务",
+     "启用定时任务",
+     "选择所有126个商品",
+     "选择所有126个商品"
+    ],
+    "dialogText": [],
+    "bodyHead": "首页 商品复制 不限量 多店关联 1688铺货 快速修改 任务记录 切换店铺： 视 欢轴家居 联系客服 更新商品数据 欢轴家居 搜功能 批量修改 改价格 改库存 上下架 恢复回收站 改标题 改短标题 改主图 改类目 改属性 改资质 改货号 改品牌 改限购 改尺码表 改运费模板 添加SKU 删除SKU 复制SKU 改SKU名 改SKU图 改sku编码 改发货方式 改售后 改售后说明 删除商品 改发货时效 改重量 改标题前缀 改详情图 改主图视频 改售后地址 改支持换货 改优选联盟 限时抢购 优惠券 商品优化 批量修改库存 修改库存记录 商品状态: 包含 全部 商品ID: 商品选择器 包含 标题关键词: 包含 排除标题关键词: 货号: 包含 SKU编码: 包含 SKU ID: 精准匹配 SKU名称: 包含 运费模板: 包含 请选择 发货方式: 包含 请选择 是否预售: 请选择 价格范围: 包含 - 库存范围: 包含 - 销量范围: 包含 - 排除商品ID: 包含 商品复制时间范围: 包含 商品标签: 包含 可多选 鉴图状态: 包含 请选择 类 目 确 定 清 空 不显示审核中商品 排序 默认排序 降序 共 126 条记录 上一页 1 2 3 4 5 6 7 下一页 20 条/页 商品 SKU库存 操作 预览 移动沙发边柜侧边柜2026新款双层储物柜现代简约客厅边几小茶几 ID: 10001791387477 价格: ¥3598.00 281#铂金钻微晶石【40*80*67】 281#黑金花微晶石【40*80*67】 281#卡塔金微晶石【40*80*67】 281#雪花白岩板【40*80*67】 保存 撤销 快捷编辑 预览 黑胡桃清言茶桌矮款家用黑胡桃实木阳台茶桌茶台新中式茶几禅意 ID: 10001791417890 价格: ¥3798.00 100cm长/63cm宽/63cm高 120cm长/63cm宽/63cm高 140cm长/63cm宽/63cm高 160cm长/63cm宽/63cm高 保存 撤销 快捷编辑 预览 宋代手绘花鸟落地灯客厅沙发旁卧室床头灯中式复古国风茶室装饰灯 ID: 10001791512998 价格: ¥736.00 款式:三色光-麻布手绘款（节节高升）插电款 款式:三色光-麻布手绘款（鸟语花香）插电款 款式:遥控式-麻布手绘（节节高升）插电款 款式:遥控式-麻布手绘（鸟语花香）插电款 保存 撤销 快捷编辑 预览 度庐巴斯沙发小边几楠竹现代简约可移动 ID: 10001791547574 价格: ¥598.00 默认规格 保存 撤销 快捷编辑 预览 北美黑胡桃木茶几咖啡桌正方形可旋转升降茶桌公寓简约可移动边几 ID: 10001791552521 价格: ¥2226.00 升降方桌70*70cm桌面 升降圆桌直径70cm桌面 保存 撤销 快捷编辑 预览 2026新款新中式实木茶桌椅组合金丝胡桃木小户型阳台茶桌-聚财茶桌 ID: 10001791552803 价格: ¥856.00 1.【100聚财茶桌】(100*60*75cm)(金丝胡桃木) 2.【120聚财茶桌】(120*60*75cm)(金丝胡桃木) 3.【140聚财茶桌】(140*60*75cm)(金丝胡桃木) 4.【整装汉克椅】(68.5*66*85m-坐高40cm)(金丝胡桃木) 5.【素茗凳（软包款）】(39.5*29.5*43cm)(金丝胡桃木) 6.【圆梦茶水柜】(68*31*60cm)(金丝胡桃木) 7.【圆满玄关柜（右）】(78*33*120cm)(金丝"
+   }
+  }
+ ],
+ "clickMenu": true,
+ "selBtn": null
+}

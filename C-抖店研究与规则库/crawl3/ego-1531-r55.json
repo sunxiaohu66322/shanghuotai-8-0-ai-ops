@@ -1,0 +1,166 @@
+{
+  "saved": {
+    "at": null,
+    "ok": false
+  },
+  "del": {
+    "ok": true,
+    "rowTxt": "尺寸 添加规格图 批量上传规格图 下移 上移 请上传规格图 请输入规格值 请输入规格值 请输入规格值",
+    "rowY": 378,
+    "rowH": 227,
+    "icons": [
+      {
+        "cls": "ecom-g-select-arrow",
+        "x": 754,
+        "y": 395,
+        "w": 16
+      },
+      {
+        "cls": "anticon anticon-down ecom-g-select-suffix",
+        "x": 754,
+        "y": 395,
+        "w": 16
+      },
+      {
+        "cls": "",
+        "x": 754,
+        "y": 395,
+        "w": 16
+      },
+      {
+        "cls": "ecom-g-switch-inner",
+        "x": 790,
+        "y": 395,
+        "w": 8
+      },
+      {
+        "cls": "",
+        "x": 888,
+        "y": 394,
+        "w": 14
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel style-module_pub",
+        "x": 888,
+        "y": 394,
+        "w": 14
+      },
+      {
+        "cls": "icon",
+        "x": 888,
+        "y": 395,
+        "w": 14
+      },
+      {
+        "cls": "",
+        "x": 1514,
+        "y": 395,
+        "w": 12
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel",
+        "x": 1514,
+        "y": 395,
+        "w": 12
+      },
+      {
+        "cls": "icon",
+        "x": 1514,
+        "y": 396,
+        "w": 12
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel",
+        "x": 838,
+        "y": 443,
+        "w": 16
+      },
+      {
+        "cls": "icon",
+        "x": 838,
+        "y": 443,
+        "w": 16
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+        "x": 869,
+        "y": 443,
+        "w": 14
+      },
+      {
+        "cls": "icon",
+        "x": 869,
+        "y": 443,
+        "w": 14
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+        "x": 1178,
+        "y": 443,
+        "w": 14
+      },
+      {
+        "cls": "icon",
+        "x": 1178,
+        "y": 443,
+        "w": 14
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+        "x": 1487,
+        "y": 443,
+        "w": 14
+      },
+      {
+        "cls": "icon",
+        "x": 1487,
+        "y": 443,
+        "w": 14
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+        "x": 869,
+        "y": 505,
+        "w": 14
+      },
+      {
+        "cls": "icon",
+        "x": 869,
+        "y": 505,
+        "w": 14
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel style_delete__vu",
+        "x": 1178,
+        "y": 505,
+        "w": 14
+      },
+      {
+        "cls": "icon",
+        "x": 1178,
+        "y": 505,
+        "w": 14
+      },
+      {
+        "cls": "ecom-g-sp-icon sp-icon-parcel",
+        "x": 608,
+        "y": 559,
+        "w": 12
+      },
+      {
+        "cls": "icon",
+        "x": 608,
+        "y": 560,
+        "w": 12
+      }
+    ]
+  },
+  "st": {
+    "rows": 4,
+    "sels": [
+      "款式"
+    ],
+    "area": "商品规格\n1、规格不知道怎么创建？查看案例教程\n2、sku数量不可超过450个，支持调整规格顺序点击了解\n3、仅支持第一组规格添加规格图，宽高比1:1，大小5M内\n基础信息\n图文信息\n属性信息\n价格库存\n服务与履约\n其他信息\n只看必填\n消费者预览效果\n基础信息\n*商品标题\n60/60\nAI 推荐\n使用品牌名\n导购短标题",
+    "prog": "0%"
+  }
+}
