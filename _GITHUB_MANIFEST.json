@@ -3,7 +3,7 @@
   "generated_at": "2026-11-11T02:35:02.0763761+08:00",
   "owner": "sunxiaohu66322",
   "repo": "shanghuotai-8-0-ai-ops",
-  "visibility": "private",
+  "visibility": "public",
   "staging_path": "D:\\DSH_Cache\\cache\\tmp\\ghpush-8.0-staging",
   "included_files": 1218,
   "included_bytes": 122598032,
@@ -111,5 +111,9 @@
       "dest": "E-P0开发副本参考/gitignore.txt",
       "is_dir": false
     }
-  ]
+  ],
+  "commit_sha_local": "afc26fcb19428b5c63e439cef089dece04dc5cac",
+  "commit_sha_remote": "afc26fcb19428b5c63e439cef089dece04dc5cac",
+  "head_match": true,
+  "visibility_remote": "PUBLIC"
 }
