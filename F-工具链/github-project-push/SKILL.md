@@ -9,6 +9,27 @@ description: 把本机任意项目一条命令打包并上传到 GitHub 私有�
 
 **主脚本 `scripts/push.ps1`：吃一个本地目录（或一份多根清单），在独立 staging 副本里做排除 / 脱敏 / 建仓 / 提交 / 推送 / 回读，原项目一个字节不改。**
 
+## 公开仓库（给外部 AI / ChatGPT 看架构）
+
+主人说「公开」「发给 ChatGPT 看」「别人打开地址就能懂整套系统、知道怎么改」时：
+
+- 新建：命令加 `-Visibility public`；已存在的私有仓库直接
+  `gh repo edit <owner/name> --visibility public --accept-visibility-change-consequences`
+  原地转公开（地址不变、零重建、零删历史）。
+- **公开版必须补根目录六件套**（外部 AI 只拿到一个地址也能读懂、能指导修改）：
+  `README.md`（总览/现状/六层目录/架构/真数据/红线/怎么跑）、`llms.txt`（全文索引 + 关键源码与报告链接）、
+  `00_读我_AI-FIRST.md`（读法 + 提建议四条格式）、`01_架构.md`、`02_现状与边界.md`、
+  `03_怎么改.md`（逐文件六步 + 验收命令 + 回滚）。
+- 文档口径：点名「生产真源是哪一层」、区分「已实测 / 未做 / 未取得」、写清「未收 ≠ 不存在」、列红线。
+- 一句提示词（新对话直接发）：
+  `用 github-project-push 把 <项目路径> 传到 GitHub，设为 public，并在根目录生成 README.md、llms.txt、00_读我_AI-FIRST.md、01_架构.md、02_现状与边界.md、03_怎么改.md，让外部 AI 打开地址就能看懂全貌并知道怎么改`
+- 回读验收：`gh repo view --json visibility` = PUBLIC；匿名 GET
+  `https://raw.githubusercontent.com/<owner>/<repo>/main/README.md` = 200；远端 tree 六件套全在。
+
+## 已知陷阱补充
+
+- 证据目录里的登录态快照不一定叫 `Cookies` / `Login Data`：
+  `*login-cookies*.json`、`*cookies*.json`、`*.har` 这类命名同样要挡（2026-11-11 实测漏过一次）。
 ## 何时用
 
 - 「整个项目帮我上传到 GitHub」「把 X 推到仓库」「以后我一句提示词就传」
