@@ -77,7 +77,7 @@ $badName = @('shops.json','config.json','token.txt','.env','credentials.json','s
 $badDirExact = @('node_modules','__pycache__','.git','.codegraph','dist','build','web_diag','venv','.venv','.cache','.pytest_cache','备份','证据截图大图',
   'Local Storage','Sync Data','Service Worker','Session Storage','Site Characteristics Database','shared_proto_db',
   'Extension State','Extension Rules','Extension Scripts','Extensions','Safe Browsing Network','Code Cache','GPUCache','blob_storage','IndexedDB','leveldb','LevelDB','Cache','CacheStorage','profile')
-$badDirPrefix = @('_基线','_备份','_backups','_stage','_保全','_snapshot','_验_','_探_','_测_','_拍_','_改_','_回填_','_apply_','_patch_','_tmp','_iso_','_probe','_verify_','_diag','_smoke','_统_','_扫_','_check','_obs_','_open','_shot_','_svc','_清_','_验','_探','_测','_拍','_改','_统','_扫','_补','_iso','_probe','_backup','chrome-profile')
+$badDirPrefix = @('_基线','_备份','_backups','_bak','_stage','_保全','_snapshot','_验_','_探_','_测_','_拍_','_改_','_回填_','_apply_','_patch_','_tmp','_iso_','_probe','_verify_','_diag','_smoke','_统_','_扫_','_check','_obs_','_open','_shot_','_svc','_清_','_验','_探','_测','_拍','_改','_统','_扫','_补','_iso','_probe','_backup','chrome-profile')
 # 浏览器凭据/运行态文件名（含 -journal 变体）
 $badNamePattern = '^(Cookies|Cookies-journal|Login Data.*|Web Data.*|Account Web Data.*|History.*|Preferences|Secure Preferences|Network Persistent State|Trust Tokens.*|Current Session|Current Tabs|Favicons.*|Shortcuts.*|Top Sites.*|Visited Links|TransportSecurity|QuotaManager.*|Affiliation Database.*|CURRENT|LOG|LOG\.old|MANIFEST-[0-9]+|[0-9]+\.ldb|[0-9]+\.log)$'
 $textExt = @('.py','.pyw','.js','.mjs','.cjs','.ts','.tsx','.json','.md','.yaml','.yml','.txt','.config','.sql','.cmd','.ps1','.sh','.html','.htm','.css','.ini','.toml','.xml','.csv','.spec','.pyi','.bat','.gitignore','.properties')
@@ -103,6 +103,9 @@ function Test-Excluded([string]$rel, [System.IO.FileInfo]$file) {
   if ($n -match '\.bak') { return 'name:bak' }
   if ($badName -contains $n) { return "name:$n" }
   if ($n -match $badNamePattern) { return 'name:browser-runtime' }
+  # 2026-11-11 版本化同步实测：证据目录里的登录态快照命名不一定是 Cookies，
+  # dy-login-cookies.json / *.har 这类同样含会话串，copy 阶段必须挡（此前只在 .gitignore 挡了，不够）
+  if ($ln -match 'cookies' -or $ln.EndsWith('.har')) { return 'name:login-state-snapshot' }
   if ($ln -match '\.(db|sqlite|sqlite3)[-.](journal|wal|shm)$') { return 'db-side' }
   if ($file.Length -gt ($MaxFileMB * 1MB)) { return "size>$($MaxFileMB)MB" }
   return $null

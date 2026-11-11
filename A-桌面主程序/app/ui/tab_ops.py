@@ -23,10 +23,11 @@ import json
 import os
 import urllib.request
 
-from PyQt6.QtCore import Qt, QTimer
+from PyQt6.QtCore import Qt, QTimer, QUrl
+from PyQt6.QtGui import QDesktopServices
 from PyQt6.QtWidgets import (
     QAbstractItemView, QHBoxLayout, QHeaderView, QLabel, QPushButton, QTabWidget,
-    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget,
+    QTableWidget, QTableWidgetItem, QTextEdit, QVBoxLayout, QWidget,
 )
 
 from .. import theme
@@ -113,6 +114,10 @@ class OpsCenterTab(QWidget):
             ["平台", "名称", "完整ID", "引擎", "登录检查", "最后检查", "启用", "备注"])
         self.t_biz_ops = self._table(
             ["#", "模块", "动作", "状态", "结果", "错误", "开始", "完成", "耗时"])
+        # ---- 模块3 每日运营（真巡店 / 今日任务 / 日报）----
+        self.t_daily_tasks = self._table(["类", "任务", "依据", "状态"])
+        self.t_daily_steps = self._table(["#", "页面", "方式", "回读", "字数", "耗时", "错误"])
+        self.t_daily_runs = self._table(["#", "店铺", "登录", "成功步", "搜索", "结果", "时间"])
         self.t_shops = self._table(["平台", "店名", "完整 shop_id", "引擎",
                                     "登录状态", "启用", "备注"])
         self.t_tasks = self._table(["task_id", "kind", "state", "attempts",
@@ -167,6 +172,40 @@ class OpsCenterTab(QWidget):
         for b in (self.btn_biz_collect, self.btn_biz_account, self.btn_biz_video,
                   self.btn_biz_camp, self.btn_biz_refresh):
             _bbl.addWidget(b)
+        # ---- 模块3：每日运营（真浏览器巡店 + 今日任务 + 经营日报）----
+        self.tab_daily = QWidget()
+        _dl = QVBoxLayout(self.tab_daily)
+        _dl.setContentsMargins(4, 4, 4, 4)
+        _dl.setSpacing(4)
+        dbar = QWidget()
+        _dbl = QHBoxLayout(dbar)
+        _dbl.setContentsMargins(0, 0, 0, 0)
+        _dbl.setSpacing(6)
+        self.lb_daily = QLabel("每日运营 · 真登录抖店后台巡店 → 回读 → 今日任务 → 经营日报（零发布/零改价，未取得的数据不编造）")
+        self.lb_daily.setWordWrap(True)
+        self.lb_daily.setStyleSheet("color:#9aa4b8;font-size:12px")
+        _dbl.addWidget(self.lb_daily, 1)
+        self.btn_daily_patrol = QPushButton("▶ 现在真巡一次店")
+        self.btn_daily_patrol.setToolTip("真打开后台、真点菜单、真搜索商品、真回读；全程留步骤与截图")
+        self.btn_daily_web = QPushButton("打开经营页面")
+        self.btn_daily_refresh = QPushButton("↻ 刷新")
+        for b in (self.btn_daily_patrol, self.btn_daily_web, self.btn_daily_refresh):
+            _dbl.addWidget(b)
+        _dl.addWidget(dbar)
+        self.daily_subtabs = QTabWidget()
+        self.daily_subtabs.setDocumentMode(True)
+        self.daily_subtabs.addTab(self.t_daily_tasks, "① 今日运营任务")
+        self.daily_subtabs.addTab(self.t_daily_steps, "② 真实巡店步骤")
+        self.daily_subtabs.addTab(self.t_daily_runs, "③ 历次巡店")
+        self.txt_daily_report = QTextEdit()
+        self.txt_daily_report.setReadOnly(True)
+        self.txt_daily_report.setPlaceholderText("今日经营日报（点一次巡店后生成，讲经营结果，不是技术日志）")
+        self.daily_subtabs.addTab(self.txt_daily_report, "④ 今日经营日报")
+        _dl.addWidget(self.daily_subtabs, 1)
+        self.btn_daily_patrol.clicked.connect(self.daily_patrol)
+        self.btn_daily_web.clicked.connect(
+            lambda: QDesktopServices.openUrl(QUrl(self.base + "/api/ops/daily/page")))
+        self.btn_daily_refresh.clicked.connect(self.load_daily)
         _bl.addWidget(bizbar)
         self.biz_subtabs = QTabWidget()
         self.biz_subtabs.setDocumentMode(True)
@@ -176,7 +215,8 @@ class OpsCenterTab(QWidget):
         self.biz_subtabs.addTab(self.t_biz_campaign, "④ 限时限量购 · 活动")
         self.biz_subtabs.addTab(self.t_biz_account, "⑤ 账号运营")
         _bl.addWidget(self.biz_subtabs, 1)
-        for t, name in ((self.tab_business, "02 · 真实业务运营与反馈"),
+        for t, name in ((self.tab_daily, "03 · 每日运营（真巡店/任务/日报）"),
+                        (self.tab_business, "02 · 真实业务运营与反馈"),
                         (self.tab_platform, "01 · 双平台真实商品中心"),
                         (self.t_products, "商品运营（v3 只读）"),
                         (self.t_shops, "店铺与账号"),
@@ -375,6 +415,10 @@ class OpsCenterTab(QWidget):
             self.load_business()
         except Exception as e:                               # noqa: BLE001
             self.err += " business:%s" % e
+        try:
+            self.load_daily()
+        except Exception as e:                               # noqa: BLE001
+            self.err += " daily:%s" % e
 
         if self.err:
             self.lb_state.setText(self.lb_state.text() + " · 部分接口异常：" + self.err[:80])
@@ -559,6 +603,79 @@ class OpsCenterTab(QWidget):
                 for r in a])
         except Exception as e:                               # noqa: BLE001
             self.err += " biz_account:%s" % e
+
+    # ---------------- 模块3：每日运营（真巡店 / 任务 / 日报）----------------
+    def daily_patrol(self):
+        """点一下 → 9192 真跑巡店（约 1–3 分钟）→ 立刻回读任务/步骤/日报/反馈。"""
+        self.lb_daily.setText("已提交，真浏览器正在巡店（打开后台、点菜单、搜索、回读）…")
+        self.btn_daily_patrol.setEnabled(False)
+        try:
+            req = urllib.request.Request(
+                self.base + "/api/ops/daily/patrol",
+                data=json.dumps({"actor": "gui"}).encode("utf-8"),
+                headers={"Content-Type": "application/json"}, method="POST")
+            with urllib.request.urlopen(req, timeout=320) as r:
+                res = json.loads(r.read().decode("utf-8") or "{}")
+            self.lb_daily.setText(
+                ("✔ " if res.get("ok") else "✘ ") +
+                str(res.get("result") or res.get("error") or res.get("state") or "无回执")[:200])
+            self._log("每日巡店 → %s" % (res.get("state") or res.get("ok")))
+        except Exception as e:                               # noqa: BLE001
+            self.lb_daily.setText("巡店请求失败：%s: %s" % (type(e).__name__, e))
+        finally:
+            self.btn_daily_patrol.setEnabled(True)
+            self.load_daily()
+            self.load_business()
+
+    def load_daily(self):
+        """回读模块3 四张真表，全部来自 9192，不写死。"""
+        try:
+            ov = self._data(self._get("/api/ops/daily/overview"))
+            self.last["daily_overview"] = ov
+            self.lb_daily.setText(
+                "今日 %s｜AI 已完成 %s 条｜等你确认 %s 条｜人工/不可得 %s 条｜"
+                "巡店累计 %s 次｜流量实测数据 %s 条"
+                % (ov.get("day"), ov.get("today_auto"), ov.get("today_need_human"),
+                   ov.get("today_manual"), ov.get("patrol_runs"),
+                   ov.get("metrics_measured")))
+        except Exception as e:                               # noqa: BLE001
+            self.err += " daily_overview:%s" % e
+        try:
+            t = self._rows(self._get("/api/ops/daily/tasks?limit=100"))
+            self.last["daily_tasks"] = t
+            self._fill(self.t_daily_tasks, [
+                [r.get("cls"), (r.get("title") or "")[:80],
+                 (r.get("evidence") or "")[:40], r.get("state")]
+                for r in t])
+        except Exception as e:                               # noqa: BLE001
+            self.err += " daily_tasks:%s" % e
+        try:
+            s = self._rows(self._get("/api/ops/daily/steps?limit=60"))
+            self.last["daily_steps"] = s
+            self._fill(self.t_daily_steps, [
+                [r.get("seq"), (r.get("label") or "")[:38], r.get("method"),
+                 "成功" if r.get("readback_ok") else "未通过", r.get("body_len"),
+                 r.get("elapsed_ms"), (r.get("error") or "")[:40]]
+                for r in s])
+        except Exception as e:                               # noqa: BLE001
+            self.err += " daily_steps:%s" % e
+        try:
+            rr = self._rows(self._get("/api/ops/daily/runs?limit=30"))
+            self.last["daily_runs"] = rr
+            self._fill(self.t_daily_runs, [
+                [r.get("run_id"), r.get("shop"), r.get("login_state"),
+                 "%s/%s" % (r.get("ok_steps"), r.get("total_steps")),
+                 "通过" if r.get("search_ok") else "未通过", r.get("state"),
+                 r.get("started_at")] for r in rr])
+        except Exception as e:                               # noqa: BLE001
+            self.err += " daily_runs:%s" % e
+        try:
+            rp = self._rows(self._get("/api/ops/daily/reports?limit=1"))
+            self.txt_daily_report.setPlainText(
+                (rp[0].get("body") if rp else "") or
+                "还没有日报。点一次「现在真巡一次店」即可生成。")
+        except Exception as e:                               # noqa: BLE001
+            self.err += " daily_report:%s" % e
 
     def counts(self) -> dict:
         return {"products": self.t_products.rowCount(),

@@ -1,9 +1,24 @@
 ---
 name: github-project-push
-description: 把本机任意项目一条命令打包并上传到 GitHub 私有仓库。当用户说「上传到 GitHub / 推到仓库 / 同步到 GitHub / 一个提示词上传项目 / 把本地项目发到 GitHub / 建仓库并推送 / 打包给外部 AI 看架构」，或要求把 skill / 插件 / 源码目录做成可复用仓库时使用。默认私有、默认脱敏、默认不污染原项目（在临时副本里建 git），推送前强制密钥终检，推送后回读远端 HEAD 校验。
+description: 把本机任意项目一条命令打包并上传到 GitHub。当用户说「上传到 GitHub / 推到仓库 / 同步到 GitHub / 一个提示词上传项目 / 把本地项目发到 GitHub / 建仓库并推送 / 打包给外部 AI 看架构」时使用；已登记项目每次对话收尾必须做版本化增量同步（新 commit + vN tag + CHANGELOG），供第三方 AI 随时看改动记录。默认私有、默认脱敏、默认不污染原项目（在独立工作树里建 git），推送前强制密钥终检，推送后回读远端 HEAD 校验。
 ---
 
-# github-project-push — 本地项目 → GitHub 私有仓库
+# github-project-push — 本地项目 → GitHub（首传 + 版本化增量同步）
+
+## 0. 版本化同步（已登记项目 · 每轮必做 · 行为硬约束 · 位置最前）
+
+**触发**：主人说「这套系统需要上传 GitHub / 以后每次更新都传一个版本 / 让第三方 AI 随时看改动记录」。
+**登记**（一次）：`scripts/register.ps1 -Project <key> -Manifest <清单.json> -RootDocs <根文档目录> -WorkTree <工作树> -Owner <账号> -Visibility public`
+**每轮收尾必做**：`scripts/sync.ps1 -Project <key> -Note "<本轮改了什么>"`
+ → **只要本轮动了已登记项目里的任何文件，交付前必须跑一次**；跑完把 `tag` / `commit_sha` 写进报告。
+ → **不改不推**：无实质改动时 sync.ps1 自动 `skipped=true`，不制造垃圾版本；要强制出版本加 `-Force`。
+**版本形状**：`vN` 递增 = 远端历史之上 **1 个新 commit + 1 个 annotated tag + `CHANGELOG.md` 顶部一条 + `VERSIONS.md` 一行**。
+**绝不做**：清空 `.git` / force push / 重建仓库 / 删历史 / 把 CHANGELOG 写成「本版 SHA」（提交不能写自己的 SHA，只写基线 commit + `git rev-parse <tag>` 指引）。
+**给第三方 AI**：`https://raw.githubusercontent.com/<owner>/<repo>/main/CHANGELOG.md` —— 从最新一条往下读即看全历史；`git show <tag>` 看某版完整 diff。
+**状态真源**：`registry.json`（`last_version` / `last_sha` / `history`），**跨会话靠落盘，不靠会话记忆**。
+**首次**：工作树无 `.git` → sync.ps1 自动 clone 远端（保留完整历史）；远端也不存在 → 自动调 push.ps1 首传。
+**复用**：组装阶段调 `push.ps1 -DryRun` 完成硬排除 / 脱敏重写 / 密钥终检，**不重复造轮子**。
+**已登记项目**：见 `registry.json` → `shanghuotai-8-0-ai-ops`（8.0 双平台 AI 运营系统，PUBLIC）。
 
 ## 一句话
 

@@ -56,3 +56,8 @@ token.txt
 *_secret*
 *_credential*
 *_cookie*
+
+# 浏览器登录态快照（命名不一定是 Cookies）
+*cookies*.json
+*login-cookies*.json
+*.har

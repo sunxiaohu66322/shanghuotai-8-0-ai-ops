@@ -321,3 +321,81 @@ CREATE TABLE IF NOT EXISTS ops_content_publish (
 );
 CREATE INDEX IF NOT EXISTS ix_ops_cp_type ON ops_content_publish(content_type, state);
 -- 版本：4（模块2 真实业务运营 + 操作反馈）
+
+-- =====================================================================
+-- ★ 模块3 · 每日真实运营闭环（2026-11-11）
+--   ops_patrol_run   一次真巡店（登录态/步数/成败/搜索任务/耗时）
+--   ops_patrol_step  每一步真实操作：操作前后URL / 点击 / 回读 / 截图 / 错误
+--   ops_daily_task   今日运营任务（A 自动 / B 人工确认 / C 人工操作）
+--   ops_daily_report 经营日报（白话，流量未取得如实标，不编造）
+--   与 browser_ops.DDL 一致（CREATE IF NOT EXISTS，重跑安全）
+-- =====================================================================
+CREATE TABLE IF NOT EXISTS ops_patrol_run (
+    run_id        INTEGER PRIMARY KEY AUTOINCREMENT,
+    platform      TEXT NOT NULL,
+    shop          TEXT,
+    login_state   TEXT,
+    started_at    TEXT,
+    finished_at   TEXT,
+    elapsed_ms    INTEGER,
+    total_steps   INTEGER DEFAULT 0,
+    ok_steps      INTEGER DEFAULT 0,
+    fail_steps    INTEGER DEFAULT 0,
+    search_ok     INTEGER DEFAULT 0,
+    result_json   TEXT,
+    state         TEXT,
+    error         TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_ops_pr_at ON ops_patrol_run(run_id DESC);
+
+CREATE TABLE IF NOT EXISTS ops_patrol_step (
+    step_id       INTEGER PRIMARY KEY AUTOINCREMENT,
+    run_id        INTEGER NOT NULL,
+    seq           INTEGER,
+    key           TEXT,
+    label         TEXT,
+    platform      TEXT,
+    shop          TEXT,
+    method        TEXT,
+    before_url    TEXT,
+    after_url     TEXT,
+    body_len      INTEGER,
+    nums          TEXT,
+    click_ok      INTEGER,
+    readback_ok   INTEGER,
+    screenshot    TEXT,
+    elapsed_ms    INTEGER,
+    error         TEXT,
+    at            TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_ops_ps_run ON ops_patrol_step(run_id, seq);
+
+CREATE TABLE IF NOT EXISTS ops_daily_task (
+    task_id       INTEGER PRIMARY KEY AUTOINCREMENT,
+    day           TEXT NOT NULL,
+    platform      TEXT,
+    shop          TEXT,
+    product_id    TEXT,
+    title         TEXT,
+    kind          TEXT,
+    source_step   TEXT,
+    evidence      TEXT,
+    cls           TEXT,
+    state         TEXT DEFAULT 'open',
+    created_at    TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_ops_dt_day ON ops_daily_task(day, platform);
+
+CREATE TABLE IF NOT EXISTS ops_daily_report (
+    report_id     INTEGER PRIMARY KEY AUTOINCREMENT,
+    day           TEXT NOT NULL UNIQUE,
+    platform      TEXT,
+    shop          TEXT,
+    body          TEXT,
+    patrol_run_id INTEGER,
+    auto_done     INTEGER DEFAULT 0,
+    need_human    INTEGER DEFAULT 0,
+    manual_only   INTEGER DEFAULT 0,
+    created_at    TEXT
+);
+-- 版本：5（模块3 每日真实运营闭环）

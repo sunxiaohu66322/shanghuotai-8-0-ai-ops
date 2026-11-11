@@ -25,7 +25,7 @@ import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
 
-from . import config, queue, store, worker, platform, business
+from . import config, queue, store, worker, platform, business, browser_ops
 
 START_TS = time.time()
 RECOVERY_TOTAL = {"requeued": 0, "failed": 0, "passes": 0}
@@ -296,6 +296,29 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(self.with_store(
                     lambda con: business.feedback(
                         con, int(q.get("limit", ["60"])[0]))))
+            # ---- 模块3 · 每日真实运营闭环 ----
+            if p == "/api/ops/daily/page":
+                return self._send_html(DAILY_HTML)
+            if p == "/api/ops/daily/overview":
+                return self._send(self.with_store(browser_ops.overview))
+            if p == "/api/ops/daily/runs":
+                return self._send(self.with_store(
+                    lambda con: browser_ops.patrol_runs(
+                        con, int(q.get("limit", ["30"])[0]))))
+            if p == "/api/ops/daily/steps":
+                return self._send(self.with_store(
+                    lambda con: browser_ops.patrol_steps(
+                        con, int(q.get("run", ["0"])[0]),
+                        int(q.get("limit", ["60"])[0]))))
+            if p == "/api/ops/daily/tasks":
+                return self._send(self.with_store(
+                    lambda con: browser_ops.daily_tasks(
+                        con, (q.get("day") or [""])[0],
+                        int(q.get("limit", ["100"])[0]))))
+            if p == "/api/ops/daily/reports":
+                return self._send(self.with_store(
+                    lambda con: browser_ops.daily_reports(
+                        con, int(q.get("limit", ["30"])[0]))))
             return self._send({"error": "no such route", "path": p}, 404)
         except Exception as e:                               # noqa: BLE001
             log("GET %s error: %s" % (p, traceback.format_exc(limit=3)))
@@ -376,6 +399,10 @@ class Handler(BaseHTTPRequestHandler):
                 r = business.run_action(
                     b.get("module") or "业务工作台", b.get("action") or "",
                     b.get("payload") or {}, actor=(b.get("actor") or "gui"))
+                return self._send(r, 200 if r.get("ok") else 500)
+            # 模块3：真浏览器每日巡店（A 类自动执行；结果回读 + 反馈）
+            if p == "/api/ops/daily/patrol":
+                r = browser_ops.run_patrol(actor=(b.get("actor") or "gui"))
                 return self._send(r, 200 if r.get("ok") else 500)
             return self._send({"error": "no such route", "path": p}, 404)
         except Exception as e:                               # noqa: BLE001
@@ -480,6 +507,99 @@ class Handler(BaseHTTPRequestHandler):
 
 
 from pathlib import Path                                     # noqa: E402
+
+# --------------------------------------------------------------------------- #
+# 模块3 · 每日运营（给主人看经营结果，不是数据库/技术日志）
+# --------------------------------------------------------------------------- #
+DAILY_HTML = """<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<title>8.0 · 每日运营</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#12151c;color:#e6e9ef;
+ font:14px/1.7 "Microsoft YaHei",Consolas,sans-serif;padding:20px}
+h1{font-size:20px;margin:0 0 4px}h2{font-size:14px;margin:18px 0 8px;color:#9aa4b8}
+.sub{color:#8b95a8;font-size:12px;margin-bottom:14px}
+.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+button{background:#2b6cd4;color:#fff;border:0;border-radius:6px;padding:8px 16px;
+ font-size:13px;cursor:pointer}button:disabled{opacity:.5;cursor:wait}
+#msg{font-size:12px;color:#9aa4b8}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.card{background:#1c212c;border:1px solid #2b3242;border-radius:8px;padding:12px}
+.k{color:#8b95a8;font-size:12px}.v{font-size:22px;font-weight:700;color:#6ee7a8;margin-top:2px}
+.v.blue{color:#71b7ff}.v.warn{color:#ffc46b}
+pre{background:#1c212c;border:1px solid #2b3242;border-radius:8px;padding:14px;
+ white-space:pre-wrap;font:13px/1.8 "Microsoft YaHei",Consolas,sans-serif;color:#dfe4ee}
+table{width:100%;border-collapse:collapse;background:#1c212c;border-radius:8px;overflow:hidden}
+td,th{padding:7px 10px;border-bottom:1px solid #262d3b;text-align:left;font-size:12px}
+th{color:#8b95a8;background:#191e28}.ok{color:#6ee7a8}.bad{color:#ff8b8b}
+.tag{display:inline-block;padding:1px 7px;border-radius:10px;background:#26344a;color:#9cc4ff;font-size:11px}
+</style>
+<h1>每日运营 <span class="tag">真浏览器 · 真后台</span></h1>
+<div class="sub">抖店后台真登录巡店 → 回读 → 今日任务 → 经营日报；零发布/零改价/零改库存；拿不到的数据标「未取得」，不编造。</div>
+<div class="bar">
+ <button id="btn">▶ 现在真巡一次店</button>
+ <span id="msg">点一下：真打开后台、真点菜单、真搜索商品、真回读，全程留截图与步骤记录。</span>
+</div>
+<h2>今天的结果</h2><div class="grid" id="g"></div>
+<h2>今日运营任务（A 自动 / B 等你确认 / C 人工）</h2>
+<table id="tasks"><tr><th>类</th><th>任务</th><th>依据</th><th>状态</th></tr></table>
+<h2>今日经营日报</h2><pre id="report">还没有日报。点一次「现在真巡一次店」即可生成。</pre>
+<h2>真实巡店步骤（操作前后 / 点击 / 回读 / 截图）</h2>
+<table id="steps"><tr><th>#</th><th>页面</th><th>方式</th><th>回读</th><th>字数</th><th>耗时</th><th>截图</th></tr></table>
+<h2>历次巡店</h2>
+<table id="runs"><tr><th>#</th><th>店铺</th><th>登录</th><th>成功步</th><th>搜索任务</th><th>结果</th><th>时间</th></tr></table>
+<script>
+function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+function get(u){return fetch(u).then(function(r){return r.json()})}
+function card(k,v,c){return '<div class="card"><div class="k">'+k+'</div><div class="v '+(c||'')+'">'+v+'</div></div>'}
+function rows(o){return o.rows||o.data||[]}
+function load(){
+ get('/api/ops/daily/overview').then(function(o){
+   var d=o.data||o;
+   document.getElementById('g').innerHTML=
+    card('今天已完成',d.today_auto||0)+card('等你确认',d.today_need_human||0,'warn')+
+    card('人工/不可得',d.today_manual||0,'blue')+card('巡店次数',d.patrol_runs||0,'blue');
+ });
+ get('/api/ops/daily/tasks').then(function(o){
+   var s='<tr><th>类</th><th>任务</th><th>依据</th><th>状态</th></tr>';
+   rows(o).forEach(function(t){s+='<tr><td>'+esc(t.cls)+'</td><td>'+esc(t.title)+
+     '</td><td>'+esc((t.evidence||'').slice(0,60))+'</td><td>'+esc(t.state)+'</td></tr>'});
+   if(!rows(o).length)s+='<tr><td colspan="4">今天还没跑巡店</td></tr>';
+   document.getElementById('tasks').innerHTML=s;
+ });
+ get('/api/ops/daily/reports').then(function(o){
+   var r=rows(o)[0];
+   document.getElementById('report').textContent=r?r.body:'还没有日报。点一次「现在真巡一次店」即可生成。';
+ });
+ get('/api/ops/daily/steps?limit=40').then(function(o){
+   var s='<tr><th>#</th><th>页面</th><th>方式</th><th>回读</th><th>字数</th><th>耗时</th><th>截图</th></tr>';
+   rows(o).forEach(function(t){s+='<tr><td>'+esc(t.seq)+'</td><td>'+esc(t.label)+
+     '</td><td>'+esc(t.method)+'</td><td class="'+(t.readback_ok?'ok':'bad')+'">'+
+     (t.readback_ok?'成功':'未通过')+'</td><td>'+esc(t.body_len)+'</td><td>'+esc(t.elapsed_ms)+
+     'ms</td><td>'+(t.screenshot?'有':'—')+'</td></tr>'});
+   document.getElementById('steps').innerHTML=s;
+ });
+ get('/api/ops/daily/runs').then(function(o){
+   var s='<tr><th>#</th><th>店铺</th><th>登录</th><th>成功步</th><th>搜索任务</th><th>结果</th><th>时间</th></tr>';
+   rows(o).forEach(function(t){s+='<tr><td>'+esc(t.run_id)+'</td><td>'+esc(t.shop)+
+     '</td><td>'+esc(t.login_state)+'</td><td>'+esc(t.ok_steps)+'/'+esc(t.total_steps)+
+     '</td><td>'+(t.search_ok?'<span class=ok>通过</span>':'<span class=bad>未通过</span>')+
+     '</td><td>'+esc(t.state)+'</td><td>'+esc(t.started_at)+'</td></tr>'});
+   document.getElementById('runs').innerHTML=s;
+ });
+}
+document.getElementById('btn').onclick=function(){
+ var b=this;b.disabled=true;
+ document.getElementById('msg').textContent='正在真浏览器巡店（约 1–3 分钟）…';
+ fetch('/api/ops/daily/patrol',{method:'POST',headers:{'Content-Type':'application/json'},
+   body:JSON.stringify({actor:'gui'})}).then(function(r){return r.json()}).then(function(d){
+   document.getElementById('msg').textContent=d.ok?('✔ '+(d.result||'完成')):
+     ('✘ '+(d.error||d.state||'未完成'));
+   b.disabled=false;load();
+ }).catch(function(e){document.getElementById('msg').textContent='请求失败：'+e;
+   b.disabled=false;});
+};
+load();setInterval(load,15000);
+</script></html>"""
 
 # --------------------------------------------------------------------------- #
 # 8.0 运营总览（自包含 HTML，真数据由 JS 拉 /api/ops/overview + /health）
