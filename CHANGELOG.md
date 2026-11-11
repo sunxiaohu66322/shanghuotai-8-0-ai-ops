@@ -6,6 +6,14 @@
 > 「基线 commit」= 这一版的上一版提交；本版 SHA 用 `git rev-parse <tag>` 取（提交自身不能写自己的 SHA）。
 > 本文件与 `VERSIONS.md` 自身的更新不重复计入下面的改动清单。
 
+## v2 · 2026-11-11 15:52:29 +08:00 · 版本化系统收尾：CHANGELOG/VERSIONS 累积保护、运行态登记表排除防无限刷版、_bak 备份目录硬排除、note 放宽
+
+- 标签：`v2` ｜ 基线 commit（上一版）：`b5ab36398` ｜ 密钥终检：**0 命中** ｜ 纳入 **1222** 文件 / 排除 **1201**
+- 本版有意义的改动 **2** 项（A 新增 / M 修改 / D 删除 / R 改名）：
+  - `D` `F-工具链/github-project-push/registry.json`
+  - `M` `F-工具链/github-project-push/scripts/sync.ps1`
+- 本版提交 SHA：`git rev-parse v2`；改动记录同步维护在 `VERSIONS.md` 与仓库 tags 页。
+
 ## v1 · 2026-11-11 15:49:14 +08:00 · 8.0 每日自动运营：browser_ops/dy_daily_patrol 真实巡店、engine/schema/config/tab_ops 升级；新增 github-project-push 版本化同步系统（reg
 
 - 标签：`v1` ｜ 基线 commit（上一版）：`35efb6d05` ｜ 密钥终检：**0 命中** ｜ 纳入 **1222** 文件 / 排除 **1201**
@@ -24,6 +32,4 @@
   - `A` `F-工具链/github-project-push/scripts/register.ps1`
   - `A` `F-工具链/github-project-push/scripts/sync.ps1`
 - 本版提交 SHA：`git rev-parse v1`；改动记录同步维护在 `VERSIONS.md` 与仓库 tags 页。
-
-
 

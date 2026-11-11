@@ -120,6 +120,9 @@ foreach ($f in @(Get-ChildItem -LiteralPath $assemble -Recurse -File -Force)) {
   if ($rel -eq '.git' -or $rel.StartsWith('.git/')) { continue }
   # 一次性回执不进仓库（push.ps1 DryRun 生成，带时间戳，属噪音）
   if ($rel -eq '_GITHUB_REPORT.json') { continue }
+  # 本机运行态登记表 / state 绝不进仓库：sync 成功后会回写 registry.json，
+  # 若收录，则每次都被判「有改动」→ 无限刷版本。这是版本化系统的第二个命门。
+  if ($rel -match 'github-project-push/registry\.json$' -or $rel -match 'github-project-push/state/') { continue }
   $desired[$rel] = $f.FullName
 }
 if (Test-Path -LiteralPath $rootDocs) {
@@ -157,7 +160,7 @@ Write-Step "改动 $($changes.Count) 项，其中有意义 $($meaningful.Count) 
 $now = Get-Date
 $ts = $now.ToString('yyyy-MM-dd HH:mm:ss zzz')
 $noteShort = if ($Note) { ($Note -replace "`r?`n", ' ').Trim() } else { "同步 $($meaningful.Count) 处文件改动" }
-if ($noteShort.Length -gt 110) { $noteShort = $noteShort.Substring(0,110) }
+if ($noteShort.Length -gt 160) { $noteShort = $noteShort.Substring(0,160) }
 
 # ---------- 8. 无实质改动 → 不制造垃圾版本 ----------
 if ($meaningful.Count -eq 0 -and -not $Force) {
