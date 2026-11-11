@@ -199,6 +199,8 @@ $header = @"
 > 看某一版完整差异：``git show <tag>``，或 GitHub 的 ``/commits/<tag>`` 页。
 > 「基线 commit」= 这一版的上一版提交；本版 SHA 用 ``git rev-parse <tag>`` 取（提交自身不能写自己的 SHA）。
 > 本文件与 ``VERSIONS.md`` 自身的更新不重复计入下面的改动清单。
+> 注：``raw.githubusercontent.com`` 有 CDN 缓存，刚推完的几分钟内可能读到上一版；
+> 想确认最新版，请看仓库根本文件的**网页渲染**或 ``/tags`` 页（实时），或 ``git show <tag>``。
 "@
 
 $lines = @("## $tag · $ts · $noteShort", '')

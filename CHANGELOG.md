@@ -5,6 +5,18 @@
 > 看某一版完整差异：`git show <tag>`，或 GitHub 的 `/commits/<tag>` 页。
 > 「基线 commit」= 这一版的上一版提交；本版 SHA 用 `git rev-parse <tag>` 取（提交自身不能写自己的 SHA）。
 > 本文件与 `VERSIONS.md` 自身的更新不重复计入下面的改动清单。
+> 注：`raw.githubusercontent.com` 有 CDN 缓存，刚推完的几分钟内可能读到上一版；
+> 想确认最新版，请看仓库根本文件的**网页渲染**或 `/tags` 页（实时），或 `git show <tag>`。
+
+## v3 · 2026-11-11 15:57:06 +08:00 · 第三方入口定稿：README §0 与 llms.txt 顶部加入 CHANGELOG/VERSIONS 版本记录入口；CHANGELOG 头部加 raw CDN 缓存提示；SKILL 补入口常驻与权威读法
+
+- 标签：`v3` ｜ 基线 commit（上一版）：`df6490adf` ｜ 密钥终检：**0 命中** ｜ 纳入 **1222** 文件 / 排除 **1201**
+- 本版有意义的改动 **4** 项（A 新增 / M 修改 / D 删除 / R 改名）：
+  - `M` `F-工具链/github-project-push/SKILL.md`
+  - `M` `F-工具链/github-project-push/scripts/sync.ps1`
+  - `M` `README.md`
+  - `M` `llms.txt`
+- 本版提交 SHA：`git rev-parse v3`；改动记录同步维护在 `VERSIONS.md` 与仓库 tags 页。
 
 ## v2 · 2026-11-11 15:52:29 +08:00 · 版本化系统收尾：CHANGELOG/VERSIONS 累积保护、运行态登记表排除防无限刷版、_bak 备份目录硬排除、note 放宽
 

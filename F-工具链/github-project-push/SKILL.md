@@ -14,7 +14,9 @@ description: 把本机任意项目一条命令打包并上传到 GitHub。当用
  → **不改不推**：无实质改动时 sync.ps1 自动 `skipped=true`，不制造垃圾版本；要强制出版本加 `-Force`。
 **版本形状**：`vN` 递增 = 远端历史之上 **1 个新 commit + 1 个 annotated tag + `CHANGELOG.md` 顶部一条 + `VERSIONS.md` 一行**。
 **绝不做**：清空 `.git` / force push / 重建仓库 / 删历史 / 把 CHANGELOG 写成「本版 SHA」（提交不能写自己的 SHA，只写基线 commit + `git rev-parse <tag>` 指引）。
-**给第三方 AI**：`https://raw.githubusercontent.com/<owner>/<repo>/main/CHANGELOG.md` —— 从最新一条往下读即看全历史；`git show <tag>` 看某版完整 diff。
+**给第三方 AI**：仓库根 `CHANGELOG.md` 从最新一条往下读即看全历史；`git show <tag>` 看某版完整 diff。
+**入口必须常驻**：`README.md` §0 与 `llms.txt` 顶部各放一条指向 CHANGELOG/VERSIONS 的链接（根文档由 `root_docs` 持久化，增量重建不丢）。
+**CDN 缓存坑**：`raw.githubusercontent.com` 刚推完几分钟内可能返回上一版；`gh api repos/<R>/contents/CHANGELOG.md` 或 GitHub 文件网页 / `tags` 页才是实时权威，别据 raw 旧值误判「累积失效」。
 **状态真源**：`registry.json`（`last_version` / `last_sha` / `history`），**跨会话靠落盘，不靠会话记忆**。
 **首次**：工作树无 `.git` → sync.ps1 自动 clone 远端（保留完整历史）；远端也不存在 → 自动调 push.ps1 首传。
 **复用**：组装阶段调 `push.ps1 -DryRun` 完成硬排除 / 脱敏重写 / 密钥终检，**不重复造轮子**。
