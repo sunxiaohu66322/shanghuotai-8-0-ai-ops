@@ -25,7 +25,8 @@ import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
 
-from . import config, queue, store, worker, platform, business, browser_ops
+from . import (config, queue, store, worker, platform, business, browser_ops,
+               sync_freshness)
 
 START_TS = time.time()
 RECOVERY_TOTAL = {"requeued": 0, "failed": 0, "passes": 0}
@@ -267,6 +268,8 @@ class Handler(BaseHTTPRequestHandler):
                     lambda con: platform.fetches(con, int(q.get("limit", ["100"])[0]))))
             if p == "/api/ops/platform/status":
                 return self._send(platform.status())
+            if p == "/api/ops/platform/sync_status":
+                return self._send(self.with_store(platform.sync_status))
             if p == "/api/ops/platform/page":
                 return self._send_html(PLATFORM_HTML)
             # ---- 模块2 真实业务运营 + 操作反馈（抖店后台真明细/视频/活动/账号） ----
@@ -628,6 +631,9 @@ th{color:#8b95a8;font-weight:600;background:#191e28}
 <div id="err"></div>
 <h2>引擎与数据</h2>
 <div class="grid" id="g1"></div>
+<h2>三店数据真实性（P0.3.1 · 平台数/明细/覆盖率/新鲜度/最后成功/状态/错误）</h2>
+<table id="sync"><tr><th>店铺</th><th>平台商品总数</th><th>已读明细</th><th>数据覆盖率</th>
+<th>最近采集时间</th><th>数据新鲜度</th><th>采集状态</th><th>采集错误</th></tr></table>
 <h2>真实店铺与账号（完整 shop_id，不存凭据）</h2>
 <table id="shops"><tr><th>平台</th><th>店名</th><th>完整 shop_id</th><th>引擎</th><th>状态</th></tr></table>
 <h2>任务队列与执行记录</h2>
@@ -638,9 +644,10 @@ th{color:#8b95a8;font-weight:600;background:#191e28}
 function card(k,v,cls){return '<div class="card"><div class="k">'+k+'</div><div class="v '+(cls||'')+'">'+v+'</div></div>'}
 function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
 function get(u){return fetch(u).then(function(r){return r.json()})}
-Promise.all([get('/api/ops/health'),get('/api/ops/overview'),get('/api/ops/task/events?limit=12')])
+Promise.all([get('/api/ops/health'),get('/api/ops/overview'),get('/api/ops/task/events?limit=12'),
+             get('/api/ops/platform/summary')])
 .then(function(a){
-  var h=a[0], o=a[1].data||a[1], ev=a[2].rows||[];
+  var h=a[0], o=a[1].data||a[1], ev=a[2].rows||[], pr=a[3].data||a[3];
   document.getElementById('g1').innerHTML=
     card('引擎',h.ok?'在线':'异常',h.ok?'':'warn')+
     card('版本',esc(h.version),'blue')+
@@ -665,6 +672,23 @@ Promise.all([get('/api/ops/health'),get('/api/ops/overview'),get('/api/ops/task/
        esc(x.account_id)+'</td><td>'+esc(x.browser_engine)+'</td><td>'+
        esc(x.login_status)+'</td></tr>'});
   document.getElementById('shops').innerHTML=s;
+  // P0.3.1 三店数据真实性：7 字段逐店展示，历史快照明确标红
+  var sy='<tr><th>店铺</th><th>平台商品总数</th><th>已读明细</th><th>数据覆盖率</th>'+
+    '<th>最近采集时间</th><th>数据新鲜度</th><th>采集状态</th><th>采集错误</th></tr>';
+  var hist={'stale':'bad','failed':'bad','missing':'','fresh':'ok'};
+  (pr.shops||[]).forEach(function(x){
+    var total=(x.total==null?'<span class="bad">未取得</span>':esc(x.total));
+    var cov=esc(x.coverage_text||'未取得');
+    var fs=esc(x.freshness_text||'—');
+    var stt=esc(x.data_status||'—');
+    var cls=x.is_historical||x.data_status==='stale'?' class="bad"':'';
+    sy+='<tr'+cls+'><td>'+esc(x.shop_name)+'</td><td>'+total+'</td><td>'+
+      esc(x.detail_rows!=null?x.detail_rows:'—')+'</td><td>'+cov+'</td><td class="mono">'+
+      esc(x.last_success_at||x.fetched_at||'—')+'</td><td>'+fs+'</td><td>'+stt+'</td><td>'+
+      esc((x.error||'—').slice(0,44))+'</td></tr>';
+  });
+  if(!(pr.shops||[]).length)sy+='<tr><td colspan="8">尚无采集记录</td></tr>';
+  document.getElementById('sync').innerHTML=sy;
   var e='<tr><th>时间</th><th>任务</th><th>类型</th><th>转移</th><th>说明</th></tr>';
   ev.forEach(function(x){
     e+='<tr><td class="mono">'+esc(x.at_text)+'</td><td class="mono">'+esc(x.task_id)+
@@ -706,13 +730,14 @@ th{color:#8b95a8;font-weight:600;background:#191e28;position:sticky;top:0}
 tr.warnrow{background:#2a2028}
 #msg{color:#ffc46b;font-size:12px;margin-left:6px}
 #err{color:#ff8b8b}
+.badtag{color:#ff9b9b;font-weight:600}
 .note{color:#8b95a8;font-size:11px;margin-top:4px}
 </style>
 <h1>8.0 · 双平台真实商品中心 <span class="tag">模块1</span></h1>
 <div class="sub">微信＝官方 API 权威数 · 抖店＝ego 页面快照（未取得的不编造）· 平台真数 ≠ 本地 v3.db 商品数 · 零发布零改价</div>
 <div class="bar">
-  <button id="btnSnap">↻ 刷新真实数据（快速）</button>
-  <button id="btnFull" class="ghost">抓取更多明细</button>
+  <button id="btnSnap">↻ 快速刷新（每状态 1 页）</button>
+  <button id="btnFull" class="ghost">⇩ 全量同步（微信两店翻完所有分页）</button>
   <span id="msg"></span>
 </div>
 <h2>三店真实商品概览</h2>
@@ -749,6 +774,8 @@ function card(s){
    '<div style="margin:6px 0">'+tags+'</div>'+
    '<div class="k">明细 '+esc(s.detail_rows)+' 行 · 读取 '+(
      s.read_ok?'<span class="tag ok">成功</span>':'<span class="tag bad">失败</span>')+'</div>'+
+    '<div class="note">数据覆盖率 '+esc(s.coverage_text||'未取得')+'</div>'+
+    '<div class="note'+(s.is_historical?' badtag':'')+'">新鲜度 '+esc(s.freshness_text||'—')+' | 最近采集 '+esc(s.last_success_at||s.fetched_at||'—')+'</div>'+
    '<div class="note">来源 '+esc(s.source_kind)+' · '+esc(s.fetched_at)+'</div>'+
    (s.error?'<div class="tag bad">'+esc(s.error.slice(0,80))+'</div>':'')+
    '<div class="note">'+esc(s.note||'')+'</div></div>';
@@ -868,7 +895,8 @@ def _serve() -> int:
         try:
             platform.ensure_tables(con)
             business.ensure_tables(con)
-            log("模块1 平台商品表 / 模块2 业务表已确保存在")
+            sync_freshness.ensure_tables(con)   # P0.3.1 采集真实性表（幂等）
+            log("模块1 平台商品表 / 模块2 业务表 / P0.3.1 同步状态表已确保存在")
         finally:
             con.close()
     except Exception as e:                                    # noqa: BLE001

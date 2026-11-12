@@ -38,8 +38,8 @@ V3_DB = Path(os.environ.get("OPS_V3_DB")
 WX_WEB_BASE = "http://127.0.0.1:9191"
 
 ENGINE_NAME = "上货台8.0-ops_engine"
-ENGINE_VERSION = "8.0-P0.4.0"                          # 模块3 每日真实运营闭环（真巡店/任务/日报）
-SCHEMA_VERSION = "5"                                   # 5 = 模块3 每日运营表
+ENGINE_VERSION = "8.0-P0.3.1"                          # P0.3.1 真实同步（微信全量分页 / 快照新鲜度 / 三店首页）
+SCHEMA_VERSION = "6"                                   # 6 = ops_sync_state 采集真实性表
 FROZEN = bool(getattr(sys, "frozen", False))
 
 

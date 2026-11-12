@@ -25,7 +25,7 @@ import traceback
 import urllib.request
 from pathlib import Path
 
-from . import config, queue
+from . import config, queue, sync_freshness
 
 WX_BASE = config.WX_WEB_BASE
 DD_CSV = config.WS / "抖店研究" / "crawl3" / "抖店_驳回商品_20261103.csv"
@@ -33,7 +33,7 @@ DD_RATE_CSV = config.WS / "抖店研究" / "crawl3" / "抖店_上货成功率_20
 
 # 后台采集进度（POST 起线程，GET /status 轮询）
 PROGRESS = {"running": False, "mode": "", "started_at": "", "finished_at": "",
-            "log": [], "error": "", "report": {}}
+            "log": [], "error": "", "report": {}, "progress": {}}
 _PLOCK = threading.Lock()
 
 DDL = """
@@ -159,12 +159,72 @@ def _match(pid, wx_map, dy_map, platform) -> tuple:
 WX_STATUS = ("5", "0", "6", "11", "12", "13")
 
 
-def _wx_shop(con, shop, wx_map, dy_map, pages_per_status: int) -> dict:
+ABSOLUTE_PAGE_CAP = 200   # 安全上限：next_key 异常时也不会死循环（249 件约需 13 页）
+
+
+def _progress(shop_id, name, status, page, got, cnt):
+    """逐店逐状态进度（供 GET /api/ops/platform/status 轮询显示）。"""
+    with _PLOCK:
+        PROGRESS["progress"] = {"shop_id": shop_id, "shop_name": name,
+                                "status": status, "page": page, "got": got,
+                                "total": cnt, "at": now()}
+        line = "%s · 状态%s 第%d页 已读 %d/%d" % (name, status, page, got, cnt)
+        PROGRESS["log"].append(line)
+        if len(PROGRESS["log"]) > 400:
+            del PROGRESS["log"][:200]
+
+
+def _record_sync(con, shop, out, started, full):
+    """把本轮微信采集结果落新鲜度状态（P0.3.1）。
+
+    ★ 快速刷新/定时循环不得把已「完整分页」的全量状态降级为 partial：
+      那会让页面每 30 分钟自己退回 60/700 的不完整状态，等于每月自毁一次数据。
+      快速刷新只更新读取时间，保留上一次全量的总数/明细/覆盖率/最后成功时间。
+    """
+    try:
+        sync_freshness.ensure_tables(con)
+        per = out.get("per_status") or {}
+        all_complete = bool(per) and all(
+            v.get("complete") for v in per.values()) and out.get("read_ok")
+        basis = "complete" if (full and all_complete) else (
+            "partial" if out.get("detail") else "none")
+        if not full:
+            prev = sync_freshness.for_shop(con, shop["appid"])
+            if prev and prev.get("coverage_basis") == "complete":
+                # 已有完整全量：本轮快速刷新不动 7 字段，只追加一条 note
+                con.execute("UPDATE ops_sync_state SET note=?, updated_at=? WHERE shop_id=?",
+                            ("快速刷新 @%s（保留上一次全量同步结果，不降级）" % now(),
+                             now(), shop["appid"]))
+                return
+        sync_freshness.record(
+            con, shop_id=shop["appid"], platform="wx",
+            shop_name=out.get("shop_name"), source=WX_BASE + "/api/products",
+            source_kind="wx_official_api", capture_started_at=started,
+            capture_finished_at=now(), last_success_at="",
+            total_count=out.get("total"), detail_rows=out.get("detail", 0),
+            coverage_basis=basis, read_ok=bool(out.get("read_ok")),
+            error=" | ".join(out.get("errors") or [])[:400],
+            note=("全量同步（完整分页）" if full else "快速刷新（每状态 1 页）")
+                 + "；逐状态 " + json.dumps(per, ensure_ascii=False)[:300])
+    except Exception as e:                                    # noqa: BLE001
+        out.setdefault("errors", []).append("sync_state: %s: %s" % (type(e).__name__, e))
+
+
+def _wx_shop(con, shop, wx_map, dy_map, pages_per_status: int,
+             full: bool = False) -> dict:
+    """微信单店真采集。full=True → 翻完所有分页到 next_key 空 / 达权威总数。
+
+    P0.3.1：真全量分页 + 商品ID去重 + 店铺隔离 + 逐店进度 + 失败记录 +
+    最后成功时间（落 ops_sync_state）。绝不用接口总数冒充已取得全部明细。
+    """
     sid = shop["appid"]
     name = shop.get("name") or sid
     hdr = {"X-Shop-Id": sid, "Accept": "application/json"}
+    started = now()
+    max_pages = ABSOLUTE_PAGE_CAP if full else pages_per_status
     out = {"shop_id": sid, "shop_name": name, "total": None, "read_ok": True,
-           "errors": [], "detail": 0, "by_status": {}}
+           "errors": [], "detail": 0, "by_status": {}, "coverage": {},
+           "per_status": {}, "started_at": started, "full": full}
     t0 = time.time()
 
     ov, ok, err, ms = _http(WX_BASE + "/api/overview", hdr, timeout=40)
@@ -173,7 +233,9 @@ def _wx_shop(con, shop, wx_map, dy_map, pages_per_status: int) -> dict:
     if not ok or not ov.get("ok"):
         out["read_ok"] = False
         out["errors"].append("overview: " + (err or str(ov)[:120]))
-        _upsert_shop(con, shop, out, pages_per_status, int((time.time() - t0) * 1000))
+        _upsert_shop(con, shop, out, pages_per_status,
+                     int((time.time() - t0) * 1000), full)
+        _record_sync(con, shop, out, started, full)
         return out
     bs = ov.get("by_status") or {}
     bst = ov.get("by_status_text") or {}
@@ -181,16 +243,25 @@ def _wx_shop(con, shop, wx_map, dy_map, pages_per_status: int) -> dict:
     out["by_status"] = bs
     out["status_text"] = bst
 
+    # 全量同步：先清掉本店上一轮的镜像行（仅 ops.db 平台镜像表，可从 API 再生，
+    # 不碰商品主库 v3.db；清的是「镜像明细」不是商品本身）。快速刷新不清。
+    if full:
+        con.execute("DELETE FROM ops_platform_product"
+                    " WHERE shop_id=? AND source_kind='wx_official_api'", (sid,))
+
+    seen = set()                       # 本店本轮 product_id 去重
     for st in WX_STATUS:
         cnt = int(bs.get(st) or 0)
         if cnt <= 0:
             continue
-        # 逐状态分页抓真实明细；每店每状态最多 pages_per_status 页，如实标 coverage
         cursor, got, pages = "0", 0, 0
-        while pages < pages_per_status:
-            u = "%s/api/products?status=%s&page_size=20&cursor=%s" % (WX_BASE, st, cursor)
+        exhausted = False
+        while pages < max_pages:
+            u = "%s/api/products?status=%s&page_size=20&cursor=%s" % (
+                WX_BASE, st, cursor)
             d, ok2, err2, ms2 = _http(u, hdr, timeout=60)
-            rows = ((d or {}).get("data") or {}).get("rows") or []
+            data = (d or {}).get("data") or {}
+            rows = data.get("rows") or []
             _record_fetch(con, sid, u, "GET X-Shop-Id", ok2, len(rows), ms2, err2,
                           "status=%s page=%d" % (st, pages + 1))
             if not ok2 or not d.get("ok"):
@@ -199,8 +270,9 @@ def _wx_shop(con, shop, wx_map, dy_map, pages_per_status: int) -> dict:
                 break
             for r in rows:
                 pid = str(r.get("product_id") or "").strip()
-                if not pid:
+                if not pid or pid in seen:
                     continue
+                seen.add(pid)
                 lid, mstate = _match(pid, wx_map, dy_map, "wx")
                 con.execute(
                     "INSERT OR REPLACE INTO ops_platform_product("
@@ -216,20 +288,45 @@ def _wx_shop(con, shop, wx_map, dy_map, pages_per_status: int) -> dict:
                      "%d/%d" % (got + 1, cnt),
                      "编辑状态:" + str(r.get("edit_status_text") or "")))
                 got += 1
-            nk = ((d or {}).get("data") or {}).get("next_key") or ""
+            _progress(sid, name, st, pages + 1, got, cnt)
+            nk = str(data.get("next_key") or "")
             pages += 1
+            # 全量：翻到 next_key 空 或 去重后已达权威总数；快速：每状态只 1 页
+            if not full:
+                break
             if not nk or not rows:
+                exhausted = True
+                break
+            if cnt and got >= cnt:
+                exhausted = True
                 break
             cursor = nk
         out["detail"] += got
-        out.setdefault("coverage", {})[st] = "%d/%d" % (got, cnt)
+        out["coverage"][st] = "%d/%d" % (got, cnt)
+        out["per_status"][st] = {"got": got, "total": cnt, "pages": pages,
+                                 "complete": bool(full and (exhausted or (cnt and got >= cnt)))}
 
-    _upsert_shop(con, shop, out, pages_per_status, int((time.time() - t0) * 1000))
+    _upsert_shop(con, shop, out, pages_per_status,
+                 int((time.time() - t0) * 1000), full)
+    _record_sync(con, shop, out, started, full)
     return out
 
 
-def _upsert_shop(con, shop, out, pages_per_status, elapsed_ms):
+def _upsert_shop(con, shop, out, pages_per_status, elapsed_ms, full=False):
     sid = shop["appid"]
+    per = out.get("per_status") or {}
+    all_complete = bool(per) and all(v.get("complete") for v in per.values()) \
+        and out.get("read_ok")
+    if full and all_complete:
+        note = ("权威总数=/api/overview；明细=/api/products 已翻完全部分页，"
+                "去重后 %d/%d 件" % (out.get("detail", 0), out.get("total") or 0))
+    elif full:
+        note = ("全量同步未完成：逐状态 %s；失败项见错误列"
+                % json.dumps(out.get("coverage") or {}, ensure_ascii=False))
+    else:
+        note = ("快速刷新：每状态只读第 1 页×20 件（未完整分页）；"
+                "完整明细请点「全量同步」；逐状态 %s"
+                % json.dumps(out.get("coverage") or {}, ensure_ascii=False))
     con.execute(
         "INSERT OR REPLACE INTO ops_platform_shop("
         "shop_id,platform,shop_name,source_kind,total,by_status,status_text,detail_rows,"
@@ -240,9 +337,7 @@ def _upsert_shop(con, shop, out, pages_per_status, elapsed_ms):
          out.get("detail", 0),
          json.dumps(out.get("coverage") or {}, ensure_ascii=False),
          1 if out.get("read_ok") else 0, now(), elapsed_ms,
-         " | ".join(out.get("errors") or [])[:400],
-         "权威总数=/api/overview；明细=/api/products 分页，每状态最多 %d 页×20 件；"
-         "完整明细可点「抓取全量」后台补齐" % pages_per_status))
+         " | ".join(out.get("errors") or [])[:400], note))
 
 
 # --------------------------------------------------------------------------- #
@@ -355,13 +450,19 @@ def _dy_shop(con, shop, wx_map, dy_map) -> dict:
 # 采集总入口
 # --------------------------------------------------------------------------- #
 def collect_all(mode: str = "snapshot", shop_filter: str = "") -> dict:
-    """mode=snapshot 每状态抓 1 页(快) / full 每状态最多 10 页。只写 ops.db。"""
-    pages = 1 if mode != "full" else 10
-    report = {"mode": mode, "pages_per_status": pages, "shops": [], "at": now(),
-              "v3_readonly": True, "platform_writes": 0}
+    """P0.3.1 三种模式（只写 ops.db）：
+      snapshot = 快速刷新：每状态只读第 1 页（20 件），如实标「未完成分页」
+      full     = 全量同步：微信两店翻完所有分页（next_key 空 / 达权威总数）
+      auto     = 定时内部用，等同 snapshot（不冒充新一轮浏览器采集）
+    """
+    full = (mode == "full")
+    pages = 1 if not full else ABSOLUTE_PAGE_CAP
+    report = {"mode": mode, "full": full, "pages_per_status": pages,
+              "shops": [], "at": now(), "v3_readonly": True, "platform_writes": 0}
     con = queue.connect()
     try:
         ensure_tables(con)
+        sync_freshness.ensure_tables(con)
         wx_map, dy_map = _id_maps(con)
         d, ok, err, ms = _http(WX_BASE + "/api/shops", timeout=8)
         _record_fetch(con, "", "/api/shops", "GET", ok,
@@ -376,13 +477,26 @@ def collect_all(mode: str = "snapshot", shop_filter: str = "") -> dict:
             try:
                 if s.get("kind") == "doudian":
                     r = _dy_shop(con, s, wx_map, dy_map)
+                    # P0.3.1：抖店 3846 件后台真明细 + 新鲜度状态，与 auto_loop 同一口径。
+                    # 老 _dy_shop 只有草稿/驳回汇总（7 行）与 total=None，不能当三店真数。
+                    try:
+                        from . import business as _biz
+                        snap = _biz.import_dy_snapshot(con)
+                        r["dy_snapshot"] = {
+                            "inserted": snap.get("inserted"),
+                            "source_time": snap.get("source_time"),
+                            "freshness": (snap.get("freshness") or {}).get("freshness_text")}
+                    except Exception as e:                    # noqa: BLE001
+                        r.setdefault("errors", []).append(
+                            "dy_snapshot: %s: %s" % (type(e).__name__, e))
                 else:
-                    r = _wx_shop(con, s, wx_map, dy_map, pages)
+                    r = _wx_shop(con, s, wx_map, dy_map, pages, full=full)
                 report["shops"].append(r)
                 PROGRESS["log"].append(
-                    "%s %s total=%s detail=%s ok=%s" % (
+                    "%s %s total=%s detail=%s ok=%s%s" % (
                         r["shop_id"], r["shop_name"], r.get("total"),
-                        r.get("detail"), r.get("read_ok")))
+                        r.get("detail"), r.get("read_ok"),
+                        " [全量/完整分页]" if full else " [快速/未完整分页]"))
             except Exception as e:                            # noqa: BLE001
                 report["shops"].append({"shop_id": s.get("appid"), "read_ok": False,
                                         "errors": ["%s: %s" % (type(e).__name__, e)]})
@@ -391,6 +505,7 @@ def collect_all(mode: str = "snapshot", shop_filter: str = "") -> dict:
             "SELECT COUNT(*) FROM ops_platform_product").fetchone()[0]
         report["fetch_rows"] = con.execute(
             "SELECT COUNT(*) FROM ops_platform_fetch").fetchone()[0]
+        report["sync_states"] = sync_freshness.all_states(con)
     finally:
         con.close()
     return report
@@ -449,8 +564,26 @@ def summary(con) -> dict:
     by_platform = {}
     for r in rows:
         by_platform[r["platform"]] = by_platform.get(r["platform"], 0) + 1
+    # P0.3.1：给每店挂上真实新鲜度/覆盖率/最后成功时间/错误
+    try:
+        sync_freshness.ensure_tables(con)
+        rows = sync_freshness.attach(rows, sync_freshness.all_states(con))
+    except Exception:                                        # noqa: BLE001
+        pass
     return {"shops": rows, "count": len(rows), "by_platform": by_platform,
-            "note": "微信=官方 API 权威数；抖店=ego 页面快照，未取得的不编造"}
+            "note": "微信=官方 API 权威数；抖店=ego 页面快照，未取得的不编造；"
+                    "新鲜度按数据真实时间判定，历史快照明确标注"}
+
+
+def sync_status(con) -> dict:
+    """P0.3.1 采集真实性总览（三店新鲜度/覆盖率/最后成功/错误）。"""
+    sync_freshness.ensure_tables(con)
+    states = sync_freshness.all_states(con)
+    cols = con.execute("PRAGMA table_info(ops_sync_state)").fetchall()
+    return {"states": states, "count": len(states),
+            "columns": [c["name"] for c in cols],
+            "stale_hours": {"wx": sync_freshness.STALE_HOURS_WX,
+                            "dy": sync_freshness.STALE_HOURS_DY}}
 
 
 def products(con, shop: str = "", status_code: str = "", q: str = "",

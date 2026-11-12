@@ -399,3 +399,36 @@ CREATE TABLE IF NOT EXISTS ops_daily_report (
     created_at    TEXT
 );
 -- 版本：5（模块3 每日真实运营闭环）
+
+-- =====================================================================
+-- ★ P0.3.1 · 采集真实性 / 快照新鲜度（2026-11-12）
+--   ops_sync_state  每店一行：数据来源 / 起止时间 / 快照文件时间 / 最后成功采集 /
+--                   平台总数 / 明细数 / 覆盖率及依据 / 新鲜度 / 失败原因
+--   与 sync_freshness.DDL 一致（CREATE IF NOT EXISTS，重跑安全）
+--   微信=完整分页后才有资格算覆盖率；抖店历史快照按文件时间判过期，不冒充最新
+-- =====================================================================
+CREATE TABLE IF NOT EXISTS ops_sync_state (
+    shop_id               TEXT PRIMARY KEY,
+    platform              TEXT NOT NULL,
+    shop_name             TEXT,
+    source                TEXT,
+    source_kind           TEXT,
+    capture_started_at    TEXT,
+    capture_finished_at   TEXT,
+    snapshot_file_mtime   TEXT,
+    last_success_at       TEXT,
+    total_count           INTEGER,
+    detail_rows           INTEGER,
+    coverage              REAL,
+    coverage_basis        TEXT,
+    read_ok               INTEGER DEFAULT 0,
+    data_status           TEXT,
+    freshness_text        TEXT,
+    age_hours             REAL,
+    stale_after_hours     REAL,
+    error                 TEXT,
+    note                  TEXT,
+    updated_at            TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_ops_sync_at ON ops_sync_state(updated_at);
+-- 版本：6（P0.3.1 采集真实性）

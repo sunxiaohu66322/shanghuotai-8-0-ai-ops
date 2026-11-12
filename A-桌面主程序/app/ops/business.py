@@ -31,7 +31,7 @@ import traceback
 import urllib.request
 from pathlib import Path
 
-from . import config, queue
+from . import config, queue, sync_freshness
 
 # 后台进度 / 下次定时时间（只给页面看，不参与判定）
 AUTO = {"enabled": True, "interval_s": 1800, "last_at": "", "last_result": "",
@@ -203,6 +203,24 @@ def import_dy_snapshot(con) -> dict:
          "来源 ego 浏览器快照 %s，非官方 API 实时数；定时脚本刷新后更新。"
          "平台可报名活动、曝光点击等仍未取得，不编造。" % (len(rows), mtime)))
     out["read_ok"] = True
+    # ---- P0.3.1 新鲜度：按快照文件真实时间判，不因「今天重读一次」变新 ----
+    try:
+        sync_freshness.ensure_tables(con)
+        verdict = sync_freshness.record(
+            con, shop_id=sid, platform="dy", shop_name=name, source=str(path),
+            source_kind="dy_ego_full" if fresh else "dy_snapshot_historical",
+            capture_started_at=now(), capture_finished_at=now(),
+            snapshot_file_mtime=mtime,
+            total_count=len(rows), detail_rows=out["inserted"],
+            # 快照逐行 = 完整分页依据；但历史快照按文件时间判过期
+            coverage_basis="complete" if out["inserted"] else "none",
+            read_ok=True, error="",
+            note="本轮为%s；auto_loop 只重读本地文件，不发起新一轮浏览器采集"
+                 % ("浏览器新快照" if fresh else "重读历史全店快照"),
+            new_capture=False)       # ★ 关键：重读历史文件不推进「最后成功采集时间」
+        out["freshness"] = verdict
+    except Exception as e:                                    # noqa: BLE001
+        out.setdefault("errors", []).append("sync_state: %s: %s" % (type(e).__name__, e))
     return out
 
 
@@ -225,11 +243,28 @@ def snapshot_status(con) -> dict:
     for r in con.execute("SELECT status_code, COUNT(*) n FROM ops_platform_product"
                          " WHERE source_kind='dy_ego_full' GROUP BY status_code"):
         by[str(r["status_code"])] = r["n"]
+    # P0.3.1：按快照文件真实时间判新鲜度（修「fresh 绑定路径、无过期概念」）
+    verdict = sync_freshness.judge(
+        platform="dy", source_kind="dy_ego_full",
+        snapshot_file_mtime=mtime, capture_finished_at=now(),
+        total_count=len(rows) or None, detail_rows=n,
+        coverage_basis="complete" if n else "none",
+        error="" if rows else "快照文件不存在或为空")
+    state = {}
+    try:
+        sync_freshness.ensure_tables(con)
+        state = sync_freshness.for_shop(con, "dd_lzl") or {}
+    except Exception:                                        # noqa: BLE001
+        pass
     return {"db_rows": n, "file": str(path) if path else "", "file_mtime": mtime,
             "fresh_browser": fresh, "rows_in_file": len(rows),
             "by_status": by, "timed": dict(AUTO),
             "capture_script": str(config.WS / "上货台" / "app" / "ops" / "dy_timed_capture.mjs"),
-            "note": "历史快照非实时；浏览器脚本产物更新后下一次定时采集自动入库"}
+            "freshness": verdict, "sync_state": state,
+            "note": "Python 定时循环只重读本地快照文件，不发起新一轮浏览器采集；"
+                    "新鲜度按快照文件时间判定（%s），历史数据明确标注；"
+                    "浏览器刷新器产物 dy-timed-snapshot.json 需人工在 ego 已登录空间跑一次"
+                    % (verdict["freshness_text"])}
 
 
 # --------------------------------------------------------------------------- #

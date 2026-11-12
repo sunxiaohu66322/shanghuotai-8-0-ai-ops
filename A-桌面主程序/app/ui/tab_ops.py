@@ -64,9 +64,12 @@ class OpsCenterTab(QWidget):
             Qt.TextInteractionFlag.TextSelectableByMouse)
         self.btn_refresh = QPushButton("↻ 刷新")
         self.btn_refresh.clicked.connect(self.reload)
-        self.btn_sync = QPushButton("⟳ 采集平台真实数据")
-        self.btn_sync.setToolTip("后台真读 9191 官方接口 / 抖店快照，只写 ops.db，零发布零改价")
-        self.btn_sync.clicked.connect(self.sync_platform)
+        self.btn_sync = QPushButton("⟳ 快速刷新")
+        self.btn_sync.setToolTip("每状态只读第 1 页×20 件，如实标未完成分页；只写 ops.db")
+        self.btn_sync.clicked.connect(lambda: self.sync_platform("snapshot"))
+        self.btn_full = QPushButton("⇩ 全量同步")
+        self.btn_full.setToolTip("微信两店翻完所有分页到 next_key 空 / 达权威总数，ID 去重；耗时约数分钟")
+        self.btn_full.clicked.connect(lambda: self.sync_platform("full"))
         self.btn_start = QPushButton("▶ 启动引擎")
         self.btn_start.clicked.connect(self.start_engine)
         self.btn_stop = QPushButton("■ 停止引擎")
@@ -78,7 +81,7 @@ class OpsCenterTab(QWidget):
         bl.addWidget(self.lb_state)
         bl.addStretch(1)
         bl.addWidget(self.lb_hint)
-        for b in (self.btn_refresh, self.btn_sync, self.btn_start,
+        for b in (self.btn_refresh, self.btn_sync, self.btn_full, self.btn_start,
                   self.btn_stop, self.btn_restart):
             bl.addWidget(b)
         lay.addWidget(bar)
@@ -95,8 +98,9 @@ class OpsCenterTab(QWidget):
         self.t_products = self._table(["ID", "标题", "状态", "价(低)", "价(高)",
                                        "主图", "视频", "抖店", "微店", "更新时间"])
         self.t_platform_shops = self._table(
-            ["平台", "店铺", "完整 shop_id", "平台实际商品数", "在售", "未上架",
-             "回收站", "审核失败/驳回", "明细行", "读取", "来源", "更新时间", "说明"])
+            ["平台", "店铺", "完整 shop_id", "平台商品总数", "已读明细", "数据覆盖率",
+             "最近采集时间", "数据新鲜度", "采集状态", "采集错误",
+             "在售", "未上架", "回收站", "审核失败/驳回", "来源", "说明"])
         self.t_platform_products = self._table(
             ["店铺", "平台商品ID", "标题", "状态", "价(低)", "库存", "规格",
              "本地商品ID", "匹配", "来源", "源时间", "读取", "备注"])
@@ -424,20 +428,24 @@ class OpsCenterTab(QWidget):
             self.lb_state.setText(self.lb_state.text() + " · 部分接口异常：" + self.err[:80])
 
     # ---------------- 模块1：双平台真实商品 ----------------
-    def sync_platform(self):
-        """点按钮 → POST 9192 起后台采集（真读 9191 官方接口/抖店快照），轮询到结束再回读。"""
+    def sync_platform(self, mode: str = "snapshot"):
+        """点按钮 → POST 9192 起后台采集（真读 9191 官方接口/抖店快照），轮询到结束再回读。
+        P0.3.1：mode=snapshot 快速刷新 / mode=full 微信两店全量同步（翻完所有分页）。"""
         self.btn_sync.setEnabled(False)
-        self.lb_platform.setText("采集中…（后台真读平台数据，只写 ops.db）")
+        self.btn_full.setEnabled(False)
+        tag = "全量同步" if mode == "full" else "快速刷新"
+        self.lb_platform.setText("%s…（后台真读平台数据，只写 ops.db）" % tag)
         try:
             req = urllib.request.Request(
                 self.base + "/api/ops/platform/collect",
-                data=json.dumps({"mode": "snapshot"}).encode("utf-8"),
+                data=json.dumps({"mode": mode}).encode("utf-8"),
                 headers={"Content-Type": "application/json"}, method="POST")
             with urllib.request.urlopen(req, timeout=5) as r:
                 r.read()
         except Exception as e:                               # noqa: BLE001
             self.lb_platform.setText("采集请求失败：%s: %s" % (type(e).__name__, e))
             self.btn_sync.setEnabled(True)
+            self.btn_full.setEnabled(True)
             return
         self._sync_polls = 0
         self._poll_sync()
@@ -449,13 +457,19 @@ class OpsCenterTab(QWidget):
         except Exception as e:                               # noqa: BLE001
             self.lb_platform.setText("采集状态读取失败：%s" % e)
             self.btn_sync.setEnabled(True)
+            self.btn_full.setEnabled(True)
             return
-        if st.get("running") and self._sync_polls < 180:
+        if st.get("running") and self._sync_polls < 300:
             tail = (st.get("log") or ["采集中…"])[-1]
-            self.lb_platform.setText("采集中… " + str(tail))
+            pr = st.get("progress") or {}
+            extra = ("（%s 状态%s 第%s页 %s/%s）" % (
+                pr.get("shop_name", ""), pr.get("status", ""), pr.get("page", ""),
+                pr.get("got", ""), pr.get("total", ""))) if pr else ""
+            self.lb_platform.setText("采集中… " + str(tail) + extra)
             QTimer.singleShot(1200, self._poll_sync)
             return
         self.btn_sync.setEnabled(True)
+        self.btn_full.setEnabled(True)
         self.lb_platform.setText("采集完成 %s" % (st.get("finished_at") or ""))
         self.load_platform()
         self.load_business()
@@ -469,15 +483,20 @@ class OpsCenterTab(QWidget):
             rows = []
             for x in shops:
                 bs = x.get("by_status") or {}
+                # P0.3.1 三店 7 字段：总数/明细/覆盖率/采集时间/新鲜度/状态/错误
                 rows.append([
                     x.get("platform"), x.get("shop_name"), x.get("shop_id"),
                     "未取得" if x.get("total") is None else x.get("total"),
+                    x.get("detail_rows"),
+                    x.get("coverage_text") or "未取得",
+                    x.get("last_success_at") or x.get("fetched_at") or "—",
+                    x.get("freshness_text") or "—",
+                    x.get("data_status") or ("成功" if x.get("read_ok") else "失败"),
+                    (x.get("error") or "—")[:60],
                     bs.get("5", bs.get("上架", "—")), bs.get("0", bs.get("未上架", "—")),
                     bs.get("6", bs.get("回收站", "—")),
                     bs.get("审核驳回", bs.get("13", "—")),
-                    x.get("detail_rows"), "成功" if x.get("read_ok") else "失败",
-                    x.get("source_kind"), x.get("fetched_at"),
-                    (x.get("error") or x.get("note") or "")[:60]])
+                    x.get("source_kind"), (x.get("note") or "")[:60]])
             self._fill(self.t_platform_shops, rows)
         except Exception as e:                               # noqa: BLE001
             self.lb_platform.setText("三店概览读取失败：%s" % e)
