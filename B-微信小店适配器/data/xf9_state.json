@@ -1,0 +1,78 @@
+{
+ "day": "2026-11-12",
+ "flow": [
+  {
+   "id": "T001",
+   "path": "/businessOpportunity",
+   "title": "商机提报",
+   "status": "成功",
+   "at": "2026-11-12 21:22:49",
+   "note": "",
+   "evidence": "平台回读：活动状态 未开始→进行中，报名商品数 0→3"
+  },
+  {
+   "id": "T002",
+   "path": "/viral_remake/video",
+   "title": "竞品视频复刻",
+   "status": "进行中",
+   "at": "2026-11-12 21:22:49",
+   "note": "",
+   "evidence": ""
+  },
+  {
+   "id": "T003",
+   "path": "/video_tools/video_create_record",
+   "title": "主图视频生成记录",
+   "status": "待开始",
+   "at": "2026-11-12 21:22:35",
+   "note": "",
+   "evidence": ""
+  },
+  {
+   "id": "T004",
+   "path": "/video_tools/batch_main_video_upload",
+   "title": "批量主图视频上传",
+   "status": "待开始",
+   "at": "2026-11-12 21:22:35",
+   "note": "",
+   "evidence": ""
+  },
+  {
+   "id": "T005",
+   "path": "/video_tools/short_video",
+   "title": "种草短视频",
+   "status": "待开始",
+   "at": "2026-11-12 21:22:35",
+   "note": "",
+   "evidence": ""
+  },
+  {
+   "id": "T006",
+   "path": "/active",
+   "title": "限时限量购",
+   "status": "待开始",
+   "at": "2026-11-12 21:22:35",
+   "note": "",
+   "evidence": ""
+  },
+  {
+   "id": "T007",
+   "path": "/newComerGiftMoney1",
+   "title": "新人礼金",
+   "status": "待开始",
+   "at": "2026-11-12 21:22:35",
+   "note": "",
+   "evidence": ""
+  },
+  {
+   "id": "T008",
+   "path": "/active/history",
+   "title": "批量修改记录",
+   "status": "待开始",
+   "at": "2026-11-12 21:22:35",
+   "note": "",
+   "evidence": ""
+  }
+ ],
+ "seq": 8
+}

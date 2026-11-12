@@ -15,6 +15,7 @@ import photo as PH
 import publish as PB
 import dd as DD
 import union3 as U3
+import xf9 as XF9
 
 WEB = os.path.join(ROOT, 'web')
 DATA = os.path.join(ROOT, 'data')
@@ -1399,6 +1400,8 @@ class H(BaseHTTPRequestHandler):
     # -- API
     def _api_get(self, p, q):
         g = lambda k, d='': (q.get(k) or [d])[0]
+        if p.startswith('/api/xf9/'):              # 9.0 AI 运营中心（独立模块 xf9.py）
+            return self._json(XF9.api_get(p, q))
         if p.startswith('/api/dd/'):                # 7.0 抖店后台管理（独立模块 dd.py）
             return self._json(DD.api_get(p, q))
         if p.startswith('/api/publish/'):          # 6.0 上架平台（独立模块 publish.py）
@@ -1528,6 +1531,8 @@ class H(BaseHTTPRequestHandler):
         return self._json({'ok': False, 'error': 'unknown endpoint ' + p}, 404)
 
     def _api_post(self, p, b):
+        if p.startswith('/api/xf9/'):              # 9.0 AI 运营中心
+            return self._json(XF9.api_post(p, b))
         if p.startswith('/api/dd/'):                # 7.0 抖店后台管理
             return self._json(DD.api_post(p, b))
         if p.startswith('/api/publish/'):          # 6.0 上架平台

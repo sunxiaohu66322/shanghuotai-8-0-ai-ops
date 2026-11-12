@@ -127,6 +127,19 @@ window.MENU = [
       { key: '/dd/publish', title: '上架执行', page: 'ddPublish', state: 'real' },
       { key: '/dd/links', title: '后台跳转', page: 'ddLinks', state: 'real' }
     ]
+  },
+  /* 9.0 AI 运营中心（2026-11-12）：晓风搬家上货全部 91 条运营功能复刻 + 流转状态机。
+     与 8.0 的区别：8.0 是散功能，9.0 是「今日一趟」的工作流 + 状态机 + 平台回读写死。
+     数据源 data/xf9_catalog.json（静态还原，不是假数据）；任务账本 xf9_state.json / xf9_ledger.jsonl。
+     红线：本页不发真实平台请求；正式发布/报名/改价一律「AI 准备 → 人工确认」。 */
+  {
+    key: 'xf9', title: '9.0 AI 运营中心', icon: '✦', children: [
+      { key: '/xf9/hub', title: '今日一趟 · 运营闭环', page: 'xf9Hub', state: 'real' },
+      { key: '/xf9/all', title: '全套功能树（91项）', page: 'xf9All', state: 'real' },
+      { key: '/xf9/remake', title: '爆款视频复刻', page: 'xf9Remake', state: 'real' },
+      { key: '/xf9/principle', title: '视频原理 · 本地试合成', page: 'xf9Principle', state: 'real' },
+      { key: '/xf9/tasks', title: '任务账本 / 回读证据', page: 'xf9Tasks', state: 'real' }
+    ]
   }
 ];
 

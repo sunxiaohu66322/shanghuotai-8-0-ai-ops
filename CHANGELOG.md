@@ -8,6 +8,32 @@
 > 注：`raw.githubusercontent.com` 有 CDN 缓存，刚推完的几分钟内可能读到上一版；
 > 想确认最新版，请看仓库根本文件的**网页渲染**或 `/tags` 页（实时），或 `git show <tag>`。
 
+## v5 · 2026-11-12 21:32:48 +08:00 · P0.3.6 新手可用：8.0 首页顶部新增『今天照着做』店主操作层（4行：货状态/报活动/视频挂链/卖了多少，可勾选记忆），系统自检7字段折叠下移并标注『你不用管』；新增独立自包含 HTML 说明页；engine.py py_compile + 真起9192 HTTP回读7断言全绿 + 首页/模块2 双截图验收
+
+- 标签：`v5` ｜ 基线 commit（上一版）：`a2b6038c4` ｜ 密钥终检：**0 命中** ｜ 纳入 **1239** 文件 / 排除 **1207**
+- 本版有意义的改动 **20** 项（A 新增 / M 修改 / D 删除 / R 改名）：
+  - `M` `A-桌面主程序/app/ops/engine.py`
+  - `M` `B-微信小店适配器/app.py`
+  - `M` `B-微信小店适配器/data/logs/wx60-std.log`
+  - `M` `B-微信小店适配器/data/overview.json`
+  - `A` `B-微信小店适配器/data/xf9_catalog.json`
+  - `A` `B-微信小店适配器/data/xf9_ledger.jsonl`
+  - `A` `B-微信小店适配器/data/xf9_state.json`
+  - `M` `B-微信小店适配器/web/index.html`
+  - `M` `B-微信小店适配器/web/menu.js`
+  - `A` `B-微信小店适配器/web/pages9.js`
+  - `A` `B-微信小店适配器/web/vendor9/crypto-browserify-DuEXuEwu.js`
+  - `A` `B-微信小店适配器/web/vendor9/dist-CGwuciAw.js`
+  - `A` `B-微信小店适配器/web/vendor9/naive-ui-BLRq4YLq.js`
+  - `A` `B-微信小店适配器/web/vendor9/preload-helper-DYl5dUZ5.js`
+  - `A` `B-微信小店适配器/web/vendor9/rolldown-runtime-DAXXjFlN.js`
+  - `A` `B-微信小店适配器/web/vendor9/tos.esm-D9GlSBMx.js`
+  - `A` `B-微信小店适配器/web/vendor9/useLocalShortVideo-Drins-0G.js`
+  - `A` `B-微信小店适配器/web/vendor9/utils-libs-CxrTFSuI.js`
+  - `A` `B-微信小店适配器/xf9.py`
+  - `A` `D-调查报告与交付证据/新手运营-今天照着做.html`
+- 本版提交 SHA：`git rev-parse v5`；改动记录同步维护在 `VERSIONS.md` 与仓库 tags 页。
+
 ## v4 · 2026-11-12 20:45:01 +08:00 · P0.3.1 真实同步：微信两店全量分页(700/143) + ops_sync_state 新鲜度(抖店3846标历史14.2天) + 首页/卡片/桌面三店7字段 + 10项测试14/14
 
 - 标签：`v4` ｜ 基线 commit（上一版）：`196e0c6b5` ｜ 密钥终检：**0 命中** ｜ 纳入 **1225** 文件 / 排除 **1202**

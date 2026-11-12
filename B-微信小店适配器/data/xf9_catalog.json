@@ -1,0 +1,2406 @@
+{
+ "version": "9.0",
+ "built_at": "2026-11-12 21:16:39",
+ "source": "晓风搬家上货 SPA 30.3.3 · 372 chunk / 19.75MB 静态还原 + 真 ego 16 页 DOM",
+ "counts": {
+  "routes": 91,
+  "groups": 8,
+  "vendor_files": 8,
+  "eps_with_facts": 6
+ },
+ "flow": [
+  "/businessOpportunity",
+  "/viral_remake/video",
+  "/video_tools/video_create_record",
+  "/video_tools/batch_main_video_upload",
+  "/video_tools/short_video",
+  "/active",
+  "/newComerGiftMoney1",
+  "/active/history"
+ ],
+ "groups": [
+  {
+   "id": "g_video_remake",
+   "title": "爆款视频复刻（老师教的那条）",
+   "icon": "🎬"
+  },
+  {
+   "id": "g_business",
+   "title": "商机与选品",
+   "icon": "◈"
+  },
+  {
+   "id": "g_video_tools",
+   "title": "视频工具",
+   "icon": "▶"
+  },
+  {
+   "id": "g_active",
+   "title": "活动与推广",
+   "icon": "◎"
+  },
+  {
+   "id": "g_ai",
+   "title": "AI 商品与图片",
+   "icon": "✧"
+  },
+  {
+   "id": "g_copy",
+   "title": "铺货与复制",
+   "icon": "⧉"
+  },
+  {
+   "id": "g_bulk",
+   "title": "批量修改与检测",
+   "icon": "✎"
+  },
+  {
+   "id": "g_shop",
+   "title": "店铺与云库",
+   "icon": "⌘"
+  }
+ ],
+ "items": [
+  {
+   "path": "/1688AIWork",
+   "title": "1688AI工作台",
+   "group": "g_ai",
+   "group_title": "AI 商品与图片",
+   "group_icon": "✧",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/fzsh",
+   "title": "复制上货",
+   "group": "g_copy",
+   "group_title": "铺货与复制",
+   "group_icon": "⧉",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/comboDistribution",
+   "title": "组合铺货",
+   "group": "g_copy",
+   "group_title": "铺货与复制",
+   "group_icon": "⧉",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/multi_store_replenish_manage",
+   "title": "多店铺货数据管理",
+   "group": "g_copy",
+   "group_title": "铺货与复制",
+   "group_icon": "⧉",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/link_supply",
+   "title": "同步/替换SKU",
+   "group": "g_copy",
+   "group_title": "铺货与复制",
+   "group_icon": "⧉",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/link_supply_sku_replace_record",
+   "title": "规格替换记录",
+   "group": "g_copy",
+   "group_title": "铺货与复制",
+   "group_icon": "⧉",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/ai_copy_goods2",
+   "title": "AI爆款裂变",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/AiRenovate",
+   "title": "商品翻新/添加SKU",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/AiRenovateLog",
+   "title": "AI商品翻新记录",
+   "group": "g_ai",
+   "group_title": "AI 商品与图片",
+   "group_icon": "✧",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/fzsh/entire_store/index",
+   "title": "1688全店铺货",
+   "group": "g_copy",
+   "group_title": "铺货与复制",
+   "group_icon": "⧉",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/categoryMoveQuota",
+   "title": "发品额度查询",
+   "group": "g_business",
+   "group_title": "商机与选品",
+   "group_icon": "◈",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/risk_supply",
+   "title": "风险货源检测",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/risk_supply_task_history",
+   "title": "风险货源检测日志",
+   "group": "g_business",
+   "group_title": "商机与选品",
+   "group_icon": "◈",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/xf_gyl",
+   "title": "选品中心",
+   "group": "g_business",
+   "group_title": "商机与选品",
+   "group_icon": "◈",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/dyClosureSelection",
+   "title": "截流选品",
+   "group": "g_business",
+   "group_title": "商机与选品",
+   "group_icon": "◈",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/multShop",
+   "title": "商品批量修改",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/mult_shop_change_navigate",
+   "title": "多店批量修改",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/excel_manage",
+   "title": "EXCEL批量修改",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/white_bg_image",
+   "title": "白底图管理",
+   "group": "g_ai",
+   "group_title": "AI 商品与图片",
+   "group_icon": "✧",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/product_task",
+   "title": "定时上下架",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/multShopBulkEdit",
+   "title": "多店批量修改",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/multShopBulkEditOld",
+   "title": "多店批量修改旧版",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/claerMaterial",
+   "title": "多店素材库清理",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/multShopCateDete",
+   "title": "多店类目错放检测",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/multShopRepetitionReleaseDetection",
+   "title": "多店重复铺货检测",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/clear_trash",
+   "title": "多店清理回收站",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/violation_warning",
+   "title": "多店违规监控",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/viral_remake",
+   "title": "竞品复刻",
+   "group": "g_video_remake",
+   "group_title": "爆款视频复刻（老师教的那条）",
+   "group_icon": "🎬",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/viral_remake/video",
+   "title": "竞品视频复刻",
+   "group": "g_video_remake",
+   "group_title": "爆款视频复刻（老师教的那条）",
+   "group_icon": "🎬",
+   "eps": [
+    "/productRecommendation/query",
+    "/productRecommendation/queryVideo",
+    "/productRecommendation/downloadVideo",
+    "/productRecommendation/task/createAnalysis",
+    "/productRecommendation/task/createReproduction",
+    "/productRecommendation/task/list",
+    "/productRecommendation/task/detail"
+   ],
+   "steps": [
+    "选本店已上架商品（同步商品）",
+    "后台自动匹配同款竞品数据：转化率 / 成交金额 / 广告费 / 带货视频榜",
+    "看爆款视频（广告素材 / 非广告素材、销售额、商品点击）",
+    "一键复刻（消耗算力，提交后不能取消）或直接下载成片",
+    "拿去投流 / 二次剪辑 / 混剪",
+    "作品列表回读状态（待开始→进行中→成功 / 失败→重试）"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "recommendation-8zc_19MH.js @5309/5496/6777/7446 · works-6NgiIQtl.js · video-CgSHeDQ0.js"
+  },
+  {
+   "path": "/viral_remake/image_text",
+   "title": "竞品图文复刻",
+   "group": "g_video_remake",
+   "group_title": "爆款视频复刻（老师教的那条）",
+   "group_icon": "🎬",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/viral_remake/video/similar",
+   "title": "同款优质视频",
+   "group": "g_video_remake",
+   "group_title": "爆款视频复刻（老师教的那条）",
+   "group_icon": "🎬",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/viral_remake/image_text/similar",
+   "title": "同款优质图文",
+   "group": "g_video_remake",
+   "group_title": "爆款视频复刻（老师教的那条）",
+   "group_icon": "🎬",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/viral_remake/works",
+   "title": "作品列表",
+   "group": "g_video_remake",
+   "group_title": "爆款视频复刻（老师教的那条）",
+   "group_icon": "🎬",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/free_ai_main_image",
+   "title": "爆款视频复刻",
+   "group": "g_video_remake",
+   "group_title": "爆款视频复刻（老师教的那条）",
+   "group_icon": "🎬",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/businessOpportunity",
+   "title": "商机提报",
+   "group": "g_business",
+   "group_title": "商机与选品",
+   "group_icon": "◈",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/low_dynamic_detection",
+   "title": "低动销检测",
+   "group": "g_business",
+   "group_title": "商机与选品",
+   "group_icon": "◈",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/active",
+   "title": "限时限量购",
+   "group": "g_active",
+   "group_title": "活动与推广",
+   "group_icon": "◎",
+   "eps": [
+    "/activity/queryActivities",
+    "/activity/checkProductAvailable",
+    "/activity/temp/checkTempParams",
+    "/batchTask/addMultiShopTask"
+   ],
+   "steps": [
+    "查活动列表与状态",
+    "选商品 → 服务端资格预检（FailItemArr.ErrMsg）",
+    "填报名表单（折扣/限购/库存/续期）",
+    "预览宝贝 → 立即修改 → 提交后台任务",
+    "回读活动状态与报名商品数"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+server",
+   "src": "limited_active-CSQ6eWOB.js @12264/@44003 · activeList-CfGU3vlv.js @900"
+  },
+  {
+   "path": "/active/history",
+   "title": "批量修改记录",
+   "group": "g_active",
+   "group_title": "活动与推广",
+   "group_icon": "◎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+server",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/video_tools",
+   "title": "主图视频工具",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/video_tools/short_video",
+   "title": "种草短视频",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [
+    "/shortVideo/getInfoForPublish",
+    "/shortVideo/upload",
+    "/shortVideo/getUploadTask",
+    "/shortVideo/publishV2",
+    "/shortVideo/getContributedVideoList"
+   ],
+   "steps": [
+    "选商品",
+    "选挂车视频来源（AI 视频 / 上传自定义 / 用主图视频）",
+    "官方生成标题描述",
+    "预览 + 声明",
+    "发布视频到抖音",
+    "回读 BindType / PlayCount / OrderAmount"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "short_videos_iframe-BzjR7lP2.js @6832 · publish_short_video-DjAZRllf.js @7300"
+  },
+  {
+   "path": "/video_tools/pic_banner_video",
+   "title": "图文挂车",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/video_tools/batch_main_video_upload",
+   "title": "批量主图视频上传",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [
+    "/material/videoTaskList",
+    "/product/tproduct/batchSaveMaterial",
+    "/product/tproduct/getSchema"
+   ],
+   "steps": [
+    "视频以商品ID命名或打 ZIP",
+    "上传（MP4≤100M / 时长≤60s / 1:1 3:4 9:16）",
+    "确认预览",
+    "一键发布到商品（并发 3）",
+    "回读 StatusStr 审核通过",
+    "失败清单导出 xlsx"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "batch_main_video_upload-bfY-iPi-.js @794 · preview-Lhj8Bw4T.js @2400 · co_util @481389"
+  },
+  {
+   "path": "/video_tools/batch_main_video_upload/preview",
+   "title": "视频列表",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/video_tools/video_manage",
+   "title": "主图视频管理",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/video_tools/video_create_record",
+   "title": "主图视频生成记录",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [
+    "/material/videoTaskList",
+    "/material/videoInfo"
+   ],
+   "steps": [
+    "读 5 张主图",
+    "浏览器本地 WebCodecs 合成 mp4",
+    "上传素材",
+    "应用至商品",
+    "回读审核状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "useLocalShortVideo-Drins-0G.js @193172-196099 · main_video-DxU0GI1t.js"
+  },
+  {
+   "path": "/video_tools/video_test",
+   "title": "主图视频检测",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/video_tools/video_test_record",
+   "title": "主图视频生成记录",
+   "group": "g_video_tools",
+   "group_title": "视频工具",
+   "group_icon": "▶",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local+official",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/shoplist",
+   "title": "多店铺管理",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/template",
+   "title": "模板列表",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/cloudLib",
+   "title": "云商品库",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/cloudLib/share-manage",
+   "title": "共享管理",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/cloudLib/duplicate-check",
+   "title": "云商品库重复检测",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/ai_tool",
+   "title": "AI商品管理",
+   "group": "g_ai",
+   "group_title": "AI 商品与图片",
+   "group_icon": "✧",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/ai_copy_goods",
+   "title": "AI爆款裂变",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/aiCheckImg",
+   "title": "AI商品违规检测",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/smartCreation",
+   "title": "AI智能创作",
+   "group": "g_ai",
+   "group_title": "AI 商品与图片",
+   "group_icon": "✧",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/aiReferenceImg",
+   "title": "AI鉴图",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/AiAntiPrice",
+   "title": "AI防比价",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/AiDrawImg",
+   "title": "AI作图",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/rechargeComputingPowerRecord",
+   "title": "AI算力记录",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/dy_active",
+   "title": "一键开活动",
+   "group": "g_active",
+   "group_title": "活动与推广",
+   "group_icon": "◎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "official_page",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/promotional",
+   "title": "一键全域推广",
+   "group": "g_active",
+   "group_title": "活动与推广",
+   "group_icon": "◎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/stepCoupon",
+   "title": "自动阶梯券",
+   "group": "g_active",
+   "group_title": "活动与推广",
+   "group_icon": "◎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/bulkSale",
+   "title": "限时限量购",
+   "group": "g_active",
+   "group_title": "活动与推广",
+   "group_icon": "◎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/newComerGiftMoney1",
+   "title": "新人礼金",
+   "group": "g_active",
+   "group_title": "活动与推广",
+   "group_icon": "◎",
+   "eps": [
+    "/marketing/union_allowance/v1/list_record",
+    "/marketing/union_allowance/v1/search_product",
+    "/marketing/union_allowance/v1/create_apply",
+    "/marketing/activity/v1/query_available_product_v2"
+   ],
+   "steps": [
+    "打开官方新人礼金页（不能切换/关闭）",
+    "导入上架商品 ID",
+    "过滤不可用商品",
+    "设面额/基准折扣/分组",
+    "提交 create_apply",
+    "回读活动状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "official_page",
+   "src": "newcomer_gift_money-zt-7Y2hQ.js @900-2991"
+  },
+  {
+   "path": "/drawReviewRecycle",
+   "title": "清空/恢复回收站",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/batch_delete_freight_template",
+   "title": "批量删除运费模板",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/yunying_tool",
+   "title": "抖店运营工具",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/low_price_check",
+   "title": "低价引流检测",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/dynamic_detection",
+   "title": "滞销商品清理",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/clear_no_sales",
+   "title": "清理无流量",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/check_quality_score",
+   "title": "质量分检测",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/drawReview",
+   "title": "人工鉴图",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/loveGoods",
+   "title": "爱心好物",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/goods_check_guide",
+   "title": "商品检测导航",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/aiCheckImg2",
+   "title": "AI商品违规检测",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/multShopRepetitionReleaseDetection2",
+   "title": "多店重复铺货检测",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/multShopCateDete2",
+   "title": "多店类目错放检测",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/prohibited_words_check",
+   "title": "多店违禁词检测",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/check_quality_score2",
+   "title": "质量分检测",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/checkAliProduct",
+   "title": "1688商品检测",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/low_price_check2",
+   "title": "低价引流检测",
+   "group": "g_bulk",
+   "group_title": "批量修改与检测",
+   "group_icon": "✎",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/xf_app",
+   "title": "晓风客户端",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/xiaoke",
+   "title": "邀请好友",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/iframe/template/list",
+   "title": "模板列表",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/iframe/addTemplate",
+   "title": "新增模板",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/trash",
+   "title": "删除商品",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/trash/recoverGoods",
+   "title": "恢复商品",
+   "group": "g_shop",
+   "group_title": "店铺与云库",
+   "group_icon": "⌘",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/yijianfankui",
+   "title": "意见反馈",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/home/searchSameGoods",
+   "title": "根据商品发布同款",
+   "group": "g_other",
+   "group_title": "其他",
+   "group_icon": "·",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  },
+  {
+   "path": "/fzsh/entire_store/store_get_result",
+   "title": "获取结果",
+   "group": "g_copy",
+   "group_title": "铺货与复制",
+   "group_icon": "⧉",
+   "eps": [],
+   "steps": [
+    "打开原版对应页",
+    "选店铺 / 选商品",
+    "读表单字段与默认值",
+    "提交（AI 准备，人工确认）",
+    "回读平台状态"
+   ],
+   "status": [
+    "待开始",
+    "进行中",
+    "成功",
+    "失败",
+    "已暂停",
+    "已终止"
+   ],
+   "owner": "local",
+   "src": "index-0VLI2dBF.js 路由表"
+  }
+ ],
+ "video_principle": {
+  "file": "useLocalShortVideo-Drins-0G.js (196,321 B)",
+  "export": "Ea as r = 纯合成器 / Oa as t = Vue composable / Da as n = 转场表",
+  "defaults": {
+   "duration": 15,
+   "width": 720,
+   "height": 1280,
+   "fps": 30,
+   "bgmVolume": 0.6,
+   "transformMode": "kenburns"
+  },
+  "pipeline": [
+   "① 图片加载：new Image + crossOrigin=anonymous；失败走 co_util 的 PU_Request2(fetch,base64) 兜底（ha @191642）",
+   "② 分段：aa(n,duration,0.18) → 每张图 start/end/transition，末段 transition=0（@189158）",
+   "③ 逐帧绘制：ma() 每帧先 fillRect 黑底 → oa() 找当前段 → Ken Burns 用 da() 缓动缩放 1.0↔1.18 + 方向交替平移；fade/slide 用 fa() 双图叠 globalAlpha / translate（@189666/@191075）",
+   "④ 出帧：canvas 交给 Vi(CanvasSource).add(timestamp,duration) → new VideoFrame(canvas,{timestamp,duration}) → VideoEncoder.encode（Vi @166012）",
+   "⑤ 编码：codec=avc(H.264) → avc1.6400xx，alpha:discard，latencyMode/hardwareAcceleration 探测；BGM 走 AudioEncoder aac → mp4a.40.2（@17030/@18117/@101139）",
+   "⑥ 音轨：OfflineAudioContext 解码 BGM → 按 duration 截断 → GainNode 应用 bgmVolume → AudioData 编码（va @192900）",
+   "⑦ 封装：Mp4OutputFormat(Ji) + BufferTarget(Di, fastStart:in-memory) + Output(ia) → addVideoTrack(frameRate) / addAudioTrack → start → 逐帧 add → finalize → u.buffer（@125269/@177760/@180611）",
+   "⑧ 出件：new Blob([buffer],{type:\"video/mp4\"}) + URL.createObjectURL → download()；AbortSignal 每帧检查，setTimeout(0) 每 5 帧让出主线程（Ea @193172-196099）"
+  ],
+  "concurrency": "批量发布并发 3（preview-Lhj8Bw4T.js @2400）",
+  "limits": "MP4≤100M / 时长≤60s（建议30s内）/ 最少 600x600 / 1:1 3:4 9:16 / 每日发布上限100条",
+  "three_sources": [
+   "AI 视频：官方 submitImgOptimizeTask4PC + 每2s queryImgOptimizeTask4PC",
+   "上传自定义：字节 VOD SDK upload_v1.js → OpenUploader.addFile/start 拿 Vid",
+   "用主图视频：官方 uploadVideoToken → vod.bytedanceapi.com 取 MainPlayUrl+CoverUrl"
+  ],
+  "apply_to_product": "官方 /product/tproduct/batchSaveMaterial：material_type:23, is_direct_apply:true, video_type:main_video, code===0（co_util @481389）",
+  "readback": "/material/videoTaskList?productIds= → videoList[].StatusStr（审核中/审核通过/审核失败）"
+ }
+}

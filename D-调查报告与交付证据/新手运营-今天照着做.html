@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>今天照着做 · 一家抖店 + 两家微店</title>
+<style>
+:root{--bg:#12161d;--card:#1b212b;--line:#2c3543;--tx:#e8edf5;--dim:#93a0b4;--ok:#63d49a;--warn:#ffc46b;--bad:#ff8b8b;--blue:#79b8ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.7 "Microsoft YaHei","PingFang SC",sans-serif;padding:22px}
+.wrap{max-width:980px;margin:0 auto}
+h1{font-size:25px;margin:0 0 6px}
+.sub{color:var(--dim);font-size:13px;margin-bottom:18px}
+.banner{background:#2a2418;border:1px solid #5c4a26;border-left:5px solid var(--warn);border-radius:8px;padding:12px 16px;margin-bottom:20px;font-size:15px}
+.banner b{color:var(--warn)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:14px}
+.card h2{font-size:19px;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+.n{display:inline-flex;width:28px;height:28px;border-radius:50%;background:#2f3a4b;color:var(--blue);align-items:center;justify-content:center;font-size:15px;flex:none}
+.q{color:var(--dim);font-size:13px;margin:0 0 12px 38px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{border-top:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:normal;width:110px;white-space:nowrap}
+.sys{color:var(--ok)}.me{color:var(--warn)}.no{color:var(--bad)}
+.tagx{display:inline-block;padding:1px 8px;border-radius:5px;font-size:12px;margin-right:6px}
+.t-sys{background:#173a2a;color:var(--ok)}.t-me{background:#3a2e18;color:var(--warn)}.t-no{background:#3a1e1e;color:var(--bad)}
+.chk{display:flex;gap:10px;align-items:flex-start;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);cursor:pointer;user-select:none}
+.chk input{margin-top:5px;width:17px;height:17px;accent-color:var(--ok);flex:none}
+.chk span{font-size:14px}
+.chk.done span{color:var(--dim);text-decoration:line-through}
+.red{background:#251a1a;border:1px solid #5a3030;border-left:5px solid var(--bad);border-radius:8px;padding:11px 15px;margin:16px 0;font-size:14px}
+.red b{color:var(--bad)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:720px){.two{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 17px}
+.box h3{margin:0 0 9px;font-size:16px}
+ul{margin:0;padding-left:20px}li{margin:5px 0}
+.foot{color:var(--dim);font-size:12px;margin-top:22px;border-top:1px solid var(--line);padding-top:12px}
+.small{font-size:12px;color:var(--dim)}
+.reset{background:none;border:1px solid var(--line);color:var(--dim);border-radius:6px;padding:5px 12px;cursor:pointer;font-size:12px;float:right}
+.reset:hover{color:var(--tx);border-color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>今天照着做</h1>
+<div class="sub">一家抖店 + 两家微店 · 初级选手版 · 本页不联网、不连后台，双击就能开 · 勾过的会自己记住</div>
+
+<div class="banner">
+<b>覆盖率、新鲜度、采集状态那些，你不用管。</b>那是给系统自己体检用的，是我看的，不是你看的。<br>
+你每天只看下面 <b>4 行</b>。看完、该点的点了，今天就完了。
+<button class="reset" onclick="resetAll()">清空今天的勾</button>
+</div>
+
+<div class="card">
+  <h2><span class="n">1</span>先看：货还在不在架、有没有被打回</h2>
+  <p class="q">比报活动更靠前。货被驳回了，报什么活动都白搭。</p>
+  <table>
+    <tr><th>看什么</th><td>在卖的 / 还没上的 / 审核没过的。特别盯「驳回、违规」那几行。</td></tr>
+    <tr><th>现在真数</th><td>欢轴家居 <b>700</b> 件 · 崇耿 <b>143</b> 件 · 抖店 <b>3846</b> 件 <span class="no">（10-29 老数据，已贴旧标）</span></td></tr>
+    <tr><th>看到啥要动</th><td>出现驳回 → 先看驳回原因（文案写了「终身/永久」、带了没授权的牌子，这两类已经真发生过），改完再往下走。</td></tr>
+    <tr><th>谁干</th><td><span class="tagx t-sys">系统已做</span><span class="sys">把三店货数数全、把驳回原因列出来。</span><br>
+        <span class="tagx t-me">你做</span><span class="me">去平台后台点一眼，确认状态真的变了。系统读不到平台侧「刚改完」的回执。</span></td></tr>
+  </table>
+  <label class="chk" data-k="s1"><input type="checkbox"><span>今天看过了：没有新驳回 / 有的话已经记下要改哪几件</span></label>
+</div>
+
+<div class="card">
+  <h2><span class="n">2</span>再看：有没有报上活动、限时限量购</h2>
+  <p class="q">你原话里的这一条，是对的。但有一半系统真拿不到，得说清。</p>
+  <table>
+    <tr><th>看什么</th><td>哪些货能报、报名资料齐不齐、<b>报上没报上</b>。</td></tr>
+    <tr><th>谁干</th><td><span class="tagx t-sys">系统已做</span><span class="sys">按平台规则 + 真商品价格，把报名资料算好、列成草稿，一条条摆着等你点头。</span><br>
+        <span class="tagx t-no">系统做不到</span><span class="no">读不到平台后台「已报名 / 报名成功」。活动列表没有开放接口，不编、不冒充。</span><br>
+        <span class="tagx t-me">你做</span><span class="me">去抖店后台「营销 → 限时限量购」点一眼，报完回来在草稿上点「人工确认」。</span></td></tr>
+    <tr><th>去哪点</th><td>8.0 → 模块2 →「④ 限时限量购 · 活动」→ 生成资料 → 逐条人工确认</td></tr>
+  </table>
+  <label class="chk" data-k="s2"><input type="checkbox"><span>今天看过了：能报的挑出来了 / 报没报成已去后台对过</span></label>
+</div>
+
+<div class="card">
+  <h2><span class="n">3</span>再看：视频传没传、有没有挂上商品链接</h2>
+  <p class="q">「商品详情视频」和「短视频挂车」是两件事，别混。你现有 194 条真视频。</p>
+  <table>
+    <tr><th>看什么</th><td>这条视频配的是哪件货、传上去没、点进去能不能跳到商品。</td></tr>
+    <tr><th>谁干</th><td><span class="tagx t-sys">系统已做</span><span class="sys">把已有真视频按商品配好、生成发布准备草稿，两种视频分开摆。</span><br>
+        <span class="tagx t-no">系统做不到</span><span class="no">平台侧「上传成功 / 已关联商品」读不到回执；账号发布权限也还没开。</span><br>
+        <span class="tagx t-me">你做</span><span class="me">在后台传完、挂完链接，回来核一下跳过去是不是那件货。</span></td></tr>
+    <tr><th>去哪点</th><td>8.0 → 模块2 →「③ 短视频运营」→ 生成视频发布准备 → 人工确认</td></tr>
+  </table>
+  <label class="chk" data-k="s3"><input type="checkbox"><span>今天看过了：传了几条 / 链接对不对已核过</span></label>
+</div>
+
+<div class="card">
+  <h2><span class="n">4</span>最后看：今天卖了多少、退了多少</h2>
+  <p class="q">放最后，是因为它是「上面三件事有没有用」的判据，不是第一眼。</p>
+  <table>
+    <tr><th>看什么</th><td>成交、退款、有没有曝光进来。</td></tr>
+    <tr><th>谁干</th><td><span class="tagx t-no">系统做不到</span><span class="no">两家平台都没给开放接口（实测未授权 / 报错码），AI 不许编数字，也不会拿 0 冒充「没卖了」。</span><br>
+        <span class="tagx t-me">你做</span><span class="me">后台截一眼，或者直接口述给我，我记进当天日报。</span></td></tr>
+  </table>
+  <label class="chk" data-k="s4"><input type="checkbox"><span>今天看过了：卖了多少 / 退了多少已记下</span></label>
+</div>
+
+<div class="red">
+<b>红线（不用记，系统已经定死）：</b>不替你真报名、不替你发视频、不改价格、不改库存、不批量上架。上面所有「人工确认」都只在本地留个记号，平台那一下永远是你自己点。
+</div>
+
+<div class="two">
+  <div class="box">
+    <h3>明天就一件事，别铺开</h3>
+    <ul>
+      <li>挑 <b>1–3 款</b> 货，别贪多。</li>
+      <li>给它补一条视频，<b>或</b> 报一个活动，二选一。</li>
+      <li>第二天回来看第 4 行的数变没变。</li>
+      <li>变了 → 明天照着再来一轮；没变 → 换款，别加码。</li>
+    </ul>
+    <p class="small">这就是「读建议 → 挑款 → 你点头 → 放视频/报活动 → 看结果 → 次日循环」那条最短路，绕开收费墙，不用先学那套界面。</p>
+  </div>
+  <div class="box">
+    <h3>三家店分别在哪看</h3>
+    <table>
+      <tr><th>抖店·LZL</th><td>抖店后台（要你扫码登录）<br><span class="small">3846 件为旧快照</span></td></tr>
+      <tr><th>欢轴家居</th><td>微信小店后台 / 9191<br><span class="small">700 件，已读全</span></td></tr>
+      <tr><th>崇耿</th><td>微信小店后台 / 9191<br><span class="small">143 件，已读全；两家不串号</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="two" style="margin-top:14px">
+  <div class="box">
+    <h3><span class="sys">已经替你干到的</span></h3>
+    <ul>
+      <li>三家店货数一件不漏（700 / 143 / 3846 标旧）。</li>
+      <li>驳回原因、被拒原文列得出来。</li>
+      <li>报名资料草稿、视频配货草稿都备好了。</li>
+      <li>每次点了什么、成没成，都有记录可回看。</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3><span class="no">还没替你干到的（真缺口，不冒充）</span></h3>
+    <ul>
+      <li>平台侧「活动报没报成」。</li>
+      <li>平台侧「视频传成功 / 挂链成功」回执。</li>
+      <li>成交、退款、曝光数字。</li>
+    </ul>
+    <p class="small">原因是平台没开放接口 + 登录要你扫码，不是按钮没写。这三样在你人工登录后台那一趟里顺手看掉，暂时不用等我改代码。</p>
+  </div>
+</div>
+
+<div class="foot">
+本页自包含、不联网、不读账号不读密码。勾选用浏览器本地存储，只在你这台机器上记，关掉不丢、清一次重来。<br>
+对应系统现状：8.0 首页「三店数据真实性」= 系统体检层；本页 = 店主操作层。两者不冲突，本页是给你看的第一屏。<br>
+零发布 · 零改价 · 零改库存 · 零真报名。
+</div>
+
+</div>
+<script>
+(function(){
+  var day = new Date().toISOString().slice(0,10);
+  var P = 'xins8-' + day + '-';
+  var ls = document.querySelectorAll('.chk');
+  function paint(el){
+    var on = localStorage.getItem(P + el.dataset.k) === '1';
+    el.querySelector('input').checked = on;
+    el.classList.toggle('done', on);
+  }
+  ls.forEach(function(el){
+    paint(el);
+    el.querySelector('input').addEventListener('change', function(){
+      localStorage.setItem(P + el.dataset.k, this.checked ? '1' : '0');
+      paint(el);
+    });
+  });
+  window.resetAll = function(){
+    ls.forEach(function(el){ localStorage.removeItem(P + el.dataset.k); paint(el); });
+  };
+})();
+</script>
+</body>
+</html>

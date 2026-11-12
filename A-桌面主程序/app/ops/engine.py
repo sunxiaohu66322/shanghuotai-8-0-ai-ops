@@ -625,10 +625,56 @@ th{color:#8b95a8;font-weight:600;background:#191e28}
 .ok{color:#6ee7a8}.bad{color:#ff8b8b}
 .mono{font-family:Consolas,monospace;font-size:11px;color:#aab3c4}
 #err{color:#ff8b8b}
+.todo{background:#182231;border:1px solid #35507a;border-left:4px solid #71b7ff;border-radius:8px;padding:14px 16px;margin:6px 0 16px}
+.todo h2{color:#cfe2ff;font-size:17px;margin:0 0 4px}
+.todo .hint{color:#93a0b4;font-size:12px;margin-bottom:10px}
+.todo .row{display:flex;gap:10px;align-items:flex-start;border-top:1px solid #2b3242;padding:9px 0;cursor:pointer}
+.todo .row input{margin-top:4px;width:17px;height:17px;accent-color:#6ee7a8;flex:none}
+.todo .row .body{flex:1}
+.todo .row .t{font-size:14px;font-weight:700;color:#e6e9ef}
+.todo .row .d{font-size:12px;color:#aab3c4;margin-top:3px;line-height:1.65}
+.todo .row .n{display:inline-flex;width:20px;height:20px;border-radius:50%;background:#2f3a4b;color:#71b7ff;align-items:center;justify-content:center;font-size:12px;margin-right:7px}
+.todo .sys{color:#6ee7a8}.todo .me{color:#ffc46b}.todo .no{color:#ff8b8b}
+.todo a{color:#9cc4ff}
+.todo .row.done .t{text-decoration:line-through;color:#8b95a8}
+.todo .foot{font-size:11px;color:#8b95a8;margin-top:8px;border-top:1px dashed #2b3242;padding-top:9px}
+details{margin-top:4px}summary{cursor:pointer;color:#8b95a8;font-size:12px;padding:6px 0;user-select:none}
 </style>
 <h1>8.0 · AI 运营中心 <span class="tag">运营总览</span></h1>
 <div class="sub">独立 ops.db 可写 · 商品主库 v3.db 只读挂载 · 零平台调用 · P0 底座</div>
 <div id="err"></div>
+<div class="todo" id="today">
+ <h2>今天照着做</h2>
+ <div class="hint">一家抖店 + 两家微店 · 下面 <b style="color:#e6e9ef">4 行</b>看完、该点的点了，今天就完了。
+ <b style="color:#ffc46b">覆盖率 / 新鲜度 / 采集状态那些是给系统自己体检的，你不用管</b>（已折到最下面）。勾过的会自己记住，明天自动重来。</div>
+
+ <label class="row" data-k="s1"><input type="checkbox"><div class="body">
+  <div class="t"><span class="n">1</span>货还在不在架、有没有被打回</div>
+  <div class="d"><span class="sys">系统已做：</span>三店货一件不漏数全（欢轴家居 700 · 崇耿 143 · 抖店 3846 标旧数据）、驳回原因列得出来。
+  <span class="me">你做：</span>去后台点一眼，特别盯「驳回 / 违规」，改完再往下（被打回的货，报什么活动都白搭）。</div></div></label>
+
+ <label class="row" data-k="s2"><input type="checkbox"><div class="body">
+  <div class="t"><span class="n">2</span>有没有报上活动、限时限量购</div>
+  <div class="d"><span class="sys">系统已做：</span>按平台规则 + 真商品价格把报名资料算好、列成草稿，一条条等你点头。
+  <span class="no">系统做不到：</span>读不到平台「已报名 / 报名成功」——活动列表没开放接口，不编、不冒充。
+  <span class="me">你做：</span>去抖店后台「营销 → 限时限量购」点一眼，报完回来在草稿上点「人工确认」。</div></div></label>
+
+ <label class="row" data-k="s3"><input type="checkbox"><div class="body">
+  <div class="t"><span class="n">3</span>视频传没传、有没有挂上商品链接</div>
+  <div class="d"><span class="sys">系统已做：</span>194 条真视频按商品配好、生成发布准备草稿（「商品详情视频」和「短视频挂车」分开摆）。
+  <span class="no">系统做不到：</span>平台侧「上传成功 / 已关联商品」回执读不到。
+  <span class="me">你做：</span>后台传完、挂完链接，点进去核一下跳过去是不是那件货。</div></div></label>
+
+ <label class="row" data-k="s4"><input type="checkbox"><div class="body">
+  <div class="t"><span class="n">4</span>今天卖了多少、退了多少</div>
+  <div class="d"><span class="no">系统做不到：</span>两家平台都没给成交/退款/曝光接口，AI 不许编数字，也不会拿 0 冒充「没卖了」。
+  <span class="me">你做：</span>后台截一眼，或口述给我记进当天日报。放最后看，因为它是上面三件事有没有用的判据。</div></div></label>
+
+ <div class="foot"><b style="color:#e6e9ef">明天就一件事：</b>挑 1–3 款货，补一条视频 <b>或</b> 报一个活动，第二天回来看第 4 行的数变没变；变了照着再来，没变换款、别加码。
+ &nbsp;·&nbsp; <a href="/api/ops/business/page">打开业务工作台（模块2）→ 点 ③ 短视频 / ④ 限时限量购</a>
+ <br>红线：不替你真报名、不替你发视频、不改价、不改库存、不批量上架 ——「人工确认」只在本地留记号，平台那一下永远你自己点。</div>
+</div>
+<details><summary>▸ 系统自检数据（我给系统体检用的，初级选手不用管，点开才看）</summary>
 <h2>引擎与数据</h2>
 <div class="grid" id="g1"></div>
 <h2>三店数据真实性（P0.3.1 · 平台数/明细/覆盖率/新鲜度/最后成功/状态/错误）</h2>
@@ -640,6 +686,7 @@ th{color:#8b95a8;font-weight:600;background:#191e28}
 <div class="grid" id="g2"></div>
 <h2>最近任务状态事件</h2>
 <table id="events"><tr><th>时间</th><th>任务</th><th>类型</th><th>转移</th><th>说明</th></tr></table>
+</details>
 <script>
 function card(k,v,cls){return '<div class="card"><div class="k">'+k+'</div><div class="v '+(cls||'')+'">'+v+'</div></div>'}
 function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
@@ -697,6 +744,13 @@ Promise.all([get('/api/ops/health'),get('/api/ops/overview'),get('/api/ops/task/
   if(!ev.length)e+='<tr><td colspan="5">暂无事件（入队探针任务后这里会出现真实记录）</td></tr>';
   document.getElementById('events').innerHTML=e;
 }).catch(function(e){document.getElementById('err').textContent='接口读取失败：'+e});
+(function(){var d=new Date().toISOString().slice(0,10),P='xins80-'+d+'-';
+ var ls=document.querySelectorAll('#today .row');
+ function paint(el){var on=localStorage.getItem(P+el.dataset.k)==='1';
+  el.querySelector('input').checked=on;el.classList.toggle('done',on);}
+ ls.forEach(function(el){paint(el);
+  el.querySelector('input').addEventListener('change',function(){
+   localStorage.setItem(P+el.dataset.k,this.checked?'1':'0');paint(el);});});})();
 </script></html>"""
 
 

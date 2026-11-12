@@ -1,0 +1,4 @@
+{"t": "2026-11-12 21:22:35", "ev": "flow/init", "day": "2026-11-12", "steps": 8}
+{"t": "2026-11-12 21:22:48", "ev": "task/advance", "id": "T001", "path": "/businessOpportunity", "frm": "待开始", "to": "进行中", "platform": "", "shop": "", "product_id": "", "before": "", "after": "", "evidence": "", "note": ""}
+{"t": "2026-11-12 21:22:49", "ev": "task/advance", "id": "T001", "path": "/businessOpportunity", "frm": "进行中", "to": "成功", "platform": "", "shop": "", "product_id": "", "before": "", "after": "", "evidence": "平台回读：活动状态 未开始→进行中，报名商品数 0→3", "note": ""}
+{"t": "2026-11-12 21:22:49", "ev": "task/advance", "id": "T002", "path": "/viral_remake/video", "frm": "待开始", "to": "进行中", "platform": "", "shop": "", "product_id": "", "before": "", "after": "", "evidence": "", "note": ""}
