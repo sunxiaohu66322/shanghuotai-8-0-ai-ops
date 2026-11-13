@@ -8,6 +8,24 @@
 > 注：`raw.githubusercontent.com` 有 CDN 缓存，刚推完的几分钟内可能读到上一版；
 > 想确认最新版，请看仓库根本文件的**网页渲染**或 `/tags` 页（实时），或 `git show <tag>`。
 
+## v6 · 2026-11-13 17:43:46 +08:00 · 8.0 数据包统一命名：新增 app/packlabel.py（日期+第N批+筛选前/后，历史包诚实短名，只写 display_name 不动 pack_code）；导入与精筛收口自动命名；v3_packs 统一 default 最新口径，3.0/4.0/5.5/发布/2.0/商品库/本地链路下拉全部显示友好名并默认选
+
+- 标签：`v6` ｜ 基线 commit（上一版）：`e1362ca8e` ｜ 密钥终检：**0 命中** ｜ 纳入 **1240** 文件 / 排除 **1208**
+- 本版有意义的改动 **12** 项（A 新增 / M 修改 / D 删除 / R 改名）：
+  - `M` `A-桌面主程序/app/bridge.py`
+  - `A` `A-桌面主程序/app/packlabel.py`
+  - `M` `A-桌面主程序/app/ui/tab_detect.py`
+  - `M` `A-桌面主程序/app/ui/tab_dlmon.py`
+  - `M` `A-桌面主程序/app/ui/tab_export.py`
+  - `M` `A-桌面主程序/app/ui/tab_fine.py`
+  - `M` `A-桌面主程序/app/ui/tab_publish.py`
+  - `M` `A-桌面主程序/app/ui/tabs.py`
+  - `M` `A-桌面主程序/app/ui/wall_main.py`
+  - `M` `A-桌面主程序/app/v3img.py`
+  - `M` `B-微信小店适配器/data/logs/wx60-std.log`
+  - `M` `B-微信小店适配器/data/overview.json`
+- 本版提交 SHA：`git rev-parse v6`；改动记录同步维护在 `VERSIONS.md` 与仓库 tags 页。
+
 ## v5 · 2026-11-12 21:32:48 +08:00 · P0.3.6 新手可用：8.0 首页顶部新增『今天照着做』店主操作层（4行：货状态/报活动/视频挂链/卖了多少，可勾选记忆），系统自检7字段折叠下移并标注『你不用管』；新增独立自包含 HTML 说明页；engine.py py_compile + 真起9192 HTTP回读7断言全绿 + 首页/模块2 双截图验收
 
 - 标签：`v5` ｜ 基线 commit（上一版）：`a2b6038c4` ｜ 密钥终检：**0 命中** ｜ 纳入 **1239** 文件 / 排除 **1207**

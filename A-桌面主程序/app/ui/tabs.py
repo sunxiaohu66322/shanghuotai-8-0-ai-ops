@@ -22,7 +22,7 @@ from PyQt6.QtWidgets import (
     QVBoxLayout, QWidget,
 )
 
-from .. import bridge, dirbook, paths, theme
+from .. import bridge, dirbook, packlabel, paths, theme
 from . import widgets as W
 from .word_manager import WordManager
 
@@ -1096,7 +1096,8 @@ class PackTab(StepTab):
         self.btn_rename = QPushButton("✎ 改名")
         self.btn_rename.setToolTip(
             "给选中的数据包改个显示名（只改名字，不改数据、不改归属、不搬文件）。\n"
-            "留空 = 恢复默认名。一次改一个包。")
+            "改完 3.0 精筛 / 4.0 检测打码 / 5.5 出表 / 发布 / 商品库 / 下载监控\n"
+            "刷新后都会跟着显示新名字。留空 = 恢复默认短名。一次改一个包。")
         self.btn_rename.clicked.connect(self._rename_pack)
         bar.addWidget(self.btn_rename)
 
@@ -1608,7 +1609,7 @@ class PackTab(StepTab):
         for it in self._rows:
             code = it.get("pack_code")
             rows.append([
-                it.get("display_name") or code,   # 显示名优先，没设就用包代号
+                packlabel.friendly(it),          # ★ 8.0：改名 / 历史包短名全项目统一
                 self.STATUS_TEXT.get(it.get("status"), it.get("status") or ""),
                 it.get("products_live"), it.get("images_live"), it.get("rows"),
                 it.get("size_kb"), "✔ 可以" if it.get("ready") else "✘ 不行",
@@ -1725,12 +1726,19 @@ class DetectTab(StepTab):
         items = [x for x in (r.get("items") or []) if x.get("ready")]
         for it in items:
             self.cmb_pack.addItem(
-                "%s（%s 商品 / %s 图）" % (it.get("pack_code"), it.get("products_live"),
+                "%s（%s 商品 / %s 图）" % (packlabel.friendly(it), it.get("products_live"),
                                           it.get("images_live")), it.get("pack_code"))
         if not items:
             self.cmb_pack.addItem("（第 2 步还没有可用的数据包）", "")
+        pick = ""
         if cur:
             i = self.cmb_pack.findData(cur)
+            if i >= 0:
+                pick = cur
+        if not pick:
+            pick = str((r or {}).get("default") or "")
+        if pick:
+            i = self.cmb_pack.findData(pick)
             if i >= 0:
                 self.cmb_pack.setCurrentIndex(i)
         self.cmb_pack.blockSignals(False)

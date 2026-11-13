@@ -2144,9 +2144,15 @@ class MainWallPage(QWidget):
         self.cb_pack.clear()
         self.cb_pack.addItem("（全部数据包）", "")
         for p in packs:
-            self.cb_pack.addItem("%s · %d 张" % (p["code"], p["n"]), p["code"])
+            label = (p.get("display_name") or "").strip() or p["code"]
+            self.cb_pack.addItem("%s · %d 张" % (label, p["n"]), p["code"])
         if cur:
             i = self.cb_pack.findData(cur)
+            if i >= 0:
+                self.cb_pack.setCurrentIndex(i)
+        elif len(packs):
+            # ★ 8.0：默认挑最新一批（v3img.packs 已按统一口径排好序）
+            i = self.cb_pack.findData(packs[0]["code"])
             if i >= 0:
                 self.cb_pack.setCurrentIndex(i)
         self.cb_pack.blockSignals(False)

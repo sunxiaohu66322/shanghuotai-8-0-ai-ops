@@ -20,6 +20,7 @@ import time
 from pathlib import Path
 
 from . import paths
+from . import packlabel  # 8.0 统一数据包命名（只写 display_name，不动 pack_code）
 
 _CNW = paths.CREATE_NO_WINDOW
 
@@ -758,12 +759,51 @@ def v3_packs() -> dict:
         return {"ok": True, "items": items,
                 "inbox": m["pack"].list_inbox(),
                 "inbox_dir": m["pack"].ensure_dir(),
-                "meta_missing": [x["pack_code"] for x in items if x.get("no_meta")]}
+                "meta_missing": [x["pack_code"] for x in items if x.get("no_meta")],
+                # ★ 2026-11-13 主人：「每个功能页它默认都是挑的最新的数据包」。
+                #   本字段是所有下拉的唯一口径，页面不再各自 sort / 取第 0 项。
+                "default": packlabel.choose_default(items)}
     return _wrap(_do)
 
 
 def v3_pack_preview(path: str) -> dict:
     return _wrap(lambda m, c: m["pack"].preview(path))
+
+
+def _label_new_pack(pack_code: str, stage: str = "") -> str:
+    """导入成功后：给新包写一个「MM-DD 第N批 · 筛选前」显示名。
+
+    只写 v3_pack.display_name，绝不碰 pack_code（十几处外键）。用户后来在 2.0
+    改名会覆盖它；幂等：已有 display_name 的包不动（历史包 / 用户改过的都保留）。
+    """
+    code = (pack_code or "").strip()
+    if not code:
+        return ""
+    def _do(m, c):
+        try:
+            row = c.execute("SELECT display_name FROM v3_pack WHERE pack_code=?",
+                            (code,)).fetchone()
+        except Exception:                                # noqa: BLE001
+            return ""
+        if not row:
+            return ""
+        try:
+            cur = row["display_name"]
+        except (TypeError, KeyError, IndexError):
+            cur = row[0]
+        if str(cur or "").strip():
+            return ""
+        name = packlabel.next_batch(c, stage or packlabel.STAGE_RAW)
+        try:
+            c.execute("UPDATE v3_pack SET display_name=?, updated_at=?"
+                       " WHERE pack_code=? AND (display_name IS NULL OR display_name='')",
+                       (name, time.strftime("%Y-%m-%d %H:%M:%S"), code))
+            c.commit()
+        except Exception:                                # noqa: BLE001
+            return ""
+        return name
+    r = _wrap(_do)
+    return str(r) if isinstance(r, str) else ""
 
 
 def v3_pack_convert(path: str, pack_code: str = "") -> dict:
@@ -796,7 +836,11 @@ def v3_pack_convert(path: str, pack_code: str = "") -> dict:
         r = m["pack"].convert(path, pack_code=pack_code)
         r["route"] = "pack.convert（19列模板解析）"
         return r
-    return _wrap(_do)
+    r = _wrap(_do)
+    # ★ 8.0 统一命名：导入成功后自动写「MM-DD 第N批 · 筛选前」显示名（连接已关，无锁竞争）
+    if isinstance(r, dict) and r.get("ok"):
+        _label_new_pack(str(r.get("pack_code") or ""))
+    return r
 
 
 def v3_pack_convert_many(files: list, pack_name: str = "",
@@ -852,7 +896,18 @@ def v3_pack_convert_many(files: list, pack_name: str = "",
         return {"ok": ok_n > 0, "route": "pack.convert 逐文件（都不认识）",
                 "files": len(lst), "converted": ok_n, "detail": outs,
                 "message": "逐文件转换 %d/%d（这批文件都不是商品卡格式）" % (ok_n, len(lst))}
-    return _wrap(_do)
+    r = _wrap(_do)
+    # ★ 8.0 统一命名：cards 整批一个包 / 逐文件老路每个成功的包，都写友好显示名
+    if isinstance(r, dict) and r.get("ok"):
+        codes = []
+        if r.get("pack_code"):
+            codes.append(str(r["pack_code"]))
+        for x in (r.get("detail") or []):
+            if isinstance(x, dict) and x.get("ok") and x.get("pack_code"):
+                codes.append(str(x["pack_code"]))
+        for code in codes:
+            _label_new_pack(code)
+    return r
 
 
 def v3_pack_status(pack_code: str) -> dict:
@@ -3135,12 +3190,23 @@ def v3_fine_release_pack(pack_code: str = "", name: str = "") -> dict:
                                    % (old, len(passed))}
 
         # ④ 没有就造一个（引用式：只写 v3_pack_member，不复制商品/图片、不删原包）
-        label = (name or "").strip() or "筛选后"
+        # ★ 8.0 统一命名：筛选后包继承源包批次（如 11-13 第1批 · 筛选后），
+        #   名字通过 pack.save_members 的 name 落到 source_name，再由下面的
+        #   display_name 写成所有页面统一读的那一个字段。
+        label = (name or "").strip() or packlabel.fine_label_of(c, code)
         rep = pack.save_members(c, name=label, pids=passed,
                                 source_pack=code, only="keep")
         if not rep.get("ok"):
             return {"ok": False, "error": str(rep.get("error") or "save_members 没做成")}
         new_code = str(rep.get("pack_code") or "")
+        # 只写展示层：已有名字（复用/用户改过）不动，新包写继承来的友好名
+        try:
+            c.execute("UPDATE v3_pack SET display_name=?"
+                       " WHERE pack_code=? AND (display_name IS NULL OR display_name='')",
+                       (label, new_code))
+            c.commit()
+        except Exception:                                # noqa: BLE001
+            pass
         _inherit_fine_done(code, new_code, len(passed))
         return {"ok": True, "pack_code": new_code, "count": len(passed),
                 "reused": False, "source_pack": code,
@@ -3183,7 +3249,10 @@ def v3_screen_pack_choices() -> dict:
             choices.append({"pack_code": code, "source_pack": src,
                             "count": len(rows)})
         return {"ok": True, "choices": choices,
-                "default": choices[0]["pack_code"] if choices else ""}
+                # 与 v3_packs() 共用同一「最新」口径：有筛选后包就取它，
+                # 一个都没有时退回全包里最新的那个（不再返回空串让页面乱选）。
+                "default": (choices[0]["pack_code"] if choices else
+                            packlabel.choose_default(v3_packs().get("items") or []))}
     return _wrap(_do)
 
 

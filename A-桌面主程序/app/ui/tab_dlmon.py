@@ -137,14 +137,23 @@ class DlMonTab(QWidget):
         self._last_ts = 0.0
         self._rows: list[dict] = []
         self._header: dict = {}
+        # ★ 8.0：下载监控补「数据包名字选择」——code → 友好名映射 + 默认最新
+        self._pack_names: dict = {}
+        self._pack_default = ""
 
         lay = QVBoxLayout(self)
         lay.setContentsMargins(10, 8, 10, 8)
         lay.setSpacing(6)
 
-        # ---- 顶栏：任务选择 + 统计 + 三个控制 ----
+        # ---- 顶栏：数据包 + 任务选择 + 统计 + 三个控制 ----
         top = QHBoxLayout()
         top.setSpacing(8)
+        top.addWidget(QLabel("数据包"))
+        self.cb_pack = QComboBox()
+        self.cb_pack.setMinimumWidth(190)
+        self.cb_pack.setToolTip("按数据包看下载任务；默认停在最新一批。改过的名字会在这里同步。")
+        self.cb_pack.currentIndexChanged.connect(lambda _: self.refresh(force=True))
+        top.addWidget(self.cb_pack, 0)
         top.addWidget(QLabel("任务"))
         self.cb_job = QComboBox()
         self.cb_job.setMinimumWidth(260)
@@ -295,6 +304,7 @@ class DlMonTab(QWidget):
         cnt = hdr.get("counts") or {}
 
         if force or not self.cb_job.count():
+            self._fill_packs()
             self._fill_jobs(job)
 
         jid = job.get("id") or job.get("job_id") or self.job_id
@@ -310,9 +320,11 @@ class DlMonTab(QWidget):
         done = int(cnt.get("done") or stats.get("done") or 0)
         failed = int(cnt.get("failed") or stats.get("failed") or 0)
         state = STATE_CN.get(job.get("state"), job.get("state") or "—")
+        pcode = str(job.get("pack_code") or "")
+        pname = self._pack_names.get(pcode) or pcode or "全库"
         self.lb_sum.setText(
-            "任务 #%s · %s · 共 %s 条 · 成功 %s · 失败 %s"
-            % (jid or "—", state, total, done, failed))
+            "%s · 任务 #%s · %s · 共 %s 条 · 成功 %s · 失败 %s"
+            % (pname[:26], jid or "—", state, total, done, failed))
 
         self._rows = list(tasks)
         self.model.set_rows(tasks)
@@ -326,6 +338,42 @@ class DlMonTab(QWidget):
             self.log.verticalScrollBar().setValue(
                 self.log.verticalScrollBar().maximum())
 
+    def _fill_packs(self):
+        """2.5.1 · 数据包名字选择（2026-11-13 主人：「下载监控里面，没有名字选择」）。
+
+        数据源就是 2.0 那张 v3_pack 表，显示名与「✎ 改名」完全同源；
+        默认选 r["default"]（全项目统一的最新口径），用户手动选过的保留。
+        """
+        from .. import bridge as B, packlabel as PL
+        try:
+            r = B.v3_packs() or {}
+        except Exception:                      # noqa: BLE001
+            return
+        items = r.get("items") or []
+        self._pack_names = {str(x.get("pack_code") or ""): PL.friendly(x)
+                            for x in items}
+        self._pack_default = str(r.get("default") or "")
+        cur = self.cb_pack.currentData() or self._pack_default
+        self.cb_pack.blockSignals(True)
+        self.cb_pack.clear()
+        self.cb_pack.addItem("（全部数据包）", "")
+        for x in items:
+            code = str(x.get("pack_code") or "")
+            if not code:
+                continue
+            self.cb_pack.addItem("%s（%s 件）"
+                                 % (self._pack_names.get(code, code),
+                                    x.get("products_live") or 0), code)
+        i = self.cb_pack.findData(cur)
+        self.cb_pack.setCurrentIndex(i if i >= 0 else 0)
+        self.cb_pack.blockSignals(False)
+
+    def _cur_pack(self) -> str:
+        try:
+            return str(self.cb_pack.currentData() or "")
+        except Exception:                      # noqa: BLE001
+            return ""
+
     def _fill_jobs(self, cur_job: dict):
         from .. import bridge as B
         try:
@@ -333,20 +381,28 @@ class DlMonTab(QWidget):
         except Exception:                      # noqa: BLE001
             return
         jobs = (r or {}).get("jobs") or []
-        if not jobs:
+        pack = self._cur_pack()
+        if pack:
+            jobs = [j for j in jobs if str(j.get("pack_code") or "") == pack]
+        if not jobs and not pack:
             return
         self.cb_job.blockSignals(True)
         self.cb_job.clear()
         keep = 0
         for i, j in enumerate(jobs):
             jid = j.get("id") or j.get("job_id")
-            label = "#%s · %s · %s 条 · %s" % (
-                jid, STATE_CN.get(j.get("state"), j.get("state") or "—"),
+            pcode = str(j.get("pack_code") or "")
+            pname = self._pack_names.get(pcode) or pcode or "全库"
+            label = "【%s】#%s · %s · %s 条 · %s" % (
+                pname[:22], jid, STATE_CN.get(j.get("state"), j.get("state") or "—"),
                 j.get("total") or j.get("refs") or 0,
                 (j.get("title") or "")[:40])
             self.cb_job.addItem(label, int(jid or 0))
             if int(jid or 0) == int(self.job_id or 0):
                 keep = i
+        if not jobs:
+            self.cb_job.addItem("（这个数据包还没有下载任务）", 0)
+            keep = 0
         self.cb_job.setCurrentIndex(keep)
         self.cb_job.blockSignals(False)
 

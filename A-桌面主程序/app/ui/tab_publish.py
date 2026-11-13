@@ -26,7 +26,7 @@ from PyQt6.QtWidgets import (QCheckBox, QComboBox, QDoubleSpinBox,
                               QSpinBox, QTabBar, QTableWidget, QTableWidgetItem,
                               QVBoxLayout, QWidget)
 
-from .. import bridge, theme
+from .. import bridge, packlabel, theme
 from .tabs import StepTab
 
 # 已验证可用的模板商品（茶台，类目 1247>549041>549074，平台已审过）
@@ -340,21 +340,28 @@ class PublishTab(StepTab):
         items = (r.get("items") or []) if isinstance(r, dict) else []
         items = [it for it in items
                  if (it.get("pack_code") or "") and (it.get("products_live") or 0)]
-        # ★ 2026-10-27 主人要求：数据包默认选**最新的**，不用每次自己找。
-        items.sort(key=self._pack_key, reverse=True)
+        # ★ 2026-11-13：与全项目统一「默认最新」口径，不再各页自己按码里日期串排序
+        default = str((r or {}).get("default") or "")
         self.cmb.blockSignals(True)
         self.cmb.clear()
         for it in items:
             code = it.get("pack_code") or ""
             n = it.get("products_live") or 0
-            self.cmb.addItem("%s（%s 件）" % (code, n), code)
+            self.cmb.addItem("%s（%s 件）" % (packlabel.friendly(it), n), code)
         self.cmb.blockSignals(False)
+        pick = ""
         if cur:
             i = self.cmb.findData(cur)
             if i >= 0:
+                pick = cur
+        if not pick:
+            pick = default
+        if pick:
+            i = self.cmb.findData(pick)
+            if i >= 0:
                 self.cmb.setCurrentIndex(i)
-        else:
-            self.cmb.setCurrentIndex(0)          # 第一次进来 = 最新那个包
+        elif self.cmb.count():
+            self.cmb.setCurrentIndex(0)
         self._changed()
         self._load_batches()
         self._load_state()

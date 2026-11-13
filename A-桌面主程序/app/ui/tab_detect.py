@@ -28,7 +28,7 @@ from PyQt6.QtWidgets import (QAbstractItemView, QCheckBox, QComboBox, QGroupBox,
                              QPushButton, QSlider, QSplitter, QStackedWidget,
                              QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
 
-from .. import bridge, imgcap, paths, theme
+from .. import bridge, imgcap, packlabel, paths, theme
 from .tabs import StepTab
 
 CACHE = paths.DATA / "img_cache"
@@ -518,7 +518,7 @@ class DetectStepTab(StepTab):
                 continue
             n = it.get("products_live") or it.get("products") or 0
             mark = "✅ 筛选后 · " if code in screen_codes else "⚠ 未筛原包 · "
-            self.cmb.addItem("%s%s（%s 件）" % (mark, code, n), code)
+            self.cmb.addItem("%s%s（%s 件）" % (mark, packlabel.friendly(it), n), code)
         self.cmb.blockSignals(False)
         pick = ""
         if cur:
@@ -529,6 +529,8 @@ class DetectStepTab(StepTab):
             i = self.cmb.findData(default)
             if i >= 0:
                 pick = default
+        if not pick:
+            pick = str((r or {}).get("default") or "")
         if pick:
             i = self.cmb.findData(pick)
             if i >= 0:
@@ -597,7 +599,10 @@ class DetectStepTab(StepTab):
         self._build_wall()
         self._build_table()
         self._refresh_plan()
-        self._refresh_align(can=can, info=a)
+        # ★ 8.0 顺手修一个既有 NameError：这里原来写 info=a，但 a 从未定义，
+        #   任何一次 4.0 refresh 都会炸在最后一步（下拉其实已经填好了，页面却报错）。
+        #   _refresh_align 内部会自己调 bridge.detect_align(code)，无需从外部塞。
+        self._refresh_align(can=can)
         self._refresh_measure()
 
     # ---- 图片墙 ----

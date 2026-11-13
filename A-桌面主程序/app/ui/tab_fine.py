@@ -86,7 +86,7 @@ from PyQt6.QtWidgets import (QAbstractItemView, QCheckBox, QComboBox, QDialog, Q
                              QSplitter, QTabWidget, QTableWidget, QTableWidgetItem,
                              QVBoxLayout, QWidget)
 
-from .. import bridge, paths, theme
+from .. import bridge, packlabel, paths, theme
 from .tabs import StepTab
 
 MAX_LOG_LINES = 5000
@@ -953,15 +953,24 @@ class FineStepTab(StepTab):
         cur = self.cmb_pack.currentData()
         r = bridge.v3_packs()
         items = r.get("items") if isinstance(r, dict) else None
+        items = list(items or [])
+        # ★ 8.0：下拉显示统一友好名（改过的名字在这里也跟着变），默认挑最新一批
         self.cmb_pack.blockSignals(True)
         self.cmb_pack.clear()
-        for it in (items or []):
+        for it in items:
             code = it.get("pack_code") or ""
             n = it.get("products_live") or it.get("products") or 0
-            self.cmb_pack.addItem("%s（%s 件）" % (code, n), code)
+            self.cmb_pack.addItem("%s（%s 件）" % (packlabel.friendly(it), n), code)
         self.cmb_pack.blockSignals(False)
+        pick = ""
         if cur:
             i = self.cmb_pack.findData(cur)
+            if i >= 0:
+                pick = cur
+        if not pick:
+            pick = str((r or {}).get("default") or "")
+        if pick:
+            i = self.cmb_pack.findData(pick)
             if i >= 0:
                 self.cmb_pack.setCurrentIndex(i)
         self._pack_changed()

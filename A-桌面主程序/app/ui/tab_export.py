@@ -12,7 +12,7 @@ from PyQt6.QtWidgets import (QComboBox, QHBoxLayout, QHeaderView, QLabel,
                              QMessageBox, QProgressBar, QPushButton, QSpinBox,
                              QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
 
-from .. import bridge, theme
+from .. import bridge, packlabel, theme
 from .tabs import StepTab
 
 
@@ -324,7 +324,7 @@ class ExportStepTab(StepTab):
                 continue
             mark = "✅ 筛选后 · " if code in screen_codes else "⚠ 未筛原包 · "
             self.cmb.addItem("%s%s（%s 件）"
-                             % (mark, code, it.get("products_live") or 0), code)
+                             % (mark, packlabel.friendly(it), it.get("products_live") or 0), code)
         self.cmb.blockSignals(False)
         pick = ""
         if cur:
@@ -335,6 +335,8 @@ class ExportStepTab(StepTab):
             i = self.cmb.findData(default)
             if i >= 0:
                 pick = default
+        if not pick:
+            pick = str((r or {}).get("default") or "")
         if pick:
             i = self.cmb.findData(pick)
             if i >= 0:

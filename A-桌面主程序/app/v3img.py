@@ -90,8 +90,25 @@ class MainLib:
             for c in codes:
                 n = self._count_mains(con, c)
                 if n:
-                    out.append({"code": c, "n": n})
-            out.sort(key=lambda x: (-x["n"], x["code"]))
+                    d = {"code": c, "n": n, "display_name": ""}
+                    try:
+                        r = con.execute(
+                            "SELECT display_name, created_at, converted_at FROM v3_pack"
+                            " WHERE pack_code=?", (c,)).fetchone()
+                        if r:
+                            d["display_name"] = r[0] or ""
+                            d["created_at"] = r[1] or ""
+                            d["converted_at"] = r[2] or ""
+                    except sqlite3.OperationalError:
+                        pass
+                    out.append(d)
+            # ★ 8.0：最新批次优先（与全项目 choose_default 同口径），
+            #   显示名留给用户 2.0 改名；历史包无 display_name 时回退原码。
+            from . import packlabel as _pl  # 延迟导入，避免 v3img 被单独 import 时绕环
+            out.sort(key=lambda x: _pl.sort_key(
+                {"pack_code": x["code"], "display_name": x.get("display_name"),
+                 "created_at": x.get("created_at"), "converted_at": x.get("converted_at")}),
+                reverse=True)
             return out
         finally:
             con.close()
