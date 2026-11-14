@@ -806,6 +806,42 @@ def _label_new_pack(pack_code: str, stage: str = "") -> str:
     return str(r) if isinstance(r, str) else ""
 
 
+def cardfile_classify(path: str) -> dict:
+    """★ 2026-11-14：2.0 选文件按**后端适配器真识别**判定，不再看文件头 4KB 猜格式。
+
+    老版拼多多页面快照（H:\\bdpan-txt-download\\*\\*.txt）顶层是
+    ``{"store":{"initDataObj":{...}}}``，前 4KB 里根本没有 goods_id/server_time/ui，
+    旧 UI 的 ``looks_detail_json`` 必然把它当列表文件挡掉 —— 那 8 个被拒样本全是
+    合法详情卡（goodsID/goodsName/topGallery/detailGallery/skus 齐全）。
+    detect_file 会完整 json.loads 后交给 ``adapters`` 注册表，认得出就返回平台码。
+    认不出时顺手带一份「小样本字段速写」，UI 弹窗能说清是哪种列表/坏文件。
+    """
+    out = {"ok": False, "kind": "unknown", "platform": None,
+           "display_name": "", "reason": "", "fields": {}}
+    if not os.path.isfile(path):
+        out["reason"] = "文件不存在"
+        return out
+    try:
+        m = _v3()
+        ad = m.get("adapters")
+        plat, payload, err = ad.detect_file(path)
+        if plat:
+            out.update({"ok": True, "kind": "card", "platform": plat,
+                        "display_name": ad.display_name(plat), "reason": ""})
+            return out
+        if isinstance(payload, dict):
+            out["fields"] = {"top_keys": list(payload.keys())[:12],
+                             "size": os.path.getsize(path)}
+            ini = (payload.get("store") or {}).get("initDataObj") or {}
+            if isinstance(ini, dict) and isinstance(ini.get("goods"), dict):
+                out["fields"]["goods_keys"] = list(ini["goods"].keys())[:12]
+        out["reason"] = err or "认不出平台"
+        return out
+    except Exception as e:  # noqa: BLE001
+        out["reason"] = "%s: %s" % (type(e).__name__, e)
+        return out
+
+
 def v3_pack_convert(path: str, pack_code: str = "") -> dict:
     """单文件导入。★ 2026-10-25 加分流：
 

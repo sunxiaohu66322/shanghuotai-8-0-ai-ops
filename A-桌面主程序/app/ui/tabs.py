@@ -1114,7 +1114,7 @@ class PackTab(StepTab):
         bar.addWidget(self.btn_dl)
 
         bar.addStretch(1)
-        self.lb_hint = W.Hint("只吃单商品详情卡（微信 .json / 拼多多详情 .txt 完整 JSON）；纯列表 CSV/TSV/TXT 请走第 1 步 URL 包初筛")
+        self.lb_hint = W.Hint("只吃单商品详情卡（微信 .json / 拼多多详情 .txt 完整 JSON，含新版与老版页面快照）；纯列表 CSV/TSV/TXT 请走第 1 步 URL 包初筛")
         bar.addWidget(self.lb_hint)
         root.addLayout(bar)
 
@@ -1157,87 +1157,54 @@ class PackTab(StepTab):
     _inbox_dir = ""
 
     def _pick_files(self):
-        def looks_detail_json(p):
-            """按**内容**判断 .txt 是不是「单商品详情卡」（拼多多详情原始响应）。
+        """★ 2026-11-14：改按**后端适配器真识别**判定，不再靠扩展名 + 头 4KB 猜。
 
-            ★ 2026-11-09：多米数据助手导出的拼多多详情包是 `*.txt`，
-              但内容是完整 JSON（goods.gallery 主图 / decoration 详情图 / 顶层 sku[] /
-              ui.carousel_section.video），6万~17万字节一件。
-              旧逻辑按扩展名 .json 一刀切，把这些详情卡误判成「列表类文件」挡在门外。
-              这里只读文件头 4KB：必须同时有 goods / goods_id，再带 server_time 或 ui。
-              真·列表 TXT/CSV（标题/店铺/链接）不会有这些键 → 仍挡回第一步。
-              真正的字段解析权在后端 adapters.detect_file，UI 这里只负责「别误挡」。
-            """
-            try:
-                with open(p, "rb") as fh:
-                    head = fh.read(4096).decode("utf-8", "ignore")
-                return ('"goods"' in head and '"goods_id"' in head
-                        and ('"server_time"' in head or '"ui"' in head))
-            except Exception:  # noqa: BLE001
-                return False
-
+        老版拼多多页面快照（H:\\bdpan-txt-download\\*\\*.txt）是
+        {"store":{"initDataObj":{goods:{goodsID,goodsName,topGallery,
+        detailGallery,skus...},mall,queries}}} —— 头 4KB 根本没有 goods_id /
+        server_time/ui，旧 looks_detail_json 把它当「列表类 TXT」挡掉，实测 8 个
+        被拒样本全是**合法详情卡**。现在统一交 bridge.cardfile_classify →
+        adapters.detect_file 完整解析后判定；认不出的才是列表/坏文件。
+        """
         start = bridge.dirbook_start("pack", self._inbox_dir or str(paths.PACK_STAGE_PACK))
         files, _ = QFileDialog.getOpenFileNames(
-            self, "选择商品卡文件（.json / 拼多多详情 .txt）", start,
+            self, "选择商品卡文件（.json / 拼多多详情 .txt，新版与老版页面快照均可）", start,
             "商品卡 (*.json *.txt);;JSON (*.json);;拼多多详情 TXT (*.txt);;所有文件 (*.*)")
         if not files:
             return
 
-        # ★ 2026-10-23 口径（主人明确）：**纯列表 CSV 只能进第一步，不许从第二步走**。
-        #   第二步的输入必须是"单商品详情卡"（有主图/详情图/SKU 图）。
-        #   2026-11-09 修正：判定按**内容**不按扩展名 —— 拼多多详情卡就是 .txt 的完整 JSON。
-        ext_blocked, rest, detail_cards = [], [], set()
+        blocked, ok_files, cards = [], [], {}
         for f in files:
-            ext = os.path.splitext(f)[1].lower()
-            if ext == ".json":
-                rest.append(f)
-            elif ext == ".txt" and looks_detail_json(f):
-                rest.append(f)
-                detail_cards.add(f)   # 已按内容确认是详情卡 → 跳过下面的表格分类器
-            else:
-                ext_blocked.append(f)
-        if ext_blocked:
-            names = "\n".join("· " + os.path.basename(f) for f in ext_blocked[:8])
-            QMessageBox.warning(
-                self, "这类文件不能从这里进",
-                "第二步只吃【单商品详情卡】。下面这些不是商品卡：\n\n"
-                + names +
-                "\n\n这些是列表类文件（只有标题 / 店铺 / 链接），或内容认不出的 TXT，"
-                "没有主图 / 详情图 / SKU 图，做不了精筛。\n\n"
-                "拼多多采集的详情 TXT（完整 JSON，含主图 / 详情图 / SKU）可直接从这里导入；\n"
-                "纯列表文件去「1 · 采集初筛」用「导入 URL 包初筛 …」走第一步；"
-                "第一步筛完的链接交给外部程序解析成商品卡，再回到这里导入。")
-        if not rest:
-            return
-
-        # ★ 再拦一层：粗包（只有链接/标题/店铺）就算转成了 json 也不许进第 2/3 步。
-        #   它没有详情图与 SKU 图，进来之后程序为了补证据会逐个打开商品页抓取 —— 那违规。
-        #   2026-11-09：已按内容确认的拼多多详情 TXT 直接放行，不喂给表格分类器
-        #   （url_pack.read_table 会把 JSON 当表格读，header 全是乱码片段，纯属误判）。
-        blocked, ok_files = [], []
-        for f in rest:
-            if f in detail_cards:
+            info = bridge.cardfile_classify(f)
+            if info.get("ok") and info.get("kind") == "card":
                 ok_files.append(f)
-                continue
-            info = bridge.urlpack_classify(f)
-            if info.get("kind") == "url":
+                cards[f] = info
+            else:
                 blocked.append((f, info))
-            else:
-                ok_files.append(f)
         if blocked:
             lines = []
-            for f, info in blocked[:6]:
-                lines.append("· %s（%d 行，详情图 0 / SKU 图 0）"
-                             % (os.path.basename(f), info.get("rows") or 0))
+            for f, info in blocked[:8]:
+                why = str(info.get("reason") or "认不出商品卡格式").replace("\n", " ")[:70]
+                lines.append("· %s（%s）" % (os.path.basename(f), why))
             QMessageBox.warning(
-                self, "这是 URL 粗包，不能进这一步",
-                "下面这些文件只有「链接 / 标题 / 店铺名」，没有详情图与 SKU 图：\n\n"
+                self, "这类文件不能从这里进",
+                "第二步只吃【单商品详情卡】。下面这些没认出来：\n\n"
                 + "\n".join(lines) +
-                "\n\n第三步精筛要靠详情图和 SKU 图判定；拿这种包进来，"
-                "程序只能一个个打开商品页去抓 —— 那是违规操作，本软件不做。\n\n"
-                "正确用法：这种包去「1 · 采集初筛」用「导入 URL 包初筛 …」走第一步。")
+                "\n\n认不出的通常是纯列表文件（只有标题 / 店铺 / 链接），"
+                "或不是完整 JSON 的 TXT，没有主图 / 详情图 / SKU 图，做不了精筛。\n\n"
+                "已支持的详情卡：微信 .json · 拼多多新版详情 .txt · "
+                "拼多多老版页面快照 .txt（store.initDataObj）。\n"
+                "纯列表文件去「1 · 采集初筛」用「导入 URL 包初筛 …」走第一步；"
+                "第一步筛完的链接交给外部程序解析成商品卡，再回到这里导入。")
         if not ok_files:
             return
+        kinds = sorted({str(cards[f].get("display_name") or cards[f].get("platform") or "")
+                        for f in ok_files})
+        self.out.appendPlainText(
+            "已识别商品卡 %d 个：%s" % (len(ok_files), "、".join(kinds) or "商品卡"))
+        # ★ 已按后端适配器确认是正式商品卡（含主图/详情图/SKU 证据），
+        #   不再喂给 url_pack.read_table 表格分类器 —— 那份会把完整 JSON 当表读，
+        #   header 全是乱码片段，是 11-09 之前「老卡被误挡」的第二道误判。
         for f in ok_files:
             bridge.dirbook_remember(f, "pack")
         self._start_convert(ok_files)

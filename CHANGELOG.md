@@ -8,6 +8,67 @@
 > 注：`raw.githubusercontent.com` 有 CDN 缓存，刚推完的几分钟内可能读到上一版；
 > 想确认最新版，请看仓库根本文件的**网页渲染**或 `/tags` 页（实时），或 `git show <tag>`。
 
+## v7 · 2026-11-14 18:02:07 +08:00 · P0.3.2 老版拼多多详情卡接入：新增 store.initDataObj 方言适配器，2.0 按后端识别放行，SKU/主图/详情图/SKU图绑定；8拒收样本+195跨批次抽样全过
+
+- 标签：`v7` ｜ 基线 commit（上一版）：`7ae5ed63a` ｜ 密钥终检：**0 命中** ｜ 纳入 **1291** 文件 / 排除 **1305**
+- 本版有意义的改动 **55** 项（A 新增 / M 修改 / D 删除 / R 改名）：
+  - `M` `A-桌面主程序/app/bridge.py`
+  - `M` `A-桌面主程序/app/ui/tabs.py`
+  - `M` `B-微信小店适配器/data/logs/wx60-std.log`
+  - `M` `B-微信小店适配器/data/overview.json`
+  - `A` `G-后端适配器/v3/__init__.py`
+  - `A` `G-后端适配器/v3/adapters/__init__.py`
+  - `A` `G-后端适配器/v3/adapters/pdd.py`
+  - `A` `G-后端适配器/v3/adapters/pdd_legacy.py`
+  - `A` `G-后端适配器/v3/adapters/wechat.py`
+  - `A` `G-后端适配器/v3/adapters/weidian.py`
+  - `A` `G-后端适配器/v3/ai_fine.py`
+  - `A` `G-后端适配器/v3/api.py`
+  - `A` `G-后端适配器/v3/batches.py`
+  - `A` `G-后端适配器/v3/bundle.py`
+  - `A` `G-后端适配器/v3/cards.py`
+  - `A` `G-后端适配器/v3/catmap.py`
+  - `A` `G-后端适配器/v3/criteria.py`
+  - `A` `G-后端适配器/v3/detail_ingest.py`
+  - `A` `G-后端适配器/v3/detect_slim.py`
+  - `A` `G-后端适配器/v3/dlcenter.py`
+  - `A` `G-后端适配器/v3/doudian.py`
+  - `A` `G-后端适配器/v3/edits.py`
+  - `A` `G-后端适配器/v3/enrich.py`
+  - `A` `G-后端适配器/v3/fieldaudit.py`
+  - `A` `G-后端适配器/v3/finelog.py`
+  - `A` `G-后端适配器/v3/flow.py`
+  - `A` `G-后端适配器/v3/grade.py`
+  - `A` `G-后端适配器/v3/images.py`
+  - `A` `G-后端适配器/v3/importer.py`
+  - `A` `G-后端适配器/v3/inpaint_lama.py`
+  - `A` `G-后端适配器/v3/keywords.py`
+  - `A` `G-后端适配器/v3/mask.py`
+  - `A` `G-后端适配器/v3/maskgen.py`
+  - `A` `G-后端适配器/v3/media.py`
+  - `A` `G-后端适配器/v3/pack.py`
+  - `A` `G-后端适配器/v3/pack_merge.py`
+  - `A` `G-后端适配器/v3/packaging.py`
+  - `A` `G-后端适配器/v3/packsrc.py`
+  - `A` `G-后端适配器/v3/positioning.py`
+  - `A` `G-后端适配器/v3/profile.py`
+  - `A` `G-后端适配器/v3/publish_guard.py`
+  - `A` `G-后端适配器/v3/purge.py`
+  - `A` `G-后端适配器/v3/related.py`
+  - `A` `G-后端适配器/v3/repair.py`
+  - `A` `G-后端适配器/v3/restore_pack.py`
+  - `A` `G-后端适配器/v3/safedelete.py`
+  - `A` `G-后端适配器/v3/sku.py`
+  - `A` `G-后端适配器/v3/status.py`
+  - `A` `G-后端适配器/v3/store.py`
+  - `A` `G-后端适配器/v3/taskcenter.py`
+  - `A` `G-后端适配器/v3/titles.py`
+  - `A` `G-后端适配器/v3/trash.py`
+  - `A` `G-后端适配器/v3/upload.py`
+  - `A` `G-后端适配器/v3/words.py`
+  - `A` `G-后端适配器/v3/wxshop.py`
+- 本版提交 SHA：`git rev-parse v7`；改动记录同步维护在 `VERSIONS.md` 与仓库 tags 页。
+
 ## v6 · 2026-11-13 17:43:46 +08:00 · 8.0 数据包统一命名：新增 app/packlabel.py（日期+第N批+筛选前/后，历史包诚实短名，只写 display_name 不动 pack_code）；导入与精筛收口自动命名；v3_packs 统一 default 最新口径，3.0/4.0/5.5/发布/2.0/商品库/本地链路下拉全部显示友好名并默认选
 
 - 标签：`v6` ｜ 基线 commit（上一版）：`e1362ca8e` ｜ 密钥终检：**0 命中** ｜ 纳入 **1240** 文件 / 排除 **1208**
