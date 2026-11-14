@@ -8,6 +8,73 @@
 > 注：`raw.githubusercontent.com` 有 CDN 缓存，刚推完的几分钟内可能读到上一版；
 > 想确认最新版，请看仓库根本文件的**网页渲染**或 `/tags` 页（实时），或 `git show <tag>`。
 
+## v8 · 2026-11-14 18:16:35 +08:00 · 本地服务控制中心一键上传 · 2026-11-14 18:15:33
+
+- 标签：`v8` ｜ 基线 commit（上一版）：`a60b870b5` ｜ 密钥终检：**0 命中** ｜ 纳入 **1291** 文件 / 排除 **1305**
+- 本版有意义的改动 **1294** 项（A 新增 / M 修改 / D 删除 / R 改名）：
+  - `R100` `0/.gitignore`
+  - `R100` `0/A-桌面主程序/app/__init__.py`
+  - `R100` `0/A-桌面主程序/app/assets/上货台.ico`
+  - `R100` `0/A-桌面主程序/app/boot.py`
+  - `R100` `0/A-桌面主程序/app/bridge.py`
+  - `R100` `0/A-桌面主程序/app/crashguard.py`
+  - `R100` `0/A-桌面主程序/app/dirbook.py`
+  - `R100` `0/A-桌面主程序/app/excel_route.py`
+  - `R100` `0/A-桌面主程序/app/imgcap.py`
+  - `R100` `0/A-桌面主程序/app/lama_ipc.py`
+  - `R100` `0/A-桌面主程序/app/lama_worker.py`
+  - `R100` `0/A-桌面主程序/app/ops/__init__.py`
+  - `R100` `0/A-桌面主程序/app/ops/browser_ops.py`
+  - `R100` `0/A-桌面主程序/app/ops/business.py`
+  - `R100` `0/A-桌面主程序/app/ops/config.py`
+  - `R100` `0/A-桌面主程序/app/ops/dy_daily_patrol.mjs`
+  - `R100` `0/A-桌面主程序/app/ops/dy_timed_capture.mjs`
+  - `R100` `0/A-桌面主程序/app/ops/engine.py`
+  - `R100` `0/A-桌面主程序/app/ops/migrate.py`
+  - `R100` `0/A-桌面主程序/app/ops/platform.py`
+  - `R100` `0/A-桌面主程序/app/ops/queue.py`
+  - `R100` `0/A-桌面主程序/app/ops/schema.sql`
+  - `R100` `0/A-桌面主程序/app/ops/store.py`
+  - `R100` `0/A-桌面主程序/app/ops/sync_freshness.py`
+  - `R100` `0/A-桌面主程序/app/ops/worker.py`
+  - `R100` `0/A-桌面主程序/app/packlabel.py`
+  - `R100` `0/A-桌面主程序/app/paths.py`
+  - `R100` `0/A-桌面主程序/app/theme.py`
+  - `R100` `0/A-桌面主程序/app/ui/__init__.py`
+  - `R100` `0/A-桌面主程序/app/ui/buildstamp.py`
+  - `R100` `0/A-桌面主程序/app/ui/cat_map_dialog.py`
+  - `R100` `0/A-桌面主程序/app/ui/criteria_dialog.py`
+  - `R100` `0/A-桌面主程序/app/ui/dlcenter_win.py`
+  - `R100` `0/A-桌面主程序/app/ui/editor.py`
+  - `R100` `0/A-桌面主程序/app/ui/fine_detail.py`
+  - `R100` `0/A-桌面主程序/app/ui/logwin.py`
+  - `R100` `0/A-桌面主程序/app/ui/main_window.py`
+  - `R100` `0/A-桌面主程序/app/ui/settings_panel.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_detect.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_dlmon.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_export.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_fine.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_flow.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_lab.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_ops.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_publish.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_wall.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_wall_main.py`
+  - `R100` `0/A-桌面主程序/app/ui/tab_wx.py`
+  - `R100` `0/A-桌面主程序/app/ui/tabs.py`
+  - `R100` `0/A-桌面主程序/app/ui/wall.py`
+  - `R100` `0/A-桌面主程序/app/ui/wall_main.py`
+  - `R100` `0/A-桌面主程序/app/ui/widgets.py`
+  - `R100` `0/A-桌面主程序/app/ui/word_manager.py`
+  - `R100` `0/A-桌面主程序/app/ui/workbench.py`
+  - `R100` `0/A-桌面主程序/app/v3img.py`
+  - `R100` `0/A-桌面主程序/app/wxserve.py`
+  - `R100` `0/A-桌面主程序/docs/4.1主图人工审核-阶段A审计.md`
+  - `R100` `0/A-桌面主程序/docs/4.1主图人工审核-阶段C1第二批.md`
+  - `R100` `0/A-桌面主程序/docs/4.1主图人工审核-阶段C交付.md`
+  - …另有 1234 项，见 `git show v8 --stat`
+- 本版提交 SHA：`git rev-parse v8`；改动记录同步维护在 `VERSIONS.md` 与仓库 tags 页。
+
 ## v7 · 2026-11-14 18:02:07 +08:00 · P0.3.2 老版拼多多详情卡接入：新增 store.initDataObj 方言适配器，2.0 按后端识别放行，SKU/主图/详情图/SKU图绑定；8拒收样本+195跨批次抽样全过
 
 - 标签：`v7` ｜ 基线 commit（上一版）：`7ae5ed63a` ｜ 密钥终检：**0 命中** ｜ 纳入 **1291** 文件 / 排除 **1305**
